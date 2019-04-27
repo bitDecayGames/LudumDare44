@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/NewScene.unity
     guid: adb732fea9fac504b9ae5897b0698235
+  - enabled: 1
+    path: Assets/Scenes/Levels/TannersWorld.unity
+    guid: 05e76a9df1263334690728ff1b05212f
   m_configObjects: {}

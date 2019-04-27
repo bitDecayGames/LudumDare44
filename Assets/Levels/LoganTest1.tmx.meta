@@ -1,0 +1,60 @@
+fileFormatVersion: 2
+guid: f1cf45417bdcc49b8a02285248fc98a6
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/LoganTest1
+    100002: _MapPrfab/LoganTest1/Floors
+    100004: _MapPrfab/LoganTest1/Interactables
+    100006: _MapPrfab/LoganTest1/Interactables/MyDick
+    100012: _MapPrfab/LoganTest1/Interactables/Spawn
+    100096: _MapPrfab/LoganTest1/Floors/Chunk (0,32)
+    100098: _MapPrfab/LoganTest1/Floors/Chunk (0,48)
+    100100: _MapPrfab/LoganTest1/Floors/Chunk (16,32)
+    100102: _MapPrfab/LoganTest1/Floors/Chunk (16,48)
+    400000: _MapPrfab/LoganTest1/Transform
+    400002: _MapPrfab/LoganTest1/Floors/Transform
+    400004: _MapPrfab/LoganTest1/Interactables/Transform
+    400006: _MapPrfab/LoganTest1/Interactables/MyDick/Transform
+    400012: _MapPrfab/LoganTest1/Interactables/Spawn/Transform
+    400096: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/Transform
+    400098: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/Transform
+    400100: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/Transform
+    400102: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/Transform
+    6000000: _MapPrfab/LoganTest1/Interactables/MyDick/PolygonCollider2D
+    11400000: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/LoganTest1/Floors/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400006: _MapPrfab/LoganTest1/Floors/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/LoganTest1/Floors/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400010: _superAsset
+    11400012: _MapPrfab/LoganTest1/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400014: _MapPrfab/LoganTest1/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/LoganTest1/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400018: _MapPrfab/LoganTest1/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400020: _MapPrfab/LoganTest1/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400034: _MapPrfab/LoganTest1/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400036: _MapPrfab/LoganTest1/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/LoganTest1/Grid
+    3664157343022684176: _MapPrfab/LoganTest1/Floors/TilemapRenderer
+    8195094279510102542: _MapPrfab/LoganTest1/Floors/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 12
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 1
+  customImporterClassName: 
+  internalTilesets: []
