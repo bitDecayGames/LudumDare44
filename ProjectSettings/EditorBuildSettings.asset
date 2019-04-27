@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/JakesWorld.unity
     guid: b0c89745981b7db4bae4b0b8c24a40f9
+  - enabled: 1
+    path: Assets/Scenes/Levels/LoganWorld.unity
+    guid: 30eb159f139b146a8a0b5908ccb5ebc8
   m_configObjects: {}
