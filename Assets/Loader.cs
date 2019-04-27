@@ -34,7 +34,7 @@ public class Loader : MonoBehaviour
                             Debug.Log("Player failed to get added to the board at (" + player.boardPos.x + ", " + player.boardPos.y + ")");
                         }
                         
-                        Debug.Log(Search.Navigate(board.board, player.boardPos.x, player.boardPos.y, "myDick"));
+                        //Debug.Log(Search.Navigate(board.board, player.boardPos.x, player.boardPos.y, "myDick"));
                     }
                 }
             }
