@@ -2,7 +2,9 @@ using UnityEngine;
 
 namespace Utils {
     public class FadeInFromBlack : MonoBehaviour {
-        private const float timeToFade = 2f;
+        public float TimeToFade = 2f;
+        public float InitialDelay = 0f;
+        
         private float time;
         private bool started;
 
@@ -27,9 +29,13 @@ namespace Utils {
         
         void Update() {
             if (started) {
-                if (time < timeToFade) {
+                if (InitialDelay > 0)
+                {
+                    InitialDelay -= Time.deltaTime;
+                }
+                else if (time < TimeToFade) {
                     time += Time.deltaTime;
-                    SetAlpha(Mathf.Clamp(1 - time / timeToFade, 0f, 1f));
+                    SetAlpha(Mathf.Clamp(1 - time / TimeToFade, 0f, 1f));
                 } else {
                     started = false;
                     Destroy(gameObject);

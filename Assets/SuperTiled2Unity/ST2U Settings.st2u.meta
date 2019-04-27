@@ -10,12 +10,15 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1669159e4149c3941a53b0dab3a68d7c, type: 3}
+  missingFiles: []
   errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []
-  version: 1.1.5
-  pixelsPerUnit: 100
+  missingTags: []
+  importerVersion: 0
+  version: 1.3.2
+  pixelsPerUnit: 16
   edgesPerEllipse: 32
   animationFramerate: 20
   defaultMaterial: {instanceID: 0}
@@ -53,3 +56,4 @@ ScriptedImporter:
   - {r: 1, g: 0.64705884, b: 0, a: 1}
   - {r: 0, g: 1, b: 1, a: 1}
   - {r: 0.7372549, g: 0.56078434, b: 0.56078434, a: 1}
+  prefabReplacements: []
