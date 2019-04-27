@@ -82,7 +82,7 @@
  </layer>
  <objectgroup id="5" name="Interactables">
   <object id="22" name="MyDick" x="176" y="352" width="8" height="8"/>
-  <object id="28" name="Spawn" x="178.25" y="402.75">
+  <object id="28" name="Spawn" x="184" y="408">
    <point/>
   </object>
  </objectgroup>

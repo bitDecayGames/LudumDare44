@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using SuperTiled2Unity;
 using UnityEngine;
+using Utils;
 
 public class Loader : MonoBehaviour
 {
@@ -12,13 +13,6 @@ public class Loader : MonoBehaviour
     void Start()
     {
         SuperMap map = FindObjectOfType<SuperMap>();
-        foreach (var layer in map.GetComponentsInChildren<SuperTileLayer>())
-        {
-            foreach (var spriteRenderer in layer.GetComponentsInChildren<SpriteRenderer>())
-            {
-               // spriteRenderer.sprite.pivot = new Vector2(8, 4);
-            }
-        }
         foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>())
         {
             if ("Interactables" == componentsInChild.m_TiledName)
@@ -28,9 +22,11 @@ public class Loader : MonoBehaviour
                     if ("Spawn" == superObject.m_TiledName)
                     {
                         var player = Instantiate(playerPrefab, map.transform);
-//                        player.transform.position = superObject.transform.position;
-                        player.boardPos.x = (int)superObject.m_X / 8; // 8 is tile size
-                        player.boardPos.y = (int)superObject.m_Y / 8; // 8 is tile size
+                        player.boardPos.x = (int)superObject.m_X / TileConstants.TILE_SIZE; // 8 is tile size
+                        player.boardPos.y = (int)superObject.m_Y / TileConstants.TILE_SIZE; // 8 is tile size
+                        
+                        // TODO: Make sure this doesn't break the rest of the grid (i.e. Now everything else is off by (-2, -2)
+                        player.boardPos.Add(new IsoVector2(-2, -2));
                     }
                 }
             }
