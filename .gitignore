@@ -14,3 +14,8 @@ Logs/
 Assets/StreamingAssets/*.bank
 fmod.log
 fmod_editor.log
+
+// vscode
+.vscode
+
+*.bank.meta
