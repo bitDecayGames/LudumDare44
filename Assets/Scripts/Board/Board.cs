@@ -57,6 +57,19 @@ namespace Board {
             return true;
         }
 
+        public bool SetForce(Occupier occupier, int x, int y) {
+            var node = Get(x, y);
+            if (node == null) return false;
+            if (node.occupier != null) {
+                Debug.Log("Forcibly removed something from the board at (" + x + ", " + y + ")");
+                node.occupier.myNode = null;
+                node.occupier = null;
+            }
+            node.occupier = occupier;
+            occupier.myNode = node;
+            return true;
+        }
+
         public void Remove(Occupier occupier) {
             occupier.myNode.occupier = null;
             occupier.myNode = null;
