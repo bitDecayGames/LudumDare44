@@ -1,0 +1,3 @@
+[submodule "LudumDare44Audio"]
+	path = LudumDare44Audio
+	url = git@github.com:bitDecayGames/LudumDare44Audio.git
