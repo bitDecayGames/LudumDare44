@@ -5,24 +5,28 @@ using UnityEngine;
 
 public class SimpleMove : MonoBehaviour
 {
+
+    private BoardPosition boardPos;
     // Start is called before the first frame update
     void Start()
     {
-        
+        boardPos = GetComponent<BoardPosition>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
-            transform.position = transform.position + Vector3.left/20f;
-        if (Input.GetKey(KeyCode.D))
-            transform.position = transform.position + Vector3.right/20f;
-        if (Input.GetKey(KeyCode.W))
-            transform.position = transform.position + Vector3.up/20f;
-        if (Input.GetKey(KeyCode.S))
-            transform.position = transform.position + Vector3.down/20f;
-
-        Debug.Log(transform.position);
+        if (Input.GetKeyDown(KeyCode.A))
+            GetComponent<BoardPosition>().
+                boardPos.x -= 1;
+        if (Input.GetKeyDown(KeyCode.D))
+            GetComponent<BoardPosition>().
+                boardPos.x += 1;
+        if (Input.GetKeyDown(KeyCode.W))
+            GetComponent<BoardPosition>().
+                boardPos.y -= 1;
+        if (Input.GetKeyDown(KeyCode.S))
+            GetComponent<BoardPosition>().
+                boardPos.y += 1;
     }
 }

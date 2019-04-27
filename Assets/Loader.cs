@@ -6,7 +6,7 @@ using UnityEngine;
 public class Loader : MonoBehaviour
 {
 
-    public GameObject playerPrefab;
+    public BoardPosition playerPrefab;
     
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,9 @@ public class Loader : MonoBehaviour
                     if ("Spawn" == superObject.m_TiledName)
                     {
                         var player = Instantiate(playerPrefab, map.transform);
-                        player.transform.position = superObject.transform.position;
+//                        player.transform.position = superObject.transform.position;
+                        player.boardPos.x = (int)superObject.m_X / 8; // 8 is tile size
+                        player.boardPos.y = (int)superObject.m_Y / 8; // 8 is tile size
                     }
                 }
             }
