@@ -10,7 +10,7 @@ namespace Board {
             SuperMap map = FindObjectOfType<SuperMap>();
             foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>())
             {
-                if ("Collisions" == componentsInChild.m_TiledName)
+                if ("Collisions" == componentsInChild.m_TiledName || "Interactables" == componentsInChild.m_TiledName)
                 {
                     foreach (var superObject in map.GetComponentsInChildren<SuperObject>())
                     {

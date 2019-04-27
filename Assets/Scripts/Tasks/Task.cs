@@ -3,32 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum TaskType {
-    DepositMoney,
-
+    DepositMoney
 }
 
 public class Task : MonoBehaviour
 {
     public TaskType type;
-    List<TaskStep> steps;
+    public List<TaskStep> steps;
     GameObject npc;
 
     public static string GetTaskName(TaskType type)
     {
-        switch (type) {
-            case TaskType.DepositMoney:
-                return "Deposit Money";
-        }
+        return System.Enum.GetName(typeof(TaskType), type);
+    }
 
-        return "Unkown Task Type";
+    public Task(){
+        steps = new List<TaskStep>();
     }
 
     void Start()
     {
-        steps = new List<TaskStep>();
-        TaskStep moveToSafeStep = new TaskStep();
-        moveToSafeStep.type = TaskStepType.MoveToSafe;
-        steps.Add(moveToSafeStep);
+
     }
     
     void Update()
