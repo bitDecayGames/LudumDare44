@@ -1,1 +1,1 @@
-LudumDare44
+Base project for all Unity game jam games

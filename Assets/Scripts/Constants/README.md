@@ -1,0 +1,1 @@
+Some constant files will not be present in source control since they are generated locally every time the project is saved
