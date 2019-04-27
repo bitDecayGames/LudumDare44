@@ -314,6 +314,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BoardPosition.cs" />
+    <Compile Include="Assets\Loader.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODMusicPlayer.cs" />
@@ -335,14 +337,54 @@
     <Compile Include="Assets\Scripts\Constants\Songs.cs" />
     <Compile Include="Assets\Scripts\Constants\Tags.cs" />
     <Compile Include="Assets\Scripts\Delegates\Delegates.cs" />
+    <Compile Include="Assets\Scripts\Jakes\Player.cs" />
+    <Compile Include="Assets\Scripts\Jakes\Tasks.cs" />
+    <Compile Include="Assets\Scripts\Jakes\Teller.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameObjectManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameObjectSpawner.cs" />
+    <Compile Include="Assets\Scripts\Managers\GenericGameObjectClass.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuController.cs" />
+    <Compile Include="Assets\Scripts\Tasks\Task.cs" />
+    <Compile Include="Assets\Scripts\Tasks\TaskStep.cs" />
     <Compile Include="Assets\Scripts\Utils\CustomMath.cs" />
     <Compile Include="Assets\Scripts\Utils\DelayedSceneTransition.cs" />
     <Compile Include="Assets\Scripts\Utils\EasyNavigator.cs" />
     <Compile Include="Assets\Scripts\Utils\FadeInFromBlack.cs" />
     <Compile Include="Assets\Scripts\Utils\FadeToBlack.cs" />
+    <Compile Include="Assets\Scripts\Utils\IsoVector2.cs" />
     <Compile Include="Assets\Scripts\Utils\RandomNumberGenerator.cs" />
     <Compile Include="Assets\Scripts\Utils\References.cs" />
+    <Compile Include="Assets\Scripts\Utils\TileConstants.cs" />
+    <Compile Include="Assets\SimpleMove.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Examples\Overhead\Sprites\MegaDad\OverheadMegaDadController.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\CollisionObject.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\CollisionShapeType.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\CustomProperty.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\Extensions\CustomPropertyExtensions.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\Extensions\GameObjectExtensions.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\Extensions\StringExtensions.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\Extensions\SuperTileExtensions.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\FlipFlags.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\MapOrientation.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\MapRenderOrder.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\Math\MatrixUtils.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SerializableDictionary.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\StaggerAxis.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\StaggerIndex.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperColliderComponent.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperCustomProperties.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperGroupLayer.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperImageLayer.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperLayer.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperMap.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperObject.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperObjectLayer.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperTile.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\SuperTileLayer.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\TilemapData.cs" />
+    <Compile Include="Assets\SuperTiled2Unity\Scripts\TileObjectAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -379,6 +421,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
+    <None Include="Assets\SuperTiled2Unity\Examples\Overhead\Maps\Zoria Tileset\readme.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
