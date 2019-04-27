@@ -1,0 +1,16 @@
+// Unity
+.idea/
+Assembly-CSharp-Editor-firstpass.csproj
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-firstpass.csproj
+Temp/
+obj/
+Library/
+Builds/
+Logs/
+
+// FMOD
+Assets/StreamingAssets/*.bank
+fmod.log
+fmod_editor.log
