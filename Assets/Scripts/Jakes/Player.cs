@@ -16,6 +16,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+
+        if (Input.GetKeyDown("space"))
+        {
+            TaskManager manager = GameObject.FindObjectOfType<TaskManager>();
+            manager.CompleteStep(TaskStepType.MoveToSafe);
+        }
     }
 
     void Move()

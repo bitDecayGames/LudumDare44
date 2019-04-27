@@ -2,22 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum TaskStepType {
-    DepositMoney,
-    MoveToSafe
+public enum TaskStepType {
+    MoveToSafe,
 }
 
-public class TaskStep : MonoBehaviour
+public class TaskStep
 {
-    TaskStepType type;
+    public TaskStepType type;
 
-    void Start()
-    {
-        type = TaskStepType.DepositMoney;
-    }
-    
-    void Update()
-    {
-        
-    }
+    public bool complete;
 }
