@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fa02c5c3620314944a6cd07faf77722f
 ScriptedImporter:
   fileIDToRecycleName:
@@ -35,21 +36,40 @@ ScriptedImporter:
     21300024: Sprite_FloorTiles_13
     21300026: Sprite_FloorTiles_14
     21300028: Sprite_FloorTiles_15
+=======
+guid: 510abc94e433942f99f92ff0a0f956ed
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: _TilesetScriptObject
+    11400002: _superAsset
+>>>>>>> 622558faa29100e194b7285c1c43b0147de92a00
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
   missingFiles: []
+<<<<<<< HEAD
   errors: []
+=======
+  errors:
+  - Texture was imported at a smaller size. Make sure 'Max Size' on '../../Art/Tilesets/Floors/FloorTiles.png'
+    is at least '96'
+>>>>>>> 622558faa29100e194b7285c1c43b0147de92a00
   warnings: []
   missingSortingLayers: []
   missingLayers: []
   missingTags: []
   importerVersion: 7
+<<<<<<< HEAD
   pixelsPerUnit: 100
   edgesPerEllipse: 32
   numberOfObjectsImported: 33
+=======
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+>>>>>>> 622558faa29100e194b7285c1c43b0147de92a00
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048
