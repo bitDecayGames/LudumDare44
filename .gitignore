@@ -14,11 +14,9 @@ Logs/
 Assets/StreamingAssets/*.bank
 fmod.log
 fmod_editor.log
+*.bank.meta
 Assets/FMODStudioCache.asset
 Assets/Resources/FMODStudioSettings.asset
 
-
 // vscode
 .vscode
-
-*.bank.meta
