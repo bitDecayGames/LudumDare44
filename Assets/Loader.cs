@@ -12,6 +12,13 @@ public class Loader : MonoBehaviour
     void Start()
     {
         SuperMap map = FindObjectOfType<SuperMap>();
+        foreach (var layer in map.GetComponentsInChildren<SuperTileLayer>())
+        {
+            foreach (var spriteRenderer in layer.GetComponentsInChildren<SpriteRenderer>())
+            {
+               // spriteRenderer.sprite.pivot = new Vector2(8, 4);
+            }
+        }
         foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>())
         {
             if ("Interactables" == componentsInChild.m_TiledName)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="6" nextobjectid="30">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="8" nextobjectid="40">
  <tileset firstgid="1" source="Tilesets/floors.tsx"/>
  <layer id="2" name="Floors" width="164" height="100">
   <properties>
@@ -85,5 +85,17 @@
   <object id="28" name="Spawn" x="178.25" y="402.75">
    <point/>
   </object>
+ </objectgroup>
+ <objectgroup id="7" name="Collisions">
+  <object id="30" gid="15" x="136" y="368" width="16" height="32"/>
+  <object id="31" gid="15" x="144" y="368" width="16" height="32"/>
+  <object id="32" gid="15" x="144" y="376" width="16" height="32"/>
+  <object id="33" gid="15" x="144" y="384" width="16" height="32"/>
+  <object id="34" gid="15" x="144" y="392" width="16" height="32"/>
+  <object id="35" gid="15" x="160" y="384" width="16" height="32"/>
+  <object id="36" gid="15" x="168" y="384" width="16" height="32"/>
+  <object id="37" gid="15" x="176" y="384" width="16" height="32"/>
+  <object id="38" gid="15" x="184" y="384" width="16" height="32"/>
+  <object id="39" gid="15" x="184" y="376" width="16" height="32"/>
  </objectgroup>
 </map>
