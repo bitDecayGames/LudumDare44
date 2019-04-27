@@ -1,0 +1,64 @@
+fileFormatVersion: 2
+guid: 9f53c9d42ffbcf94c90dc63e8ab3106c
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/JakeTest
+    100002: _MapPrfab/JakeTest/Collisions
+    100004: _MapPrfab/JakeTest/Floors
+    100006: _MapPrfab/JakeTest/Floors/Chunk (0,32)
+    100008: _MapPrfab/JakeTest/Floors/Chunk (0,48)
+    100010: _MapPrfab/JakeTest/Floors/Chunk (16,32)
+    100012: _MapPrfab/JakeTest/Floors/Chunk (16,48)
+    100014: _MapPrfab/JakeTest/Interactables
+    100016: _MapPrfab/JakeTest/Interactables/MyDick
+    100018: _MapPrfab/JakeTest/Interactables/Spawn
+    400000: _MapPrfab/JakeTest/Transform
+    400002: _MapPrfab/JakeTest/Collisions/Transform
+    400004: _MapPrfab/JakeTest/Floors/Transform
+    400006: _MapPrfab/JakeTest/Floors/Chunk (0,32)/Transform
+    400008: _MapPrfab/JakeTest/Floors/Chunk (0,48)/Transform
+    400010: _MapPrfab/JakeTest/Floors/Chunk (16,32)/Transform
+    400012: _MapPrfab/JakeTest/Floors/Chunk (16,48)/Transform
+    400014: _MapPrfab/JakeTest/Interactables/Transform
+    400016: _MapPrfab/JakeTest/Interactables/MyDick/Transform
+    400018: _MapPrfab/JakeTest/Interactables/Spawn/Transform
+    6000000: _MapPrfab/JakeTest/Interactables/MyDick/PolygonCollider2D
+    11400000: _MapPrfab/JakeTest/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/JakeTest/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/JakeTest/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400006: _MapPrfab/JakeTest/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/JakeTest/Floors/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400010: _MapPrfab/JakeTest/Floors/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400012: _MapPrfab/JakeTest/Floors/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400014: _MapPrfab/JakeTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400016: _MapPrfab/JakeTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400018: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400020: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400022: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400024: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400026: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400028: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/JakeTest/Grid
+    3664157343022684176: _MapPrfab/JakeTest/Floors/TilemapRenderer
+    8195094279510102542: _MapPrfab/JakeTest/Floors/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 12
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 1
+  customImporterClassName: 
+  internalTilesets: []

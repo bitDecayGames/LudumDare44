@@ -8,11 +8,16 @@ namespace Board {
     public class Board {
         public int width { get; private set; }
         public int height { get; private set; }
+        public int startX { get; private set; }
+        public int startY { get; private set; }
         private List<Node> board;
+        
 
-        public Board(int width, int height) {
+        public Board(int startX, int startY, int width, int height) {
             this.width = width;
             this.height = height;
+            this.startX = startX;
+            this.startY = startY;
             // Looks like:
             //
             // 0 4 8 
@@ -20,16 +25,16 @@ namespace Board {
             // 2 6 ...
             // 3 7
             board = new List<Node>();
-            for (int x = 0; x < width; x++) {
-                for (int y = 0; y < height; y++) {
+            for (int x = startX; x < startX + width; x++) {
+                for (int y = startY; y < startY + height; y++) {
                     var node = new Node(x, y);
                     board.Add(node);
-                    if (x - 1 >= 0) {
+                    if (x - 1 >= startX) {
                         node.left = Get(x - 1, y);
                         node.left.right = node;
                     }
 
-                    if (y - 1 >= 0) {
+                    if (y - 1 >= startY) {
                         node.up = Get(x, y - 1);
                         node.up.down = node;
                     }
@@ -38,9 +43,9 @@ namespace Board {
         }
 
         public Node Get(int x, int y) {
-            if (x < 0 || y < 0) return null;
-            if (x > width || y > height) return null;
-            return board[x * height + y];
+            if (x < startX || y < startY) return null;
+            if (x > startX + width || y > startY + height) return null;
+            return board[(x - startX) * height + (y - startY)];
         }
 
         public bool Set(Occupier occupier, int x, int y) {
@@ -97,9 +102,21 @@ namespace Board {
         }
 
         public override string ToString() {
+            var topLeftX = startX + width;
+            var topLeftY = startY + height;
+            var bottomRightX = startX;
+            var bottomRightY = startY;
+            board.ForEach(n => {
+                if (n.occupier != null) {
+                    if (topLeftX > n.x) topLeftX = n.x;
+                    if (topLeftY > n.y) topLeftY = n.y;
+                    if (bottomRightX < n.x) bottomRightX = n.x;
+                    if (bottomRightY < n.y) bottomRightY = n.y;
+                }
+            });
             StringBuilder sb = new StringBuilder();
-            for (int y = 0; y < height; y++) {
-                for (int x = 0; x < width; x++) {
+            for (int y = topLeftY; y <= bottomRightY; y++) {
+                for (int x = topLeftX; x <= bottomRightX; x++) {
                     var node = Get(x, y);
                     sb.Append(node.occupier == null ? "." : "@");
                 }

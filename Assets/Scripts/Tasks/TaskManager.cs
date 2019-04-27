@@ -12,13 +12,7 @@ public class TaskManager : MonoBehaviour
     {
         for (uint i = 0; i < NumTasks; i++)
         {
-            GameObject newTaskObj = new GameObject();
-            newTaskObj.name = Task.GetTaskName(TaskType.DepositMoney);
-            newTaskObj.tag = TAG;
-            newTaskObj.transform.SetParent(this.transform);
-
-            Task task = newTaskObj.AddComponent(typeof(Task)) as Task;
-            task.type = TaskType.DepositMoney;
+            CreateTaskGameObj();
         }
     }
     
@@ -39,5 +33,14 @@ public class TaskManager : MonoBehaviour
                 Destroy(go);
             }
         }
+    }
+
+    public void CreateTaskGameObj(){
+        GameObject newTaskObj = new GameObject();
+        var task = newTaskObj.AddComponent(typeof(Task)) as Task;
+        TaskBuilder.CreateRandomTask(task);
+        newTaskObj.name = Task.GetTaskName(task.type);
+        newTaskObj.tag = TAG;
+        newTaskObj.transform.SetParent(this.transform);
     }
 }
