@@ -15,6 +15,7 @@ public class Loader : MonoBehaviour
     {
         SuperMap map = FindObjectOfType<SuperMap>();
         BoardManager board = FindObjectOfType<BoardManager>();
+        board.Initialize();
         foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>())
         {
             if ("Interactables" == componentsInChild.m_TiledName)
@@ -32,6 +33,8 @@ public class Loader : MonoBehaviour
                         
                         var occupier = player.gameObject.AddComponent<Board.Board.Occupier>();
                         board.board.Set(occupier, player.boardPos.x, player.boardPos.y);
+                        
+                        Debug.Log(Search.Navigate(board.board, player.boardPos.x, player.boardPos.y, "myDick"));
                     }
                 }
             }

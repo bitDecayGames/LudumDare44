@@ -5,7 +5,7 @@ namespace Board {
     public class BoardManager : MonoBehaviour {
         public Board board;
         
-        void Start() {
+        public void Initialize() {
             board = new Board(-100, -100, 200, 200);
             SuperMap map = FindObjectOfType<SuperMap>();
             foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>())
