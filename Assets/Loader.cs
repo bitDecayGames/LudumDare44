@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Board;
+﻿using Board;
 using SuperTiled2Unity;
 using UnityEngine;
 using Utils;
@@ -31,7 +29,9 @@ public class Loader : MonoBehaviour
                         player.boardPos.Add(new IsoVector2(-2, -2));
                         
                         var occupier = player.gameObject.AddComponent<Board.Board.Occupier>();
-                        board.board.Set(occupier, player.boardPos.x, player.boardPos.y);
+                        if (!board.board.SetForce(occupier, player.boardPos.x, player.boardPos.y)) {
+                            Debug.Log("Player failed to get added to the board at (" + player.boardPos.x + ", " + player.boardPos.y + ")");
+                        }
                     }
                 }
             }
