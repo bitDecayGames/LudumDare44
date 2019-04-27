@@ -1,0 +1,55 @@
+fileFormatVersion: 2
+guid: 510abc94e433942f99f92ff0a0f956ed
+ScriptedImporter:
+  fileIDToRecycleName:
+    2800000: Atlas_FloorTiles_1
+    11400000: _TilesetScriptObject
+    11400002: _superAsset
+    11400004: Tile_FloorTiles_1
+    11400006: Tile_FloorTiles_2
+    11400008: Tile_FloorTiles_3
+    11400010: Tile_FloorTiles_4
+    11400012: Tile_FloorTiles_5
+    11400014: Tile_FloorTiles_6
+    11400016: Tile_FloorTiles_7
+    11400018: Tile_FloorTiles_8
+    11400020: Tile_FloorTiles_9
+    11400022: Tile_FloorTiles_10
+    11400024: Tile_FloorTiles_11
+    11400026: Tile_FloorTiles_12
+    11400028: Tile_FloorTiles_13
+    11400030: Tile_FloorTiles_14
+    11400032: Tile_FloorTiles_15
+    21300000: Sprite_FloorTiles_1
+    21300002: Sprite_FloorTiles_2
+    21300004: Sprite_FloorTiles_3
+    21300006: Sprite_FloorTiles_4
+    21300008: Sprite_FloorTiles_5
+    21300010: Sprite_FloorTiles_6
+    21300012: Sprite_FloorTiles_7
+    21300014: Sprite_FloorTiles_8
+    21300016: Sprite_FloorTiles_9
+    21300018: Sprite_FloorTiles_10
+    21300020: Sprite_FloorTiles_11
+    21300022: Sprite_FloorTiles_12
+    21300024: Sprite_FloorTiles_13
+    21300026: Sprite_FloorTiles_14
+    21300028: Sprite_FloorTiles_15
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 7
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 33
+  useSpriteAtlas: 1
+  atlasWidth: 2048
+  atlasHeight: 2048
