@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GameObjectManager : MonoBehaviour
 {
@@ -30,34 +31,34 @@ public class GameObjectManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
     
-    
-    private List<GameObject> _registeredGameObjects = new List<GameObject>();
+    [SerializeField]
+    private List<GameObject> RegisteredGameObjects = new List<GameObject>();
 
     public void RegisterGameObject(GameObject gameObject)
     {
-        _registeredGameObjects.Add(gameObject);
+        RegisteredGameObjects.Add(gameObject);
     }
 
     public bool DeregisterGameObject(GameObject gameObject)
     {
-        return _registeredGameObjects.Remove(gameObject);
+        return RegisteredGameObjects.Remove(gameObject);
     }
     
     public GameObject GetGameObject(int index)
     {
-        if (_registeredGameObjects.Count < index)
+        if (RegisteredGameObjects.Count < index)
         {
             throw new Exception("Game object registry out of bounds exception");
         }
 
-        return _registeredGameObjects[index];
+        return RegisteredGameObjects[index];
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightShift))
         {
-            Debug.Log(String.Format("Registered game object count: {0}", _registeredGameObjects.Count));
+            Debug.Log(String.Format("Registered game object count: {0}", RegisteredGameObjects.Count));
         }
     }
 }
