@@ -7,8 +7,8 @@ public static class TaskBuilder
 {
     public static void CreateRandomTask(Task task){
         // EmptyCashRegister(task);
-        // DepositMoney(task);
-        TestTask(task);
+        DepositMoney(task);
+//        TestTask(task);
     }
 
     static void TestTask(Task task)

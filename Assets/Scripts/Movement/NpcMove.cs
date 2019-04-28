@@ -168,21 +168,26 @@ namespace Movement {
             lerper.Begin(originalPos, endPos, TIME_TO_MOVE, () => { isAcceptingInput = true; });
         }
 
+        private void playAnimationIfNotPlayingAsAFunction(string animName)
+        {
+            animator.Play(animName);
+        }
+
         private void UpdateStandAnimation() {
             if (!standing) {
                 standing = true;
                 switch (facing) {
                     case Facing.Up:
-                        animator.Play(AnimationConstants.STAND_UP_RIGHT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_UP_RIGHT);
                         break;
                     case Facing.Right:
-                        animator.Play(AnimationConstants.STAND_DOWN_RIGHT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_DOWN_RIGHT);
                         break;
                     case Facing.Down:
-                        animator.Play(AnimationConstants.STAND_DOWN_LEFT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_DOWN_LEFT);
                         break;
                     case Facing.Left:
-                        animator.Play(AnimationConstants.STAND_UP_LEFT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_UP_LEFT);
                         break;
                 }
             }
@@ -192,16 +197,16 @@ namespace Movement {
             standing = false;
             switch (facing) {
                 case Facing.Up:
-                    animator.Play(AnimationConstants.WALK_UP_RIGHT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_UP_RIGHT);
                     break;
                 case Facing.Right:
-                    animator.Play(AnimationConstants.WALK_DOWN_RIGHT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_DOWN_RIGHT);
                     break;
                 case Facing.Down:
-                    animator.Play(AnimationConstants.WALK_DOWN_LEFT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_DOWN_LEFT);
                     break;
                 case Facing.Left:
-                    animator.Play(AnimationConstants.WALK_UP_LEFT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_UP_LEFT);
                     break;
             }
         }
