@@ -22,6 +22,7 @@ namespace Utils {
             var cam = FindObjectOfType<Camera>();
             var camPos = cam.transform.position;
             camPos.z = 0;
+            _sprite.sortingOrder = 100;
             transform.position = camPos;
             transform.localScale = new Vector3(1, 1, 0) * 10000f + new Vector3(0, 0, 1);
             started = true;

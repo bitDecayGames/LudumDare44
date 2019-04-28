@@ -10,6 +10,7 @@ public class Scenes
 	public const string TannersWorld = "TannersWorld";
 	public const string JakesWorld = "JakesWorld";
 	public const string LoganWorld = "LoganWorld";
+	public const string DebugPlayerAnimations = "DebugPlayerAnimations";
 	public enum SceneEnum
 	{
 		TitleScreen = 98,
@@ -20,6 +21,7 @@ public class Scenes
 		TannersWorld = 227,
 		JakesWorld = 246,
 		LoganWorld = 249,
+		DebugPlayerAnimations = 103,
 	}
 	public static string GetSceneNameFromEnum(SceneEnum sceneEnum)
 	{
@@ -41,6 +43,8 @@ public class Scenes
 				return JakesWorld;
 			case SceneEnum.LoganWorld:
 				return LoganWorld;
+			case SceneEnum.DebugPlayerAnimations:
+				return DebugPlayerAnimations;
 			default:
 				throw new Exception("Unable to resolve scene name for: " + sceneEnum);
 		}

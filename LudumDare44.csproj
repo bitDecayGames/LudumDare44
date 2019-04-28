@@ -325,6 +325,8 @@
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\ParametersListEnum.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODSoundEffectsPlayer\FMODSoundEffectsPlayer.cs" />
     <Compile Include="Assets\Scripts\Audio\MusicSelector.cs" />
+    <Compile Include="Assets\Scripts\Board\Board.cs" />
+    <Compile Include="Assets\Scripts\Board\BoardManager.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateScenes.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateSFX.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateSongs.cs" />
@@ -338,13 +340,12 @@
     <Compile Include="Assets\Scripts\Constants\Tags.cs" />
     <Compile Include="Assets\Scripts\Delegates\Delegates.cs" />
     <Compile Include="Assets\Scripts\Jakes\Player.cs" />
-    <Compile Include="Assets\Scripts\Jakes\Tasks.cs" />
-    <Compile Include="Assets\Scripts\Jakes\Teller.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Managers\GenericGameObjectClass.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuController.cs" />
     <Compile Include="Assets\Scripts\Tasks\Task.cs" />
+    <Compile Include="Assets\Scripts\Tasks\TaskManager.cs" />
     <Compile Include="Assets\Scripts\Tasks\TaskStep.cs" />
     <Compile Include="Assets\Scripts\Utils\CustomMath.cs" />
     <Compile Include="Assets\Scripts\Utils\DelayedSceneTransition.cs" />
