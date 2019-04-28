@@ -66,25 +66,20 @@ public class Task : MonoBehaviour
     {
         switch (taskStep.type)
         {
-            case TaskStepType.MoveToSafe:
-                var icon = FindObjectOfType<TaskManager>().CreateIcon(global::Icons.Icon.CashRegister, npc.transform.position);
-                Icons.Add(icon);
+            case TaskStepType.Safe:
+                Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform.position));
                 break;
             
-            case TaskStepType.MoveToVacuumTube:
+            case TaskStepType.VacuumTube:
                 break;
         }
     }
 
-    public void ClearIconsForStep(TaskStepType taskStepType)
+    public void ClearIcons()
     {
-        switch (taskStepType)
+        foreach (GameObject icon in Icons)
         {
-            case TaskStepType.MoveToSafe:
-                break;
-            
-            case TaskStepType.MoveToVacuumTube:
-                break;
+            Destroy(icon);
         }
     }
 
@@ -126,9 +121,11 @@ public class Task : MonoBehaviour
                     TimeAlive = 0;
                 }
 
+                ClearIcons();
                 if (StepsLeftToComplete > 0)
                 {
                     npcController.AssignStep(steps[i + 1]);
+                    CreateIconsForStep(steps[i + 1]);
                 }
             }
             break;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Board;
@@ -37,11 +38,6 @@ public class TaskManager : MonoBehaviour
             }
         }
 
-    }
-
-    public GameObject CreateIcon(Icons.Icon icon, Vector3 location)
-    {
-        return Instantiate(MaleNpc, location + Vector3.up, Quaternion.identity);
     }
 
     public void CompleteTaskStep(TaskStepType type, bool npcStep)
