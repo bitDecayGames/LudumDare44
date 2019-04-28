@@ -35,5 +35,5 @@ public class TaskStep
 
     public Board.Board.Node node;
 
-    public Icon icon;
+    public Icon icon = Icon.Empty;
 }

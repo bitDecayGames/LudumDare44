@@ -73,15 +73,30 @@ public class Task : MonoBehaviour
 
     void CreateIconsForStep(TaskStep step)
     {
-        // Icons.Add(IconManager.GetLocalReference().CreateIcon(step.icon, npc.transform));
+        if (step.icon == Icon.Empty) {
+            Debug.Log("Skipping icon for " + step);
+            return;
+        }
+
+        Board.BoardManager boardManager = FindObjectOfType<Board.BoardManager>();
+        string lowerName = TaskStep.GetStepName(step.type).ToLower();
+        List<Board.Board.Occupier> locations = boardManager.board.stepLocations[lowerName];
+        foreach (var loc in locations)
+        {
+            // TODO Move this offset somewhere else.
+            Vector3 offset = new Vector3(-0.25f, 1f, 0f);
+            GameObject iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, loc.gameObject.transform, offset);
+            Icons.Add(iconObj);
+        }
     }
 
     void ClearIcons()
     {
-        // foreach (GameObject icon in Icons)
-        // {
-        //     Destroy(icon);
-        // }
+        foreach (GameObject icon in Icons)
+        {
+            Destroy(icon);
+        }
+        Icons.Clear();
     }
 
     public void CompleteStep(TaskStepType type, bool npcStep) {
@@ -104,6 +119,7 @@ public class Task : MonoBehaviour
         }
 
         ClearIcons();
+
         if (!IsComplete())
         {
             TaskStep nextStep = steps.Peek();
