@@ -25,15 +25,15 @@ public class Loader : MonoBehaviour
                     if ("Spawn" == superObject.m_TiledName)
                     {
                         var player = Instantiate(playerPrefab, map.transform);
-                        player.boardPos.x = (int)superObject.m_X / TileConstants.TILE_SIZE; // 8 is tile size
-                        player.boardPos.y = (int)superObject.m_Y / TileConstants.TILE_SIZE; // 8 is tile size
+                        player.X = (int)superObject.m_X / TileConstants.TILE_SIZE; // 8 is tile size
+                        player.Y = (int)superObject.m_Y / TileConstants.TILE_SIZE; // 8 is tile size
 
                         // TODO: Make sure this doesn't break the rest of the grid (i.e. Now everything else is off by (-2, -2)
-                        player.boardPos.Add(new IsoVector2(-2, -2));
+                        player.Add(-2, -2);
                         
                         var occupier = player.gameObject.AddComponent<Board.Board.Occupier>();
-                        if (!board.board.SetForce(occupier, player.boardPos.x, player.boardPos.y)) {
-                            Debug.Log("Player failed to get added to the board at (" + player.boardPos.x + ", " + player.boardPos.y + ")");
+                        if (!board.board.SetForce(occupier, player.X, player.Y)) {
+                            Debug.Log("Player failed to get added to the board at (" + player.X + ", " + player.Y + ")");
                         }
 
                         if (once)
@@ -41,7 +41,7 @@ public class Loader : MonoBehaviour
                             once = false;
 
                             string dirs = "";
-                            foreach (var d in Search.Navigate(board.board, player.boardPos, board.board.stepLocations["cashRegister"][0].myNode.IsoLoc()))
+                            foreach (var d in Search.Navigate(board.board, player.CopyIsoVector2(), board.board.stepLocations["cashRegister"][0].myNode.IsoLoc()))
                             {
                                 dirs += d.ToString();
                             }
