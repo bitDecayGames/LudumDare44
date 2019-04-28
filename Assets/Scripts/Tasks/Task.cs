@@ -20,8 +20,6 @@ public class Task : MonoBehaviour
     
     public TaskType type;
     public List<TaskStep> steps;
-    public int TotalSteps; // For debugging purposes
-    public int StepsLeftToComplete; // For debugging purposes
     GameObject npc;
     NpcController npcController;
     public float TimeAlive;
@@ -54,24 +52,20 @@ public class Task : MonoBehaviour
     void Update()
     {
         TimeAlive += Time.deltaTime;
-        TotalSteps = steps.Count;
-        StepsLeftToComplete = 0;
-        foreach (TaskStep taskStep in steps)
-        {
-            if (!taskStep.complete)
-            {
-                StepsLeftToComplete++;
-            }
-        }
+    }
+
+    void OnDestroy()
+    {
+        Destroy(npc);
     }
 
     public void CreateIconsForStep(TaskStep taskStep)
     {
         switch (taskStep.icon)
         {
-            case IconManager.Icon.CashRegister:
-                Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
-                break;
+            // case IconManager.Icon.CashRegister:
+            //     Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
+            //     break;
             
             default:
                 break;
@@ -94,7 +88,7 @@ public class Task : MonoBehaviour
     }
     public CustomerMood GetCustomerMood()
     {
-        if (StepsLeftToComplete == 0)
+        if (IsComplete())
         {
             return CustomerMood.HAPPY;
         }
@@ -117,7 +111,6 @@ public class Task : MonoBehaviour
             if (steps[i].type == type && steps[i].npcStep == npcStep)
             {
                 steps[i].complete = true;
-                StepsLeftToComplete--;
                 TimeAlive -= StepCompletionTimeReduction;
                 if (TimeAlive <= 0)
                 {
@@ -125,7 +118,7 @@ public class Task : MonoBehaviour
                 }
 
                 ClearIcons();
-                if (StepsLeftToComplete > 0)
+                if (StepsLeft() > 0)
                 {
                     npcController.AssignStep(steps[i + 1]);
                     CreateIconsForStep(steps[i + 1]);
@@ -133,6 +126,31 @@ public class Task : MonoBehaviour
             }
             break;
         }
+    }
+
+    public uint StepsLeft()
+    {
+        uint stepsLeft = 0;
+        foreach (TaskStep ts in steps)
+        {
+            if (!ts.complete) {
+                stepsLeft++;
+            }
+        }
+        return stepsLeft;
+    }
+
+    public uint StepsComplete()
+    {
+        uint stepsComplete = 0;
+        foreach (TaskStep ts in steps)
+        {
+            if (ts.complete) {
+                stepsComplete++;
+            }
+        }
+        return stepsComplete;
+
     }
 
     public bool IsComplete()

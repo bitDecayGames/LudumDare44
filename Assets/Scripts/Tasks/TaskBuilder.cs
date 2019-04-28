@@ -6,7 +6,7 @@ using UnityEngine;
 public static class TaskBuilder
 {
     public static void CreateRandomTask(Task task){
-        DepositMoney(task);
+        EmptyCashRegister(task);
     }
 
     static void DepositMoney(Task task){
@@ -44,6 +44,7 @@ public static class TaskBuilder
 
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.FullCashRegister;
+        moveToTeller.icon = IconManager.Icon.CashRegister;
         task.steps.Add(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
