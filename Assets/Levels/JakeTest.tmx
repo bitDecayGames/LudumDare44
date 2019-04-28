@@ -86,7 +86,7 @@
   </object>
   <object id="40" name="MyDick" x="184" y="360">
    <properties>
-    <property name="TaskStepType" value="MoveToSafe"/>
+    <property name="TaskStepType" value="Safe"/>
    </properties>
    <point/>
   </object>

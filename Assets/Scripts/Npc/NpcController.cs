@@ -20,11 +20,11 @@ public class NpcController : MonoBehaviour
 
         switch (step.type)
         {
-            case TaskStepType.MoveToSafe:
+            case TaskStepType.Safe:
                 //GetComponent<NpcMovementController>().MoveToPlace(task.type, taskManager.CompleteTaskStep(taskStep.type)) 
                 break;
             
-            case TaskStepType.MoveToVacuumTube:
+            case TaskStepType.VacuumTube:
                 break;
         }
     }

@@ -41,14 +41,19 @@ public class PlayerTaskController : MonoBehaviour
                 if (nodeProperty != null)
                 {
                     // Debug.Log("Found Node Property");
-                    var taskStepType = new CustomProperty();
-                    if (nodeProperty.TryGetCustomProperty("TaskStepType", out taskStepType))
+                    var typeProperty = new CustomProperty();
+                    if (nodeProperty.TryGetCustomProperty("TaskStepType", out typeProperty))
                     {
 
-                        if (taskStepType.m_Value == TaskStep.GetStepName(TaskStepType.MoveToSafe)){
-                            TaskManager manager = FindObjectOfType<TaskManager>();
-                            manager.CompleteTaskStep(TaskStepType.MoveToSafe, false);
-                        }
+                        TaskManager manager = FindObjectOfType<TaskManager>();
+                        TaskStepType taskStepType = (TaskStepType) System.Enum.Parse(typeof(TaskStepType), typeProperty.m_Value);
+                        manager.CompleteTaskStep(taskStepType, false);
+
+
+                        // if (taskStepType.m_Value == TaskStep.GetStepName(TaskStepType.Safe)){
+                        //     TaskManager manager = FindObjectOfType<TaskManager>();
+                        //     manager.CompleteTaskStep(TaskStepType.Safe, false);
+                        // }
                     }
                 }
             }
