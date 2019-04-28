@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using SuperTiled2Unity;
 using UnityEngine;
+using Utils;
 
 namespace Board {
     public class BoardManager : MonoBehaviour {
@@ -22,6 +24,21 @@ namespace Board {
                                 var x = (int) superObject.m_X / 8 - 2; // 8 is tile size
                                 var y = (int) superObject.m_Y / 8 - 2; // 8 is tile size
                                 var occupier = superObject.gameObject.AddComponent<Board.Occupier>();
+                                var props = superObject.GetComponent<SuperCustomProperties>();
+                                if (props != null)
+                                {
+                                    foreach (var p in props.m_Properties)
+                                    {
+                                        if (p.m_Name == "stepName")
+                                        {
+                                            if (!board.stepLocations.ContainsKey(p.m_Value))
+                                            {
+                                                board.stepLocations.Add(p.m_Value, new List<Board.Occupier>());
+                                            }
+                                            board.stepLocations[p.m_Value].Add(occupier);
+                                        }
+                                    }
+                                } 
                                 if (!board.Set(occupier, x, y)) {
                                     Debug.Log(string.Format("Failed to set ({0}, {1}): {2}", x, y, superObject));
                                 }

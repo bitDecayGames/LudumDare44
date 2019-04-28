@@ -77,7 +77,7 @@ public class Task : MonoBehaviour
         return CustomerMood.ANGRY;
     }
 
-    public void CompleteStep(TaskStepType type) {
+    public void CompleteStep(TaskStepType type, bool npcStep) {
         for (int i = 0; i < steps.Count; i++)
         {
             if (steps[i].complete)
@@ -85,7 +85,7 @@ public class Task : MonoBehaviour
                 continue;
             }
 
-            if (steps[i].type == type)
+            if (steps[i].type == type && steps[i].npcStep == npcStep)
             {
                 steps[i].complete = true;
                 StepsLeftToComplete--;
