@@ -8,16 +8,32 @@ public class TaskManager : MonoBehaviour
 
     uint NumTasks = 2;
 
+    // Time before a new task is created. (Seconds)
+    static float TaskBetweenTime = 1f;
+    float TimeToNewTasks = TaskBetweenTime;
+
+    bool TaskResentlyComplete = false;
+
     void Start()
     {
-        for (uint i = 0; i < NumTasks; i++)
-        {
-            CreateTaskGameObj();
-        }
+
     }
     
     void Update()
     {
+        if (!TaskResentlyComplete)
+        {
+            var numCurrentTasks = GetComponentsInChildren<Task>().Length;
+            if (numCurrentTasks < NumTasks) {
+                CreateTaskGameObj();
+            }
+        } else {
+            TimeToNewTasks -= Time.deltaTime;
+            if (TimeToNewTasks <= 0) {
+                TimeToNewTasks = TaskBetweenTime;
+                TaskResentlyComplete = false;
+            }
+        }
 
     }
 
@@ -31,6 +47,7 @@ public class TaskManager : MonoBehaviour
 
             if (task.IsComplete()) {
                 Destroy(go);
+                TaskResentlyComplete = true;
             }
         }
     }
