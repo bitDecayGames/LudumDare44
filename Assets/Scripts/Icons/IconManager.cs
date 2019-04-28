@@ -22,7 +22,7 @@ public class IconManager : MonoBehaviour
         switch (icon)
         {
            case Icon.CashRegister:
-               return Instantiate(Icons.GetByName("Cloud"), parent.position + IconOffset, Quaternion.identity, parent);
+               return Instantiate(Icons.GetByName("Angry"), parent.position + IconOffset, Quaternion.identity, parent);
         }
         
         throw new Exception("Unable to determine icon");
