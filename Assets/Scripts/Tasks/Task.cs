@@ -5,6 +5,7 @@ using UnityEngine;
 public enum TaskType {
     DepositMoney,
     FillCashRegister,
+    EmptyCashRegister,
     OpenBankDoor
 }
 
@@ -12,18 +13,18 @@ public class Task : MonoBehaviour
 {
     public const float StepCompletionTimeReduction = 10f;
 
-    public GameObject MaleNpc;
+    public GameObject SomeNpc;
     public TaskManager taskManager;
     
     List<GameObject> Icons = new List<GameObject>();
     
     public TaskType type;
     public List<TaskStep> steps;
-    public int TotalSteps; // For debugging purposes
-    public int StepsLeftToComplete; // For debugging purposes
     GameObject npc;
     NpcController npcController;
     public float TimeAlive;
+    public int lineNumber;
+    public bool lineTask = false;
 
     public static string GetTaskName(TaskType type)
     {
@@ -42,7 +43,7 @@ public class Task : MonoBehaviour
 
     void Start()
     {
-        npc = Instantiate(MaleNpc);
+        npc = Instantiate(SomeNpc);
         npcController = npc.GetComponent<NpcController>();
         npcController.task = this;
         CreateIconsForStep(steps[0]);
@@ -51,26 +52,22 @@ public class Task : MonoBehaviour
     void Update()
     {
         TimeAlive += Time.deltaTime;
-        TotalSteps = steps.Count;
-        StepsLeftToComplete = 0;
-        foreach (TaskStep taskStep in steps)
-        {
-            if (!taskStep.complete)
-            {
-                StepsLeftToComplete++;
-            }
-        }
+    }
+
+    void OnDestroy()
+    {
+        Destroy(npc);
     }
 
     public void CreateIconsForStep(TaskStep taskStep)
     {
-        switch (taskStep.type)
+        switch (taskStep.icon)
         {
-            case TaskStepType.Safe:
-                Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
-                break;
+            // case IconManager.Icon.CashRegister:
+            //     Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
+            //     break;
             
-            case TaskStepType.VacuumTube:
+            default:
                 break;
         }
     }
@@ -91,7 +88,7 @@ public class Task : MonoBehaviour
     }
     public CustomerMood GetCustomerMood()
     {
-        if (StepsLeftToComplete == 0)
+        if (IsComplete())
         {
             return CustomerMood.HAPPY;
         }
@@ -114,7 +111,6 @@ public class Task : MonoBehaviour
             if (steps[i].type == type && steps[i].npcStep == npcStep)
             {
                 steps[i].complete = true;
-                StepsLeftToComplete--;
                 TimeAlive -= StepCompletionTimeReduction;
                 if (TimeAlive <= 0)
                 {
@@ -122,7 +118,7 @@ public class Task : MonoBehaviour
                 }
 
                 ClearIcons();
-                if (StepsLeftToComplete > 0)
+                if (StepsLeft() > 0)
                 {
                     npcController.AssignStep(steps[i + 1]);
                     CreateIconsForStep(steps[i + 1]);
@@ -130,6 +126,31 @@ public class Task : MonoBehaviour
             }
             break;
         }
+    }
+
+    public uint StepsLeft()
+    {
+        uint stepsLeft = 0;
+        foreach (TaskStep ts in steps)
+        {
+            if (!ts.complete) {
+                stepsLeft++;
+            }
+        }
+        return stepsLeft;
+    }
+
+    public uint StepsComplete()
+    {
+        uint stepsComplete = 0;
+        foreach (TaskStep ts in steps)
+        {
+            if (ts.complete) {
+                stepsComplete++;
+            }
+        }
+        return stepsComplete;
+
     }
 
     public bool IsComplete()

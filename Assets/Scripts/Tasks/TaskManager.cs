@@ -8,7 +8,7 @@ public class TaskManager : MonoBehaviour
 {
     const string TAG = "Task";
 
-    public GameObject MaleNpc;
+    public NpcObjects Npcs;
 
     uint NumTasks = 1;
 
@@ -17,6 +17,10 @@ public class TaskManager : MonoBehaviour
     float TimeToNewTasks = TaskBetweenTime;
 
     bool TaskResentlyComplete = false;
+
+    static int MaxNumberLines = 3;
+    static int LineLength = 3;
+    int currentLine = 0;
 
     void Start()
     {
@@ -59,9 +63,23 @@ public class TaskManager : MonoBehaviour
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
         TaskBuilder.CreateRandomTask(task);
-        task.MaleNpc = MaleNpc;
+        task.SomeNpc = Npcs.PickOneAtRandom();
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
+
+        if (task.lineTask) {
+            task.lineNumber = currentLine;
+            currentLine++;
+            if(currentLine > MaxNumberLines) currentLine = 0;
+
+            List<TaskStep> newSteps;
+            // TODO get nodes for line.
+            // make lots of steps with those nodes for the lines.
+            // add other steps and stuffs
+
+
+        }
+
         newTaskObj.transform.SetParent(this.transform);
     }
 }

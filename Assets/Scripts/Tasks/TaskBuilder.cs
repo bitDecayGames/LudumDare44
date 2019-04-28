@@ -2,22 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO ADD ICONS EVERYWHERE!!! SHIT!!
 public static class TaskBuilder
 {
     public static void CreateRandomTask(Task task){
-        DepositMoney(task);
+        EmptyCashRegister(task);
     }
 
     static void DepositMoney(Task task){
         task.type = TaskType.DepositMoney;
+        task.lineTask = true;
 
-        TaskStep moveToSafeStep = new TaskStep();
-        moveToSafeStep.type = TaskStepType.Safe;
-        task.steps.Add(moveToSafeStep);
+        TaskStep getInLIine = new TaskStep();
+        getInLIine.type = TaskStepType.GetInLine;
+        task.steps.Add(getInLIine);
 
-        TaskStep moveToSafeStep2 = new TaskStep();
-        moveToSafeStep2.type = TaskStepType.Safe;
-        task.steps.Add(moveToSafeStep2);
+        TaskStep depositMoney = new TaskStep();
+        depositMoney.type = TaskStepType.TalkToTeller;
+        depositMoney.icon = IconManager.Icon.CashRegister;
+        task.steps.Add(depositMoney);
     }
 
     static void FillCashRegister(Task task) {
@@ -34,6 +37,19 @@ public static class TaskBuilder
         TaskStep moveToTeller2 = new TaskStep();
         moveToTeller2.type = TaskStepType.FullCashRegister;
         task.steps.Add(moveToTeller2);
+    }
+
+    static void EmptyCashRegister(Task task) {
+        task.type = TaskType.EmptyCashRegister;
+
+        TaskStep moveToTeller = new TaskStep();
+        moveToTeller.type = TaskStepType.FullCashRegister;
+        moveToTeller.icon = IconManager.Icon.CashRegister;
+        task.steps.Add(moveToTeller);
+
+        TaskStep moveToSafe = new TaskStep();
+        moveToSafe.type = TaskStepType.Safe;
+        task.steps.Add(moveToSafe);
     }
 
     static void OpenBankDoor(Task task) {

@@ -7,7 +7,9 @@ public enum TaskStepType {
     VacuumTube,
     EmptyCashRegister,
     FullCashRegister,
-    BankDoor
+    BankDoor,
+    GetInLine,
+    TalkToTeller
 }
 
 public class TaskStep
@@ -29,4 +31,8 @@ public class TaskStep
     public bool complete;
 
     public bool npcStep = false;
+
+    public Board.Board.Node node;
+
+    public IconManager.Icon icon;
 }
