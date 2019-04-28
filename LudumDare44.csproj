@@ -314,11 +314,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BoardPosition.cs" />
-    <Compile Include="Assets\Loader.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
     <Compile Include="Assets\Scripts\Animations\AnimationConstants.cs" />
+    <Compile Include="Assets\Scripts\Animations\LerpAnimator.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODMusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODMusicPlayerAccessor.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODPlayerGetters.cs" />
@@ -328,9 +327,11 @@
     <Compile Include="Assets\Scripts\Audio\MusicSelector.cs" />
     <Compile Include="Assets\Scripts\Board\Board.cs" />
     <Compile Include="Assets\Scripts\Board\BoardManager.cs" />
+    <Compile Include="Assets\Scripts\Board\BoardPosition.cs" />
     <Compile Include="Assets\Scripts\Board\Direction.cs" />
     <Compile Include="Assets\Scripts\Board\PriorityQueue.cs" />
     <Compile Include="Assets\Scripts\Board\Search.cs" />
+    <Compile Include="Assets\Scripts\Camera\Follow.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateScenes.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateSFX.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateSongs.cs" />
@@ -343,10 +344,14 @@
     <Compile Include="Assets\Scripts\Constants\Songs.cs" />
     <Compile Include="Assets\Scripts\Constants\Tags.cs" />
     <Compile Include="Assets\Scripts\Delegates\Delegates.cs" />
+    <Compile Include="Assets\Scripts\Icons\IconManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Managers\GenericGameObjectClass.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuController.cs" />
+    <Compile Include="Assets\Scripts\Movement\Facing.cs" />
+    <Compile Include="Assets\Scripts\Movement\NpcMove.cs" />
+    <Compile Include="Assets\Scripts\Movement\SimpleMove.cs" />
     <Compile Include="Assets\Scripts\Npc\NpcController.cs" />
     <Compile Include="Assets\Scripts\Tasks\PlayerTaskController.cs" />
     <Compile Include="Assets\Scripts\Tasks\Task.cs" />
@@ -359,10 +364,10 @@
     <Compile Include="Assets\Scripts\Utils\FadeInFromBlack.cs" />
     <Compile Include="Assets\Scripts\Utils\FadeToBlack.cs" />
     <Compile Include="Assets\Scripts\Utils\IsoVector2.cs" />
+    <Compile Include="Assets\Scripts\Utils\Loader.cs" />
     <Compile Include="Assets\Scripts\Utils\RandomNumberGenerator.cs" />
     <Compile Include="Assets\Scripts\Utils\References.cs" />
     <Compile Include="Assets\Scripts\Utils\TileConstants.cs" />
-    <Compile Include="Assets\SimpleMove.cs" />
     <Compile Include="Assets\SuperTiled2Unity\Examples\Overhead\Sprites\MegaDad\OverheadMegaDadController.cs" />
     <Compile Include="Assets\SuperTiled2Unity\Scripts\CollisionObject.cs" />
     <Compile Include="Assets\SuperTiled2Unity\Scripts\CollisionShapeType.cs" />
