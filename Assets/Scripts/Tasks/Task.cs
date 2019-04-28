@@ -42,8 +42,8 @@ public class Task : MonoBehaviour
             if (ts.type == type)
             {
                 ts.complete = true;
-                break;
             }
+            break;
         }
     }
 

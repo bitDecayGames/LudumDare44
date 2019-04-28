@@ -15,5 +15,4 @@ public static class TaskBuilder
         task.steps.Add(moveToSafeStep);
     }
 
-
 }
