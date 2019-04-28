@@ -14,18 +14,16 @@ namespace Utils {
         }
 
         public static IsoVector2 WorldToBoardPos(Vector3 worldPos) {
-            return WorldToBoardPos((int) worldPos.x, (int) worldPos.y);
+            return WorldToBoardPos(worldPos.x, worldPos.y);
         }
 
-        public static IsoVector2 WorldToBoardPos(int x, int y) {
-            var screenX = x;
-            var screenY = y;
-            var halfTileWidth = TileConstants.TILE_WIDTH * 0.5f;
-            var halfTileHeight = TileConstants.TILE_HEIGHT * 0.5f;
-            return new IsoVector2(
-                (int)Math.Floor((screenX / halfTileWidth + screenY / halfTileHeight) * 0.5f),
-                (int)Math.Floor((screenX / halfTileWidth + screenY / halfTileHeight) * 0.5f)
-                );
+        public static IsoVector2 WorldToBoardPos(float x, float y) {
+            // double isoX = (x / TileConstants.cos30) - (y / TileConstants.cos60);
+            // double isoY = (-x / TileConstants.cos30) + (y / TileConstants.cos60);
+            // return new IsoVector2((int) isoX, (int) isoY);
+            double isoX = (x / TileConstants.WIDTH_HALF + y / TileConstants.HEIGHT_HALF) / 2;
+            double isoY = (y / TileConstants.HEIGHT_HALF - (x / TileConstants.WIDTH_HALF)) / 2;
+            return new IsoVector2((int) isoX, (int) isoY);
         }
 
         public Vector2 ToWorldPos() {
@@ -52,14 +50,24 @@ namespace Utils {
             return Math.Abs(this.x - dest.x) + Math.Abs(this.y - dest.y);
         }
 
-        public bool Matches(int currentNodeX, int currentNodeY)
+        public bool Equals(int currentNodeX, int currentNodeY)
         {
             return this.x == currentNodeX && this.y == currentNodeY;
+        }
+
+        public bool Equals(IsoVector2 isoVector2)
+        {
+            return this.Equals(isoVector2.x, isoVector2.y);
         }
 
         public int distance(int checkX, int checkY)
         {
             return distance(new IsoVector2(checkX, checkY));
+        }
+
+        public static IsoVector2 GridCoordsToBoard(float x, float y)
+        {
+            return new IsoVector2((int) (x / 8) - 2, (int) (y / 8) - 2);
         }
     }
 }

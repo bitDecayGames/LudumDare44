@@ -44,7 +44,7 @@ public class PlayerTaskController : MonoBehaviour
                     var typeProperty = new CustomProperty();
                     if (nodeProperty.TryGetCustomProperty("TaskStepType", out typeProperty))
                     {
-
+                        // Debug.Log("Property: " + typeProperty.m_Value);
                         TaskManager manager = FindObjectOfType<TaskManager>();
                         TaskStepType taskStepType = (TaskStepType) System.Enum.Parse(typeof(TaskStepType), typeProperty.m_Value);
                         manager.CompleteTaskStep(taskStepType, false);
