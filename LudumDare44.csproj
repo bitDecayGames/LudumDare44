@@ -318,6 +318,7 @@
     <Compile Include="Assets\Loader.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
+    <Compile Include="Assets\Scripts\Animations\AnimationConstants.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODMusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODMusicPlayerAccessor.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODPlayerGetters.cs" />
@@ -328,6 +329,7 @@
     <Compile Include="Assets\Scripts\Board\Board.cs" />
     <Compile Include="Assets\Scripts\Board\BoardManager.cs" />
     <Compile Include="Assets\Scripts\Board\Direction.cs" />
+    <Compile Include="Assets\Scripts\Board\PriorityQueue.cs" />
     <Compile Include="Assets\Scripts\Board\Search.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateScenes.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\GenerateSFX.cs" />
@@ -341,7 +343,6 @@
     <Compile Include="Assets\Scripts\Constants\Songs.cs" />
     <Compile Include="Assets\Scripts\Constants\Tags.cs" />
     <Compile Include="Assets\Scripts\Delegates\Delegates.cs" />
-    <Compile Include="Assets\Scripts\Jakes\Player.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Managers\GenericGameObjectClass.cs" />
