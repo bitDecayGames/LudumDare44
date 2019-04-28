@@ -5,6 +5,7 @@ using UnityEngine;
 public enum TaskType {
     DepositMoney,
     FillCashRegister,
+    EmptyCashRegister,
     OpenBankDoor
 }
 
@@ -24,6 +25,8 @@ public class Task : MonoBehaviour
     GameObject npc;
     NpcController npcController;
     public float TimeAlive;
+    public int lineNumber;
+    public bool lineTask = false;
 
     public static string GetTaskName(TaskType type)
     {

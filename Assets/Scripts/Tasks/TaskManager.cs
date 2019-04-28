@@ -18,6 +18,10 @@ public class TaskManager : MonoBehaviour
 
     bool TaskResentlyComplete = false;
 
+    static int MaxNumberLines = 3;
+    static int LineLength = 3;
+    int currentLine = 0;
+
     void Start()
     {
     }
@@ -62,6 +66,20 @@ public class TaskManager : MonoBehaviour
         task.MaleNpc = MaleNpc;
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
+
+        if (task.lineTask) {
+            task.lineNumber = currentLine;
+            currentLine++;
+            if(currentLine > MaxNumberLines) currentLine = 0;
+
+            List<TaskStep> newSteps;
+            // TODO get nodes for line.
+            // make lots of steps with those nodes for the lines.
+            // add other steps and stuffs
+
+
+        }
+
         newTaskObj.transform.SetParent(this.transform);
     }
 }

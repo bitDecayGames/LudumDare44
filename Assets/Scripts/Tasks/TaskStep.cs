@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Icons;
 
 public enum TaskStepType {
     Safe,
     VacuumTube,
     EmptyCashRegister,
     FullCashRegister,
-    BankDoor
+    BankDoor,
+    GetInLine,
+    TalkToTeller
 }
 
 public class TaskStep
@@ -29,4 +32,8 @@ public class TaskStep
     public bool complete;
 
     public bool npcStep = false;
+
+    public Board.Board.Node node;
+
+    public IconManager.Icon icon;
 }
