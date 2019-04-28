@@ -30,6 +30,10 @@ public class BoardPosition : MonoBehaviour {
         return this;
     }
 
+    public IsoVector2 CopyIsoVector2() {
+        return new IsoVector2(boardPos.x, boardPos.y, boardPos.z);
+    }
+
     private IsoVector2 boardPos = new IsoVector2();
 
     private void UpdatePos() {

@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene: 98
-  DelayInSeconds: 7
+  DelayInSeconds: 8
 --- !u!4 &1707157817
 Transform:
   m_ObjectHideFlags: 0

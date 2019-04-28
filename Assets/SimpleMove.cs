@@ -45,7 +45,7 @@ public class SimpleMove : MonoBehaviour {
         if (isAcceptingInput) {
             if (Input.GetKey(KeyCode.A)) {
                 facing = Facing.Left;
-                if (board.board.MoveLeft(occupier)) {
+                if (board.board.MoveLeft(occupier) || Input.GetKey(KeyCode.LeftArrow)) {
                     UpdateWalkAnimation();
                     var originalPos = boardPos.ToWorldPos();
                     boardPos.X -= 1;
@@ -53,7 +53,7 @@ public class SimpleMove : MonoBehaviour {
                 } else {
                     UpdateStandAnimation();
                 }
-            } else if (Input.GetKey(KeyCode.D)) {
+            } else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
                 facing = Facing.Right;
                 if (board.board.MoveRight(occupier)) {
                     UpdateWalkAnimation();
@@ -63,7 +63,7 @@ public class SimpleMove : MonoBehaviour {
                 } else {
                     UpdateStandAnimation();
                 }
-            } else if (Input.GetKey(KeyCode.W)) {
+            } else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
                 facing = Facing.Up;
                 if (board.board.MoveDown(occupier)) {
                     UpdateWalkAnimation();
@@ -73,7 +73,7 @@ public class SimpleMove : MonoBehaviour {
                 } else {
                     UpdateStandAnimation();
                 }
-            } else if (Input.GetKey(KeyCode.S)) {
+            } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
                 facing = Facing.Down;
                 if (board.board.MoveUp(occupier)) {
                     UpdateWalkAnimation();

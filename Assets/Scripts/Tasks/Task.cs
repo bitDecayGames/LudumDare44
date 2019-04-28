@@ -8,13 +8,27 @@ public enum TaskType {
 
 public class Task : MonoBehaviour
 {
+    public const float StepCompletionTimeReduction = 10f;
+
+    public GameObject MaleNpc;
+    
     public TaskType type;
     public List<TaskStep> steps;
+    public int TotalSteps; // For debugging purposes
+    public int StepsLeftToComplete; // For debugging purposes
     GameObject npc;
+    NpcController npcController;
+    public float TimeAlive;
 
     public static string GetTaskName(TaskType type)
     {
         return System.Enum.GetName(typeof(TaskType), type);
+    }
+
+    public static string GetTaskNameReadable(TaskType type)
+    {
+        string typeName = System.Enum.GetName(typeof(TaskType), type);
+        return System.Text.RegularExpressions.Regex.Replace(typeName, "(\\B[A-Z])", " $1");
     }
 
     public Task(){
@@ -23,25 +37,68 @@ public class Task : MonoBehaviour
 
     void Start()
     {
-
+        npc = Instantiate(MaleNpc);
+        npcController = npc.GetComponent<NpcController>();
+        npcController.task = this;
+        npcController.taskManager = FindObjectOfType<TaskManager>();
     }
     
     void Update()
     {
-        
+        TimeAlive += Time.deltaTime;
+        TotalSteps = steps.Count;
+        StepsLeftToComplete = 0;
+        foreach (TaskStep taskStep in steps)
+        {
+            if (!taskStep.complete)
+            {
+                StepsLeftToComplete++;
+            }
+        }
     }
 
-    public void CompleteStep(TaskStepType type) {
-        foreach (TaskStep ts in steps)
+    public enum CustomerMood
+    {
+        HAPPY,
+        NUETRAL,
+        ANGRY
+    }
+    public CustomerMood GetCustomerMood()
+    {
+        if (StepsLeftToComplete == 0)
         {
-            if (ts.complete)
+            return CustomerMood.HAPPY;
+        }
+        
+        if (TimeAlive < 20)
+        {
+            return CustomerMood.NUETRAL;
+        }
+        return CustomerMood.ANGRY;
+    }
+
+    public void CompleteStep(TaskStepType type, bool npcStep) {
+        for (int i = 0; i < steps.Count; i++)
+        {
+            if (steps[i].complete)
             {
                 continue;
             }
 
-            if (ts.type == type)
+            if (steps[i].type == type && steps[i].npcStep == npcStep)
             {
-                ts.complete = true;
+                steps[i].complete = true;
+                StepsLeftToComplete--;
+                TimeAlive -= StepCompletionTimeReduction;
+                if (TimeAlive <= 0)
+                {
+                    TimeAlive = 0;
+                }
+
+                if (StepsLeftToComplete > 0)
+                {
+                    npcController.AssignStep(steps[i + 1]);
+                }
             }
             break;
         }

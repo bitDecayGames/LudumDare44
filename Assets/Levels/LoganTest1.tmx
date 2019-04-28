@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="8" nextobjectid="40">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="8" nextobjectid="76">
  <tileset firstgid="1" source="Tilesets/floors.tsx"/>
+ <tileset firstgid="16" source="Tilesets/Objects.tsx"/>
  <layer id="2" name="Floors" width="164" height="100">
   <properties>
    <property name="layerName" value="ultrafloor"/>
@@ -81,21 +82,38 @@
   </data>
  </layer>
  <objectgroup id="5" name="Interactables">
-  <object id="22" name="MyDick" x="176" y="352" width="8" height="8"/>
-  <object id="28" name="Spawn" x="184" y="408">
+  <object id="28" name="Spawn" x="112" y="408">
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="7" name="Collisions">
-  <object id="30" gid="15" x="136" y="368" width="16" height="32"/>
-  <object id="31" gid="15" x="144" y="368" width="16" height="32"/>
-  <object id="32" gid="15" x="144" y="376" width="16" height="32"/>
-  <object id="33" gid="15" x="144" y="384" width="16" height="32"/>
-  <object id="34" gid="15" x="144" y="392" width="16" height="32"/>
-  <object id="35" gid="15" x="160" y="384" width="16" height="32"/>
-  <object id="36" gid="15" x="168" y="384" width="16" height="32"/>
-  <object id="37" gid="15" x="176" y="384" width="16" height="32"/>
-  <object id="38" gid="15" x="184" y="384" width="16" height="32"/>
-  <object id="39" gid="15" x="184" y="376" width="16" height="32"/>
+  <object id="44" gid="24" x="176" y="376" width="16" height="32"/>
+  <object id="49" gid="17" x="168" y="376" width="16" height="32"/>
+  <object id="50" gid="17" x="160" y="376" width="16" height="32"/>
+  <object id="51" gid="17" x="152" y="376" width="16" height="32"/>
+  <object id="52" gid="17" x="144" y="376" width="16" height="32"/>
+  <object id="53" gid="19" x="176" y="384" width="16" height="32"/>
+  <object id="54" gid="19" x="176" y="392" width="16" height="32"/>
+  <object id="55" gid="19" x="160" y="408" width="16" height="32"/>
+  <object id="56" gid="19" x="160" y="400" width="16" height="32"/>
+  <object id="57" gid="19" x="160" y="392" width="16" height="32"/>
+  <object id="58" gid="19" x="144" y="384" width="16" height="32"/>
+  <object id="59" gid="19" x="144" y="392" width="16" height="32"/>
+  <object id="60" gid="19" x="144" y="400" width="16" height="32"/>
+  <object id="61" gid="19" x="176" y="400" width="16" height="32"/>
+  <object id="62" gid="17" x="136" y="376" width="16" height="32"/>
+  <object id="63" gid="17" x="128" y="376" width="16" height="32"/>
+  <object id="64" gid="17" x="120" y="376" width="16" height="32"/>
+  <object id="65" gid="17" x="112" y="376" width="16" height="32"/>
+  <object id="66" gid="17" x="104" y="376" width="16" height="32"/>
+  <object id="67" gid="17" x="96" y="376" width="16" height="32"/>
+  <object id="68" gid="17" x="88" y="376" width="16" height="32"/>
+  <object id="69" gid="17" x="80" y="376" width="16" height="32"/>
+  <object id="70" gid="19" x="160" y="416" width="16" height="32"/>
+  <object id="71" gid="19" x="160" y="432" width="16" height="32"/>
+  <object id="72" gid="19" x="160" y="424" width="16" height="32"/>
+  <object id="73" gid="19" x="160" y="440" width="16" height="32"/>
+  <object id="74" gid="19" x="160" y="448" width="16" height="32"/>
+  <object id="75" gid="17" x="184" y="376" width="16" height="32"/>
  </objectgroup>
 </map>

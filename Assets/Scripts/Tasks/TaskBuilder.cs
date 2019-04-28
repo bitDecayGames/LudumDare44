@@ -13,6 +13,10 @@ public static class TaskBuilder
         TaskStep moveToSafeStep = new TaskStep();
         moveToSafeStep.type = TaskStepType.MoveToSafe;
         task.steps.Add(moveToSafeStep);
+
+        TaskStep moveToSafeStep2 = new TaskStep();
+        moveToSafeStep2.type = TaskStepType.MoveToSafe;
+        task.steps.Add(moveToSafeStep2);
     }
 
 }

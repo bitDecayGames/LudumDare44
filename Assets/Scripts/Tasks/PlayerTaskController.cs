@@ -46,9 +46,8 @@ public class PlayerTaskController : MonoBehaviour
 
                         if (taskStepType.m_Value == TaskStep.GetStepName(TaskStepType.MoveToSafe)){
                             TaskManager manager = FindObjectOfType<TaskManager>();
-                            manager.CompleteTaskStep(TaskStepType.MoveToSafe);
+                            manager.CompleteTaskStep(TaskStepType.MoveToSafe, false);
                         }
-
                     }
                 }
             }

@@ -46,5 +46,20 @@ namespace Utils {
         public IsoVector2 Add(IsoVector2 toAdd) {
             return Add(toAdd.x, toAdd.y, toAdd.z);
         }
+
+        public int distance(IsoVector2 dest)
+        {
+            return Math.Abs(this.x - dest.x) + Math.Abs(this.y - dest.y);
+        }
+
+        public bool Matches(int currentNodeX, int currentNodeY)
+        {
+            return this.x == currentNodeX && this.y == currentNodeY;
+        }
+
+        public int distance(int checkX, int checkY)
+        {
+            return distance(new IsoVector2(checkX, checkY));
+        }
     }
 }
