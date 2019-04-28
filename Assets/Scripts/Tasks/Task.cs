@@ -45,6 +45,26 @@ public class Task : MonoBehaviour
         }
     }
 
+    public enum CustomerMood
+    {
+        HAPPY,
+        NUETRAL,
+        ANGRY
+    }
+    public CustomerMood GetCustomerMood()
+    {
+        if (TimeAlive < 10)
+        {
+            return CustomerMood.HAPPY;
+        } 
+        
+        if (TimeAlive < 20)
+        {
+            return CustomerMood.NUETRAL;
+        }
+        return CustomerMood.ANGRY;
+    }
+
     public void CompleteStep(TaskStepType type) {
         foreach (TaskStep ts in steps)
         {
