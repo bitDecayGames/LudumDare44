@@ -1,4 +1,5 @@
 ﻿using Board;
+using DefaultNamespace;
 using UnityEngine;
 
 public class SimpleMove : MonoBehaviour {
@@ -6,6 +7,7 @@ public class SimpleMove : MonoBehaviour {
 
     private BoardManager board;
     private Board.Board.Occupier occupier;
+    private Animator animator;
 
     public Facing facing;
 
@@ -19,37 +21,45 @@ public class SimpleMove : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        animator = GetComponentInChildren<Animator>();
         boardPos = GetComponent<BoardPosition>();
         occupier = GetComponent<Board.Board.Occupier>();
+        if (occupier == null) occupier = gameObject.AddComponent<Board.Board.Occupier>();
         board = FindObjectOfType<BoardManager>();
         
+        
+        animator.Play(AnimationConstants.WALK_UP_LEFT);
         Debug.Log(board.board);
     }
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
+            animator.Play(AnimationConstants.STAND_UP_LEFT);
             if (board.board.MoveLeft(occupier)) {
                 GetComponent<BoardPosition>().boardPos.x -= 1;
             }
             facing = Facing.Left;
         }
 
-        if (Input.GetKeyDown(KeyCode.D)) {
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
+            animator.Play(AnimationConstants.STAND_DOWN_RIGHT);
             if (board.board.MoveRight(occupier)) {
                 GetComponent<BoardPosition>().boardPos.x += 1;
             }
             facing = Facing.Right;
         }
 
-        if (Input.GetKeyDown(KeyCode.W)) {
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
+            animator.Play(AnimationConstants.STAND_UP_RIGHT);
             if (board.board.MoveDown(occupier)) {
                 GetComponent<BoardPosition>().boardPos.y -= 1;
             }
             facing = Facing.Up;
         }
 
-        if (Input.GetKeyDown(KeyCode.S)) {
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
+            animator.Play(AnimationConstants.STAND_DOWN_LEFT);
             if (board.board.MoveUp(occupier)) {
                 GetComponent<BoardPosition>().boardPos.y += 1;
             }
