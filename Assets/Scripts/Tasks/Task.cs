@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum TaskType {
     DepositMoney,
-    OpenBankTeller,
+    FillCashRegister,
     OpenBankDoor
 }
 

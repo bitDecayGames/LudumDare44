@@ -20,11 +20,11 @@ public static class TaskBuilder
         task.steps.Add(moveToSafeStep2);
     }
 
-    static void OpenBankTeller(Task task) {
-        task.type = TaskType.OpenBankTeller;
+    static void FillCashRegister(Task task) {
+        task.type = TaskType.FillCashRegister;
 
         TaskStep moveToTeller = new TaskStep();
-        moveToTeller.type = TaskStepType.CashRegister;
+        moveToTeller.type = TaskStepType.EmptyCashRegister;
         task.steps.Add(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
@@ -32,7 +32,7 @@ public static class TaskBuilder
         task.steps.Add(moveToSafe);
 
         TaskStep moveToTeller2 = new TaskStep();
-        moveToTeller2.type = TaskStepType.CashRegister;
+        moveToTeller2.type = TaskStepType.FullCashRegister;
         task.steps.Add(moveToTeller2);
     }
 
