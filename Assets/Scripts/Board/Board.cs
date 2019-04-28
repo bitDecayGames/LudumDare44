@@ -80,12 +80,12 @@ namespace Board {
 
         public bool MoveUp(Occupier occupier) {
             if (occupier.myNode == null) return false;
-            return MoveTo(occupier, occupier.myNode.x, occupier.myNode.y + 1);
+            return MoveTo(occupier, occupier.myNode.x, occupier.myNode.y - 1);
         }
 
         public bool MoveDown(Occupier occupier) {
             if (occupier.myNode == null) return false;
-            return MoveTo(occupier, occupier.myNode.x, occupier.myNode.y - 1);
+            return MoveTo(occupier, occupier.myNode.x, occupier.myNode.y + 1);
         }
 
         public bool MoveRight(Occupier occupier) {

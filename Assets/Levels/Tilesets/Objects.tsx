@@ -3,22 +3,22 @@
  <image source="../../Art/Tilesets/Objects/Objects.png" width="208" height="96"/>
  <tile id="8">
   <properties>
-   <property name="stepName" value="cashRegister"/>
+   <property name="stepName" value="CashRegister"/>
   </properties>
  </tile>
  <tile id="9">
   <properties>
-   <property name="stepName" value="cashRegister"/>
+   <property name="stepName" value="CashRegister"/>
   </properties>
  </tile>
  <tile id="10">
   <properties>
-   <property name="stepName" value="cashRegister"/>
+   <property name="stepName" value="CashRegister"/>
   </properties>
  </tile>
  <tile id="11">
   <properties>
-   <property name="stepName" value="cashRegister"/>
+   <property name="stepName" value="CashRegister"/>
   </properties>
  </tile>
 </tileset>

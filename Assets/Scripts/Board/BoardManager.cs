@@ -33,9 +33,9 @@ namespace Board {
                                         {
                                             if (!board.stepLocations.ContainsKey(p.m_Value))
                                             {
-                                                board.stepLocations.Add(p.m_Value, new List<Board.Occupier>());
+                                                board.stepLocations.Add(p.m_Value.ToLower(), new List<Board.Occupier>());
                                             }
-                                            board.stepLocations[p.m_Value].Add(occupier);
+                                            board.stepLocations[p.m_Value.ToLower()].Add(occupier);
                                         }
                                     }
                                 } 

@@ -26,10 +26,10 @@ public class PlayerTaskController : MonoBehaviour
             BoardManager bm = FindObjectOfType<BoardManager>();
             Board.Board.Node playerBoardNode = bm.board.Get(playerPos.X, playerPos.Y);
 
-            Board.Board.Node checkNode = player.facing == SimpleMove.Facing.Up ? playerBoardNode.up :
-                                         player.facing == SimpleMove.Facing.Down ? playerBoardNode.down :
-                                         player.facing == SimpleMove.Facing.Left ? playerBoardNode.left :
-                                         player.facing == SimpleMove.Facing.Right ? playerBoardNode.right:
+            Board.Board.Node checkNode = player.facing == Facing.Up ? playerBoardNode.up :
+                                         player.facing == Facing.Down ? playerBoardNode.down :
+                                         player.facing == Facing.Left ? playerBoardNode.left :
+                                         player.facing == Facing.Right ? playerBoardNode.right:
                                          playerBoardNode;
 
             // Debug.Log("check node Pos " + checkNode.x + " " + checkNode.y);

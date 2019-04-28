@@ -16,15 +16,8 @@ namespace Movement {
         private bool isAcceptingInput = true;
         private bool standing = false;
 
+        [HideInInspector]
         public Facing facing;
-
-        public enum Facing {
-            Up,
-            Left,
-            Down,
-            Right,
-            Unknown
-        }
 
         // Start is called before the first frame update
         void Start() {
@@ -36,17 +29,16 @@ namespace Movement {
             board = FindObjectOfType<BoardManager>();
             lerper = GetComponentInChildren<LerpAnimator>();
             if (lerper == null) lerper = animator.gameObject.AddComponent<LerpAnimator>();
-        
-            animator.Play(AnimationConstants.WALK_UP_LEFT);
+
             Debug.Log(board.board);
         }
 
         // Update is called once per frame
         void Update() {
             if (isAcceptingInput) {
-                if (Input.GetKey(KeyCode.A)) {
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
                     facing = Facing.Left;
-                    if (board.board.MoveLeft(occupier) || Input.GetKey(KeyCode.LeftArrow)) {
+                    if (board.board.MoveLeft(occupier)) {
                         UpdateWalkAnimation();
                         var originalPos = boardPos.ToWorldPos();
                         boardPos.X -= 1;
@@ -66,7 +58,7 @@ namespace Movement {
                     }
                 } else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
                     facing = Facing.Up;
-                    if (board.board.MoveDown(occupier)) {
+                    if (board.board.MoveUp(occupier)) {
                         UpdateWalkAnimation();
                         var originalPos = boardPos.ToWorldPos();
                         boardPos.Y -= 1;
@@ -76,7 +68,7 @@ namespace Movement {
                     }
                 } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
                     facing = Facing.Down;
-                    if (board.board.MoveUp(occupier)) {
+                    if (board.board.MoveDown(occupier)) {
                         UpdateWalkAnimation();
                         var originalPos = boardPos.ToWorldPos();
                         boardPos.Y += 1;

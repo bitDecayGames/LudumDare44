@@ -40,7 +40,7 @@ namespace Utils {
                                 once = false;
 
                                 string dirs = "";
-                                foreach (var d in Search.Navigate(board.board, player.CopyIsoVector2(), board.board.stepLocations["cashRegister"][0].myNode.IsoLoc()))
+                                foreach (var d in Search.Navigate(board.board, player.CopyIsoVector2(), board.board.stepLocations["cashregister"][0].myNode.IsoLoc()))
                                 {
                                     dirs += d.ToString();
                                 }
