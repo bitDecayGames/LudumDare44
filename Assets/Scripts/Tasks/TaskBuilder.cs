@@ -7,7 +7,17 @@ public static class TaskBuilder
 {
     public static void CreateRandomTask(Task task){
         // EmptyCashRegister(task);
-        DepositMoney(task);
+        // DepositMoney(task);
+        TestTask(task);
+    }
+
+    static void TestTask(Task task)
+    {
+        task.type = TaskType.TestTask;
+
+        TaskStep moveToSafe = new TaskStep();
+        moveToSafe.type = TaskStepType.Safe;
+        task.AddStep(moveToSafe);
     }
 
     static void DepositMoney(Task task){
