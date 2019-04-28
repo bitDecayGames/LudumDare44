@@ -6,22 +6,38 @@ public class TaskManager : MonoBehaviour
 {
     const string TAG = "Task";
 
-    uint NumTasks = 2;
+    uint NumTasks = 1;
+
+    // Time before a new task is created. (Seconds)
+    static float TaskBetweenTime = 1f;
+    float TimeToNewTasks = TaskBetweenTime;
+
+    bool TaskResentlyComplete = false;
 
     void Start()
     {
-        for (uint i = 0; i < NumTasks; i++)
-        {
-            CreateTaskGameObj();
-        }
+
     }
     
     void Update()
     {
+        if (!TaskResentlyComplete)
+        {
+            var numCurrentTasks = GetComponentsInChildren<Task>().Length;
+            if (numCurrentTasks < NumTasks) {
+                CreateTaskGameObj();
+            }
+        } else {
+            TimeToNewTasks -= Time.deltaTime;
+            if (TimeToNewTasks <= 0) {
+                TimeToNewTasks = TaskBetweenTime;
+                TaskResentlyComplete = false;
+            }
+        }
 
     }
 
-    public void CompleteStep(TaskStepType type)
+    public void CompleteTaskStep(TaskStepType type)
     {
         GameObject[] taskObjs = GameObject.FindGameObjectsWithTag(TAG);
         foreach (GameObject go in taskObjs)
@@ -31,6 +47,7 @@ public class TaskManager : MonoBehaviour
 
             if (task.IsComplete()) {
                 Destroy(go);
+                TaskResentlyComplete = true;
             }
         }
     }

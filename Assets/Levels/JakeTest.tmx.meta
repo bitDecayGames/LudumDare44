@@ -22,7 +22,6 @@ ScriptedImporter:
     400014: _MapPrfab/JakeTest/Interactables/Transform
     400016: _MapPrfab/JakeTest/Interactables/MyDick/Transform
     400018: _MapPrfab/JakeTest/Interactables/Spawn/Transform
-    6000000: _MapPrfab/JakeTest/Interactables/MyDick/PolygonCollider2D
     11400000: _MapPrfab/JakeTest/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/JakeTest/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/JakeTest/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
@@ -33,7 +32,6 @@ ScriptedImporter:
     11400014: _MapPrfab/JakeTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400016: _MapPrfab/JakeTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400018: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400020: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400022: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400024: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400026: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
