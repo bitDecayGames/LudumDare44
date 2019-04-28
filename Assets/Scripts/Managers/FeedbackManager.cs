@@ -6,13 +6,13 @@ namespace Managers {
         public TextMeshPro PositiveFeedbackTextPrefab;
         public TextMeshPro NegativeFeedbackTextPrefab;
 
-        public void Positive(string text) {
-            var t = Instantiate(PositiveFeedbackTextPrefab);
+        public void Positive(string text, Transform transform) {
+            var t = Instantiate(PositiveFeedbackTextPrefab, transform);
             t.text = text;
         }
 
-        public void Negative(string text) {
-            var t = Instantiate(NegativeFeedbackTextPrefab);
+        public void Negative(string text, Transform transform) {
+            var t = Instantiate(NegativeFeedbackTextPrefab, transform);
             t.text = text;
         }
     }

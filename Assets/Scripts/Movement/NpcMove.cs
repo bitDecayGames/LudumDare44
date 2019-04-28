@@ -25,7 +25,7 @@ namespace Movement {
         private const int maxTries = 30;
         private int overallTries = 0;
         private const int maxOverallTries = 5;
-        private Board.Board.Occupier currentStepLocation;
+        private Board.Board.Node currentStepLocation;
         private bool initialized = false;
 
         [HideInInspector]
@@ -99,10 +99,7 @@ namespace Movement {
             var taskStepName = TaskStep.GetStepName(taskStep.type).ToLower();
 
             if (taskStep.node != null) {
-                if (taskStep.node.occupier == null) {
-                    throw new Exception("occupier is null on node");
-                }
-                currentStepLocation = taskStep.node.occupier;
+                currentStepLocation = taskStep.node;
                 getDirections();
             } else if (board.board.stepLocations.ContainsKey(taskStepName)) {
                 var taskStepLocations = board.board.stepLocations[taskStepName];
@@ -119,18 +116,18 @@ namespace Movement {
 
         private bool IsTheThingInfrontTheThingIWant(Direction dir) {
             var thingInFront = Peek(dir);
-            return thingInFront == currentStepLocation.myNode;
+            return thingInFront == currentStepLocation;
         }
 
-        private Board.Board.Occupier getStepLocation(List<Board.Board.Occupier> stepLocations) {
+        private Board.Board.Node getStepLocation(List<Board.Board.Occupier> stepLocations) {
             // TODO: MW figure out if these step locations are currently available to be interacted with and then pick a random one
-            return stepLocations[0];
+            return stepLocations[0].myNode;
         }
 
         private void getDirections() {
             currentDirections = Search.Navigate(board.board,
             occupier.myNode.IsoLoc(),
-            currentStepLocation.myNode.IsoLoc());
+            currentStepLocation.IsoLoc());
             isFindingPath = true;
         }
         
@@ -171,21 +168,26 @@ namespace Movement {
             lerper.Begin(originalPos, endPos, TIME_TO_MOVE, () => { isAcceptingInput = true; });
         }
 
+        private void playAnimationIfNotPlayingAsAFunction(string animName)
+        {
+            animator.Play(animName);
+        }
+
         private void UpdateStandAnimation() {
             if (!standing) {
                 standing = true;
                 switch (facing) {
                     case Facing.Up:
-                        animator.Play(AnimationConstants.STAND_UP_RIGHT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_UP_RIGHT);
                         break;
                     case Facing.Right:
-                        animator.Play(AnimationConstants.STAND_DOWN_RIGHT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_DOWN_RIGHT);
                         break;
                     case Facing.Down:
-                        animator.Play(AnimationConstants.STAND_DOWN_LEFT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_DOWN_LEFT);
                         break;
                     case Facing.Left:
-                        animator.Play(AnimationConstants.STAND_UP_LEFT);
+                        playAnimationIfNotPlayingAsAFunction(AnimationConstants.STAND_UP_LEFT);
                         break;
                 }
             }
@@ -195,16 +197,16 @@ namespace Movement {
             standing = false;
             switch (facing) {
                 case Facing.Up:
-                    animator.Play(AnimationConstants.WALK_UP_RIGHT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_UP_RIGHT);
                     break;
                 case Facing.Right:
-                    animator.Play(AnimationConstants.WALK_DOWN_RIGHT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_DOWN_RIGHT);
                     break;
                 case Facing.Down:
-                    animator.Play(AnimationConstants.WALK_DOWN_LEFT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_DOWN_LEFT);
                     break;
                 case Facing.Left:
-                    animator.Play(AnimationConstants.WALK_UP_LEFT);
+                    playAnimationIfNotPlayingAsAFunction(AnimationConstants.WALK_UP_LEFT);
                     break;
             }
         }

@@ -104,12 +104,12 @@ public class TaskManager : MonoBehaviour
 
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
-            foreach (Board.Board.Occupier occupier in bm.board.lineLocations[task.lineNumber])
+            foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
             {
                 TaskStep getInLine = new TaskStep();
                 getInLine.type = TaskStepType.GetInLine;
                 getInLine.npcStep = true;
-                getInLine.node = occupier.myNode;
+                getInLine.node = poi.myNode;
                 getInLineSteps.Enqueue(getInLine);
             }
 
