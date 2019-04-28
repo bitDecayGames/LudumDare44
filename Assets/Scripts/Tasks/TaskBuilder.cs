@@ -15,12 +15,12 @@ public static class TaskBuilder
 
         TaskStep getInLIine = new TaskStep();
         getInLIine.type = TaskStepType.GetInLine;
-        task.steps.Add(getInLIine);
+        task.AddStep(getInLIine);
 
         TaskStep depositMoney = new TaskStep();
         depositMoney.type = TaskStepType.TalkToTeller;
         depositMoney.icon = IconManager.Icon.CashRegister;
-        task.steps.Add(depositMoney);
+        task.AddStep(depositMoney);
     }
 
     static void FillCashRegister(Task task) {
@@ -28,15 +28,15 @@ public static class TaskBuilder
 
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.EmptyCashRegister;
-        task.steps.Add(moveToTeller);
+        task.AddStep(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
         moveToSafe.type = TaskStepType.Safe;
-        task.steps.Add(moveToSafe);
+        task.AddStep(moveToSafe);
 
         TaskStep moveToTeller2 = new TaskStep();
         moveToTeller2.type = TaskStepType.FullCashRegister;
-        task.steps.Add(moveToTeller2);
+        task.AddStep(moveToTeller2);
     }
 
     static void EmptyCashRegister(Task task) {
@@ -45,11 +45,11 @@ public static class TaskBuilder
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.FullCashRegister;
         moveToTeller.icon = IconManager.Icon.CashRegister;
-        task.steps.Add(moveToTeller);
+        task.AddStep(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
         moveToSafe.type = TaskStepType.Safe;
-        task.steps.Add(moveToSafe);
+        task.AddStep(moveToSafe);
     }
 
     static void OpenBankDoor(Task task) {
@@ -57,6 +57,6 @@ public static class TaskBuilder
 
         TaskStep moveToBankDoor = new TaskStep();
         moveToBankDoor.type = TaskStepType.BankDoor;
-        task.steps.Add(moveToBankDoor);
+        task.AddStep(moveToBankDoor);
     }
 }
