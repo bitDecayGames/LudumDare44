@@ -17,6 +17,12 @@ public class Task : MonoBehaviour
         return System.Enum.GetName(typeof(TaskType), type);
     }
 
+    public static string GetTaskNameReadable(TaskType type)
+    {
+        string typeName = System.Enum.GetName(typeof(TaskType), type);
+        return System.Text.RegularExpressions.Regex.Replace(typeName, "(\\B[A-Z])", " $1");
+    }
+
     public Task(){
         steps = new List<TaskStep>();
     }
