@@ -32,9 +32,9 @@ ScriptedImporter:
     11400014: _MapPrfab/JakeTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400016: _MapPrfab/JakeTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400018: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400022: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400024: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400026: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/JakeTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400022: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400024: _MapPrfab/JakeTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400028: _superAsset
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/JakeTest/Grid
@@ -46,7 +46,19 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
-  errors: []
+  errors:
+  - Errors detected in tileset 'Tilesets/floors.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Could not find tile 5. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 3. Make sure the tilesets were successfully imported.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
   warnings: []
   missingSortingLayers: []
   missingLayers: []
