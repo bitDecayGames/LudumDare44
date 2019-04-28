@@ -20,7 +20,6 @@ public static class TaskBuilder
 
         TaskStep depositMoney = new TaskStep();
         depositMoney.type = TaskStepType.TalkToTeller;
-        depositMoney.icon = IconManager.Icon.CashRegister;
         task.AddStep(depositMoney);
     }
 
@@ -45,11 +44,12 @@ public static class TaskBuilder
 
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.FullCashRegister;
-        moveToTeller.icon = IconManager.Icon.CashRegister;
+        moveToTeller.icon = Icon.Angry;
         task.AddStep(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
         moveToSafe.type = TaskStepType.Safe;
+        moveToTeller.icon = Icon.Elipsis;
         task.AddStep(moveToSafe);
     }
 
