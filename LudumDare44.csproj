@@ -339,6 +339,7 @@
     <Compile Include="Assets\Scripts\CodeGeneration\JsonFileSchemas\SFXList.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\JsonFileSchemas\SongList.cs" />
     <Compile Include="Assets\Scripts\CodeGeneration\OnSaveScripts.cs" />
+    <Compile Include="Assets\Scripts\Constants\Scenes.cs" />
     <Compile Include="Assets\Scripts\Constants\SFX.cs" />
     <Compile Include="Assets\Scripts\Constants\Songs.cs" />
     <Compile Include="Assets\Scripts\Constants\Tags.cs" />
@@ -348,6 +349,8 @@
     <Compile Include="Assets\Scripts\Managers\GameObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Managers\GenericGameObjectClass.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuController.cs" />
+    <Compile Include="Assets\Scripts\Movement\Facing.cs" />
+    <Compile Include="Assets\Scripts\Movement\NpcMove.cs" />
     <Compile Include="Assets\Scripts\Movement\SimpleMove.cs" />
     <Compile Include="Assets\Scripts\Npc\NpcController.cs" />
     <Compile Include="Assets\Scripts\Tasks\PlayerTaskController.cs" />
