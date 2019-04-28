@@ -67,13 +67,13 @@ public class Task : MonoBehaviour
 
     public void CreateIconsForStep(TaskStep taskStep)
     {
-        switch (taskStep.type)
+        switch (taskStep.icon)
         {
-            case TaskStepType.Safe:
+            case IconManager.Icon.CashRegister:
                 Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
                 break;
             
-            case TaskStepType.VacuumTube:
+            default:
                 break;
         }
     }
