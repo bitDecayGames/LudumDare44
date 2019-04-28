@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4230337349330708318
+--- !u!1001 &8465206572609313950
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 8060033611966307318, guid: c54c12376fefda643bbee0cac58eddfb,
         type: 3}
       propertyPath: m_Name
-      value: Elipsis
+      value: Waiting
       objectReference: {fileID: 0}
     - target: {fileID: 8060033611966307312, guid: c54c12376fefda643bbee0cac58eddfb,
         type: 3}
@@ -71,12 +71,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300008, guid: 390fac9afe5500c4db7f1a88f69872a7,
+      objectReference: {fileID: 21300002, guid: 23905d1853cbfcd46b0798d3accdee0f,
         type: 3}
     - target: {fileID: 1367288452879908635, guid: c54c12376fefda643bbee0cac58eddfb,
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b41a0cb5253494248a2ada7c2376e03f, type: 2}
+      objectReference: {fileID: 9100000, guid: caa69e224d849403fbf6434832e6c677, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54c12376fefda643bbee0cac58eddfb, type: 3}
