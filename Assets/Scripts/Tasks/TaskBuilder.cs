@@ -15,6 +15,7 @@ public static class TaskBuilder
 
         TaskStep getInLIine = new TaskStep();
         getInLIine.type = TaskStepType.GetInLine;
+        getInLIine.npcStep = true;
         task.AddStep(getInLIine);
 
         TaskStep depositMoney = new TaskStep();

@@ -100,12 +100,32 @@ public class TaskManager : MonoBehaviour
             currentLine++;
             if(currentLine > MaxNumberLines) currentLine = 0;
 
-            List<TaskStep> newSteps;
-            // TODO get nodes for line.
-            // make lots of steps with those nodes for the lines.
-            // add other steps and stuffs
+            Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
+            BoardManager bm = FindObjectOfType<BoardManager>();
+            foreach (Board.Board.Occupier occupier in bm.board.lineLocations[task.lineNumber])
+            {
+                TaskStep getInLine = new TaskStep();
+                getInLine.type = TaskStepType.GetInLine;
+                getInLine.npcStep = true;
+                getInLine.node = occupier.myNode;
+                getInLineSteps.Enqueue(getInLine);
+            }
 
+            Queue<TaskStep> newSteps = new Queue<TaskStep>();
+            foreach (TaskStep oldStep in task.steps)
+            {
+                if(oldStep.type != TaskStepType.GetInLine)
+                {
+                    newSteps.Enqueue(oldStep);
+                } else {
+                    foreach (TaskStep ts in getInLineSteps)
+                    {
+                        newSteps.Enqueue(ts);
+                    };
+                }
+            }
 
+            task.steps = getInLineSteps;
         }
 
         newTaskObj.transform.SetParent(this.transform);

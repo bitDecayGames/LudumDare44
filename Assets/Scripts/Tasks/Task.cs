@@ -19,7 +19,7 @@ public class Task : MonoBehaviour
     List<GameObject> Icons = new List<GameObject>();
     
     public TaskType type;
-    Queue<TaskStep> steps;
+    public Queue<TaskStep> steps;
     List<TaskStep> completedSteps;
     GameObject npc;
     NpcController npcController;
