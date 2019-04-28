@@ -44,9 +44,9 @@ namespace Movement {
         // Update is called once per frame
         void Update() {
             if (isAcceptingInput) {
-                if (Input.GetKey(KeyCode.A)) {
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
                     facing = Facing.Left;
-                    if (board.board.MoveLeft(occupier) || Input.GetKey(KeyCode.LeftArrow)) {
+                    if (board.board.MoveLeft(occupier)) {
                         UpdateWalkAnimation();
                         var originalPos = boardPos.ToWorldPos();
                         boardPos.X -= 1;
