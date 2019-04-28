@@ -6,7 +6,8 @@ public enum TaskType {
     DepositMoney,
     FillCashRegister,
     EmptyCashRegister,
-    OpenBankDoor
+    OpenBankDoor,
+    TestTask
 }
 
 public class Task : MonoBehaviour
@@ -46,8 +47,12 @@ public class Task : MonoBehaviour
         npc = Instantiate(SomeNpc);
         npcController = npc.GetComponent<NpcController>();
         npcController.Init();
-        npcController.AssignStep(steps.Peek());
+        if(steps.Peek().npcStep)
+        {
+            npcController.AssignStep(steps.Peek());
+        }
         CreateIconsForStep(steps.Peek());
+        taskManager = GetComponentInParent<TaskManager>();
     }
     
     void Update()
@@ -92,11 +97,20 @@ public class Task : MonoBehaviour
         completedSteps.Add(currentStep);
         Debug.Log(type + " Complete");
 
+        if (!npcStep)
+        {
+            var player = FindObjectOfType<PlayerTaskController>();
+            taskManager.Feedback.Positive("you got there mfer!!", player.transform);
+        }
+
         ClearIcons();
         if (!IsComplete())
         {
             TaskStep nextStep = steps.Peek();
-            npcController.AssignStep(nextStep);
+            if(nextStep.npcStep)
+            {
+                npcController.AssignStep(nextStep);
+            }
             CreateIconsForStep(nextStep);
         }
     }
