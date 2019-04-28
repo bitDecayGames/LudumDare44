@@ -48,12 +48,6 @@ public class PlayerTaskController : MonoBehaviour
                         TaskManager manager = FindObjectOfType<TaskManager>();
                         TaskStepType taskStepType = (TaskStepType) System.Enum.Parse(typeof(TaskStepType), typeProperty.m_Value);
                         manager.CompleteTaskStep(taskStepType, false);
-
-
-                        // if (taskStepType.m_Value == TaskStep.GetStepName(TaskStepType.Safe)){
-                        //     TaskManager manager = FindObjectOfType<TaskManager>();
-                        //     manager.CompleteTaskStep(TaskStepType.Safe, false);
-                        // }
                     }
                 }
             }

@@ -5,7 +5,8 @@ using UnityEngine;
 public enum TaskStepType {
     Safe,
     VacuumTube,
-    CashRegister,
+    EmptyCashRegister,
+    FullCashRegister,
     BankDoor
 }
 
