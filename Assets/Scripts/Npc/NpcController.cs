@@ -31,6 +31,6 @@ public class NpcController : MonoBehaviour
 
     public void CompleteCurrentStep()
     {
-        taskManager.CompleteTaskStep(taskStep.type);
+        taskManager.CompleteTaskStep(taskStep.type, true);
     }
 }
