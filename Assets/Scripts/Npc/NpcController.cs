@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class NpcController : MonoBehaviour
 {
-    public TaskManager taskManager;
     public Task task;
     public TaskStep taskStep;
 
@@ -20,17 +19,17 @@ public class NpcController : MonoBehaviour
 
         switch (step.type)
         {
-            case TaskStepType.MoveToSafe:
+            case TaskStepType.Safe:
                 //GetComponent<NpcMovementController>().MoveToPlace(task.type, taskManager.CompleteTaskStep(taskStep.type)) 
                 break;
             
-            case TaskStepType.MoveToVacuumTube:
+            case TaskStepType.VacuumTube:
                 break;
         }
     }
 
     public void CompleteCurrentStep()
     {
-        taskManager.CompleteTaskStep(taskStep.type, true);
+        FindObjectOfType<TaskManager>().CompleteTaskStep(taskStep.type, true);
     }
 }

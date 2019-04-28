@@ -20,3 +20,6 @@ Assets/Resources/FMODStudioSettings.asset
 
 // vscode
 .vscode
+
+// generated code
+Assets/Scripts/Constants/Scenes.cs

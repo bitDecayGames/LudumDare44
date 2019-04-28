@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SuperTiled2Unity;
 using Board;
+using Movement;
 using Utils;
 
 public class PlayerTaskController : MonoBehaviour
@@ -21,10 +22,9 @@ public class PlayerTaskController : MonoBehaviour
 
             // Get player board position
             BoardPosition playerPos = GetComponent<BoardPosition>();
-            IsoVector2 playerBoardPos = playerPos.boardPos;
 
             BoardManager bm = FindObjectOfType<BoardManager>();
-            Board.Board.Node playerBoardNode = bm.board.Get(playerBoardPos.x, playerBoardPos.y);
+            Board.Board.Node playerBoardNode = bm.board.Get(playerPos.X, playerPos.Y);
 
             Board.Board.Node checkNode = player.facing == SimpleMove.Facing.Up ? playerBoardNode.up :
                                          player.facing == SimpleMove.Facing.Down ? playerBoardNode.down :
@@ -41,14 +41,13 @@ public class PlayerTaskController : MonoBehaviour
                 if (nodeProperty != null)
                 {
                     // Debug.Log("Found Node Property");
-                    var taskStepType = new CustomProperty();
-                    if (nodeProperty.TryGetCustomProperty("TaskStepType", out taskStepType))
+                    var typeProperty = new CustomProperty();
+                    if (nodeProperty.TryGetCustomProperty("TaskStepType", out typeProperty))
                     {
 
-                        if (taskStepType.m_Value == TaskStep.GetStepName(TaskStepType.MoveToSafe)){
-                            TaskManager manager = FindObjectOfType<TaskManager>();
-                            manager.CompleteTaskStep(TaskStepType.MoveToSafe, false);
-                        }
+                        TaskManager manager = FindObjectOfType<TaskManager>();
+                        TaskStepType taskStepType = (TaskStepType) System.Enum.Parse(typeof(TaskStepType), typeProperty.m_Value);
+                        manager.CompleteTaskStep(taskStepType, false);
                     }
                 }
             }
