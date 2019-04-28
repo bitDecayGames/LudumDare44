@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Analytics;
 using Utils;
 
 namespace Board {
@@ -14,7 +15,7 @@ namespace Board {
         private List<Node> board;
 
         public Dictionary<string, List<Occupier>> stepLocations = new Dictionary<string, List<Occupier>>();
-        public Dictionary<int, List<Occupier>> lineLocations = new Dictionary<int, List<Occupier>>();
+        public Dictionary<int, List<POI>> lineLocations = new Dictionary<int, List<POI>>();
         
 
         public Board(int startX, int startY, int width, int height) {
@@ -153,6 +154,7 @@ namespace Board {
             public Node left;
 
             public Occupier occupier;
+            public POI poi;
             
             public Node(int x, int y) {
                 this.x = x;
@@ -166,6 +168,11 @@ namespace Board {
         }
 
         public class Occupier : MonoBehaviour {
+            public Node myNode;
+        }
+
+        public class POI
+        {
             public Node myNode;
         }
     }
