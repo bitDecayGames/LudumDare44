@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SuperTiled2Unity;
 using Board;
+using Movement;
 using Utils;
 
 public class PlayerTaskController : MonoBehaviour
