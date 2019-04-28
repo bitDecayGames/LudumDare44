@@ -15,6 +15,7 @@ namespace Board {
         private List<Node> board;
 
         public Dictionary<string, List<Occupier>> stepLocations = new Dictionary<string, List<Occupier>>();
+        public Dictionary<string, List<POI>> poiLocations = new Dictionary<string, List<POI>>();
         public Dictionary<int, List<POI>> lineLocations = new Dictionary<int, List<POI>>();
         
 
