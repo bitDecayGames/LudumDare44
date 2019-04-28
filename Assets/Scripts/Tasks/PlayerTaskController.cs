@@ -21,10 +21,9 @@ public class PlayerTaskController : MonoBehaviour
 
             // Get player board position
             BoardPosition playerPos = GetComponent<BoardPosition>();
-            IsoVector2 playerBoardPos = playerPos.boardPos;
 
             BoardManager bm = FindObjectOfType<BoardManager>();
-            Board.Board.Node playerBoardNode = bm.board.Get(playerBoardPos.x, playerBoardPos.y);
+            Board.Board.Node playerBoardNode = bm.board.Get(playerPos.X, playerPos.Y);
 
             Board.Board.Node checkNode = player.facing == SimpleMove.Facing.Up ? playerBoardNode.up :
                                          player.facing == SimpleMove.Facing.Down ? playerBoardNode.down :
