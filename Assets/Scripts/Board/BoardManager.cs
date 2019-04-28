@@ -6,7 +6,7 @@ namespace Board {
         public Board board;
         
         public void Initialize() {
-            board = new Board(-100, -100, 200, 200);
+            board = new Board(0, 0, 60, 60);
             SuperMap map = FindObjectOfType<SuperMap>();
             foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>())
             {
@@ -18,6 +18,8 @@ namespace Board {
                         var x = (int)superObject.m_X / 8 - 2; // 8 is tile size
                         var y = (int)superObject.m_Y / 8 - 2; // 8 is tile size
                         var occupier = superObject.gameObject.AddComponent<Board.Occupier>();
+                        occupier.name = superObject.m_TiledName;
+                        Debug.Log("Occupier name being set to: " + occupier.name);
                         if (!board.Set(occupier, x, y)) {
                             Debug.Log(string.Format("Failed to set ({0}, {1}): {2}", x, y,superObject));
                         }
