@@ -5,7 +5,18 @@ public enum Icon
 {
     Empty,
     Angry,
+    Check,
+    Coins,
     Elipsis,
+    EmptyRegister,
+    FullRegister,
+    Happy,
+    Money,
+    Open,
+    Shut,
+    VacuumIn,
+    VacuumOut,
+    Waiting,
 }
 
 public class IconManager : MonoBehaviour

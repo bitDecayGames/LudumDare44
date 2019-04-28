@@ -91,7 +91,7 @@ ScriptedImporter:
     100172: _MapPrfab/TaskTestMap/POIs/NpcSpawn
     100174: _MapPrfab/TaskTestMap/Interactables/Spawn
     100176: _MapPrfab/TaskTestMap/Line
-    100178: _MapPrfab/TaskTestMap/Line/Object_35
+    100178: _MapPrfab/TaskTestMap/Line/Object_38
     100180: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 45) (TRS)
     100182: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 46) (TRS)
     100184: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 47) (TRS)
@@ -195,6 +195,24 @@ ScriptedImporter:
     100380: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 48) (TRS)
     100382: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 49) (TRS)
     100384: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 50) (TRS)
+    100386: _MapPrfab/TaskTestMap/Floors/Chunk (-48,48)/tile (-44, 51) (TRS)
+    100388: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 42) (TRS)
+    100390: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 43) (TRS)
+    100392: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 41) (TRS)
+    100394: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 42) (TRS)
+    100396: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 43) (TRS)
+    100398: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 41) (TRS)
+    100400: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 42) (TRS)
+    100402: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 43) (TRS)
+    100404: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 41) (TRS)
+    100406: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 42) (TRS)
+    100408: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 43) (TRS)
+    100410: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 41) (TRS)
+    100412: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 42) (TRS)
+    100414: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 43) (TRS)
+    100416: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)
+    100418: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)
+    100420: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)
     400000: _MapPrfab/TaskTestMap/Transform
     400002: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-46, 47) (TRS)/Transform
     400004: _MapPrfab/TaskTestMap/Collisions/Transform
@@ -284,7 +302,7 @@ ScriptedImporter:
     400172: _MapPrfab/TaskTestMap/POIs/NpcSpawn/Transform
     400174: _MapPrfab/TaskTestMap/Interactables/Spawn/Transform
     400176: _MapPrfab/TaskTestMap/Line/Transform
-    400178: _MapPrfab/TaskTestMap/Line/Object_35/Transform
+    400178: _MapPrfab/TaskTestMap/Line/Object_38/Transform
     400180: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 45) (TRS)/Transform
     400182: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 46) (TRS)/Transform
     400184: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 47) (TRS)/Transform
@@ -388,7 +406,25 @@ ScriptedImporter:
     400380: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 48) (TRS)/Transform
     400382: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 49) (TRS)/Transform
     400384: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 50) (TRS)/Transform
-    6800000: _MapPrfab/TaskTestMap/Line/Object_35/EdgeCollider2D
+    400386: _MapPrfab/TaskTestMap/Floors/Chunk (-48,48)/tile (-44, 51) (TRS)/Transform
+    400388: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 42) (TRS)/Transform
+    400390: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 43) (TRS)/Transform
+    400392: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 41) (TRS)/Transform
+    400394: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 42) (TRS)/Transform
+    400396: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 43) (TRS)/Transform
+    400398: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 41) (TRS)/Transform
+    400400: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 42) (TRS)/Transform
+    400402: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 43) (TRS)/Transform
+    400404: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 41) (TRS)/Transform
+    400406: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 42) (TRS)/Transform
+    400408: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 43) (TRS)/Transform
+    400410: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 41) (TRS)/Transform
+    400412: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 42) (TRS)/Transform
+    400414: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 43) (TRS)/Transform
+    400416: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)/Transform
+    400418: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/Transform
+    400420: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/Transform
+    6800000: _MapPrfab/TaskTestMap/Line/Object_38/EdgeCollider2D
     11400000: _MapPrfab/TaskTestMap/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/TaskTestMap/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-46, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -445,6 +481,7 @@ ScriptedImporter:
     11400106: _MapPrfab/TaskTestMap/Collisions/Object_33 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400108: _MapPrfab/TaskTestMap/Floors/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400110: _MapPrfab/TaskTestMap/Floors/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400112: _MapPrfab/TaskTestMap/Floors/Chunk (-48,48)/tile (-44, 51) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400114: _MapPrfab/TaskTestMap/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400116: _MapPrfab/TaskTestMap/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400118: _MapPrfab/TaskTestMap/Interactables/Object_5 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -461,9 +498,9 @@ ScriptedImporter:
     11400140: _MapPrfab/TaskTestMap/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400142: _MapPrfab/TaskTestMap/Line/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400144: _MapPrfab/TaskTestMap/Line/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400146: _MapPrfab/TaskTestMap/Line/Object_35/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400148: _MapPrfab/TaskTestMap/Line/Object_35/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400150: _MapPrfab/TaskTestMap/Line/Object_35/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400146: _MapPrfab/TaskTestMap/Line/Object_38/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400148: _MapPrfab/TaskTestMap/Line/Object_38/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400150: _MapPrfab/TaskTestMap/Line/Object_38/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400152: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400154: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400156: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-47, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -669,6 +706,41 @@ ScriptedImporter:
     11400556: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400558: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400560: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400562: _MapPrfab/TaskTestMap/Floors/Chunk (-48,48)/tile (-44, 51) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400564: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400566: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400568: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400570: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400572: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400574: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400576: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400578: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400580: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400582: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400584: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400586: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400588: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400590: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400592: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400594: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400596: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400598: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400600: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400602: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400604: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400606: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400608: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400610: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400612: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400614: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400616: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400618: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400620: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400622: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400624: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400626: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400628: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400630: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/SpriteRenderer
     21200002: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
     21200004: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8/SpriteRenderer
@@ -798,6 +870,24 @@ ScriptedImporter:
     21200252: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 48) (TRS)/SpriteRenderer
     21200254: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 49) (TRS)/SpriteRenderer
     21200256: _MapPrfab/TaskTestMap/Floors/Chunk (-64,48)/tile (-55, 50) (TRS)/SpriteRenderer
+    21200258: _MapPrfab/TaskTestMap/Floors/Chunk (-48,48)/tile (-44, 51) (TRS)/SpriteRenderer
+    21200260: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 42) (TRS)/SpriteRenderer
+    21200262: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-50, 43) (TRS)/SpriteRenderer
+    21200264: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 41) (TRS)/SpriteRenderer
+    21200266: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 42) (TRS)/SpriteRenderer
+    21200268: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-51, 43) (TRS)/SpriteRenderer
+    21200270: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 41) (TRS)/SpriteRenderer
+    21200272: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 42) (TRS)/SpriteRenderer
+    21200274: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-52, 43) (TRS)/SpriteRenderer
+    21200276: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 41) (TRS)/SpriteRenderer
+    21200278: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 42) (TRS)/SpriteRenderer
+    21200280: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-53, 43) (TRS)/SpriteRenderer
+    21200282: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 41) (TRS)/SpriteRenderer
+    21200284: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 42) (TRS)/SpriteRenderer
+    21200286: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-54, 43) (TRS)/SpriteRenderer
+    21200288: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)/SpriteRenderer
+    21200290: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/SpriteRenderer
+    21200292: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/TaskTestMap/Grid
   externalObjects: {}
