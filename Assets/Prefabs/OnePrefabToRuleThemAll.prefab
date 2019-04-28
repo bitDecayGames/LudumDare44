@@ -47,6 +47,8 @@ MonoBehaviour:
     type: 3}
   npcs: {fileID: 11400000, guid: 02c019ad181514d3da7629c28d5bfafa, type: 2}
   icons: {fileID: 11400000, guid: b8a0731dbae2046fab30b48462d473dc, type: 2}
+  fadeInPrefab: {fileID: 114428916970944160, guid: 7dd016ed26e64fd47baa7390b3ddf46e,
+    type: 3}
   loader: {fileID: 0}
   board: {fileID: 0}
   tasker: {fileID: 0}

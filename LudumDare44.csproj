@@ -316,6 +316,8 @@
   <ItemGroup>
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
+    <Compile Include="Assets\ScriptableObjects\IconObjects.cs" />
+    <Compile Include="Assets\ScriptableObjects\NpcObjects.cs" />
     <Compile Include="Assets\Scripts\Animations\AnimationConstants.cs" />
     <Compile Include="Assets\Scripts\Animations\LerpAnimator.cs" />
     <Compile Include="Assets\Scripts\Audio\FMOD\FMODMusicPlayer\FMODMusicPlayer.cs" />
@@ -365,6 +367,7 @@
     <Compile Include="Assets\Scripts\Utils\FadeToBlack.cs" />
     <Compile Include="Assets\Scripts\Utils\IsoVector2.cs" />
     <Compile Include="Assets\Scripts\Utils\Loader.cs" />
+    <Compile Include="Assets\Scripts\Utils\OneScriptToRuleThemAll.cs" />
     <Compile Include="Assets\Scripts\Utils\RandomNumberGenerator.cs" />
     <Compile Include="Assets\Scripts\Utils\References.cs" />
     <Compile Include="Assets\Scripts\Utils\TileConstants.cs" />
