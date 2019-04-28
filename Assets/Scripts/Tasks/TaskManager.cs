@@ -8,7 +8,7 @@ public class TaskManager : MonoBehaviour
 {
     const string TAG = "Task";
 
-    public GameObject MaleNpc;
+    public NpcObjects Npcs;
 
     uint NumTasks = 1;
 
@@ -63,7 +63,7 @@ public class TaskManager : MonoBehaviour
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
         TaskBuilder.CreateRandomTask(task);
-        task.MaleNpc = MaleNpc;
+        task.SomeNpc = Npcs.PickOneAtRandom();
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
 

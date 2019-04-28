@@ -13,7 +13,7 @@ public class Task : MonoBehaviour
 {
     public const float StepCompletionTimeReduction = 10f;
 
-    public GameObject MaleNpc;
+    public GameObject SomeNpc;
     public TaskManager taskManager;
     
     List<GameObject> Icons = new List<GameObject>();
@@ -45,7 +45,7 @@ public class Task : MonoBehaviour
 
     void Start()
     {
-        npc = Instantiate(MaleNpc);
+        npc = Instantiate(SomeNpc);
         npcController = npc.GetComponent<NpcController>();
         npcController.task = this;
         CreateIconsForStep(steps[0]);

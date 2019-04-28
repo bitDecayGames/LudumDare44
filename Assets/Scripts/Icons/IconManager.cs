@@ -4,7 +4,8 @@ using UnityEngine;
 public class IconManager : MonoBehaviour
 {
     private readonly Vector3 IconOffset = Vector3.up * 1.3f + Vector3.right * 0.9f;
-    public GameObject CashRegisterIcon;
+
+    public IconObjects Icons;
 
     public static IconManager GetLocalReference()
     {
@@ -21,7 +22,7 @@ public class IconManager : MonoBehaviour
         switch (icon)
         {
            case Icon.CashRegister:
-               return Instantiate(CashRegisterIcon, parent.position + IconOffset, Quaternion.identity, parent);
+               return Instantiate(Icons.GetByName("Cloud"), parent.position + IconOffset, Quaternion.identity, parent);
         }
         
         throw new Exception("Unable to determine icon");
