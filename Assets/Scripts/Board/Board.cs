@@ -14,6 +14,7 @@ namespace Board {
         private List<Node> board;
 
         public Dictionary<string, List<Occupier>> stepLocations = new Dictionary<string, List<Occupier>>();
+        public Dictionary<int, List<Occupier>> lineLocations = new Dictionary<int, List<Occupier>>();
         
 
         public Board(int startX, int startY, int width, int height) {
