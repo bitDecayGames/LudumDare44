@@ -63,7 +63,7 @@
                 fringe.Remove(checkPath);
                 visited.Add(checkPath);
 
-                if (dest.Matches(checkPath.currentNode.x, checkPath.currentNode.y))
+                if (dest.Equals(checkPath.currentNode.x, checkPath.currentNode.y))
                 {
 //                    Debug.Log("Took " + iterations + " iterations to complete");
 //                    Debug.Log("Explored " + visited.Count + " nodes");

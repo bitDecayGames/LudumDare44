@@ -6,21 +6,22 @@ using UnityEngine;
 public static class TaskBuilder
 {
     public static void CreateRandomTask(Task task){
-        EmptyCashRegister(task);
+        // EmptyCashRegister(task);
+        DepositMoney(task);
     }
 
     static void DepositMoney(Task task){
         task.type = TaskType.DepositMoney;
         task.lineTask = true;
 
-        TaskStep getInLIine = new TaskStep();
-        getInLIine.type = TaskStepType.GetInLine;
-        task.steps.Add(getInLIine);
+        TaskStep getInLine = new TaskStep();
+        getInLine.type = TaskStepType.GetInLine;
+        getInLine.npcStep = true;
+        task.AddStep(getInLine);
 
         TaskStep depositMoney = new TaskStep();
         depositMoney.type = TaskStepType.TalkToTeller;
-        depositMoney.icon = IconManager.Icon.CashRegister;
-        task.steps.Add(depositMoney);
+        task.AddStep(depositMoney);
     }
 
     static void FillCashRegister(Task task) {
@@ -28,15 +29,15 @@ public static class TaskBuilder
 
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.EmptyCashRegister;
-        task.steps.Add(moveToTeller);
+        task.AddStep(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
         moveToSafe.type = TaskStepType.Safe;
-        task.steps.Add(moveToSafe);
+        task.AddStep(moveToSafe);
 
         TaskStep moveToTeller2 = new TaskStep();
         moveToTeller2.type = TaskStepType.FullCashRegister;
-        task.steps.Add(moveToTeller2);
+        task.AddStep(moveToTeller2);
     }
 
     static void EmptyCashRegister(Task task) {
@@ -44,12 +45,13 @@ public static class TaskBuilder
 
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.FullCashRegister;
-        moveToTeller.icon = IconManager.Icon.CashRegister;
-        task.steps.Add(moveToTeller);
+        moveToTeller.icon = Icon.Elipsis;
+        task.AddStep(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
         moveToSafe.type = TaskStepType.Safe;
-        task.steps.Add(moveToSafe);
+        moveToSafe.icon = Icon.Angry;
+        task.AddStep(moveToSafe);
     }
 
     static void OpenBankDoor(Task task) {
@@ -57,6 +59,6 @@ public static class TaskBuilder
 
         TaskStep moveToBankDoor = new TaskStep();
         moveToBankDoor.type = TaskStepType.BankDoor;
-        task.steps.Add(moveToBankDoor);
+        task.AddStep(moveToBankDoor);
     }
 }

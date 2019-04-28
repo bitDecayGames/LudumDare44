@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using SuperTiled2Unity;
 using UnityEngine;
 using Utils;
+using Boo.Lang.Runtime;
 
 namespace Board {
     public class BoardManager : MonoBehaviour {
@@ -21,22 +22,94 @@ namespace Board {
                         if ("Collisions" == componentsInChild.m_TiledName || "Interactables" == componentsInChild.m_TiledName) {
                             foreach (var superObject in componentsInChild.GetComponentsInChildren<SuperObject>()) {
                                 // HACK: everything has to be -2, -2 before it goes onto the board state... ask Logan
-                                var x = (int) superObject.m_X / 8 - 2; // 8 is tile size
-                                var y = (int) superObject.m_Y / 8 - 2; // 8 is tile size
+                                IsoVector2 superObjBoardPos = IsoVector2.GridCoordsToBoard(superObject.m_X, superObject.m_Y);
+                                // var x = (int) superObject.m_X / 8 - 2; // 8 is tile size
+                                // var y = (int) superObject.m_Y / 8 - 2; // 8 is tile size
+                                var x = superObjBoardPos.x;
+                                var y = superObjBoardPos.y;
                                 var occupier = superObject.gameObject.AddComponent<Board.Occupier>();
                                 var props = superObject.GetComponent<SuperCustomProperties>();
                                 if (props != null)
                                 {
                                     foreach (var p in props.m_Properties)
                                     {
-                                        if (p.m_Name == "stepName")
+                                        // Debug.Log("NAME:" + p.m_Name);
+                                        // Debug.Log("PROP: " + p.m_Value);
+                                        if (p.m_Name == "TaskStepType")
                                         {
-                                            if (!board.stepLocations.ContainsKey(p.m_Value))
+                                            string key = p.m_Value.ToLower();
+                                            if (!board.stepLocations.ContainsKey(key))
                                             {
-                                                board.stepLocations.Add(p.m_Value.ToLower(), new List<Board.Occupier>());
+                                                board.stepLocations.Add(key, new List<Board.Occupier>());
                                             }
-                                            board.stepLocations[p.m_Value.ToLower()].Add(occupier);
+                                            board.stepLocations[key].Add(occupier);
+                                        } else if (p.m_Name == "LineNumber") {
+                                            if (!board.lineLocations.ContainsKey(p.m_Value.ToInt()))
+                                            {
+                                                board.lineLocations.Add(p.m_Value.ToInt(), new List<Board.Occupier>());
+                                            }
+                                            if(superObject.m_TiledName == "LineStart"){
+                                                SuperObject line = GetLine(superObjBoardPos);
+                                                if (line != null)
+                                                {
+                                                    // Debug.Log("We got a line mother fucker: " + x + ", " + y);
+                                                    var linePoints = line.GetComponent<EdgeCollider2D>().points;
+
+                                                    Vector2 lastPoint = Vector2.negativeInfinity;
+                                                    var lastNodeCoords = new IsoVector2(x, y);
+                                                    foreach (var point in linePoints)
+                                                    {
+                                                        var nextNodeCoords = new IsoVector2();
+                                                        if (lastPoint.Equals(Vector2.negativeInfinity)) {
+                                                            nextNodeCoords.x = lastNodeCoords.x;
+                                                            nextNodeCoords.y = lastNodeCoords.y;
+                                                            lastPoint = point;
+                                                        } else {
+                                                            var diff = point - lastPoint;
+                                                            if (Mathf.Abs(diff.x) != 0.5f) {
+                                                                throw new RuntimeException("Line x coords are bad");
+                                                            }
+                                                            if (Mathf.Abs(point.y - lastPoint.y) != 0.25f) {
+                                                                throw new RuntimeException("Line y coords are bad");
+                                                            }
+
+                                                            lastPoint = point;
+
+                                                            
+                                                            if (diff.x > 0 && diff.y > 0) {
+                                                                // UP
+                                                                nextNodeCoords.x = lastNodeCoords.x;
+                                                                nextNodeCoords.y = lastNodeCoords.y - 1;
+                                                            } else if (diff.x > 0 && diff.y < 0) {
+                                                                // RIGHT
+                                                                nextNodeCoords.x = lastNodeCoords.x + 1;
+                                                                nextNodeCoords.y = lastNodeCoords.y;
+                                                            } else if (diff.x < 0 && diff.y > 0) {
+                                                                // LEFT
+                                                                nextNodeCoords.x = lastNodeCoords.x - 1;
+                                                                nextNodeCoords.y = lastNodeCoords.y;
+                                                            } else if (diff.x < 0 && diff.y < 0) {
+                                                                // DOWN
+                                                                nextNodeCoords.x = lastNodeCoords.x;
+                                                                nextNodeCoords.y = lastNodeCoords.y + 1;
+                                                            }
+                                                        }
+                                                        lastNodeCoords = nextNodeCoords;
+
+                                                        // Debug.Log("next point: " + nextNodeCoords.x + ", " + nextNodeCoords.y);
+                                                        Board.Node lineNode = board.Get(nextNodeCoords.x, nextNodeCoords.y);
+                                                        Board.Occupier lineOccupier = new Board.Occupier();
+                                                        lineOccupier.myNode = lineNode;
+                                                        board.lineLocations[p.m_Value.ToInt()].Add(lineOccupier);
+                                                    }
+
+                                                } else {
+                                                    throw new RuntimeException("Line " + p.m_Value + " has not been FOUND!!");
+                                                }
+
+                                            } 
                                         }
+
                                     }
                                 } 
                                 if (!board.Set(occupier, x, y)) {
@@ -47,6 +120,44 @@ namespace Board {
                     }
                 }
             }
+            // Debug.Log("This be seen bitch");
+            // Debug.Log("Dictionary size: " + board.stepLocations.Count);
+            // foreach (KeyValuePair<string, List<Board.Occupier>> entry in board.stepLocations)
+            // {
+            //     Debug.Log("key" + entry.Key);
+            //     if(entry.Key == "")
+            // }
+            // Debug.Log("Dictionary size: " + board.lineLocations.Count);
+            // foreach (KeyValuePair<int, List<Board.Occupier>> entry in board.lineLocations)
+            // {
+            //     Debug.Log("key" + entry.Key);
+            //     foreach(var occupier in entry.Value)
+            //     {
+            //         Debug.Log("Point: " + occupier.myNode.x + ", " + occupier.myNode.y);
+            //     }
+            // }
+        }
+
+        private SuperObject GetLine(IsoVector2 lineStartBoard)
+        {
+            // Debug.Log("Line start board pos: " + lineStartBoard.x + " " + lineStartBoard.y);
+            SuperMap map = FindObjectOfType<SuperMap>();
+            if (map != null) {
+                foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>()) {
+                    if ("Line" == componentsInChild.m_TiledName) {
+                        foreach (var superObject in componentsInChild.GetComponentsInChildren<SuperObject>()) {
+                            IsoVector2 linePos = IsoVector2.GridCoordsToBoard(superObject.m_X, superObject.m_Y);
+                            // Debug.Log("Line pos: " + linePos.x + " " + linePos.y);
+
+                            // if (IsoVector2.WorldToBoardPos((int) superObject.m_X, (int) superObject.m_Y).Equals(lineStartBoard)){
+                            if (linePos.Equals(lineStartBoard)){
+                                return superObject;
+                            }
+                        }
+                    }
+                }
+            }
+            return null;
         }
     }
 }

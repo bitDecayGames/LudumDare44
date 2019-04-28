@@ -47,7 +47,15 @@ MonoBehaviour:
     type: 3}
   npcs: {fileID: 11400000, guid: 02c019ad181514d3da7629c28d5bfafa, type: 2}
   icons: {fileID: 11400000, guid: b8a0731dbae2046fab30b48462d473dc, type: 2}
+  fadeInPrefab: {fileID: 114428916970944160, guid: 7dd016ed26e64fd47baa7390b3ddf46e,
+    type: 3}
+  positiveFeedbackTextPrefab: {fileID: 5773502249554051048, guid: c115598e8c3f2453c9d6e79c0a69fa4d,
+    type: 3}
+  negativeFeedbackTextPrefab: {fileID: 6198107261837481071, guid: 73df7c91f96d741029409c72a0679ca0,
+    type: 3}
   loader: {fileID: 0}
   board: {fileID: 0}
+  feedback: {fileID: 0}
   tasker: {fileID: 0}
   iconer: {fileID: 0}
+  navigator: {fileID: 0}

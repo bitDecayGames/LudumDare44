@@ -11,20 +11,19 @@ public enum TaskType {
 
 public class Task : MonoBehaviour
 {
-    public const float StepCompletionTimeReduction = 10f;
-
     public GameObject SomeNpc;
     public TaskManager taskManager;
     
     List<GameObject> Icons = new List<GameObject>();
     
     public TaskType type;
-    public List<TaskStep> steps;
+    public Queue<TaskStep> steps;
+    List<TaskStep> completedSteps;
     GameObject npc;
     NpcController npcController;
-    public float TimeAlive;
     public int lineNumber;
     public bool lineTask = false;
+    public int numSteps = 0;
 
     public static string GetTaskName(TaskType type)
     {
@@ -38,20 +37,23 @@ public class Task : MonoBehaviour
     }
 
     public Task(){
-        steps = new List<TaskStep>();
+        steps = new Queue<TaskStep>();
+        completedSteps = new List<TaskStep>();
     }
 
     void Start()
     {
         npc = Instantiate(SomeNpc);
         npcController = npc.GetComponent<NpcController>();
-        npcController.task = this;
-        CreateIconsForStep(steps[0]);
+        npcController.Init();
+        npcController.AssignStep(steps.Peek());
+        CreateIconsForStep(steps.Peek());
     }
     
     void Update()
     {
-        TimeAlive += Time.deltaTime;
+        numSteps = steps.Count;
+
     }
 
     void OnDestroy()
@@ -59,109 +61,63 @@ public class Task : MonoBehaviour
         Destroy(npc);
     }
 
-    public void CreateIconsForStep(TaskStep taskStep)
+    public void AddStep(TaskStep step)
     {
-        switch (taskStep.icon)
+        steps.Enqueue(step);
+    }
+
+    void CreateIconsForStep(TaskStep step)
+    {
+        if (step.icon == Icon.Empty) {
+            Debug.Log("Skipping icon for " + step);
+            return;
+        }
+
+        Board.BoardManager boardManager = FindObjectOfType<Board.BoardManager>();
+        string lowerName = TaskStep.GetStepName(step.type).ToLower();
+        List<Board.Board.Occupier> locations = boardManager.board.stepLocations[lowerName];
+        foreach (var loc in locations)
         {
-            // case IconManager.Icon.CashRegister:
-            //     Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
-            //     break;
-            
-            default:
-                break;
+            // TODO Move this offset somewhere else.
+            Vector3 offset = new Vector3(-0.25f, 1f, 0f);
+            GameObject iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, loc.gameObject.transform, offset);
+            Icons.Add(iconObj);
         }
     }
 
-    public void ClearIcons()
+    void ClearIcons()
     {
         foreach (GameObject icon in Icons)
         {
             Destroy(icon);
         }
-    }
-
-    public enum CustomerMood
-    {
-        HAPPY,
-        NUETRAL,
-        ANGRY
-    }
-    public CustomerMood GetCustomerMood()
-    {
-        if (IsComplete())
-        {
-            return CustomerMood.HAPPY;
-        }
-        
-        if (TimeAlive < 20)
-        {
-            return CustomerMood.NUETRAL;
-        }
-        return CustomerMood.ANGRY;
+        Icons.Clear();
     }
 
     public void CompleteStep(TaskStepType type, bool npcStep) {
-        for (int i = 0; i < steps.Count; i++)
+        TaskStep currentStep = steps.Peek();
+        if (currentStep.type != type || currentStep.npcStep != npcStep)
         {
-            if (steps[i].complete)
-            {
-                continue;
-            }
-
-            if (steps[i].type == type && steps[i].npcStep == npcStep)
-            {
-                steps[i].complete = true;
-                TimeAlive -= StepCompletionTimeReduction;
-                if (TimeAlive <= 0)
-                {
-                    TimeAlive = 0;
-                }
-
-                ClearIcons();
-                if (StepsLeft() > 0)
-                {
-                    npcController.AssignStep(steps[i + 1]);
-                    CreateIconsForStep(steps[i + 1]);
-                }
-            }
-            break;
+            Debug.LogWarning("Step " + type + " cannot be completed");
+            return;
         }
-    }
 
-    public uint StepsLeft()
-    {
-        uint stepsLeft = 0;
-        foreach (TaskStep ts in steps)
+        steps.Dequeue();
+        currentStep.complete = true;
+        completedSteps.Add(currentStep);
+        Debug.Log(type + " Complete");
+        ClearIcons();
+
+        if (!IsComplete())
         {
-            if (!ts.complete) {
-                stepsLeft++;
-            }
+            TaskStep nextStep = steps.Peek();
+            npcController.AssignStep(nextStep);
+            CreateIconsForStep(nextStep);
         }
-        return stepsLeft;
-    }
-
-    public uint StepsComplete()
-    {
-        uint stepsComplete = 0;
-        foreach (TaskStep ts in steps)
-        {
-            if (ts.complete) {
-                stepsComplete++;
-            }
-        }
-        return stepsComplete;
-
     }
 
     public bool IsComplete()
     {
-        foreach (TaskStep ts in steps)
-        {
-            if (!ts.complete) {
-                return false;
-            }
-        }
-
-        return true;
+        return steps.Count <= 0;
     }
 }

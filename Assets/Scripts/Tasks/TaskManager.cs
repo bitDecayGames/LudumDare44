@@ -2,13 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Board;
+using Managers;
+using Menus;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Utils;
 
 public class TaskManager : MonoBehaviour
 {
     const string TAG = "Task";
 
     public NpcObjects Npcs;
+    public FeedbackManager Feedback;
+
+    public float LevelDurationSeconds = 10000;
+    private Timer timer;
+    private EasyNavigator navigator;
 
     uint NumTasks = 1;
 
@@ -22,8 +31,13 @@ public class TaskManager : MonoBehaviour
     static int LineLength = 3;
     int currentLine = 0;
 
-    void Start()
-    {
+    void Start() {
+        timer = gameObject.AddComponent<Timer>();
+        timer.DurationSeconds = LevelDurationSeconds;
+        timer.Reset();
+
+        navigator = FindObjectOfType<EasyNavigator>();
+        if (navigator == null) throw new Exception("Couldn't find an EasyNavigator, probably a bug in the OneScriptToRuleThemAll or it's prefab");
     }
     
     void Update()
@@ -42,6 +56,22 @@ public class TaskManager : MonoBehaviour
             }
         }
 
+        if (timer.complete) {
+            EndLevel();
+        }
+    }
+
+    public void EndLevel() {
+        Score.LevelName = SceneManager.GetActiveScene().name;
+        // TODO: MW
+        Score.Money = 1000;
+        Score.Happiness = 10;
+        Score.TotalTasks = 30;
+        Score.CompletedTasks = 20;
+        Score.FailedTasks = 10;
+        Score.NextLevelName = "Somehow get the next level name?";
+        
+        navigator.GoToScene("Score");
     }
 
     public void CompleteTaskStep(TaskStepType type, bool npcStep)
@@ -72,12 +102,32 @@ public class TaskManager : MonoBehaviour
             currentLine++;
             if(currentLine > MaxNumberLines) currentLine = 0;
 
-            List<TaskStep> newSteps;
-            // TODO get nodes for line.
-            // make lots of steps with those nodes for the lines.
-            // add other steps and stuffs
+            Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
+            BoardManager bm = FindObjectOfType<BoardManager>();
+            foreach (Board.Board.Occupier occupier in bm.board.lineLocations[task.lineNumber])
+            {
+                TaskStep getInLine = new TaskStep();
+                getInLine.type = TaskStepType.GetInLine;
+                getInLine.npcStep = true;
+                getInLine.node = occupier.myNode;
+                getInLineSteps.Enqueue(getInLine);
+            }
 
+            Queue<TaskStep> newSteps = new Queue<TaskStep>();
+            foreach (TaskStep oldStep in task.steps)
+            {
+                if(oldStep.type != TaskStepType.GetInLine)
+                {
+                    newSteps.Enqueue(oldStep);
+                } else {
+                    foreach (TaskStep ts in getInLineSteps)
+                    {
+                        newSteps.Enqueue(ts);
+                    };
+                }
+            }
 
+            task.steps = getInLineSteps;
         }
 
         newTaskObj.transform.SetParent(this.transform);

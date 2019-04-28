@@ -9,7 +9,8 @@ public enum TaskStepType {
     FullCashRegister,
     BankDoor,
     GetInLine,
-    TalkToTeller
+    TalkToTeller,
+    NpcSpawn
 }
 
 public class TaskStep
@@ -34,5 +35,5 @@ public class TaskStep
 
     public Board.Board.Node node;
 
-    public IconManager.Icon icon;
+    public Icon icon = Icon.Empty;
 }

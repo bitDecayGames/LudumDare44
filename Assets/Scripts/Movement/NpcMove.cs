@@ -37,13 +37,28 @@ namespace Movement {
 
         public void Initialize() {
             if (!initialized) {
+                initialized = true;
                 boardPos = GetComponent<BoardPosition>();
                 animator = GetComponentInChildren<Animator>();
-                boardPos = GetComponent<BoardPosition>();
                 occupier = GetComponent<Board.Board.Occupier>();
                 if (occupier == null) occupier = gameObject.AddComponent<Board.Board.Occupier>();
                 board = FindObjectOfType<BoardManager>();
                 if (board == null) throw new Exception("Missing BoardManager in the Scene, just drag the script onto the Camera");
+                if (board.board.stepLocations.ContainsKey(TaskStepType.NpcSpawn.ToString().ToLower()))
+                {
+                    // TODO make sure we spawn these thigns reasonably
+                    var mySpawn = board.board.stepLocations[TaskStepType.NpcSpawn.ToString().ToLower()][0];
+                    boardPos.X = mySpawn.myNode.x;
+                    boardPos.Y = mySpawn.myNode.y;
+                    board.board.SetForce(occupier, mySpawn.myNode.x, mySpawn.myNode.y);
+
+                    // Debug.Log("Board position bitch: " + boardPos.X + ", " + boardPos.Y);
+                    // Debug.Log("My spawn bitch: " + mySpawn);
+                    // Debug.Log("My node bitch: " + mySpawn.myNode.x + ", " + mySpawn.myNode.y);
+
+                } else {
+                    throw new Exception("No Npc spawner has been is found");
+                }
                 lerper = GetComponentInChildren<LerpAnimator>();
                 if (lerper == null) lerper = animator.gameObject.AddComponent<LerpAnimator>();
             }
@@ -78,11 +93,18 @@ namespace Movement {
             }
         }
 
-        public void Move(TaskStepType taskStepType, Action callback) {
+        public void Move(TaskStep taskStep, Action callback) {
             Initialize();
             this.callback = callback;
-            var taskStepName = TaskStep.GetStepName(taskStepType).ToLower();
-            if (board.board.stepLocations.ContainsKey(taskStepName)) {
+            var taskStepName = TaskStep.GetStepName(taskStep.type).ToLower();
+
+            if (taskStep.node != null) {
+                if (taskStep.node.occupier == null) {
+                    throw new Exception("occupier is null on node");
+                }
+                currentStepLocation = taskStep.node.occupier;
+                getDirections();
+            } else if (board.board.stepLocations.ContainsKey(taskStepName)) {
                 var taskStepLocations = board.board.stepLocations[taskStepName];
                 if (taskStepLocations.Count > 0) {
                     currentStepLocation = getStepLocation(taskStepLocations);
@@ -106,7 +128,9 @@ namespace Movement {
         }
 
         private void getDirections() {
-            currentDirections = Search.Navigate(board.board, occupier.myNode.IsoLoc(), currentStepLocation.myNode.IsoLoc());
+            currentDirections = Search.Navigate(board.board,
+            occupier.myNode.IsoLoc(),
+            currentStepLocation.myNode.IsoLoc());
             isFindingPath = true;
         }
         

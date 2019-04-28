@@ -8,20 +8,44 @@ ScriptedImporter:
     100006: _MapPrfab/RockosWorld/Interactables
     100008: _MapPrfab/RockosWorld/Interactables/Spawn
     100010: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)
+    100012: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)/Object_2 (CF)
+    100014: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2
     100016: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)
+    100018: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)/Object_3 (CF)
+    100020: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)/Object_3 (CF)/Object_3
     100022: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)
+    100024: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)/Object_4 (CF)
+    100026: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)/Object_4 (CF)/Object_4
     100028: _MapPrfab/RockosWorld/Collisions/Object_5 (TRS)
+    100030: _MapPrfab/RockosWorld/Collisions/Object_5 (TRS)/Object_5 (CF)
+    100032: _MapPrfab/RockosWorld/Collisions/Object_5 (TRS)/Object_5 (CF)/Object_5
     100034: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)
+    100036: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)/Object_6 (CF)
+    100038: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)/Object_6 (CF)/Object_6
     100040: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)
-    100046: _MapPrfab/RockosWorld/Collisions/Object_8 (TRS)
+    100042: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/Object_7 (CF)
+    100044: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/Object_7 (CF)/Object_7
     100052: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)
+    100054: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/Object_9 (CF)
+    100056: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/Object_9 (CF)/Object_9
     100058: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)
+    100060: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)/Object_10 (CF)
+    100062: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)/Object_10 (CF)/Object_10
     100064: _MapPrfab/RockosWorld/Collisions/Object_11 (TRS)
+    100066: _MapPrfab/RockosWorld/Collisions/Object_11 (TRS)/Object_11 (CF)
+    100068: _MapPrfab/RockosWorld/Collisions/Object_11 (TRS)/Object_11 (CF)/Object_11
     100070: _MapPrfab/RockosWorld/Collisions/Object_12 (TRS)
+    100072: _MapPrfab/RockosWorld/Collisions/Object_12 (TRS)/Object_12 (CF)
+    100074: _MapPrfab/RockosWorld/Collisions/Object_12 (TRS)/Object_12 (CF)/Object_12
     100076: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)
+    100078: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)/Object_13 (CF)
+    100080: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)/Object_13 (CF)/Object_13
     100082: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)
-    100088: _MapPrfab/RockosWorld/Collisions/Object_15 (TRS)
-    100094: _MapPrfab/RockosWorld/Collisions/Object_16 (TRS)
+    100084: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/Object_14 (CF)
+    100086: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/Object_14 (CF)/Object_14
+    100088: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)
+    100090: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/Safe2 (CF)
+    100092: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/Safe2 (CF)/Safe2
     100100: _MapPrfab/RockosWorld/Floor/tile (1, 1) (TRS)
     100102: _MapPrfab/RockosWorld/Floor/tile (1, 2) (TRS)
     100104: _MapPrfab/RockosWorld/Floor/tile (1, 3) (TRS)
@@ -71,30 +95,58 @@ ScriptedImporter:
     100192: _MapPrfab/RockosWorld/Floor/tile (7, 5) (TRS)
     100194: _MapPrfab/RockosWorld/Floor/tile (7, 6) (TRS)
     100196: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)
-    100198: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)
-    100200: _MapPrfab/RockosWorld/Interactables/Safe
-    100202: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)
-    100204: _MapPrfab/RockosWorld/Interactables/FullCashRegister
+    100202: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)
+    100208: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/FullCashRegister
+      (CF)
+    100210: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/FullCashRegister
+      (CF)/FullCashRegister
+    100212: _MapPrfab/RockosWorld/Interactables/Safe (TRS)
+    100214: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/Safe (CF)
+    100216: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/Safe (CF)/Safe
     400000: _MapPrfab/RockosWorld/Transform
     400002: _MapPrfab/RockosWorld/Collisions/Transform
     400004: _MapPrfab/RockosWorld/Floor/Transform
     400006: _MapPrfab/RockosWorld/Interactables/Transform
     400008: _MapPrfab/RockosWorld/Interactables/Spawn/Transform
     400010: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)/Transform
+    400012: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)/Object_2 (CF)/Transform
+    400014: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/Transform
     400016: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)/Transform
+    400018: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)/Object_3 (CF)/Transform
+    400020: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)/Object_3 (CF)/Object_3/Transform
     400022: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)/Transform
+    400024: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)/Object_4 (CF)/Transform
+    400026: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)/Object_4 (CF)/Object_4/Transform
     400028: _MapPrfab/RockosWorld/Collisions/Object_5 (TRS)/Transform
+    400030: _MapPrfab/RockosWorld/Collisions/Object_5 (TRS)/Object_5 (CF)/Transform
+    400032: _MapPrfab/RockosWorld/Collisions/Object_5 (TRS)/Object_5 (CF)/Object_5/Transform
     400034: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)/Transform
+    400036: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)/Object_6 (CF)/Transform
+    400038: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)/Object_6 (CF)/Object_6/Transform
     400040: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/Transform
-    400046: _MapPrfab/RockosWorld/Collisions/Object_8 (TRS)/Transform
+    400042: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/Object_7 (CF)/Transform
+    400044: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/Object_7 (CF)/Object_7/Transform
     400052: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/Transform
+    400054: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/Object_9 (CF)/Transform
+    400056: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/Object_9 (CF)/Object_9/Transform
     400058: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)/Transform
+    400060: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)/Object_10 (CF)/Transform
+    400062: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)/Object_10 (CF)/Object_10/Transform
     400064: _MapPrfab/RockosWorld/Collisions/Object_11 (TRS)/Transform
+    400066: _MapPrfab/RockosWorld/Collisions/Object_11 (TRS)/Object_11 (CF)/Transform
+    400068: _MapPrfab/RockosWorld/Collisions/Object_11 (TRS)/Object_11 (CF)/Object_11/Transform
     400070: _MapPrfab/RockosWorld/Collisions/Object_12 (TRS)/Transform
+    400072: _MapPrfab/RockosWorld/Collisions/Object_12 (TRS)/Object_12 (CF)/Transform
+    400074: _MapPrfab/RockosWorld/Collisions/Object_12 (TRS)/Object_12 (CF)/Object_12/Transform
     400076: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)/Transform
+    400078: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)/Object_13 (CF)/Transform
+    400080: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)/Object_13 (CF)/Object_13/Transform
     400082: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/Transform
-    400088: _MapPrfab/RockosWorld/Collisions/Object_15 (TRS)/Transform
-    400094: _MapPrfab/RockosWorld/Collisions/Object_16 (TRS)/Transform
+    400084: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/Object_14 (CF)/Transform
+    400086: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/Object_14 (CF)/Object_14/Transform
+    400088: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/Transform
+    400090: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/Safe2 (CF)/Transform
+    400092: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/Safe2 (CF)/Safe2/Transform
     400100: _MapPrfab/RockosWorld/Floor/tile (1, 1) (TRS)/Transform
     400102: _MapPrfab/RockosWorld/Floor/tile (1, 2) (TRS)/Transform
     400104: _MapPrfab/RockosWorld/Floor/tile (1, 3) (TRS)/Transform
@@ -144,17 +196,21 @@ ScriptedImporter:
     400192: _MapPrfab/RockosWorld/Floor/tile (7, 5) (TRS)/Transform
     400194: _MapPrfab/RockosWorld/Floor/tile (7, 6) (TRS)/Transform
     400196: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)/Transform
-    400198: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)/Transform
-    400200: _MapPrfab/RockosWorld/Interactables/Safe/Transform
-    400202: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/Transform
-    400204: _MapPrfab/RockosWorld/Interactables/FullCashRegister/Transform
+    400202: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/Transform
+    400208: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/FullCashRegister
+      (CF)/Transform
+    400210: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/FullCashRegister
+      (CF)/FullCashRegister/Transform
+    400212: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/Transform
+    400214: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/Safe (CF)/Transform
+    400216: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/Safe (CF)/Safe/Transform
     11400000: _MapPrfab/RockosWorld/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/RockosWorld/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/RockosWorld/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400006: _MapPrfab/RockosWorld/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400008: _MapPrfab/RockosWorld/Floor/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400010: _MapPrfab/RockosWorld/Floor/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400012: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400012: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400014: _MapPrfab/RockosWorld/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400016: _MapPrfab/RockosWorld/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400018: _MapPrfab/RockosWorld/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -172,8 +228,6 @@ ScriptedImporter:
     11400042: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400044: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400046: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400048: _MapPrfab/RockosWorld/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400050: _MapPrfab/RockosWorld/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400052: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400054: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400056: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -186,10 +240,7 @@ ScriptedImporter:
     11400070: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400072: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400074: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400076: _MapPrfab/RockosWorld/Collisions/Object_15 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400078: _MapPrfab/RockosWorld/Collisions/Object_15 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400080: _MapPrfab/RockosWorld/Collisions/Object_16 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400082: _MapPrfab/RockosWorld/Collisions/Object_16 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400076: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400084: _MapPrfab/RockosWorld/Floor/tile (1, 1) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400086: _MapPrfab/RockosWorld/Floor/tile (1, 1) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400088: _MapPrfab/RockosWorld/Floor/tile (1, 2) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -288,13 +339,23 @@ ScriptedImporter:
     11400274: _MapPrfab/RockosWorld/Floor/tile (7, 6) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400276: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400278: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400280: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400282: _MapPrfab/RockosWorld/Interactables/Safe/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400284: _MapPrfab/RockosWorld/Interactables/Safe/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400286: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400288: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400290: _MapPrfab/RockosWorld/Interactables/FullCashRegister/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400292: _MapPrfab/RockosWorld/Interactables/FullCashRegister/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400286: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400288: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400298: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400300: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    21200000: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
+    21200002: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)/Object_3 (CF)/Object_3/SpriteRenderer
+    21200004: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)/Object_4 (CF)/Object_4/SpriteRenderer
+    21200006: _MapPrfab/RockosWorld/Collisions/Object_5 (TRS)/Object_5 (CF)/Object_5/SpriteRenderer
+    21200008: _MapPrfab/RockosWorld/Collisions/Object_6 (TRS)/Object_6 (CF)/Object_6/SpriteRenderer
+    21200010: _MapPrfab/RockosWorld/Collisions/Object_7 (TRS)/Object_7 (CF)/Object_7/SpriteRenderer
+    21200014: _MapPrfab/RockosWorld/Collisions/Object_9 (TRS)/Object_9 (CF)/Object_9/SpriteRenderer
+    21200016: _MapPrfab/RockosWorld/Collisions/Object_10 (TRS)/Object_10 (CF)/Object_10/SpriteRenderer
+    21200018: _MapPrfab/RockosWorld/Collisions/Object_11 (TRS)/Object_11 (CF)/Object_11/SpriteRenderer
+    21200020: _MapPrfab/RockosWorld/Collisions/Object_12 (TRS)/Object_12 (CF)/Object_12/SpriteRenderer
+    21200022: _MapPrfab/RockosWorld/Collisions/Object_13 (TRS)/Object_13 (CF)/Object_13/SpriteRenderer
+    21200024: _MapPrfab/RockosWorld/Collisions/Object_14 (TRS)/Object_14 (CF)/Object_14/SpriteRenderer
+    21200026: _MapPrfab/RockosWorld/Interactables/Safe2 (TRS)/Safe2 (CF)/Safe2/SpriteRenderer
     21200030: _MapPrfab/RockosWorld/Floor/tile (1, 1) (TRS)/SpriteRenderer
     21200032: _MapPrfab/RockosWorld/Floor/tile (1, 2) (TRS)/SpriteRenderer
     21200034: _MapPrfab/RockosWorld/Floor/tile (1, 3) (TRS)/SpriteRenderer
@@ -344,8 +405,9 @@ ScriptedImporter:
     21200122: _MapPrfab/RockosWorld/Floor/tile (7, 5) (TRS)/SpriteRenderer
     21200124: _MapPrfab/RockosWorld/Floor/tile (7, 6) (TRS)/SpriteRenderer
     21200126: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)/SpriteRenderer
-    21200128: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)/SpriteRenderer
-    21200130: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/SpriteRenderer
+    21200130: _MapPrfab/RockosWorld/Interactables/FullCashRegister (TRS)/FullCashRegister
+      (CF)/FullCashRegister/SpriteRenderer
+    21200134: _MapPrfab/RockosWorld/Interactables/Safe (TRS)/Safe (CF)/Safe/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/RockosWorld/Grid
   externalObjects: {}
@@ -354,24 +416,7 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
-  errors:
-  - Errors detected in tileset 'Tilesets/Objects.tsx'. Check the tileset inspector
-    for more details. Your map may be broken until these are fixed.
-  - Missing tile '26' on tile object ''
-  - Missing tile '26' on tile object ''
-  - Missing tile '26' on tile object ''
-  - Missing tile '26' on tile object ''
-  - Missing tile '26' on tile object ''
-  - Missing tile '26' on tile object ''
-  - Missing tile '26' on tile object ''
-  - Missing tile '27' on tile object ''
-  - Missing tile '28' on tile object ''
-  - Missing tile '28' on tile object ''
-  - Missing tile '28' on tile object ''
-  - Missing tile '28' on tile object ''
-  - Missing tile '28' on tile object ''
-  - Missing tile '28' on tile object ''
-  - Missing tile '28' on tile object ''
+  errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []

@@ -1,0 +1,89 @@
+fileFormatVersion: 2
+guid: e08d6416f074d0f46949310513a122a2
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/TannerTest
+    100002: _MapPrfab/TannerTest/Collisions
+    100004: _MapPrfab/TannerTest/Floors
+    100006: _MapPrfab/TannerTest/Floors/Chunk (0,32)
+    100008: _MapPrfab/TannerTest/Floors/Chunk (0,48)
+    100010: _MapPrfab/TannerTest/Floors/Chunk (16,32)
+    100012: _MapPrfab/TannerTest/Floors/Chunk (16,48)
+    100014: _MapPrfab/TannerTest/Interactables
+    100016: _MapPrfab/TannerTest/Interactables/LineStart
+    100018: _MapPrfab/TannerTest/Interactables/MyDick
+    100020: _MapPrfab/TannerTest/Interactables/Spawn
+    100022: _MapPrfab/TannerTest/Line
+    100024: _MapPrfab/TannerTest/Line/Line
+    100026: _MapPrfab/TannerTest/Walls
+    100028: _MapPrfab/TannerTest/Walls/Chunk (0,32)
+    100030: _MapPrfab/TannerTest/Walls/Chunk (0,48)
+    100032: _MapPrfab/TannerTest/Walls/Chunk (16,32)
+    400000: _MapPrfab/TannerTest/Transform
+    400002: _MapPrfab/TannerTest/Collisions/Transform
+    400004: _MapPrfab/TannerTest/Floors/Transform
+    400006: _MapPrfab/TannerTest/Floors/Chunk (0,32)/Transform
+    400008: _MapPrfab/TannerTest/Floors/Chunk (0,48)/Transform
+    400010: _MapPrfab/TannerTest/Floors/Chunk (16,32)/Transform
+    400012: _MapPrfab/TannerTest/Floors/Chunk (16,48)/Transform
+    400014: _MapPrfab/TannerTest/Interactables/Transform
+    400016: _MapPrfab/TannerTest/Interactables/LineStart/Transform
+    400018: _MapPrfab/TannerTest/Interactables/MyDick/Transform
+    400020: _MapPrfab/TannerTest/Interactables/Spawn/Transform
+    400022: _MapPrfab/TannerTest/Line/Transform
+    400024: _MapPrfab/TannerTest/Line/Line/Transform
+    400026: _MapPrfab/TannerTest/Walls/Transform
+    400028: _MapPrfab/TannerTest/Walls/Chunk (0,32)/Transform
+    400030: _MapPrfab/TannerTest/Walls/Chunk (0,48)/Transform
+    400032: _MapPrfab/TannerTest/Walls/Chunk (16,32)/Transform
+    6800000: _MapPrfab/TannerTest/Line/Line/EdgeCollider2D
+    11400000: _MapPrfab/TannerTest/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/TannerTest/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/TannerTest/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400006: _MapPrfab/TannerTest/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/TannerTest/Floors/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400010: _MapPrfab/TannerTest/Floors/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400012: _MapPrfab/TannerTest/Floors/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400014: _MapPrfab/TannerTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400016: _MapPrfab/TannerTest/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400018: _MapPrfab/TannerTest/Interactables/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400020: _MapPrfab/TannerTest/Interactables/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400022: _MapPrfab/TannerTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400024: _MapPrfab/TannerTest/Interactables/MyDick/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400026: _MapPrfab/TannerTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400028: _MapPrfab/TannerTest/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400030: _MapPrfab/TannerTest/Line/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400032: _MapPrfab/TannerTest/Line/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400034: _MapPrfab/TannerTest/Line/Line/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400036: _MapPrfab/TannerTest/Line/Line/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400038: _MapPrfab/TannerTest/Line/Line/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400040: _MapPrfab/TannerTest/Walls/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400042: _MapPrfab/TannerTest/Walls/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400044: _MapPrfab/TannerTest/Walls/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400046: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/TannerTest/Grid
+    3664157343022684176: _MapPrfab/TannerTest/Floors/TilemapRenderer
+    3664157343022684178: _MapPrfab/TannerTest/Walls/TilemapRenderer
+    8195094279510102542: _MapPrfab/TannerTest/Floors/Tilemap
+    8195094279510102544: _MapPrfab/TannerTest/Walls/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 12
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 1
+  customImporterClassName: 
+  internalTilesets: []
