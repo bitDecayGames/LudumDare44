@@ -1,4 +1,5 @@
-﻿using Board;
+﻿using System;
+using Board;
 using SuperTiled2Unity;
 using UnityEngine;
 using Utils;
@@ -14,6 +15,7 @@ public class Loader : MonoBehaviour
         SuperMap map = FindObjectOfType<SuperMap>();
         BoardManager board = FindObjectOfType<BoardManager>();
         board.Initialize();
+        bool once = true;
         foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>())
         {
             if ("Interactables" == componentsInChild.m_TiledName)
@@ -33,8 +35,18 @@ public class Loader : MonoBehaviour
                         if (!board.board.SetForce(occupier, player.boardPos.x, player.boardPos.y)) {
                             Debug.Log("Player failed to get added to the board at (" + player.boardPos.x + ", " + player.boardPos.y + ")");
                         }
-                        
-                        //Debug.Log(Search.Navigate(board.board, player.boardPos.x, player.boardPos.y, "myDick"));
+
+                        if (once)
+                        {
+                            once = false;
+
+                            string dirs = "";
+                            foreach (var d in Search.Navigate(board.board, player.boardPos, new IsoVector2(22, 44)))
+                            {
+                                dirs += d.ToString();
+                            }
+                            Debug.Log(dirs);
+                        }
                     }
                 }
             }
