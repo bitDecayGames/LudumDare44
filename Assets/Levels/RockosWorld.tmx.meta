@@ -103,8 +103,8 @@ ScriptedImporter:
     100196: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)
     100198: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)
     100200: _MapPrfab/RockosWorld/Interactables/Safe
-    100202: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)
     100204: _MapPrfab/RockosWorld/Interactables/FullCashRegister
+    100206: _MapPrfab/RockosWorld/Floor/tile (10, 8) (TRS)
     400000: _MapPrfab/RockosWorld/Transform
     400002: _MapPrfab/RockosWorld/Collisions/Transform
     400004: _MapPrfab/RockosWorld/Floor/Transform
@@ -206,8 +206,8 @@ ScriptedImporter:
     400196: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)/Transform
     400198: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)/Transform
     400200: _MapPrfab/RockosWorld/Interactables/Safe/Transform
-    400202: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/Transform
     400204: _MapPrfab/RockosWorld/Interactables/FullCashRegister/Transform
+    400206: _MapPrfab/RockosWorld/Floor/tile (10, 8) (TRS)/Transform
     11400000: _MapPrfab/RockosWorld/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/RockosWorld/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/RockosWorld/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
@@ -351,10 +351,10 @@ ScriptedImporter:
     11400280: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400282: _MapPrfab/RockosWorld/Interactables/Safe/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400284: _MapPrfab/RockosWorld/Interactables/Safe/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400286: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400288: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400290: _MapPrfab/RockosWorld/Interactables/FullCashRegister/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400292: _MapPrfab/RockosWorld/Interactables/FullCashRegister/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400294: _MapPrfab/RockosWorld/Floor/tile (10, 8) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400296: _MapPrfab/RockosWorld/Floor/tile (10, 8) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/RockosWorld/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
     21200002: _MapPrfab/RockosWorld/Collisions/Object_3 (TRS)/Object_3 (CF)/Object_3/SpriteRenderer
     21200004: _MapPrfab/RockosWorld/Collisions/Object_4 (TRS)/Object_4 (CF)/Object_4/SpriteRenderer
@@ -420,7 +420,7 @@ ScriptedImporter:
     21200124: _MapPrfab/RockosWorld/Floor/tile (7, 6) (TRS)/SpriteRenderer
     21200126: _MapPrfab/RockosWorld/Floor/tile (7, 7) (TRS)/SpriteRenderer
     21200128: _MapPrfab/RockosWorld/Floor/tile (8, 8) (TRS)/SpriteRenderer
-    21200130: _MapPrfab/RockosWorld/Floor/tile (10, 10) (TRS)/SpriteRenderer
+    21200132: _MapPrfab/RockosWorld/Floor/tile (10, 8) (TRS)/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/RockosWorld/Grid
   externalObjects: {}
