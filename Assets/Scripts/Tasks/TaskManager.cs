@@ -6,6 +6,8 @@ public class TaskManager : MonoBehaviour
 {
     const string TAG = "Task";
 
+    public GameObject MaleNpc;
+
     uint NumTasks = 1;
 
     // Time before a new task is created. (Seconds)
@@ -56,6 +58,7 @@ public class TaskManager : MonoBehaviour
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
         TaskBuilder.CreateRandomTask(task);
+        task.MaleNpc = MaleNpc;
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
         newTaskObj.transform.SetParent(this.transform);
