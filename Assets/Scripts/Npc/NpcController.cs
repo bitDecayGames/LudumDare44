@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class NpcController : MonoBehaviour
 {
-    public TaskManager taskManager;
     public Task task;
     public TaskStep taskStep;
 
@@ -31,6 +30,6 @@ public class NpcController : MonoBehaviour
 
     public void CompleteCurrentStep()
     {
-        taskManager.CompleteTaskStep(taskStep.type, true);
+        FindObjectOfType<TaskManager>().CompleteTaskStep(taskStep.type, true);
     }
 }

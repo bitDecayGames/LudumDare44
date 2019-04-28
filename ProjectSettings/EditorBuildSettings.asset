@@ -20,8 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/NewScene.unity
     guid: adb732fea9fac504b9ae5897b0698235
-  - enabled: 1
-    path: Assets/Scenes/Levels/TannersWorld.unity
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/05e76a9df1263334690728ff1b05212f
     guid: 05e76a9df1263334690728ff1b05212f
   - enabled: 1
     path: Assets/Scenes/Levels/JakesWorld.unity
@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Debug/DebugPlayerAnimations.unity
     guid: d8994fe563b3e4e739cfb04ad81befda
+  - enabled: 1
+    path: Assets/Scenes/Levels/TannersWorldMine.unity
+    guid: e0251f5302f63ff4ebdeb2eae81fa16e
   m_configObjects: {}
