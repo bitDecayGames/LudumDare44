@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum TaskType {
-    DepositMoney
+    DepositMoney,
+    OpenBankTeller,
+    OpenBankDoor
 }
 
 public class Task : MonoBehaviour

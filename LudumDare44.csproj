@@ -347,6 +347,7 @@
     <Compile Include="Assets\Scripts\Managers\GameObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Managers\GenericGameObjectClass.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuController.cs" />
+    <Compile Include="Assets\Scripts\Npc\NpcController.cs" />
     <Compile Include="Assets\Scripts\Tasks\PlayerTaskController.cs" />
     <Compile Include="Assets\Scripts\Tasks\Task.cs" />
     <Compile Include="Assets\Scripts\Tasks\TaskBuilder.cs" />

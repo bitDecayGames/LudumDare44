@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum TaskStepType {
-    MoveToSafe,
-    MoveToVacuumTube
+    Safe,
+    VacuumTube,
+    CashRegister,
+    BankDoor
 }
 
 public class TaskStep
