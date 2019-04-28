@@ -27,8 +27,7 @@ public class TaskManager : MonoBehaviour
 
     bool TaskResentlyComplete = false;
 
-    static int MaxNumberLines = 3;
-    static int LineLength = 3;
+    static int MaxNumberLines = 0;
     int currentLine = 0;
 
     void Start() {
@@ -98,12 +97,14 @@ public class TaskManager : MonoBehaviour
         newTaskObj.tag = TAG;
 
         if (task.lineTask) {
-            task.lineNumber = currentLine;
-            currentLine++;
-            if(currentLine > MaxNumberLines) currentLine = 0;
+            
 
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
+            MaxNumberLines = bm.board.lineLocations.Count;
+            task.lineNumber = currentLine;
+            currentLine++;
+            if(currentLine >= MaxNumberLines) currentLine = 0;
             foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
             {
                 TaskStep getInLine = new TaskStep();

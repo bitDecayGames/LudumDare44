@@ -29,8 +29,13 @@ public static class TaskBuilder
         getInLine.npcStep = true;
         task.AddStep(getInLine);
 
+        TaskStep talkToTeller = new TaskStep();
+        talkToTeller.type = TaskStepType.TalkToTeller;
+        task.AddStep(talkToTeller);
+        
         TaskStep depositMoney = new TaskStep();
-        depositMoney.type = TaskStepType.TalkToTeller;
+        depositMoney.type = TaskStepType.Safe;
+        depositMoney.icon = Icon.Angry;
         task.AddStep(depositMoney);
     }
 
