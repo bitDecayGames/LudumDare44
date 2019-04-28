@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8752710360797937345}
   - component: {fileID: 8752710360797937346}
   - component: {fileID: 8752710360797937347}
+  - component: {fileID: 1652627047}
   m_Layer: 0
   m_Name: ClockCanvas
   m_TagString: Untagged
@@ -77,6 +78,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1652627047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752710360797937348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6354bcef5f84811976b4d2677d11eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClockText: {fileID: 8752710360896643937}
 --- !u!1 &8752710360896643939
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,16 +116,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8752710360896643939}
-  m_LocalRotation: {x: -0.15421388, y: 0.43000484, z: -0.09477864, w: 0.8844948}
-  m_LocalPosition: {x: 0, y: 0, z: 34.4}
+  m_LocalRotation: {x: -0.13984817, y: 0.48398405, z: -0.06940382, w: 0.8610372}
+  m_LocalPosition: {x: 0, y: 0, z: 31.099842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8752710360797937345}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -11.028001, y: 53.588, z: -17.815}
+  m_LocalEulerAnglesHint: {x: -10, y: 60, z: -15}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 158.1, y: 212.3}
+  m_AnchoredPosition: {x: 159.40004, y: 202.59999}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8752710360896643936
@@ -142,10 +156,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 12:30
+  m_text: 12:30 PM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81f126759211c264f8a61599ce92b276, type: 2}
-  m_sharedMaterial: {fileID: 21082679458878122, guid: 81f126759211c264f8a61599ce92b276,
+  m_fontAsset: {fileID: 11400000, guid: 11b55326c1bd90848bae91a7eb28cf11, type: 2}
+  m_sharedMaterial: {fileID: 21331997993263584, guid: 11b55326c1bd90848bae91a7eb28cf11,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -212,10 +226,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 8752710360896643937}
-    characterCount: 5
+    characterCount: 8
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 2
+    spaceCount: 1
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -263,17 +277,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8752710361012613038}
-  m_LocalRotation: {x: -0.18901792, y: 0.40078452, z: -0.09721733, w: 0.891175}
-  m_LocalPosition: {x: 0, y: 0, z: 8.51}
+  m_LocalRotation: {x: -0.13984817, y: 0.48398405, z: -0.06940382, w: 0.8610372}
+  m_LocalPosition: {x: 0, y: 0, z: -40.5}
   m_LocalScale: {x: 1, y: 1, z: 0.94907}
   m_Children: []
   m_Father: {fileID: 8752710360797937345}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -15.009001, y: 51.043003, z: -19.649}
+  m_LocalEulerAnglesHint: {x: -10, y: 60, z: -15}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123.39, y: 234.74}
-  m_SizeDelta: {x: 100, y: 46.25}
+  m_AnchoredPosition: {x: 158, y: 207.3}
+  m_SizeDelta: {x: 208.96, y: 46.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8752710361012613035
 CanvasRenderer:
