@@ -8,13 +8,16 @@ public enum TaskType {
 
 public class Task : MonoBehaviour
 {
-    public const float StepCompletionTimeReduction = 10f; 
+    public const float StepCompletionTimeReduction = 10f;
+
+    public GameObject MaleNpc;
     
     public TaskType type;
     public List<TaskStep> steps;
     public int TotalSteps; // For debugging purposes
     public int StepsLeftToComplete; // For debugging purposes
     GameObject npc;
+    NpcController npcController;
     public float TimeAlive;
 
     public static string GetTaskName(TaskType type)
@@ -34,7 +37,10 @@ public class Task : MonoBehaviour
 
     void Start()
     {
-
+        npc = Instantiate(MaleNpc);
+        npcController = npc.GetComponent<NpcController>();
+        npcController.task = this;
+        npcController.taskManager = FindObjectOfType<TaskManager>();
     }
     
     void Update()
@@ -59,10 +65,10 @@ public class Task : MonoBehaviour
     }
     public CustomerMood GetCustomerMood()
     {
-        if (TimeAlive < 10)
+        if (StepsLeftToComplete == 0)
         {
             return CustomerMood.HAPPY;
-        } 
+        }
         
         if (TimeAlive < 20)
         {
@@ -71,22 +77,27 @@ public class Task : MonoBehaviour
         return CustomerMood.ANGRY;
     }
 
-    public void CompleteStep(TaskStepType type) {
-        foreach (TaskStep ts in steps)
+    public void CompleteStep(TaskStepType type, bool npcStep) {
+        for (int i = 0; i < steps.Count; i++)
         {
-            if (ts.complete)
+            if (steps[i].complete)
             {
                 continue;
             }
 
-            if (ts.type == type)
+            if (steps[i].type == type && steps[i].npcStep == npcStep)
             {
-                ts.complete = true;
+                steps[i].complete = true;
                 StepsLeftToComplete--;
                 TimeAlive -= StepCompletionTimeReduction;
                 if (TimeAlive <= 0)
                 {
                     TimeAlive = 0;
+                }
+
+                if (StepsLeftToComplete > 0)
+                {
+                    npcController.AssignStep(steps[i + 1]);
                 }
             }
             break;

@@ -41,7 +41,7 @@ public class Loader : MonoBehaviour
                             once = false;
 
                             string dirs = "";
-                            foreach (var d in Search.Navigate(board.board, player.boardPos, new IsoVector2(22, 44)))
+                            foreach (var d in Search.Navigate(board.board, player.boardPos, board.board.stepLocations["cashRegister"][0].myNode.IsoLoc()))
                             {
                                 dirs += d.ToString();
                             }

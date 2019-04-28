@@ -6,6 +6,8 @@ public class TaskManager : MonoBehaviour
 {
     const string TAG = "Task";
 
+    public GameObject MaleNpc;
+
     uint NumTasks = 1;
 
     // Time before a new task is created. (Seconds)
@@ -37,13 +39,13 @@ public class TaskManager : MonoBehaviour
 
     }
 
-    public void CompleteTaskStep(TaskStepType type)
+    public void CompleteTaskStep(TaskStepType type, bool npcStep)
     {
         GameObject[] taskObjs = GameObject.FindGameObjectsWithTag(TAG);
         foreach (GameObject go in taskObjs)
         {
             Task task = go.GetComponent<Task>();
-            task.CompleteStep(type);
+            task.CompleteStep(type, npcStep);
 
             if (task.IsComplete()) {
                 Destroy(go);
@@ -56,6 +58,7 @@ public class TaskManager : MonoBehaviour
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
         TaskBuilder.CreateRandomTask(task);
+        task.MaleNpc = MaleNpc;
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
         newTaskObj.transform.SetParent(this.transform);

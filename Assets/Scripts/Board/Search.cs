@@ -40,6 +40,7 @@
         // Using a priority queue would be much more efficient
         private static System.Collections.Generic.List<Direction> doSearch(Board.Board board, IsoVector2 dest, PriorityQueue fringe, System.Collections.Generic.List<NodePath> visited)
         {
+            var start = Time.time * 1000;
             var iterations = 0;
             while (true)
             {
@@ -64,6 +65,10 @@
 
                 if (dest.Matches(checkPath.currentNode.x, checkPath.currentNode.y))
                 {
+//                    Debug.Log("Took " + iterations + " iterations to complete");
+//                    Debug.Log("Explored " + visited.Count + " nodes");
+//                    Debug.Log("Fringe left with " + fringe.Length + " unexplored items");
+//                    Debug.Log("Took " + ((Time.time * 1000 - start)) + " milliseconds to complete");
                     return checkPath.path;
                 }
                 

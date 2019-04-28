@@ -24,4 +24,6 @@ public class TaskStep
     public TaskStepType type;
 
     public bool complete;
+
+    public bool npcStep = false;
 }
