@@ -128,7 +128,7 @@ public class TaskManager : MonoBehaviour
                 }
             }
 
-            task.steps = getInLineSteps;
+            task.steps = newSteps;
         }
 
         newTaskObj.transform.SetParent(this.transform);
