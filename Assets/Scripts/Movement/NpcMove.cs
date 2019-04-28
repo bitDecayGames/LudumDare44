@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using Animations;
 using Board;
 using DefaultNamespace;
@@ -27,6 +28,8 @@ namespace Movement {
         private const int maxOverallTries = 5;
         private Board.Board.Node currentStepLocation;
         private bool initialized = false;
+
+        private float waitTime;
 
         [HideInInspector]
         public Facing facing;
@@ -65,6 +68,11 @@ namespace Movement {
         }
 
         void Update() {
+            if (waitTime > 0)
+            {
+                waitTime -= Time.deltaTime;
+                return;
+            }
             if (isFindingPath && isAcceptingInput) {
                 if (currentDirections.Count > 0) {
                     if (AttemptMoveInDirection(currentDirections[0])) {
@@ -85,10 +93,18 @@ namespace Movement {
                         }
                     }
                 } else {
-                    UpdateStandAnimation();
-                    isFindingPath = false;
-                    overallTries = 0;
-                    callback();
+                    if (!occupier.myNode.IsoLoc().Equals(currentStepLocation.IsoLoc()))
+                    {
+                        getDirections();
+                        waitTime = 2;
+                    }
+                    else
+                    {
+                        UpdateStandAnimation();
+                        isFindingPath = false;
+                        overallTries = 0;
+                        callback();
+                    }
                 }
             }
         }
