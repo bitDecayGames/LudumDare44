@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using Utils;
 
 namespace Board {
     
@@ -11,6 +12,8 @@ namespace Board {
         public int startX { get; private set; }
         public int startY { get; private set; }
         private List<Node> board;
+
+        public Dictionary<string, List<Occupier>> stepLocations;
         
 
         public Board(int startX, int startY, int width, int height) {
