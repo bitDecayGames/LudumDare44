@@ -37,11 +37,12 @@ namespace Board {
                                         // Debug.Log("PROP: " + p.m_Value);
                                         if (p.m_Name == "TaskStepType")
                                         {
-                                            if (!board.stepLocations.ContainsKey(p.m_Value))
+                                            string key = p.m_Value.ToLower();
+                                            if (!board.stepLocations.ContainsKey(key))
                                             {
-                                                board.stepLocations.Add(p.m_Value.ToLower(), new List<Board.Occupier>());
+                                                board.stepLocations.Add(key, new List<Board.Occupier>());
                                             }
-                                            board.stepLocations[p.m_Value.ToLower()].Add(occupier);
+                                            board.stepLocations[key].Add(occupier);
                                         } else if (p.m_Name == "LineNumber") {
                                             if (!board.lineLocations.ContainsKey(p.m_Value.ToInt()))
                                             {

@@ -44,12 +44,12 @@ public static class TaskBuilder
 
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.FullCashRegister;
-        moveToTeller.icon = Icon.Angry;
+        moveToTeller.icon = Icon.Elipsis;
         task.AddStep(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
         moveToSafe.type = TaskStepType.Safe;
-        moveToTeller.icon = Icon.Elipsis;
+        moveToSafe.icon = Icon.Angry;
         task.AddStep(moveToSafe);
     }
 

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public enum Icon
 {
+    Empty,
     Angry,
     Elipsis,
 }
@@ -23,9 +24,9 @@ public class IconManager : MonoBehaviour
         return System.Enum.GetName(typeof(Icon), icon);
     }
 
-    public GameObject CreateIcon(Icon icon, Transform parent)
+    public GameObject CreateIcon(Icon icon, Transform parent, Vector3 offset = new Vector3())
     {
         string name = GetIconName(icon);
-        return Instantiate(Icons.GetByName(name), parent.position + IconOffset, Quaternion.identity, parent);
+        return Instantiate(Icons.GetByName(name), parent.position + IconOffset + offset, Quaternion.identity, parent);
     }
 }
