@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/LoganWorld.unity
     guid: 30eb159f139b146a8a0b5908ccb5ebc8
+  - enabled: 1
+    path: Assets/Scenes/Debug/DebugPlayerAnimations.unity
+    guid: d8994fe563b3e4e739cfb04ad81befda
   m_configObjects: {}
