@@ -63,9 +63,9 @@ public class Task : MonoBehaviour
     {
         switch (taskStep.icon)
         {
-            // case IconManager.Icon.CashRegister:
-            //     Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
-            //     break;
+            case IconManager.Icon.CashRegister:
+                Icons.Add(IconManager.GetLocalReference().CreateIcon(IconManager.Icon.CashRegister, npc.transform));
+                break;
             
             default:
                 break;

@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/Score.unity
     guid: 503c74c4ed2354934b8edb0ef7ae2737
+  - enabled: 1
+    path: Assets/Scenes/Levels/RockosWorld.unity
+    guid: 0d9fda158013f0d4fbc7d88b1f03f2cc
   m_configObjects: {}
