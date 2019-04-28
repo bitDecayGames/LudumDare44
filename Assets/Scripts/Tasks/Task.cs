@@ -11,8 +11,6 @@ public enum TaskType {
 
 public class Task : MonoBehaviour
 {
-    public const float StepCompletionTimeReduction = 10f;
-
     public GameObject SomeNpc;
     public TaskManager taskManager;
     
@@ -23,7 +21,6 @@ public class Task : MonoBehaviour
     List<TaskStep> completedSteps;
     GameObject npc;
     NpcController npcController;
-    public float TimeAlive;
     public int lineNumber;
     public bool lineTask = false;
 
@@ -47,13 +44,13 @@ public class Task : MonoBehaviour
     {
         npc = Instantiate(SomeNpc);
         npcController = npc.GetComponent<NpcController>();
-        npcController.task = this;
+        npcController.AssignStep(steps.Peek());
         CreateIconsForStep(steps.Peek());
     }
     
     void Update()
     {
-        TimeAlive += Time.deltaTime;
+
     }
 
     void OnDestroy()
@@ -68,35 +65,15 @@ public class Task : MonoBehaviour
 
     void CreateIconsForStep(TaskStep step)
     {
-        Icons.Add(IconManager.GetLocalReference().CreateIcon(step.icon, npc.transform));
+        // Icons.Add(IconManager.GetLocalReference().CreateIcon(step.icon, npc.transform));
     }
 
     void ClearIcons()
     {
-        foreach (GameObject icon in Icons)
-        {
-            Destroy(icon);
-        }
-    }
-
-    public enum CustomerMood
-    {
-        HAPPY,
-        NUETRAL,
-        ANGRY
-    }
-    public CustomerMood GetCustomerMood()
-    {
-        if (IsComplete())
-        {
-            return CustomerMood.HAPPY;
-        }
-        
-        if (TimeAlive < 20)
-        {
-            return CustomerMood.NUETRAL;
-        }
-        return CustomerMood.ANGRY;
+        // foreach (GameObject icon in Icons)
+        // {
+        //     Destroy(icon);
+        // }
     }
 
     public void CompleteStep(TaskStepType type, bool npcStep) {
@@ -111,12 +88,6 @@ public class Task : MonoBehaviour
         currentStep.complete = true;
         completedSteps.Add(currentStep);
         Debug.Log(type + " Complete");
-
-        TimeAlive -= StepCompletionTimeReduction;
-        if (TimeAlive <= 0)
-        {
-            TimeAlive = 0;
-        }
 
         ClearIcons();
         if (!IsComplete())
