@@ -13,9 +13,10 @@ ScriptedImporter:
     100016: _MapPrfab/JakeTest/Interactables/MyDick
     100018: _MapPrfab/JakeTest/Interactables/Spawn
     100020: _MapPrfab/JakeTest/Interactables/NpcSpawn
-    100022: _MapPrfab/JakeTest/Interactables/LineStart
     100024: _MapPrfab/JakeTest/Line
     100026: _MapPrfab/JakeTest/Line/Line
+    100028: _MapPrfab/JakeTest/POIs
+    100030: _MapPrfab/JakeTest/POIs/LineStart
     400000: _MapPrfab/JakeTest/Transform
     400002: _MapPrfab/JakeTest/Collisions/Transform
     400004: _MapPrfab/JakeTest/Floors/Transform
@@ -27,9 +28,10 @@ ScriptedImporter:
     400016: _MapPrfab/JakeTest/Interactables/MyDick/Transform
     400018: _MapPrfab/JakeTest/Interactables/Spawn/Transform
     400020: _MapPrfab/JakeTest/Interactables/NpcSpawn/Transform
-    400022: _MapPrfab/JakeTest/Interactables/LineStart/Transform
     400024: _MapPrfab/JakeTest/Line/Transform
     400026: _MapPrfab/JakeTest/Line/Line/Transform
+    400028: _MapPrfab/JakeTest/POIs/Transform
+    400030: _MapPrfab/JakeTest/POIs/LineStart/Transform
     6800002: _MapPrfab/JakeTest/Line/Line/EdgeCollider2D
     11400000: _MapPrfab/JakeTest/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/JakeTest/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -47,13 +49,15 @@ ScriptedImporter:
     11400026: _MapPrfab/JakeTest/Interactables/NpcSpawn/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400028: _superAsset
     11400030: _MapPrfab/JakeTest/Interactables/NpcSpawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400034: _MapPrfab/JakeTest/Interactables/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400036: _MapPrfab/JakeTest/Interactables/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400032: _MapPrfab/JakeTest/POIs/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400038: _MapPrfab/JakeTest/Line/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400040: _MapPrfab/JakeTest/Line/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400042: _MapPrfab/JakeTest/Line/Line/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400044: _MapPrfab/JakeTest/Line/Line/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400046: _MapPrfab/JakeTest/Line/Line/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400048: _MapPrfab/JakeTest/POIs/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400050: _MapPrfab/JakeTest/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400052: _MapPrfab/JakeTest/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/JakeTest/Grid
     3664157343022684176: _MapPrfab/JakeTest/Floors/TilemapRenderer

@@ -21,7 +21,6 @@ namespace Board {
                     foreach (var componentsInChild in map.GetComponentsInChildren<SuperObjectLayer>()) {
                         if ("Collisions" == componentsInChild.m_TiledName || "Interactables" == componentsInChild.m_TiledName) {
                             foreach (var superObject in componentsInChild.GetComponentsInChildren<SuperObject>()) {
-                                // HACK: everything has to be -2, -2 before it goes onto the board state... ask Logan
                                 IsoVector2 superObjBoardPos = IsoVector2.GridCoordsToBoard(superObject.m_X, superObject.m_Y);
                                 // var x = (int) superObject.m_X / 8 - 2; // 8 is tile size
                                 // var y = (int) superObject.m_Y / 8 - 2; // 8 is tile size
@@ -33,8 +32,6 @@ namespace Board {
                                 {
                                     foreach (var p in props.m_Properties)
                                     {
-                                        // Debug.Log("NAME:" + p.m_Name);
-                                        // Debug.Log("PROP: " + p.m_Value);
                                         if (p.m_Name == "TaskStepType")
                                         {
                                             string key = p.m_Value.ToLower();
@@ -43,10 +40,29 @@ namespace Board {
                                                 board.stepLocations.Add(key, new List<Board.Occupier>());
                                             }
                                             board.stepLocations[key].Add(occupier);
-                                        } else if (p.m_Name == "LineNumber") {
+                                        }
+                                    }
+                                } 
+                                if (!board.Set(occupier, x, y)) {
+                                    Debug.Log(string.Format("Failed to set ({0}, {1}): {2}", x, y, superObject));
+                                }
+                            }
+                        }
+                        else if ("POIs" == componentsInChild.m_TiledName)
+                        {    
+                            foreach (var superObject in componentsInChild.GetComponentsInChildren<SuperObject>()) {
+                                IsoVector2 superObjBoardPos = IsoVector2.GridCoordsToBoard(superObject.m_X, superObject.m_Y);
+                                var x = superObjBoardPos.x;
+                                var y = superObjBoardPos.y;
+                                var props = superObject.GetComponent<SuperCustomProperties>();
+                                if (props != null)
+                                {
+                                    foreach (var p in props.m_Properties)
+                                    {
+                                        if (p.m_Name == "LineNumber") {
                                             if (!board.lineLocations.ContainsKey(p.m_Value.ToInt()))
                                             {
-                                                board.lineLocations.Add(p.m_Value.ToInt(), new List<Board.Occupier>());
+                                                board.lineLocations.Add(p.m_Value.ToInt(), new List<Board.POI>());
                                             }
                                             if(superObject.m_TiledName == "LineStart"){
                                                 SuperObject line = GetLine(superObjBoardPos);
@@ -98,9 +114,10 @@ namespace Board {
 
                                                         // Debug.Log("next point: " + nextNodeCoords.x + ", " + nextNodeCoords.y);
                                                         Board.Node lineNode = board.Get(nextNodeCoords.x, nextNodeCoords.y);
-                                                        Board.Occupier lineOccupier = new Board.Occupier();
-                                                        lineOccupier.myNode = lineNode;
-                                                        board.lineLocations[p.m_Value.ToInt()].Add(lineOccupier);
+                                                        Board.POI linePOI = new Board.POI();
+                                                        linePOI.myNode = lineNode;
+                                                        lineNode.poi = linePOI;
+                                                        board.lineLocations[p.m_Value.ToInt()].Add(linePOI);
                                                     }
 
                                                 } else {
@@ -111,9 +128,6 @@ namespace Board {
                                         }
 
                                     }
-                                } 
-                                if (!board.Set(occupier, x, y)) {
-                                    Debug.Log(string.Format("Failed to set ({0}, {1}): {2}", x, y, superObject));
                                 }
                             }
                         }
