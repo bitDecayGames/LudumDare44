@@ -5,15 +5,35 @@ ScriptedImporter:
     100000: _MapPrfab/LoganTest1
     100002: _MapPrfab/LoganTest1/Collisions
     100004: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)
+    100006: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)
+    100008: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44
     100010: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)
+    100012: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)
+    100014: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49
     100016: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)
+    100018: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)
+    100020: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50
     100022: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)
+    100024: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)
+    100026: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51
     100028: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)
+    100030: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)
+    100032: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52
     100034: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)
+    100036: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)
+    100038: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53
     100040: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)
+    100042: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)
+    100044: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54
     100046: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)
+    100048: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)
+    100050: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55
     100052: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)
+    100054: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)
+    100056: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Object_56
     100058: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)
+    100060: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)
+    100062: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Object_57
     100064: _MapPrfab/LoganTest1/Floors
     100066: _MapPrfab/LoganTest1/Floors/Chunk (0,32)
     100068: _MapPrfab/LoganTest1/Floors/Chunk (0,48)
@@ -87,40 +107,108 @@ ScriptedImporter:
     100204: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)
     100206: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)
     100208: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)
+    100210: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)
+    100212: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Object_58
     100214: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)
+    100216: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)
+    100218: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Object_59
     100220: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)
+    100222: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)
+    100224: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Object_60
     100226: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)
+    100228: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)
+    100230: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Object_61
     100232: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)
+    100234: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)
+    100236: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Object_62
+    100238: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)
+    100240: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Object_63
     100242: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)
+    100244: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)
+    100246: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Object_64
     100248: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)
+    100250: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)
+    100252: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Object_65
     100254: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)
+    100256: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)
+    100258: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Object_66
     100260: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)
+    100262: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)
+    100264: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Object_67
     100266: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)
+    100268: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)
+    100270: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Object_68
     100272: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)
+    100274: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)
+    100276: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Object_69
     100278: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)
+    100280: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)
+    100282: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Object_70
     100284: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)
+    100286: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)
+    100288: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Object_71
     100290: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)
+    100292: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)
+    100294: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Object_72
     100296: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)
+    100298: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)
+    100300: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Object_73
     100302: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)
+    100304: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)
+    100306: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74
     100308: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)
+    100310: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)
+    100312: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75
     100314: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)
+    100316: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)
+    100318: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Object_76
     100320: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)
+    100322: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)
+    100324: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Object_77
     100326: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)
+    100328: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)
+    100330: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Object_78
     100332: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)
+    100334: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)
+    100336: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Object_79
     100338: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)
+    100340: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)
+    100342: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Object_80
+    100344: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)
+    100346: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Object_82
     100350: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)
     400000: _MapPrfab/LoganTest1/Transform
     400002: _MapPrfab/LoganTest1/Collisions/Transform
     400004: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Transform
+    400006: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Transform
+    400008: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/Transform
     400010: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Transform
+    400012: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Transform
+    400014: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/Transform
     400016: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Transform
+    400018: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Transform
+    400020: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/Transform
     400022: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Transform
+    400024: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Transform
+    400026: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/Transform
     400028: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Transform
+    400030: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Transform
+    400032: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52/Transform
     400034: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Transform
+    400036: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Transform
+    400038: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53/Transform
     400040: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Transform
+    400042: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Transform
+    400044: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54/Transform
     400046: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Transform
+    400048: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Transform
+    400050: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55/Transform
     400052: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Transform
+    400054: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Transform
+    400056: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Object_56/Transform
     400058: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Transform
+    400060: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Transform
+    400062: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Object_57/Transform
     400064: _MapPrfab/LoganTest1/Floors/Transform
     400066: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/Transform
     400068: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/Transform
@@ -194,27 +282,75 @@ ScriptedImporter:
     400204: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)/Transform
     400206: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)/Transform
     400208: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Transform
+    400210: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Transform
+    400212: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Object_58/Transform
     400214: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Transform
+    400216: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Transform
+    400218: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Object_59/Transform
     400220: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Transform
+    400222: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Transform
+    400224: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Object_60/Transform
     400226: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Transform
+    400228: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Transform
+    400230: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Object_61/Transform
     400232: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Transform
+    400234: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Transform
+    400236: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Object_62/Transform
+    400238: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Transform
+    400240: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Object_63/Transform
     400242: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Transform
+    400244: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Transform
+    400246: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Object_64/Transform
     400248: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Transform
+    400250: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Transform
+    400252: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Object_65/Transform
     400254: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Transform
+    400256: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Transform
+    400258: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Object_66/Transform
     400260: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Transform
+    400262: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Transform
+    400264: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Object_67/Transform
     400266: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Transform
+    400268: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Transform
+    400270: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Object_68/Transform
     400272: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Transform
+    400274: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Transform
+    400276: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Object_69/Transform
     400278: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Transform
+    400280: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Transform
+    400282: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Object_70/Transform
     400284: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Transform
+    400286: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Transform
+    400288: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Object_71/Transform
     400290: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Transform
+    400292: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Transform
+    400294: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Object_72/Transform
     400296: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Transform
+    400298: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Transform
+    400300: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Object_73/Transform
     400302: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Transform
+    400304: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Transform
+    400306: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74/Transform
     400308: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Transform
+    400310: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Transform
+    400312: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75/Transform
     400314: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Transform
+    400316: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Transform
+    400318: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Object_76/Transform
     400320: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Transform
+    400322: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Transform
+    400324: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Object_77/Transform
     400326: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Transform
+    400328: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Transform
+    400330: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Object_78/Transform
     400332: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Transform
+    400334: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Transform
+    400336: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Object_79/Transform
     400338: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Transform
+    400340: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Transform
+    400342: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Object_80/Transform
+    400344: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Transform
+    400346: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Object_82/Transform
     400350: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Transform
     11400000: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -423,6 +559,16 @@ ScriptedImporter:
     11400408: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400414: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400416: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    21200000: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/SpriteRenderer
+    21200002: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/SpriteRenderer
+    21200004: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/SpriteRenderer
+    21200006: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/SpriteRenderer
+    21200008: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52/SpriteRenderer
+    21200010: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53/SpriteRenderer
+    21200012: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54/SpriteRenderer
+    21200014: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55/SpriteRenderer
+    21200016: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Object_56/SpriteRenderer
+    21200018: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Object_57/SpriteRenderer
     21200020: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 44) (TRS)/SpriteRenderer
     21200022: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 45) (TRS)/SpriteRenderer
     21200024: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 46) (TRS)/SpriteRenderer
@@ -487,6 +633,30 @@ ScriptedImporter:
     21200142: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 48) (TRS)/SpriteRenderer
     21200144: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)/SpriteRenderer
     21200146: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)/SpriteRenderer
+    21200148: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Object_58/SpriteRenderer
+    21200150: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Object_59/SpriteRenderer
+    21200152: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Object_60/SpriteRenderer
+    21200154: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Object_61/SpriteRenderer
+    21200156: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Object_62/SpriteRenderer
+    21200158: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Object_63/SpriteRenderer
+    21200160: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Object_64/SpriteRenderer
+    21200162: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Object_65/SpriteRenderer
+    21200164: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Object_66/SpriteRenderer
+    21200166: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Object_67/SpriteRenderer
+    21200168: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Object_68/SpriteRenderer
+    21200170: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Object_69/SpriteRenderer
+    21200172: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Object_70/SpriteRenderer
+    21200174: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Object_71/SpriteRenderer
+    21200176: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Object_72/SpriteRenderer
+    21200178: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Object_73/SpriteRenderer
+    21200180: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74/SpriteRenderer
+    21200182: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75/SpriteRenderer
+    21200184: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Object_76/SpriteRenderer
+    21200186: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Object_77/SpriteRenderer
+    21200188: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Object_78/SpriteRenderer
+    21200190: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Object_79/SpriteRenderer
+    21200192: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Object_80/SpriteRenderer
+    21200194: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Object_82/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/LoganTest1/Grid
   externalObjects: {}
@@ -495,43 +665,7 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
-  errors:
-  - Errors detected in tileset 'Tilesets/Objects.tsx'. Check the tileset inspector
-    for more details. Your map may be broken until these are fixed.
-  - Missing tile '24' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '23' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '17' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
-  - Missing tile '19' on tile object ''
+  errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []
