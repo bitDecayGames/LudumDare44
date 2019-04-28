@@ -34,7 +34,7 @@ public class SimpleMove : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
             animator.Play(AnimationConstants.STAND_UP_LEFT);
             if (board.board.MoveLeft(occupier)) {
                 GetComponent<BoardPosition>().boardPos.x -= 1;
@@ -42,7 +42,7 @@ public class SimpleMove : MonoBehaviour {
             facing = Facing.Left;
         }
 
-        if (Input.GetKeyDown(KeyCode.D)) {
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
             animator.Play(AnimationConstants.STAND_DOWN_RIGHT);
             if (board.board.MoveRight(occupier)) {
                 GetComponent<BoardPosition>().boardPos.x += 1;
@@ -50,7 +50,7 @@ public class SimpleMove : MonoBehaviour {
             facing = Facing.Right;
         }
 
-        if (Input.GetKeyDown(KeyCode.W)) {
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
             animator.Play(AnimationConstants.STAND_UP_RIGHT);
             if (board.board.MoveDown(occupier)) {
                 GetComponent<BoardPosition>().boardPos.y -= 1;
@@ -58,7 +58,7 @@ public class SimpleMove : MonoBehaviour {
             facing = Facing.Up;
         }
 
-        if (Input.GetKeyDown(KeyCode.S)) {
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
             animator.Play(AnimationConstants.STAND_DOWN_LEFT);
             if (board.board.MoveUp(occupier)) {
                 GetComponent<BoardPosition>().boardPos.y += 1;
