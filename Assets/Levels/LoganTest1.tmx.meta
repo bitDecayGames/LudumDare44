@@ -156,6 +156,9 @@ ScriptedImporter:
     100302: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)
     100304: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)
     100306: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74
+    100308: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)
+    100310: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)
+    100312: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75
     400000: _MapPrfab/LoganTest1/Transform
     400002: _MapPrfab/LoganTest1/Collisions/Transform
     400004: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Transform
@@ -310,6 +313,9 @@ ScriptedImporter:
     400302: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Transform
     400304: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Transform
     400306: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74/Transform
+    400308: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Transform
+    400310: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Transform
+    400312: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75/Transform
     11400000: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/LoganTest1/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
@@ -503,6 +509,8 @@ ScriptedImporter:
     11400380: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400382: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400384: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400386: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400388: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53/SpriteRenderer
     21200002: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54/SpriteRenderer
     21200004: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55/SpriteRenderer
@@ -594,6 +602,7 @@ ScriptedImporter:
     21200176: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Object_72/SpriteRenderer
     21200178: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Object_73/SpriteRenderer
     21200180: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74/SpriteRenderer
+    21200182: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/LoganTest1/Grid
   externalObjects: {}
