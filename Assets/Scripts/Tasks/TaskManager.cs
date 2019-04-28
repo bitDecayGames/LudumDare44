@@ -2,13 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Board;
+using Menus;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Utils;
 
 public class TaskManager : MonoBehaviour
 {
     const string TAG = "Task";
 
     public NpcObjects Npcs;
+
+    public float LevelDurationSeconds = 10;
+    private Timer timer;
+    private EasyNavigator navigator;
 
     uint NumTasks = 1;
 
@@ -22,8 +29,13 @@ public class TaskManager : MonoBehaviour
     static int LineLength = 3;
     int currentLine = 0;
 
-    void Start()
-    {
+    void Start() {
+        timer = gameObject.AddComponent<Timer>();
+        timer.DurationSeconds = LevelDurationSeconds;
+        timer.Reset();
+
+        navigator = FindObjectOfType<EasyNavigator>();
+        if (navigator == null) throw new Exception("Couldn't find an EasyNavigator, probably a bug in the OneScriptToRuleThemAll or it's prefab");
     }
     
     void Update()
@@ -42,6 +54,22 @@ public class TaskManager : MonoBehaviour
             }
         }
 
+        if (timer.complete) {
+            EndLevel();
+        }
+    }
+
+    public void EndLevel() {
+        Score.LevelName = SceneManager.GetActiveScene().name;
+        // TODO: MW
+        Score.Money = 1000;
+        Score.Happiness = 10;
+        Score.TotalTasks = 30;
+        Score.CompletedTasks = 20;
+        Score.FailedTasks = 10;
+        Score.NextLevelName = "Somehow get the next level name?";
+        
+        navigator.GoToScene("Score");
     }
 
     public void CompleteTaskStep(TaskStepType type, bool npcStep)
