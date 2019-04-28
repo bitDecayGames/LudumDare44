@@ -37,13 +37,13 @@ public class TaskManager : MonoBehaviour
 
     }
 
-    public void CompleteTaskStep(TaskStepType type)
+    public void CompleteTaskStep(TaskStepType type, bool npcStep)
     {
         GameObject[] taskObjs = GameObject.FindGameObjectsWithTag(TAG);
         foreach (GameObject go in taskObjs)
         {
             Task task = go.GetComponent<Task>();
-            task.CompleteStep(type);
+            task.CompleteStep(type, npcStep);
 
             if (task.IsComplete()) {
                 Destroy(go);
