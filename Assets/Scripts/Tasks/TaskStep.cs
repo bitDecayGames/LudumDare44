@@ -9,7 +9,8 @@ public enum TaskStepType {
     FullCashRegister,
     BankDoor,
     GetInLine,
-    TalkToTeller
+    TalkToTeller,
+    NpcSpawn
 }
 
 public class TaskStep

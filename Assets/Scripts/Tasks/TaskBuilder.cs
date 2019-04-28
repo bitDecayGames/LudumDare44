@@ -6,17 +6,18 @@ using UnityEngine;
 public static class TaskBuilder
 {
     public static void CreateRandomTask(Task task){
-        EmptyCashRegister(task);
+        // EmptyCashRegister(task);
+        DepositMoney(task);
     }
 
     static void DepositMoney(Task task){
         task.type = TaskType.DepositMoney;
         task.lineTask = true;
 
-        TaskStep getInLIine = new TaskStep();
-        getInLIine.type = TaskStepType.GetInLine;
-        getInLIine.npcStep = true;
-        task.AddStep(getInLIine);
+        TaskStep getInLine = new TaskStep();
+        getInLine.type = TaskStepType.GetInLine;
+        getInLine.npcStep = true;
+        task.AddStep(getInLine);
 
         TaskStep depositMoney = new TaskStep();
         depositMoney.type = TaskStepType.TalkToTeller;
