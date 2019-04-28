@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Board;
+using Managers;
 using Menus;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,8 +13,9 @@ public class TaskManager : MonoBehaviour
     const string TAG = "Task";
 
     public NpcObjects Npcs;
+    public FeedbackManager Feedback;
 
-    public float LevelDurationSeconds = 10;
+    public float LevelDurationSeconds = 10000;
     private Timer timer;
     private EasyNavigator navigator;
 

@@ -13,12 +13,27 @@ public class NpcController : MonoBehaviour
 
     TaskStepType taskStepType;
     GameObject currentIcon;
+    Movement.NpcMove npcMovement;
+    TaskManager taskManager;
+    private bool isInited = false;
 
     // float TimeAlive;
 
     void Start()
     {
-        CreateIcon();
+        Init();
+    }
+
+    public void Init()
+    {
+        if(!isInited)
+        {
+            CreateIcon();
+            npcMovement = GetComponent<Movement.NpcMove>();
+            npcMovement.Initialize();
+            taskManager = FindObjectOfType<TaskManager>();
+            isInited = true;
+        }
     }
 
     void OnDestroy()
@@ -35,6 +50,7 @@ public class NpcController : MonoBehaviour
         // {
         //     TimeAlive = 0;
         // }
+
     }
 
     void CreateIcon()
@@ -66,6 +82,9 @@ public class NpcController : MonoBehaviour
     {
         taskStep = step;
         taskStepType = taskStep.type;
+        npcMovement.Move(taskStep, () => {
+            taskManager.CompleteTaskStep(taskStep.type, taskStep.npcStep);
+            });
     }
 
     public void CompleteCurrentStep()

@@ -23,6 +23,7 @@ public class Task : MonoBehaviour
     NpcController npcController;
     public int lineNumber;
     public bool lineTask = false;
+    public int numSteps = 0;
 
     public static string GetTaskName(TaskType type)
     {
@@ -44,12 +45,14 @@ public class Task : MonoBehaviour
     {
         npc = Instantiate(SomeNpc);
         npcController = npc.GetComponent<NpcController>();
+        npcController.Init();
         npcController.AssignStep(steps.Peek());
         CreateIconsForStep(steps.Peek());
     }
     
     void Update()
     {
+        numSteps = steps.Count;
 
     }
 
