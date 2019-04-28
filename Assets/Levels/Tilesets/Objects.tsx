@@ -3,22 +3,27 @@
  <image source="../../Art/Tilesets/Objects/Objects.png" width="208" height="224"/>
  <tile id="8">
   <properties>
-   <property name="stepName" value="CashRegister"/>
+   <property name="TaskStepType" value="TalkToTeller"/>
   </properties>
  </tile>
  <tile id="9">
   <properties>
-   <property name="stepName" value="CashRegister"/>
+   <property name="TaskStepType" value="TalkToTeller"/>
   </properties>
  </tile>
  <tile id="10">
   <properties>
-   <property name="stepName" value="CashRegister"/>
+   <property name="TaskStepType" value="TalkToTeller"/>
   </properties>
  </tile>
  <tile id="11">
   <properties>
-   <property name="stepName" value="CashRegister"/>
+   <property name="TaskStepType" value="TalkToTeller"/>
+  </properties>
+ </tile>
+ <tile id="62">
+  <properties>
+   <property name="TaskStepType" value="Safe"/>
   </properties>
  </tile>
 </tileset>

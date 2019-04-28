@@ -44,13 +44,13 @@ namespace Movement {
                 if (occupier == null) occupier = gameObject.AddComponent<Board.Board.Occupier>();
                 board = FindObjectOfType<BoardManager>();
                 if (board == null) throw new Exception("Missing BoardManager in the Scene, just drag the script onto the Camera");
-                if (board.board.stepLocations.ContainsKey(TaskStepType.NpcSpawn.ToString().ToLower()))
+                if (board.board.poiLocations.ContainsKey("npcSpawn"))
                 {
                     // TODO make sure we spawn these thigns reasonably
-                    var mySpawn = board.board.stepLocations[TaskStepType.NpcSpawn.ToString().ToLower()][0];
+                    var mySpawn = board.board.poiLocations["npcSpawn"][0];
                     boardPos.X = mySpawn.myNode.x;
                     boardPos.Y = mySpawn.myNode.y;
-                    board.board.SetForce(occupier, mySpawn.myNode.x, mySpawn.myNode.y);
+                    board.board.Set(occupier, mySpawn.myNode.x, mySpawn.myNode.y);
 
                     // Debug.Log("Board position bitch: " + boardPos.X + ", " + boardPos.Y);
                     // Debug.Log("My spawn bitch: " + mySpawn);

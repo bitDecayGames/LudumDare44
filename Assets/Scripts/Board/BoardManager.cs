@@ -59,6 +59,19 @@ namespace Board {
                                 {
                                     foreach (var p in props.m_Properties)
                                     {
+                                        if (p.m_Name == "poiName")
+                                        {
+                                            string key = p.m_Value;
+                                            if (!board.poiLocations.ContainsKey(key))
+                                            {
+                                                board.poiLocations.Add(key, new List<Board.POI>());
+                                            }
+                                            Board.Node poiNode = board.Get(x, y);
+                                            Board.POI poi = new Board.POI();
+                                            poi.myNode = poiNode;
+                                            poiNode.poi = poi;
+                                            board.poiLocations[key].Add(poi);
+                                        }
                                         if (p.m_Name == "LineNumber") {
                                             if (!board.lineLocations.ContainsKey(p.m_Value.ToInt()))
                                             {
