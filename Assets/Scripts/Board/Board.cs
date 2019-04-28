@@ -13,7 +13,7 @@ namespace Board {
         public int startY { get; private set; }
         private List<Node> board;
 
-        public Dictionary<string, List<Occupier>> stepLocations;
+        public Dictionary<string, List<Occupier>> stepLocations = new Dictionary<string, List<Occupier>>();
         
 
         public Board(int startX, int startY, int width, int height) {
@@ -156,6 +156,11 @@ namespace Board {
             public Node(int x, int y) {
                 this.x = x;
                 this.y = y;
+            }
+
+            public IsoVector2 IsoLoc()
+            {
+                return new IsoVector2(x, y);
             }
         }
 
