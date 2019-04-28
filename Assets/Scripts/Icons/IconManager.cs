@@ -16,12 +16,12 @@ public class IconManager : MonoBehaviour
         CashRegister
     }
 
-    public GameObject CreateIcon(Icon icon, Vector3 location)
+    public GameObject CreateIcon(Icon icon, Transform parent)
     {
         switch (icon)
         {
            case Icon.CashRegister:
-               return Instantiate(CashRegisterIcon, location + IconOffset, Quaternion.identity);
+               return Instantiate(CashRegisterIcon, parent.position + IconOffset, Quaternion.identity, parent);
         }
         
         throw new Exception("Unable to determine icon");
