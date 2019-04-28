@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SuperTiled2Unity;
 using Board;
+using Utils;
 
 public class PlayerTaskController : MonoBehaviour
 {
@@ -15,28 +16,38 @@ public class PlayerTaskController : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            Debug.Log("wer space    ");
+            // Get player
+            SimpleMove player = GetComponent<SimpleMove>();
+
             // Get player board position
             BoardPosition playerPos = GetComponent<BoardPosition>();
+            IsoVector2 playerBoardPos = playerPos.boardPos;
 
             BoardManager bm = FindObjectOfType<BoardManager>();
-            var boardNode = bm.board.Get(playerPos.boardPos.x, playerPos.boardPos.y);
-            Debug.Log("Board Pos " + boardNode.x + " " + boardNode.y);
-            Debug.Log("My Pos" + playerPos.boardPos.x + " " + playerPos.boardPos.y);
-            if (boardNode.occupier != null)
+            Board.Board.Node playerBoardNode = bm.board.Get(playerBoardPos.x, playerBoardPos.y);
+
+            Board.Board.Node checkNode = player.facing == SimpleMove.Facing.Up ? playerBoardNode.up :
+                                         player.facing == SimpleMove.Facing.Down ? playerBoardNode.down :
+                                         player.facing == SimpleMove.Facing.Left ? playerBoardNode.left :
+                                         player.facing == SimpleMove.Facing.Right ? playerBoardNode.right:
+                                         playerBoardNode;
+
+            // Debug.Log("check node Pos " + checkNode.x + " " + checkNode.y);
+            // Debug.Log("My Pos" + playerBoardNode.x + " " + playerBoardNode.y);
+            if (!checkNode.Equals(playerBoardNode) && checkNode.occupier != null)
             {
-                Debug.Log("Found ocupierer");
-                var nodeProperty = boardNode.occupier.GetComponent<SuperCustomProperties>();
+                // Debug.Log("Found ocupierer on check node");
+                var nodeProperty = checkNode.occupier.GetComponent<SuperCustomProperties>();
                 if (nodeProperty != null)
                 {
-                    Debug.Log("Found Node Property");
+                    // Debug.Log("Found Node Property");
                     var taskStepType = new CustomProperty();
                     if (nodeProperty.TryGetCustomProperty("TaskStepType", out taskStepType))
                     {
-                        Debug.Log("Found Node Property");
+                        // Debug.Log("Found Node Property");
                         if (taskStepType.m_Value == "MoveToSafe")
                         {
-                            Debug.Log("Found Move to safe");
+                            // Debug.Log("Found Move to safe");
                             TaskManager manager = FindObjectOfType<TaskManager>();
                             manager.CompleteStep(TaskStepType.MoveToSafe);
                         }
