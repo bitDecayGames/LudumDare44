@@ -11,6 +11,9 @@ public class Task : MonoBehaviour
     public const float StepCompletionTimeReduction = 10f;
 
     public GameObject MaleNpc;
+    public TaskManager taskManager;
+    
+    List<GameObject> Icons = new List<GameObject>();
     
     public TaskType type;
     public List<TaskStep> steps;
@@ -40,7 +43,7 @@ public class Task : MonoBehaviour
         npc = Instantiate(MaleNpc);
         npcController = npc.GetComponent<NpcController>();
         npcController.task = this;
-        npcController.taskManager = FindObjectOfType<TaskManager>();
+        CreateIconsForStep(steps[0]);
     }
     
     void Update()
@@ -54,6 +57,32 @@ public class Task : MonoBehaviour
             {
                 StepsLeftToComplete++;
             }
+        }
+    }
+
+    public void CreateIconsForStep(TaskStep taskStep)
+    {
+        switch (taskStep.type)
+        {
+            case TaskStepType.MoveToSafe:
+                var icon = FindObjectOfType<TaskManager>().CreateIcon(global::Icons.Icon.CashRegister, npc.transform.position);
+                Icons.Add(icon);
+                break;
+            
+            case TaskStepType.MoveToVacuumTube:
+                break;
+        }
+    }
+
+    public void ClearIconsForStep(TaskStepType taskStepType)
+    {
+        switch (taskStepType)
+        {
+            case TaskStepType.MoveToSafe:
+                break;
+            
+            case TaskStepType.MoveToVacuumTube:
+                break;
         }
     }
 

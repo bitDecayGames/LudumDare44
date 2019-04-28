@@ -36,17 +36,17 @@ public class Loader : MonoBehaviour
                             Debug.Log("Player failed to get added to the board at (" + player.boardPos.x + ", " + player.boardPos.y + ")");
                         }
 
-                        if (once)
-                        {
-                            once = false;
+//                        if (once)
+//                        {
+//                            once = false;
 
-                            string dirs = "";
-                            foreach (var d in Search.Navigate(board.board, player.boardPos, board.board.stepLocations["cashRegister"][0].myNode.IsoLoc()))
-                            {
-                                dirs += d.ToString();
-                            }
-                            Debug.Log(dirs);
-                        }
+//                            string dirs = "";
+//                            foreach (var d in Search.Navigate(board.board, player.boardPos, board.board.stepLocations["cashRegister"][0].myNode.IsoLoc()))
+//                            {
+//                                dirs += d.ToString();
+//                            }
+//                            Debug.Log(dirs);
+//                        }
                     }
                 }
             }

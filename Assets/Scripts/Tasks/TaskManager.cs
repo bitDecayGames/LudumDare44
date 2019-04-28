@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Board;
 using UnityEngine;
 
 public class TaskManager : MonoBehaviour
@@ -18,7 +19,6 @@ public class TaskManager : MonoBehaviour
 
     void Start()
     {
-
     }
     
     void Update()
@@ -37,6 +37,11 @@ public class TaskManager : MonoBehaviour
             }
         }
 
+    }
+
+    public GameObject CreateIcon(Icons.Icon icon, Vector3 location)
+    {
+        return Instantiate(MaleNpc, location + Vector3.up, Quaternion.identity);
     }
 
     public void CompleteTaskStep(TaskStepType type, bool npcStep)
