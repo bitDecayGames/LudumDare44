@@ -44,13 +44,12 @@ public class PlayerTaskController : MonoBehaviour
                     var taskStepType = new CustomProperty();
                     if (nodeProperty.TryGetCustomProperty("TaskStepType", out taskStepType))
                     {
-                        // Debug.Log("Found Node Property");
-                        if (taskStepType.m_Value == "MoveToSafe")
-                        {
-                            // Debug.Log("Found Move to safe");
+
+                        if (taskStepType.m_Value == TaskStep.GetStepName(TaskStepType.MoveToSafe)){
                             TaskManager manager = FindObjectOfType<TaskManager>();
-                            manager.CompleteStep(TaskStepType.MoveToSafe);
+                            manager.CompleteTaskStep(TaskStepType.MoveToSafe);
                         }
+
                     }
                 }
             }

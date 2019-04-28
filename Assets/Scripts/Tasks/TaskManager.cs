@@ -37,7 +37,7 @@ public class TaskManager : MonoBehaviour
 
     }
 
-    public void CompleteStep(TaskStepType type)
+    public void CompleteTaskStep(TaskStepType type)
     {
         GameObject[] taskObjs = GameObject.FindGameObjectsWithTag(TAG);
         foreach (GameObject go in taskObjs)
