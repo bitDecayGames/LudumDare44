@@ -19,7 +19,7 @@ public class TaskManager : MonoBehaviour
     private Timer timer;
     private EasyNavigator navigator;
 
-    uint NumTasks = 1;
+    uint NumTasks = 2;
 
     // Time before a new task is created. (Seconds)
     static float TaskBetweenTime = 1f;
@@ -77,7 +77,7 @@ public class TaskManager : MonoBehaviour
             Task task = go.GetComponent<Task>();
             task.CompleteStep(type, completer);
 
-            if (task.IsComplete()) {
+            if (task.IsComplete() || task.IsFailed()) {
                 Destroy(go);
             }
         }
@@ -92,8 +92,6 @@ public class TaskManager : MonoBehaviour
         newTaskObj.tag = TAG;
 
         if (task.lineTask) {
-            
-
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
             MaxNumberLines = bm.board.lineLocations.Count;
