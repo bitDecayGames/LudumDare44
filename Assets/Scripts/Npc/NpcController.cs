@@ -28,7 +28,6 @@ public class NpcController : MonoBehaviour
     {
         if(!isInited)
         {
-            CreateIcon();
             npcMovement = GetComponent<Movement.NpcMove>();
             npcMovement.Initialize();
             taskManager = FindObjectOfType<TaskManager>();

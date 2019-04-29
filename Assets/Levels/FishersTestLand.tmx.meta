@@ -4,12 +4,6 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: _MapPrfab/FishersTestLand
     100002: _MapPrfab/FishersTestLand/Collisions
-    100004: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)
-    100006: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/Object_1 (CF)
-    100008: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1
-    100010: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)
-    100012: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/Object_2 (CF)
-    100014: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2
     100016: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)
     100018: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/Object_8 (CF)
     100020: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8
@@ -414,12 +408,6 @@ ScriptedImporter:
     100810: _MapPrfab/FishersTestLand/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54
     400000: _MapPrfab/FishersTestLand/Transform
     400002: _MapPrfab/FishersTestLand/Collisions/Transform
-    400004: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/Transform
-    400006: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/Object_1 (CF)/Transform
-    400008: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/Transform
-    400010: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/Transform
-    400012: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/Object_2 (CF)/Transform
-    400014: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/Transform
     400016: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/Transform
     400018: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/Object_8 (CF)/Transform
     400020: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8/Transform
@@ -827,10 +815,6 @@ ScriptedImporter:
     11400002: _MapPrfab/FishersTestLand/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/FishersTestLand/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400006: _MapPrfab/FishersTestLand/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400008: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400010: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400012: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400014: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400016: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400018: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400020: _MapPrfab/FishersTestLand/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -1461,8 +1445,6 @@ ScriptedImporter:
     11401270: _MapPrfab/FishersTestLand/Collisions/Object_53 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11401272: _MapPrfab/FishersTestLand/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11401274: _MapPrfab/FishersTestLand/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    21200000: _MapPrfab/FishersTestLand/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/SpriteRenderer
-    21200002: _MapPrfab/FishersTestLand/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
     21200004: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8/SpriteRenderer
     21200006: _MapPrfab/FishersTestLand/Collisions/Object_9 (TRS)/Object_9 (CF)/Object_9/SpriteRenderer
     21200008: _MapPrfab/FishersTestLand/Collisions/Object_10 (TRS)/Object_10 (CF)/Object_10/SpriteRenderer

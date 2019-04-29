@@ -79,8 +79,6 @@
   </data>
  </layer>
  <objectgroup id="2" name="Collisions">
-  <object id="1" gid="66" x="-416" y="376" width="16" height="32"/>
-  <object id="2" gid="67" x="-416" y="392" width="16" height="32"/>
   <object id="8" gid="22" x="-416" y="368" width="16" height="32"/>
   <object id="9" gid="22" x="-432" y="368" width="16" height="32"/>
   <object id="10" gid="22" x="-416" y="368" width="16" height="32"/>

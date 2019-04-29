@@ -79,8 +79,6 @@
   </data>
  </layer>
  <objectgroup id="2" name="Collisions">
-  <object id="1" gid="66" x="-416" y="376" width="16" height="32"/>
-  <object id="2" gid="67" x="-416" y="392" width="16" height="32"/>
   <object id="8" gid="22" x="-416" y="368" width="16" height="32"/>
   <object id="9" gid="22" x="-432" y="368" width="16" height="32"/>
   <object id="10" gid="22" x="-416" y="368" width="16" height="32"/>
@@ -144,7 +142,7 @@
   </object>
  </objectgroup>
  <objectgroup id="4" name="POIs">
-  <object id="3" name="LineStart" x="-424" y="392">
+  <object id="3" name="LineStart" x="-400" y="416">
    <properties>
     <property name="LineNumber" value="0"/>
    </properties>
@@ -158,11 +156,11 @@
   </object>
  </objectgroup>
  <objectgroup id="5" name="Line">
-  <object id="35" x="-424" y="392">
+  <object id="35" x="-400" y="416">
    <properties>
     <property name="LineNumber" value="0"/>
    </properties>
-   <polyline points="0,0 0,-8 0,-16"/>
+   <polyline points="0,0 0,-8 0,-16 -8,-16 -16,-16"/>
   </object>
  </objectgroup>
 </map>

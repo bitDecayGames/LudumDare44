@@ -55,10 +55,6 @@ namespace Movement {
                     boardPos.Y = mySpawn.myNode.y;
                     board.board.Set(occupier, mySpawn.myNode.x, mySpawn.myNode.y);
 
-                    // Debug.Log("Board position bitch: " + boardPos.X + ", " + boardPos.Y);
-                    // Debug.Log("My spawn bitch: " + mySpawn);
-                    // Debug.Log("My node bitch: " + mySpawn.myNode.x + ", " + mySpawn.myNode.y);
-
                 } else {
                     throw new Exception("No Npc spawner has been is found");
                 }
@@ -84,11 +80,9 @@ namespace Movement {
                             if (IsTheThingInfrontTheThingIWant(currentDirections[0])) {
                                 currentDirections.RemoveAt(0);
                                 tries = 0;
-                                UpdateStandAnimation();
-                                isFindingPath = false;
-                                overallTries = 0;
-                                callback();
+                                Finish();
                             } else {
+                                waitTime = 2;
                                 tries = 0;
                                 overallTries++;
                                 if (overallTries <= maxOverallTries) getDirections();
@@ -104,13 +98,18 @@ namespace Movement {
                     }
                     else
                     {
-                        UpdateStandAnimation();
-                        isFindingPath = false;
-                        overallTries = 0;
-                        callback();
+                        Finish();
                     }
                 }
             }
+        }
+
+        private void Finish() {
+            UpdateStandAnimation();
+            currentStepLocation.isBusy = null;
+            isFindingPath = false;
+            overallTries = 0;
+            callback();
         }
 
         public void Move(TaskStep taskStep, Action callback) {
@@ -135,8 +134,9 @@ namespace Movement {
         }
 
         private bool IsTheThingInfrontTheThingIWant(Direction dir) {
+            if (dir == Direction.Wait) return false;
             var thingInFront = Peek(dir);
-            return thingInFront == currentStepLocation;
+            return thingInFront == currentStepLocation && (thingInFront.isBusy == occupier || thingInFront.isBusy == null);
         }
 
         private Board.Board.Node getStepLocation(List<Board.Board.Occupier> stepLocations) {
@@ -145,14 +145,20 @@ namespace Movement {
         }
 
         private void getDirections() {
-            currentDirections = Search.Navigate(board.board,
-            occupier.myNode.IsoLoc(),
-            currentStepLocation.IsoLoc());
+            if (currentStepLocation.isBusy == occupier || currentStepLocation.isBusy == null) {
+                currentStepLocation.isBusy = occupier;
+                currentDirections = Search.Navigate(board.board,
+                    occupier.myNode.IsoLoc(),
+                    currentStepLocation.IsoLoc());
+            } else {
+                currentDirections = new List<Direction>{Direction.Wait};
+            }
             isFindingPath = true;
         }
         
 
         private bool AttemptMoveInDirection(Direction dir) {
+            if (dir == Direction.Wait) return false;
             facing = DirectionToFacing(dir);
             if (DoMove(dir)) {
                 UpdateWalkAnimation();

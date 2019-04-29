@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Boo.Lang.Runtime;
@@ -92,6 +93,7 @@ public class Task : MonoBehaviour
 
         Board.BoardManager boardManager = FindObjectOfType<Board.BoardManager>();
         string lowerName = TaskStep.GetStepName(step.type).ToLower();
+        if (!boardManager.board.stepLocations.ContainsKey(lowerName)) throw new Exception("Couldn't find task step type in the board: " + lowerName);
         List<Board.Board.Occupier> locations = boardManager.board.stepLocations[lowerName];
         foreach (var loc in locations)
         {
@@ -138,7 +140,7 @@ public class Task : MonoBehaviour
         if (completer == null)
         {
             var player = FindObjectOfType<PlayerTaskController>();
-            taskManager.Feedback.Positive("you got there mfer!!", player.transform);
+            if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("you got there mfer!!", player.transform);
         }
 
         ClearIcons();
