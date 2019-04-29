@@ -293,7 +293,6 @@ public class Task : MonoBehaviour
         Score.FailedTasks++;
         Score.TotalTasks++;
 
-
         var player = FindObjectOfType<PlayerTaskController>();
         FeedbackNegative("Customer left");
         
@@ -378,7 +377,6 @@ public class Task : MonoBehaviour
                         
                         Destroy(GameObject.Find("TutorialCanvas"));
                     } 
-
                     break;
             }
         }
