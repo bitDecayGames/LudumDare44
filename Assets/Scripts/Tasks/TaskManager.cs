@@ -29,6 +29,8 @@ public class TaskManager : MonoBehaviour
     int currentLine = 0;
     private bool isLevelEnded = false;
 
+    private Task levelStartTask;
+
     void Start() {
         timer = gameObject.AddComponent<Timer>();
         timer.DurationSeconds = LevelDurationSeconds;
@@ -38,10 +40,35 @@ public class TaskManager : MonoBehaviour
         if (navigator == null) throw new Exception("Couldn't find an EasyNavigator, probably a bug in the OneScriptToRuleThemAll or it's prefab");
         
         Score.ResetScore();
+        
+        // Create the initial task for the player to start the level
+        GameObject newTaskObj = new GameObject();
+        var task = newTaskObj.AddComponent(typeof(Task)) as Task;
+        TaskBuilder.GetStartingTask(task, "");
+        newTaskObj.transform.SetParent(this.transform);
+        newTaskObj.name = Task.GetTaskName(task.type);
+        newTaskObj.tag = TAG;
+        levelStartTask = task;
+
     }
     
     void Update()
     {
+        if (levelStartTask != null)
+        {
+            if (!levelStartTask.IsComplete())
+            {
+                // wait for player to finish the start task
+                return;
+            }
+            else
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.FemaleAngry);
+                levelStartTask = null;
+            }
+        }
+        
+        
         var numCurrentTasks = GetComponentsInChildren<Task>().Length;
 
         if (numCurrentTasks < NumTasks)
