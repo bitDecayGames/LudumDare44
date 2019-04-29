@@ -11,7 +11,6 @@ namespace Utils {
             if (!FadeToBlack.Instance.IsFadingOut())
             {
                 FadeToBlack.Instance.FadeOut(2f, () => SceneManager.LoadScene(sceneName));
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CashRegister);
             }
         }
 
@@ -21,7 +20,6 @@ namespace Utils {
             {
                 FMODMusicPlayer.Instance.StopThenDestroy();
                 FadeToBlack.Instance.FadeOut(4f, () => SceneManager.LoadScene(sceneName));
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CashRegister);
             }
         }
     }

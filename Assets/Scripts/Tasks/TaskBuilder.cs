@@ -136,6 +136,7 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
+            .Meta(TaskStepType.CashRegister)
             .NPC()
             .AddTo(task);
 
@@ -287,8 +288,8 @@ public static class TaskBuilder
         
         TaskStep.Create()
             .Type(TaskStepType.AccountComputer)
-            // Replace with account open icon
-            .SetIcon(Icon.Open)
+            .SetIcon(Icon.Handshake)
+            .TriggersSuccess()
             .AddTo(task);
 
         TaskStep.Create()
@@ -324,6 +325,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
             .SetIcon(Icon.Check)
+            .TriggersSuccess()
             .AddTo(task);      
 
         TaskStep.Create()
@@ -348,6 +350,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumIn)
+            .AddCar()
             .AddTo(task);
 
         TaskStep.Create()
@@ -358,6 +361,8 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
+            .RemoveCar()
+            .TriggersSuccess()
             .AddTo(task);      
     }
     
@@ -377,6 +382,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumIn)
+            .AddCar()
             .AddTo(task);
 
         TaskStep.Create()
@@ -387,6 +393,8 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
+            .RemoveCar()
+            .TriggersSuccess()
             .AddTo(task);      
     }
     

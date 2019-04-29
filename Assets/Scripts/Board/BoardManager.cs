@@ -7,7 +7,7 @@ using Boo.Lang.Runtime;
 
 namespace Board {
     public class BoardManager : MonoBehaviour {
-        public Board board = new Board(-100, -100, 200, 200);
+        public Board board = new Board(-100, 0, 200, 100);
         private bool initialized = false;
         public bool isDebug; // change this in the UI
         
@@ -222,7 +222,8 @@ namespace Board {
                 else if (n.isBusy != null) color = Color.yellow;
                 else if (n.npcOffLimits) color = Color.red;
                 else if (n.poi != null) color = Color.cyan;
-                else return;
+                else color = Color.gray;
+//                else return;
                 DrawSquareAt(n.IsoLoc(), color);
             });
         }

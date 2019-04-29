@@ -91,8 +91,11 @@ public class NpcController : MonoBehaviour
         }
         else if (ShouldLeave())
         {
-            leaving = true;
-            task.Fail();
+            if (task == null) Kill();
+            else {
+                leaving = true;
+                task.Fail();
+            }
         }
     }
 

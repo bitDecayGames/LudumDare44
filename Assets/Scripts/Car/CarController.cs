@@ -14,20 +14,6 @@ public class CarController : MonoBehaviour {
 
     string TAG = "MakeDatCarBoi".ToLower();
 
-    void Update()
-    { 
-        // TODO TEST Debug Code, safe to remove
-        if (Input.GetKeyUp("1"))
-        {
-            CreateCar();
-        }
-
-        if (Input.GetKeyUp("2"))
-        {
-            RemoveCar();
-        }
-    }
-
     public bool HasCar()
     {
         return currentCar != null;
@@ -36,14 +22,16 @@ public class CarController : MonoBehaviour {
     public void CreateCar()
     {
         if (HasCar()) {
-            throw new Exception("You fool! Remove the current car first");
+            Debug.LogWarning("You fool! Remove the current car first");
+            return;
         }
 
         boardManager = FindObjectOfType<Board.BoardManager>();
         List<Board.Board.Occupier> carBois = boardManager.board.stepLocations[TAG];
 
         if (carBois.Count != 1) {
-            throw new Exception("Need exactly one (1) car boi");
+            Debug.LogWarning("Need exactly one (1) car boi");
+            return;
         }
 
         int carIdx = rnd.Next(carSprites.Count);
@@ -59,7 +47,7 @@ public class CarController : MonoBehaviour {
         c.a = 0;
         renderer.color = c;
 
-        renderer.sortingOrder = 10000;
+        renderer.sortingOrder = 1;
 
         currentCar.AddComponent<SpriteRendererFadeInOverTime>().timeToFadeIn = 2f;
 
@@ -70,7 +58,8 @@ public class CarController : MonoBehaviour {
     {
         if (!HasCar())
         {
-            throw new Exception("Can't kill a car if it's not there brah");
+            Debug.LogWarning("Can't kill a car if it's not there brah");
+            return;
         }
 
         currentCar.AddComponent<KillAfterTime>().timeToKill = 3f;
