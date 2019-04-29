@@ -1,4 +1,5 @@
 using UnityEngine;
+using Utils;
 
 public class NpcController : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class NpcController : MonoBehaviour
     TaskManager taskManager;
     private bool isInited = false;
 
-    public float MaxWaitTimeSeconds = 30;
+    float MaxWaitTimeSeconds = 30;
     float totalWaitTime;
 
     bool waiting;
@@ -35,8 +36,12 @@ public class NpcController : MonoBehaviour
         }
     }
 
-    void OnDestroy()
-    {
+    public void Kill() {
+        gameObject.AddComponent<KillAfterTime>().timeToKill = 3f;
+        gameObject.AddComponent<SpriteRendererFadeOutOverTime>().timeToFadeOut = 2f;
+    }
+
+    void OnDestroy() {
         ClearIcon();
     }
 
@@ -95,7 +100,7 @@ public class NpcController : MonoBehaviour
     void CreateIcon(Icon icon)
     {
         ClearIcon();
-        currentIcon = IconManager.GetLocalReference().CreateIcon(icon, gameObject.transform);
+        currentIcon = IconManager.GetLocalReference().CreateIcon(icon, gameObject.transform.Find("Sprite").transform);
     }
 
     void ClearIcon()

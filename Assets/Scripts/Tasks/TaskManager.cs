@@ -15,7 +15,7 @@ public class TaskManager : MonoBehaviour
     public NpcObjects Npcs;
     public FeedbackManager Feedback;
 
-    public float LevelDurationSeconds = 10000;
+    public float LevelDurationSeconds = 120;
     private Timer timer;
     private EasyNavigator navigator;
 
@@ -25,7 +25,7 @@ public class TaskManager : MonoBehaviour
     static float TaskBetweenTime = 1f;
     float TimeToNewTasks = TaskBetweenTime;
 
-    static int MaxNumberLines = 0;
+    static int MaxNumberLines = 2;
     int currentLine = 0;
 
     void Start() {
@@ -87,11 +87,12 @@ public class TaskManager : MonoBehaviour
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
         TaskBuilder.CreateRandomTask(task);
-        task.SomeNpc = Npcs.PickOneAtRandom();
+        task.SomeNpc = Instantiate(Npcs.PickOneAtRandom());
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
 
         if (task.lineTask) {
+            
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
             MaxNumberLines = bm.board.lineLocations.Count;
@@ -100,7 +101,7 @@ public class TaskManager : MonoBehaviour
             if(currentLine >= MaxNumberLines) currentLine = 0;
             foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
             {
-                TaskStep getInLine = new TaskStep(TaskStepType.GetInLine, true);
+                TaskStep getInLine = TaskStep.Create().Type(TaskStepType.GetInLine).NPC(true);
                 getInLine.node = poi.myNode;
                 getInLineSteps.Enqueue(getInLine);
             }
@@ -123,5 +124,20 @@ public class TaskManager : MonoBehaviour
         }
 
         newTaskObj.transform.SetParent(this.transform);
+    }
+
+    public List<Board.Board.Node> GetNodesFromStepType(TaskStepType stepType)
+    {
+        List<Board.Board.Node> stepNodes = new List<Board.Board.Node>();
+        var tasks = GetComponentsInChildren<Task>();
+        foreach (var task in tasks)
+        {
+            var nextStep = task.steps.Peek();
+            if(nextStep.type == stepType)
+            {
+                stepNodes.Add(nextStep.node);
+            }
+        }
+        return stepNodes;
     }
 }

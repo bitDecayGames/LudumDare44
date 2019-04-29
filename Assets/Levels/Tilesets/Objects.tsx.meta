@@ -2,18 +2,224 @@ fileFormatVersion: 2
 guid: bc314da9d3a76459f9fbfed18b60a06d
 ScriptedImporter:
   fileIDToRecycleName:
+    2800000: Atlas_Objects_1
     11400000: _TilesetScriptObject
     11400002: _superAsset
+    11400004: Tile_Objects_1
+    11400006: Tile_Objects_2
+    11400008: Tile_Objects_3
+    11400010: Tile_Objects_4
+    11400012: Tile_Objects_5
+    11400014: Tile_Objects_6
+    11400016: Tile_Objects_7
+    11400018: Tile_Objects_8
+    11400020: Tile_Objects_9
+    11400022: Tile_Objects_10
+    11400024: Tile_Objects_11
+    11400026: Tile_Objects_12
+    11400028: Tile_Objects_13
+    11400030: Tile_Objects_14
+    11400032: Tile_Objects_15
+    11400034: Tile_Objects_16
+    11400036: Tile_Objects_17
+    11400038: Tile_Objects_18
+    11400040: Tile_Objects_19
+    11400042: Tile_Objects_20
+    11400044: Tile_Objects_21
+    11400046: Tile_Objects_22
+    11400048: Tile_Objects_23
+    11400050: Tile_Objects_24
+    11400052: Tile_Objects_25
+    11400054: Tile_Objects_26
+    11400056: Tile_Objects_27
+    11400058: Tile_Objects_28
+    11400060: Tile_Objects_29
+    11400062: Tile_Objects_30
+    11400064: Tile_Objects_31
+    11400066: Tile_Objects_32
+    11400068: Tile_Objects_33
+    11400070: Tile_Objects_34
+    11400072: Tile_Objects_35
+    11400074: Tile_Objects_36
+    11400076: Tile_Objects_37
+    11400078: Tile_Objects_38
+    11400080: Tile_Objects_39
+    11400082: Tile_Objects_40
+    11400084: Tile_Objects_41
+    11400086: Tile_Objects_42
+    11400088: Tile_Objects_43
+    11400090: Tile_Objects_44
+    11400092: Tile_Objects_45
+    11400094: Tile_Objects_46
+    11400096: Tile_Objects_47
+    11400098: Tile_Objects_48
+    11400100: Tile_Objects_49
+    11400102: Tile_Objects_50
+    11400104: Tile_Objects_51
+    11400106: Tile_Objects_52
+    11400108: Tile_Objects_53
+    11400110: Tile_Objects_54
+    11400112: Tile_Objects_55
+    11400114: Tile_Objects_56
+    11400116: Tile_Objects_57
+    11400118: Tile_Objects_58
+    11400120: Tile_Objects_59
+    11400122: Tile_Objects_60
+    11400124: Tile_Objects_61
+    11400126: Tile_Objects_62
+    11400128: Tile_Objects_63
+    11400130: Tile_Objects_64
+    11400132: Tile_Objects_65
+    11400134: Tile_Objects_66
+    11400136: Tile_Objects_67
+    11400138: Tile_Objects_68
+    11400140: Tile_Objects_69
+    11400142: Tile_Objects_70
+    11400144: Tile_Objects_71
+    11400146: Tile_Objects_72
+    11400148: Tile_Objects_73
+    11400150: Tile_Objects_74
+    11400152: Tile_Objects_75
+    11400154: Tile_Objects_76
+    11400156: Tile_Objects_77
+    11400158: Tile_Objects_78
+    11400160: Tile_Objects_79
+    11400162: Tile_Objects_80
+    11400164: Tile_Objects_81
+    11400166: Tile_Objects_82
+    11400168: Tile_Objects_83
+    11400170: Tile_Objects_84
+    11400172: Tile_Objects_85
+    11400174: Tile_Objects_86
+    11400176: Tile_Objects_87
+    11400178: Tile_Objects_88
+    11400180: Tile_Objects_89
+    11400182: Tile_Objects_90
+    11400184: Tile_Objects_91
+    11400186: Tile_Objects_92
+    11400188: Tile_Objects_93
+    11400190: Tile_Objects_94
+    11400192: Tile_Objects_95
+    11400194: Tile_Objects_96
+    11400196: Tile_Objects_97
+    11400198: Tile_Objects_98
+    11400200: Tile_Objects_99
+    11400202: Tile_Objects_100
+    11400204: Tile_Objects_101
+    11400206: Tile_Objects_102
+    11400208: Tile_Objects_103
+    11400210: Tile_Objects_104
+    21300000: Sprite_Objects_1
+    21300002: Sprite_Objects_2
+    21300004: Sprite_Objects_3
+    21300006: Sprite_Objects_4
+    21300008: Sprite_Objects_5
+    21300010: Sprite_Objects_6
+    21300012: Sprite_Objects_7
+    21300014: Sprite_Objects_8
+    21300016: Sprite_Objects_9
+    21300018: Sprite_Objects_10
+    21300020: Sprite_Objects_11
+    21300022: Sprite_Objects_12
+    21300024: Sprite_Objects_13
+    21300026: Sprite_Objects_14
+    21300028: Sprite_Objects_15
+    21300030: Sprite_Objects_16
+    21300032: Sprite_Objects_17
+    21300034: Sprite_Objects_18
+    21300036: Sprite_Objects_19
+    21300038: Sprite_Objects_20
+    21300040: Sprite_Objects_21
+    21300042: Sprite_Objects_22
+    21300044: Sprite_Objects_23
+    21300046: Sprite_Objects_24
+    21300048: Sprite_Objects_25
+    21300050: Sprite_Objects_26
+    21300052: Sprite_Objects_27
+    21300054: Sprite_Objects_28
+    21300056: Sprite_Objects_29
+    21300058: Sprite_Objects_30
+    21300060: Sprite_Objects_31
+    21300062: Sprite_Objects_32
+    21300064: Sprite_Objects_33
+    21300066: Sprite_Objects_34
+    21300068: Sprite_Objects_35
+    21300070: Sprite_Objects_36
+    21300072: Sprite_Objects_37
+    21300074: Sprite_Objects_38
+    21300076: Sprite_Objects_39
+    21300078: Sprite_Objects_40
+    21300080: Sprite_Objects_41
+    21300082: Sprite_Objects_42
+    21300084: Sprite_Objects_43
+    21300086: Sprite_Objects_44
+    21300088: Sprite_Objects_45
+    21300090: Sprite_Objects_46
+    21300092: Sprite_Objects_47
+    21300094: Sprite_Objects_48
+    21300096: Sprite_Objects_49
+    21300098: Sprite_Objects_50
+    21300100: Sprite_Objects_51
+    21300102: Sprite_Objects_52
+    21300104: Sprite_Objects_53
+    21300106: Sprite_Objects_54
+    21300108: Sprite_Objects_55
+    21300110: Sprite_Objects_56
+    21300112: Sprite_Objects_57
+    21300114: Sprite_Objects_58
+    21300116: Sprite_Objects_59
+    21300118: Sprite_Objects_60
+    21300120: Sprite_Objects_61
+    21300122: Sprite_Objects_62
+    21300124: Sprite_Objects_63
+    21300126: Sprite_Objects_64
+    21300128: Sprite_Objects_65
+    21300130: Sprite_Objects_66
+    21300132: Sprite_Objects_67
+    21300134: Sprite_Objects_68
+    21300136: Sprite_Objects_69
+    21300138: Sprite_Objects_70
+    21300140: Sprite_Objects_71
+    21300142: Sprite_Objects_72
+    21300144: Sprite_Objects_73
+    21300146: Sprite_Objects_74
+    21300148: Sprite_Objects_75
+    21300150: Sprite_Objects_76
+    21300152: Sprite_Objects_77
+    21300154: Sprite_Objects_78
+    21300156: Sprite_Objects_79
+    21300158: Sprite_Objects_80
+    21300160: Sprite_Objects_81
+    21300162: Sprite_Objects_82
+    21300164: Sprite_Objects_83
+    21300166: Sprite_Objects_84
+    21300168: Sprite_Objects_85
+    21300170: Sprite_Objects_86
+    21300172: Sprite_Objects_87
+    21300174: Sprite_Objects_88
+    21300176: Sprite_Objects_89
+    21300178: Sprite_Objects_90
+    21300180: Sprite_Objects_91
+    21300182: Sprite_Objects_92
+    21300184: Sprite_Objects_93
+    21300186: Sprite_Objects_94
+    21300188: Sprite_Objects_95
+    21300190: Sprite_Objects_96
+    21300192: Sprite_Objects_97
+    21300194: Sprite_Objects_98
+    21300196: Sprite_Objects_99
+    21300198: Sprite_Objects_100
+    21300200: Sprite_Objects_101
+    21300202: Sprite_Objects_102
+    21300204: Sprite_Objects_103
+    21300206: Sprite_Objects_104
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
   missingFiles: []
-  errors:
-  - Mismatching width/height detected. Tileset = (208, 224), image = (208, 256). This
-    may happen when a tileset image has been resized. Open map and tileset in Tiled
-    Map Editor and resave.
+  errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []
@@ -21,7 +227,7 @@ ScriptedImporter:
   importerVersion: 7
   pixelsPerUnit: 16
   edgesPerEllipse: 32
-  numberOfObjectsImported: 2
+  numberOfObjectsImported: 211
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048
