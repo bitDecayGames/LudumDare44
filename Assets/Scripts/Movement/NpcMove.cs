@@ -51,17 +51,6 @@ namespace Movement {
                 if (occupier == null) occupier = gameObject.AddComponent<Board.Board.Occupier>();
                 board = FindObjectOfType<BoardManager>();
                 if (board == null) throw new Exception("Missing BoardManager in the Scene, just drag the script onto the Camera");
-                if (board.board.poiLocations.ContainsKey("npcSpawn"))
-                {
-                    // TODO make sure we spawn these thigns reasonably
-                    var mySpawn = board.board.poiLocations["npcSpawn"][0];
-                    boardPos.X = mySpawn.myNode.x;
-                    boardPos.Y = mySpawn.myNode.y;
-                    board.board.Set(occupier, mySpawn.myNode.x, mySpawn.myNode.y);
-
-                } else {
-                    throw new Exception("No Npc spawner has been is found");
-                }
                 lerper = GetComponentInChildren<LerpAnimator>();
                 if (lerper == null) lerper = animator.gameObject.AddComponent<LerpAnimator>();
             }
@@ -108,7 +97,7 @@ namespace Movement {
         }
 
         private void Finish() {
-            UpdateStandAnimation();
+//            UpdateStandAnimation();
             currentStepLocation.isBusy = null;
             isFindingPath = false;
             overallTries = 0;

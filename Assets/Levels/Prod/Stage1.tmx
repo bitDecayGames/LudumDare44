@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="17" nextobjectid="188">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="17" nextobjectid="190">
  <tileset firstgid="1" source="../../Art/Tilesets/Floors/testfloors.tsx"/>
  <tileset firstgid="26" source="../../Art/Tilesets/Objects/Objects.tsx"/>
  <tileset firstgid="143" source="../../Art/Tilesets/Cars/Cars.tsx"/>
@@ -645,7 +645,7 @@
   <object id="174" name="Spawn" x="216" y="472">
    <point/>
   </object>
-  <object id="180" name="LeaveBuilding" x="403" y="449">
+  <object id="180" name="LeaveBuilding" x="416" y="480">
    <properties>
     <property name="TaskStepType" value="LeaveBuilding"/>
    </properties>
@@ -653,7 +653,7 @@
   </object>
  </objectgroup>
  <objectgroup id="12" name="POIs">
-  <object id="175" name="NpcSpawn" x="400" y="432">
+  <object id="175" name="NpcSpawn1" x="400" y="432">
    <properties>
     <property name="poiName" value="npcSpawn"/>
    </properties>
@@ -662,6 +662,18 @@
   <object id="177" name="LineStart" x="264" y="432">
    <properties>
     <property name="LineNumber" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="188" name="NpcSpawn2" x="424" y="424">
+   <properties>
+    <property name="poiName" value="npcSpawn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="189" name="NpcSpawn3" x="424" y="448">
+   <properties>
+    <property name="poiName" value="npcSpawn"/>
    </properties>
    <point/>
   </object>

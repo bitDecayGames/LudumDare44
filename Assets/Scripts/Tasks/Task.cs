@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Board;
 using Boo.Lang.Runtime;
 using Menus;
 using UnityEngine;
@@ -58,12 +59,7 @@ public class Task : MonoBehaviour
     {
         if (HaveNpcSteps())
         {
-            npcController = SomeNpc.GetComponent<NpcController>();
-            if (npcController == null)
-            {
-                throw new RuntimeException("NPC did not have NPC Controller on prefab");
-            }
-            npcController.Init();
+            InitNpc();
             npcController.AssignTask(this);
             if(steps.Peek().npcStep)
             {
@@ -74,6 +70,59 @@ public class Task : MonoBehaviour
         CreateIconsForStep(steps.Peek());
         taskManager = GetComponentInParent<TaskManager>();
         initialized = true;
+    }
+
+    private void InitNpc() {
+        npcController = SomeNpc.GetComponent<NpcController>();
+        if (npcController == null)
+        {
+            throw new RuntimeException("NPC did not have NPC Controller on prefab");
+        }
+        npcController.Init();
+        var npcBoardPos = SomeNpc.GetComponentInChildren<BoardPosition>();
+        var npcOccupier = SomeNpc.GetComponentInChildren<Board.Board.Occupier>();
+        var board = FindObjectOfType<BoardManager>();
+            
+        if (board.board.poiLocations.ContainsKey("npcSpawn"))
+        {
+            // TODO make sure we spawn these thigns reasonably
+            var mySpawn = pickSpawnLocation(board.board);
+            if (mySpawn == null) throw new Exception("I tried and tried to find a suitable spawn location, but it couldn't be found.  I'm guessing there must be a bunch of collision objects around the spawn locations");
+            npcBoardPos.X = mySpawn.x;
+            npcBoardPos.Y = mySpawn.y;
+            board.board.Set(npcOccupier, mySpawn.x, mySpawn.y);
+
+        } else {
+            throw new Exception("No Npc spawner has been is found");
+        }
+    }
+
+    private Board.Board.Node pickSpawnLocation(Board.Board board) {
+        var spawnPoints = board.poiLocations["npcSpawn"].FindAll(p => p != null && p.myNode != null).ConvertAll(p => p.myNode);
+        List<Board.Board.Node> possibleSpawns = spawnPoints.FindAll(n => n.occupier == null && !n.npcOffLimits);
+        if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
+        possibleSpawns.Clear();
+        spawnPoints.ForEach(n => {
+            possibleSpawns.AddRange(expandNode(n.up));
+            possibleSpawns.AddRange(expandNode(n.right));
+            possibleSpawns.AddRange(expandNode(n.down));
+            possibleSpawns.AddRange(expandNode(n.left));
+        });
+        possibleSpawns = possibleSpawns.FindAll(n => n != null && n.occupier == null && !n.npcOffLimits);
+        if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
+        return null;
+    }
+
+    private List<Board.Board.Node> expandNode(Board.Board.Node node) {
+        var tmp = new List<Board.Board.Node>();
+        if (node != null) {
+            tmp.Add(node);
+            if (node.up != null) tmp.Add(node.up);
+            if (node.right != null) tmp.Add(node.right);
+            if (node.down != null) tmp.Add(node.down);
+            if (node.left != null) tmp.Add(node.left);
+        }
+        return tmp;
     }
     
     void Update()
