@@ -86,7 +86,7 @@ public class Task : MonoBehaviour
         var npcOccupier = SomeNpc.GetComponentInChildren<Board.Board.Occupier>();
         var board = FindObjectOfType<BoardManager>();
             
-        if (board.board.poiLocations.ContainsKey("npcSpawn"))
+        if (board.board.poiLocations.ContainsKey("npcSpawn".ToLower()))
         {
             // TODO make sure we spawn these thigns reasonably
             var mySpawn = pickSpawnLocation(board.board);
@@ -101,7 +101,7 @@ public class Task : MonoBehaviour
     }
 
     private Board.Board.Node pickSpawnLocation(Board.Board board) {
-        var spawnPoints = board.poiLocations["npcSpawn"].FindAll(p => p != null && p.myNode != null).ConvertAll(p => p.myNode);
+        var spawnPoints = board.poiLocations["npcSpawn".ToLower()].FindAll(p => p != null && p.myNode != null).ConvertAll(p => p.myNode);
         List<Board.Board.Node> possibleSpawns = spawnPoints.FindAll(n => n.occupier == null && !n.npcOffLimits);
         if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
         possibleSpawns.Clear();
@@ -193,7 +193,7 @@ public class Task : MonoBehaviour
 
             List<Board.Board.POI> pois;
             if (allStepTypeNodes.Count == 0) {
-                pois = bm.board.poiLocations.ContainsKey(step.type.ToString()) ? bm.board.poiLocations[step.type.ToString()] : new List<Board.Board.POI>();
+                pois = bm.board.poiLocations.ContainsKey(step.type.ToString().ToLower()) ? bm.board.poiLocations[step.type.ToString().ToLower()] : new List<Board.Board.POI>();
                 foreach (var poi in pois)
                 {
                     allStepTypeNodes.Add(poi.myNode);

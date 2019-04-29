@@ -34,18 +34,18 @@
             {
                 startFringe.Push(initial);
             }
-            return doSearch(board, dest, startFringe, new List<NodePath>());
+            return doSearch(board, dest, startFringe, new List<Board.Board.Node>());
         }
 
         // Using a priority queue would be much more efficient
-        private static System.Collections.Generic.List<Direction> doSearch(Board.Board board, IsoVector2 dest, PriorityQueue fringe, System.Collections.Generic.List<NodePath> visited)
+        private static System.Collections.Generic.List<Direction> doSearch(Board.Board board, IsoVector2 dest, PriorityQueue fringe, System.Collections.Generic.List<Board.Board.Node> visited)
         {
             var start = Time.time * 1000;
             var iterations = 0;
             while (true)
             {
                 iterations++;
-                if (iterations > 500) {
+                if (iterations > 1000) {
                     var cur = fringe != null && fringe.GetFirstNode() != null ? fringe.GetFirstNode().currentNode : new Board.Board.Node(-1, -1);
                     Debug.Log(string.Format("Unable to find path from {0} to destination {1}", cur, dest));
                     return new List<Direction>();
@@ -59,7 +59,7 @@
                 
                 NodePath checkPath = fringe.GetFirstNode();
                 fringe.Remove(checkPath);
-                visited.Add(checkPath);
+                visited.Add(checkPath.currentNode);
 
                 if (dest.Equals(checkPath.currentNode.x, checkPath.currentNode.y))
                 {
@@ -82,38 +82,11 @@
                     continue;
                 }
                 
-                bool skip = false;
                 foreach (var next in expand(checkPath, board, dest))
                 {
-                    skip = false;
-                    //Debug.Log("Visited " + visited.Count);
-                    foreach (var visitCheck in visited)
-                    {
-                        if (visitCheck.currentNode == next.currentNode)
-                        {
-//                            // we've already been to this node.
-//                            if (next.weight < visitCheck.weight)
-//                            {
-//                                // we found a shorter path to the same node, so let's look at this
-//                                skip = false;
-//                            }
-//                            else
-//                            {
-//                                // Been here before, and for cheaper, nothing to do
-//                                skip = true;
-//                            }
-                            skip = true;
-                            break;
-                        }
-                    }
-
-                    if (!skip)
+                    if (!visited.Contains(next.currentNode))
                     {
                         fringe.Push(next);
-                    }
-                    else
-                    {
-                        //Debug.Log("Skipping " + next.currentNode.x + ", " + next.currentNode.y);
                     }
                 }
             }
