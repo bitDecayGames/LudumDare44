@@ -159,6 +159,7 @@ namespace Movement {
                     Debug.Log(string.Format("Received 0 directions from Search Algorithm from {0} to {1} for task step {2}", occupier.myNode, currentStepLocation, _taskStep));
                 }
             } else {
+                Debug.Log("Someone is already in my node. I'm waiting");
                 currentDirections = new List<Direction>{Direction.Wait};
                 waitTime = 2;
             }
