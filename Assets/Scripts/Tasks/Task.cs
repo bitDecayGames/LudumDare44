@@ -319,11 +319,16 @@ public class Task : MonoBehaviour
             return;
         }
 
-        if (!completer.tag.Equals("Player") && SomeNpc != completer)
+//TODO make so npc can only commplete npc steps
+
+        if (SomeNpc != completer)
         {
             // Debug.Log("Wrong NPC tried to complete a task");
             return;
         }
+
+        if (completer.tag.Equals("Player") && currentStep.npcStep) return;
+        if (!completer.tag.Equals("Player") && !currentStep.npcStep) return;
 
         steps.Dequeue();
         currentStep.complete = true;

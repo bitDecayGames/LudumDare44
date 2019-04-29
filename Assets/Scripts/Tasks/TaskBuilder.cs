@@ -45,16 +45,16 @@ public static class TaskBuilder
     public static Dictionary<TaskType, List<String>> GetAllTaskAndStepDetails()
     {
         Dictionary<TaskType, List<String>> dict = new Dictionary<TaskType, List<String>>();
-        // dict.Add(TaskType.DepositMoney, DepositMoney());
+        dict.Add(TaskType.DepositMoney, DepositMoney());
         // dict.Add(TaskType.FillCashRegister, FillCashRegister());
         // dict.Add(TaskType.EmptyCashRegister, EmptyCashRegister());
-        // dict.Add(TaskType.OpenBankDoor, OpenBankDoor());
-        // dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
-        // dict.Add(TaskType.ATMDeposit, ATMDeposit());
+        dict.Add(TaskType.OpenBankDoor, OpenBankDoor());
+        dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
+        dict.Add(TaskType.ATMDeposit, ATMDeposit());
         dict.Add(TaskType.OpenAccount, OpenAccount());
-        // dict.Add(TaskType.CheckCashing, CheckCashing());
-        // dict.Add(TaskType.VacuumTubeDeposit, VacuumTubeDeposit());
-        // dict.Add(TaskType.VacuumTubeCoinChange, VacuumTubeCoinChange());
+        dict.Add(TaskType.CheckCashing, CheckCashing());
+        dict.Add(TaskType.VacuumTubeDeposit, VacuumTubeDeposit());
+        dict.Add(TaskType.VacuumTubeCoinChange, VacuumTubeCoinChange());
 
         return dict;
     }
