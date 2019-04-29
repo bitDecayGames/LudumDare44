@@ -5,12 +5,11 @@ using UnityEngine;
 public enum TaskStepType {
     Safe,
     VacuumTube,
-    EmptyCashRegister,
-    FullCashRegister,
     BankDoor,
     GetInLine,
-    TalkToTeller,
-    NpcSpawn
+    CashRegister,
+    CoinMachine,
+    ATM
 }
 
 public class TaskStep

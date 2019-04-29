@@ -8,9 +8,9 @@ public enum TaskType {
     FillCashRegister,
     EmptyCashRegister,
     OpenBankDoor,
-    TestTask,
     ChangeIntoCash,
-    VacuumTubeDeposit
+    VacuumTubeDeposit,
+    ATMDeposit
 }
 
 public class Task : MonoBehaviour
