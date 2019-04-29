@@ -52,11 +52,6 @@ public class NpcController : MonoBehaviour
 
     }
 
-    void CreateIcon()
-    {
-        currentIcon = IconManager.GetLocalReference().CreateIcon(Icon.Elipsis, gameObject.transform);
-    }
-
     void ClearIcon()
     {
         Destroy(currentIcon);
