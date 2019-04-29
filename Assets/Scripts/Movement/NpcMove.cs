@@ -97,7 +97,7 @@ namespace Movement {
                                 currentDirections.RemoveAt(0);
                                 Finish();
                             } else {
-                                waitTime = 1;
+                                wait(1, 2);
                                 tries = 0;
                                 overallTries++;
                                 if (overallTries <= maxOverallTries) getDirections();
@@ -109,7 +109,7 @@ namespace Movement {
                     if (!occupier.myNode.IsoLoc().Equals(currentStepLocation.IsoLoc()))
                     {
                         getDirections();
-                        waitTime = 2;
+                        wait(1, 2);
                     }
                     else
                     {
@@ -147,6 +147,10 @@ namespace Movement {
                     throw new Exception("The board has no record of a step location with the task step name: " + taskStepName);
                 }
             }
+        }
+
+        private void wait(float start, float end) {
+            waitTime = UnityEngine.Random.Range(start, end);
         }
 
         private void DrawDebugLines() {
