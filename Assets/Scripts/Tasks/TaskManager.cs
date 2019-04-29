@@ -15,7 +15,7 @@ public class TaskManager : MonoBehaviour
     public NpcObjects Npcs;
     public FeedbackManager Feedback;
 
-    public float LevelDurationSeconds = 10000;
+    public float LevelDurationSeconds = 120;
     private Timer timer;
     private EasyNavigator navigator;
 
