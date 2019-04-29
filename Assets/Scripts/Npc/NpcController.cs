@@ -1,4 +1,5 @@
 using UnityEngine;
+using Utils;
 
 public enum NPCMood
 {
@@ -35,8 +36,12 @@ public class NpcController : MonoBehaviour
         }
     }
 
-    void OnDestroy()
-    {
+    public void Kill() {
+        gameObject.AddComponent<KillAfterTime>().timeToKill = 3f;
+        gameObject.AddComponent<SpriteRendererFadeOutOverTime>().timeToFadeOut = 2f;
+    }
+
+    void OnDestroy() {
         ClearIcon();
     }
 

@@ -24,7 +24,6 @@ public class Task : MonoBehaviour
     public TaskType type;
     public Queue<TaskStep> steps;
     List<TaskStep> completedSteps;
-    GameObject npc;
     NpcController npcController;
     public int lineNumber;
     public bool lineTask = false;
@@ -50,10 +49,7 @@ public class Task : MonoBehaviour
     {
         if (HaveNpcSteps())
         {
-            npc = Instantiate(SomeNpc);
-            // This is XXX af. We need the right reference here, so do this.
-            SomeNpc = npc;
-            npcController = npc.GetComponent<NpcController>();
+            npcController = SomeNpc.GetComponent<NpcController>();
             if (npcController == null)
             {
                 throw new RuntimeException("NPC did not have NPC Controller on prefab");
@@ -76,7 +72,7 @@ public class Task : MonoBehaviour
 
     void OnDestroy()
     {
-        Destroy(npc);
+        SomeNpc.GetComponent<NpcController>().Kill();
     }
 
     public void AddStep(TaskStep step)

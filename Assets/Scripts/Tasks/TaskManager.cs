@@ -87,7 +87,7 @@ public class TaskManager : MonoBehaviour
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
         TaskBuilder.CreateRandomTask(task);
-        task.SomeNpc = Npcs.PickOneAtRandom();
+        task.SomeNpc = Instantiate(Npcs.PickOneAtRandom());
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
 
