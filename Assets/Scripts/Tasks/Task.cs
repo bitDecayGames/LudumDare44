@@ -147,6 +147,7 @@ public class Task : MonoBehaviour
     public void AddStep(TaskStep step)
     {
         steps.Enqueue(step);
+        MaybeAddCar(step);
     }
 
     void CreateIconsForStep(TaskStep step)
@@ -231,6 +232,30 @@ public class Task : MonoBehaviour
         }
     }
 
+    void MaybeAddCar(TaskStep step)
+    {
+        if (!step.addCar) {
+            return;
+        }
+
+        CarController cc = FindObjectOfType<CarController>();
+        if (cc != null) {
+            cc.CreateCar();
+        }
+    }
+
+    void MaybeRemoveCar(TaskStep step)
+    {
+        if (!step.removeCar) {
+            return;
+        }
+
+        CarController cc = FindObjectOfType<CarController>();
+        if (cc != null) {
+            cc.RemoveCar();
+        }
+    }
+
     void ClearIcons()
     {
         foreach (GameObject icon in Icons)
@@ -285,6 +310,13 @@ public class Task : MonoBehaviour
         steps.Dequeue();
         currentStep.complete = true;
         completedSteps.Add(currentStep);
+
+        MaybeRemoveCar(currentStep);
+        if (steps.Count > 0)
+        {
+            MaybeAddCar(steps.Peek());
+        }
+
         if (currentStep.lastStepForSuccess) {
             Score.CompletedTasks++;
             Score.TotalTasks++;
