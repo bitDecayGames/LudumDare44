@@ -70,6 +70,8 @@ public class NpcController : MonoBehaviour
         }
         else if (ShouldAnger())
         {
+//            GetComponent<Animation>().
+//            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.);
             CreateIcon(Icon.Angry);
             angry = true;
         }
