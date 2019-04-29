@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudumDare44.Plugins", "Ludu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Analytics.DataPrivacy", "Unity.Analytics.DataPrivacy.csproj", "{D6E266C6-3D1F-28C8-9FEB-2A01E44DBF77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PackageManagerUI.Editor", "Unity.PackageManagerUI.Editor.csproj", "{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudumDare44.Editor", "LudumDare44.Editor.csproj", "{07EBCAF6-C0C6-6811-8949-F86B89CB0AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PackageManagerUI.Editor", "Unity.PackageManagerUI.Editor.csproj", "{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudumDare44.Editor.Plugins", "LudumDare44.Editor.Plugins.csproj", "{A2D44FF8-D51C-088B-B260-4BBB992148D4}"
 EndProject
@@ -41,14 +41,14 @@ Global
 		{D6E266C6-3D1F-28C8-9FEB-2A01E44DBF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6E266C6-3D1F-28C8-9FEB-2A01E44DBF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6E266C6-3D1F-28C8-9FEB-2A01E44DBF77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07EBCAF6-C0C6-6811-8949-F86B89CB0AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{07EBCAF6-C0C6-6811-8949-F86B89CB0AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07EBCAF6-C0C6-6811-8949-F86B89CB0AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07EBCAF6-C0C6-6811-8949-F86B89CB0AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2D44FF8-D51C-088B-B260-4BBB992148D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2D44FF8-D51C-088B-B260-4BBB992148D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2D44FF8-D51C-088B-B260-4BBB992148D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
