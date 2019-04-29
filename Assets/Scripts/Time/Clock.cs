@@ -8,7 +8,7 @@ public class Clock : MonoBehaviour
     private float _hourOfDay;
     private float _minuteOfDay;
 
-    public TextMeshProUGUI ClockText;
+    public TextMeshPro ClockText;
     
     private void Start()
     {
