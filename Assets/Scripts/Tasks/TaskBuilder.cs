@@ -6,13 +6,13 @@ using UnityEngine;
 
 public static class TaskBuilder
 {
-    private static int numRandomTasks = 5;
+    private static int numRandomTasks = 3;
 
     public static void CreateRandomTask(Task task){
         var rand = new System.Random();
 //        int taskNumber = rand.Next(numRandomTasks);
         int taskNumber = 0; // TODO: MW put this back
-        Debug.Log("Random task number: " + taskNumber);
+        // Debug.Log("Random task number: " + taskNumber);
 
         switch (taskNumber)
         {
@@ -25,12 +25,12 @@ public static class TaskBuilder
             case 2:
                 ATMDeposit(task);
                 break;
-            case 3:
-                FillCashRegister(task);
-                break;
-            case 4:
-                EmptyCashRegister(task);
-                break;
+            // case 3:
+            //     FillCashRegister(task);
+            //     break;
+            // case 4:
+            //     EmptyCashRegister(task);
+            //     break;
             default:
                 break;
         }

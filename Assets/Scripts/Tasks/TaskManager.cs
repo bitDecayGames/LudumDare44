@@ -19,13 +19,13 @@ public class TaskManager : MonoBehaviour
     private Timer timer;
     private EasyNavigator navigator;
 
-    uint NumTasks = 5;
+    uint NumTasks = 1;
 
     // Time before a new task is created. (Seconds)
     static float TaskBetweenTime = 1f;
     float TimeToNewTasks = TaskBetweenTime;
 
-    static int MaxNumberLines = 0;
+    static int MaxNumberLines = 2;
     int currentLine = 0;
 
     void Start() {
@@ -93,7 +93,6 @@ public class TaskManager : MonoBehaviour
 
         if (task.lineTask) {
             
-
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
             MaxNumberLines = bm.board.lineLocations.Count;
@@ -125,5 +124,20 @@ public class TaskManager : MonoBehaviour
         }
 
         newTaskObj.transform.SetParent(this.transform);
+    }
+
+    public List<Board.Board.Node> GetNodesFromStepType(TaskStepType stepType)
+    {
+        List<Board.Board.Node> stepNodes = new List<Board.Board.Node>();
+        var tasks = GetComponentsInChildren<Task>();
+        foreach (var task in tasks)
+        {
+            var nextStep = task.steps.Peek();
+            if(nextStep.type == stepType)
+            {
+                stepNodes.Add(nextStep.node);
+            }
+        }
+        return stepNodes;
     }
 }

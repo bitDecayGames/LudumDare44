@@ -47,7 +47,19 @@ public class PlayerTaskController : MonoBehaviour
                         // Debug.Log("Property: " + typeProperty.m_Value);
                         TaskManager manager = FindObjectOfType<TaskManager>();
                         TaskStepType taskStepType = (TaskStepType) System.Enum.Parse(typeof(TaskStepType), typeProperty.m_Value);
-                        manager.CompleteTaskStep(taskStepType, null);
+                        List<Board.Board.Node> taskStepTypeNodes = manager.GetNodesFromStepType(taskStepType);
+
+                        if (taskStepTypeNodes.Count > 0)
+                        {
+                            foreach (var node in taskStepTypeNodes)
+                            {
+                                if(node != null && node.Equals(checkNode))
+                                {
+                                    manager.CompleteTaskStep(taskStepType, null);
+                                    break;
+                                }
+                            }
+                        }
                     }
                 }
             }

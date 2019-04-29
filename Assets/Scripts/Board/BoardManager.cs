@@ -147,7 +147,6 @@ namespace Board {
                     }
                 }
             }
-            // Debug.Log("This be seen bitch");
             // Debug.Log("Dictionary size: " + board.stepLocations.Count);
             // foreach (KeyValuePair<string, List<Board.Occupier>> entry in board.stepLocations)
             // {

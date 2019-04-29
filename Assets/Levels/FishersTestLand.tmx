@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="6" nextobjectid="55">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="6" nextobjectid="83">
  <tileset firstgid="1" source="Tilesets/floors.tsx"/>
  <tileset firstgid="21" source="Tilesets/Objects.tsx"/>
  <layer id="1" name="Floors" width="100" height="100">
@@ -79,10 +79,11 @@
   </data>
  </layer>
  <objectgroup id="2" name="Collisions">
+  <object id="1" gid="66" x="-416" y="376" width="16" height="32"/>
+  <object id="2" gid="67" x="-416" y="392" width="16" height="32"/>
   <object id="8" gid="22" x="-416" y="368" width="16" height="32"/>
   <object id="9" gid="22" x="-432" y="368" width="16" height="32"/>
   <object id="10" gid="22" x="-416" y="368" width="16" height="32"/>
-  <object id="11" gid="24" x="-408" y="360" width="16" height="32"/>
   <object id="12" gid="73" x="-416" y="368" width="16" height="32"/>
   <object id="13" gid="73" x="-432" y="368" width="16" height="32"/>
   <object id="19" gid="41" x="-440" y="408" width="16" height="32"/>
@@ -115,6 +116,26 @@
   <object id="50" gid="39" x="-304" y="328" width="16" height="32"/>
   <object id="53" gid="66" x="-432" y="376" width="16" height="32"/>
   <object id="54" gid="67" x="-432" y="392" width="16" height="32"/>
+  <object id="55" gid="73" x="-408" y="368" width="16" height="32"/>
+  <object id="56" gid="73" x="-392" y="368" width="16" height="32"/>
+  <object id="57" gid="73" x="-384" y="368" width="16" height="32"/>
+  <object id="58" gid="73" x="-368" y="368" width="16" height="32"/>
+  <object id="59" gid="73" x="-360" y="368" width="16" height="32"/>
+  <object id="60" gid="73" x="-352" y="368" width="16" height="32"/>
+  <object id="61" gid="73" x="-344" y="368" width="16" height="32"/>
+  <object id="62" gid="73" x="-336" y="368" width="16" height="32"/>
+  <object id="63" gid="73" x="-328" y="368" width="16" height="32"/>
+  <object id="64" gid="73" x="-320" y="368" width="16" height="32"/>
+  <object id="65" gid="73" x="-312" y="368" width="16" height="32"/>
+  <object id="66" gid="73" x="-304" y="368" width="16" height="32"/>
+  <object id="71" gid="66" x="-408" y="376" width="16" height="32"/>
+  <object id="72" gid="67" x="-408" y="392" width="16" height="32"/>
+  <object id="73" gid="66" x="-392" y="376" width="16" height="32"/>
+  <object id="74" gid="67" x="-392" y="392" width="16" height="32"/>
+  <object id="75" gid="66" x="-384" y="376" width="16" height="32"/>
+  <object id="76" gid="67" x="-384" y="392" width="16" height="32"/>
+  <object id="77" gid="66" x="-368" y="376" width="16" height="32"/>
+  <object id="78" gid="67" x="-368" y="392" width="16" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="Interactables">
   <object id="5" name="CashRegister" gid="29" x="-424" y="368" width="16" height="32">
@@ -122,15 +143,15 @@
     <property name="TaskStepType" value="CashRegister"/>
    </properties>
   </object>
-  <object id="15" name="ATM" gid="83" x="-392" y="376" width="16" height="32">
+  <object id="15" name="ATM" gid="83" x="-304" y="336" width="16" height="32">
    <properties>
     <property name="TaskStepType" value="ATM"/>
    </properties>
   </object>
-  <object id="34" name="Spawn" x="-408" y="344">
+  <object id="34" name="Spawn" x="-384" y="344">
    <point/>
   </object>
-  <object id="51" name="CoinMachine" gid="107" x="-400" y="336" width="16" height="32">
+  <object id="51" name="CoinMachine" gid="107" x="-368" y="336" width="16" height="32">
    <properties>
     <property name="TaskStepType" value="CoinMachine"/>
    </properties>
@@ -140,15 +161,25 @@
     <property name="TaskStepType" value="Safe"/>
    </properties>
   </object>
+  <object id="67" name="CashRegister" gid="29" x="-400" y="368" width="16" height="32">
+   <properties>
+    <property name="TaskStepType" value="CashRegister"/>
+   </properties>
+  </object>
+  <object id="68" name="CashRegister" gid="29" x="-376" y="368" width="16" height="32">
+   <properties>
+    <property name="TaskStepType" value="CashRegister"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="POIs">
-  <object id="3" name="LineStart" x="-400" y="416">
+  <object id="3" name="LineStart" x="-424" y="392">
    <properties>
     <property name="LineNumber" value="0"/>
    </properties>
    <point/>
   </object>
-  <object id="14" name="NpcSpawn" x="-352" y="416">
+  <object id="14" name="NpcSpawn" x="-328" y="400">
    <properties>
     <property name="poiName" value="npcSpawn"/>
    </properties>
@@ -156,11 +187,35 @@
   </object>
  </objectgroup>
  <objectgroup id="5" name="Line">
-  <object id="35" x="-400" y="416">
+  <object id="35" x="-424" y="392">
    <properties>
     <property name="LineNumber" value="0"/>
    </properties>
-   <polyline points="0,0 0,-8 0,-16 -8,-16 -16,-16"/>
+   <polyline points="0,0 0,-8 0,-16"/>
+  </object>
+  <object id="79" name="LineStart" x="-400" y="392">
+   <properties>
+    <property name="LineNumber" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" x="-400" y="392">
+   <properties>
+    <property name="LineNumber" value="1"/>
+   </properties>
+   <polyline points="0,0 0,-8 0,-16"/>
+  </object>
+  <object id="81" name="LineStart" x="-376" y="392">
+   <properties>
+    <property name="LineNumber" value="2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" x="-376" y="392">
+   <properties>
+    <property name="LineNumber" value="2"/>
+   </properties>
+   <polyline points="0,0 0,-8 0,-16"/>
   </object>
  </objectgroup>
 </map>
