@@ -9,7 +9,7 @@ using Utils;
 
 namespace Movement {
     public class NpcMove : MonoBehaviour {
-        public const float TIME_TO_MOVE = 0.1f;
+        public const float TIME_TO_MOVE = 0.4f;
 
         private BoardPosition boardPos;
 

@@ -1,14 +1,9 @@
 using UnityEngine;
-
-public enum NPCMood
-{
-    HAPPY,
-    NEUTRAL,
-    ANGRY
-}
+using Utils;
 
 public class NpcController : MonoBehaviour
 {
+    Task task;
     TaskStep taskStep;
 
     TaskStepType taskStepType;
@@ -17,7 +12,12 @@ public class NpcController : MonoBehaviour
     TaskManager taskManager;
     private bool isInited = false;
 
-    // float TimeAlive;
+    public float MaxWaitTimeSeconds = 30;
+    float totalWaitTime;
+
+    bool waiting;
+    bool angry;
+    bool leaving;
 
     void Start()
     {
@@ -31,46 +31,90 @@ public class NpcController : MonoBehaviour
             npcMovement = GetComponent<Movement.NpcMove>();
             npcMovement.Initialize();
             taskManager = FindObjectOfType<TaskManager>();
+            totalWaitTime = MaxWaitTimeSeconds;
             isInited = true;
         }
     }
 
-    void OnDestroy()
-    {
+    public void Kill() {
+        gameObject.AddComponent<KillAfterTime>().timeToKill = 3f;
+        gameObject.AddComponent<SpriteRendererFadeOutOverTime>().timeToFadeOut = 2f;
+    }
+
+    void OnDestroy() {
         ClearIcon();
     }
 
     void Update()
     {
-        // TimeAlive += Time.deltaTime;
-        // // TODO Move
-        // TimeAlive -= StepCompletionTimeReduction;
-        // if (TimeAlive <= 0)
-        // {
-        //     TimeAlive = 0;
-        // }
+        totalWaitTime -= Time.deltaTime;
+        CalculateMood();
+    }
 
+    void CalculateMood()
+    {
+        if (taskStepType == TaskStepType.LeaveBuilding)
+        {
+            if (!leaving)
+            {
+                ClearIcon();
+                leaving = true;
+            }
+            return;
+        }
+
+        if (ShouldWait())
+        {
+            CreateIcon(Icon.Waiting);
+            waiting = true;
+        }
+        else if (ShouldAnger())
+        {
+            CreateIcon(Icon.Angry);
+            angry = true;
+        }
+        else if (ShouldLeave())
+        {
+            leaving = true;
+            task.Fail();
+        }
+    }
+
+    bool ShouldWait()
+    {
+        // 2/3
+        return totalWaitTime <= 2 * MaxWaitTimeSeconds / 3 && !waiting;
+    }
+
+    bool ShouldAnger()
+    {
+        // 2/3
+        return totalWaitTime <= MaxWaitTimeSeconds / 3 && !angry;
+    }
+
+    bool ShouldLeave()
+    {
+        return totalWaitTime <= 0 && !leaving;
+    }
+
+    void CreateIcon(Icon icon)
+    {
+        ClearIcon();
+        currentIcon = IconManager.GetLocalReference().CreateIcon(icon, gameObject.transform);
     }
 
     void ClearIcon()
-    {
-        Destroy(currentIcon);
+    {   
+        if (currentIcon != null) {
+            Destroy(currentIcon);
+            currentIcon = null;
+        }
     }
 
-    // public NPCMood GetCustomerMood()
-    // {
-    //     if (task.IsComplete())
-    //     {
-    //         return CustomerMood.HAPPY;
-    //     }
-        
-    //     if (TimeAlive < 20)
-    //     {
-    //         return CustomerMood.NEUTRAL;
-    //     }
-
-    //     return CustomerMood.ANGRY;
-    // }
+    public void AssignTask(Task t)
+    {
+        task = t;
+    }
 
     public void AssignStep(TaskStep step)
     {
