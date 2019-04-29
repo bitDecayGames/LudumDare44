@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: d9fb632a62b184d44a67d610867e765e
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/IntroStage
+    400000: _MapPrfab/IntroStage/Transform
+    11400000: _MapPrfab/IntroStage/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/IntroStage/Grid
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors:
+  - Errors detected in tileset '../../Art/Tilesets/Floors/testfloors.tsx'. Check the
+    tileset inspector for more details. Your map may be broken until these are fixed.
+  - 'Missing tileset asset: C:/Users/nandemoguy/Desktop/Objects.tsx'
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 12
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 1
+  customImporterClassName: 
+  internalTilesets: []
