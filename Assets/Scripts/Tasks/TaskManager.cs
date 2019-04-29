@@ -20,6 +20,7 @@ public class TaskManager : MonoBehaviour
     private EasyNavigator navigator;
 
     uint NumTasks = 8;
+    int NumRandomTasks;
 
     // Time before a new task is created. (Seconds)
     static float TaskBetweenTime = 1f;
@@ -29,6 +30,8 @@ public class TaskManager : MonoBehaviour
     int currentLine = 0;
     private bool isLevelEnded = false;
 
+    List<String> possibleStepList;
+    List<TaskType> possibleTaskList;
     private Task levelStartTask;
 
     void Start() {
@@ -40,6 +43,12 @@ public class TaskManager : MonoBehaviour
         if (navigator == null) throw new Exception("Couldn't find an EasyNavigator, probably a bug in the OneScriptToRuleThemAll or it's prefab");
         
         Score.ResetScore();
+
+        // Create the list of possible tasks to create in current level
+        possibleStepList = GetPossibleStepList();
+        possibleTaskList = CreatePossibleTaskList();
+        if(possibleTaskList.Count == 0) throw new Exception ("Couldn't create any possible tasks. Something has gone wrong");
+        NumRandomTasks = possibleTaskList.Count;
         
         // Create the initial task for the player to start the level
         GameObject newTaskObj = new GameObject();
@@ -116,7 +125,7 @@ public class TaskManager : MonoBehaviour
     public void CreateTaskGameObj(){
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
-        TaskBuilder.CreateRandomTask(task);
+        CreateRandomTask(task);
         task.SomeNpc = Instantiate(Npcs.PickOneAtRandom());
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
@@ -169,5 +178,50 @@ public class TaskManager : MonoBehaviour
             }
         }
         return stepNodes;
+    }
+
+    public void CreateRandomTask(Task task){
+        var rand = new System.Random();
+        int taskNumber = rand.Next(NumRandomTasks);
+        task.type = possibleTaskList[taskNumber];
+        TaskBuilder.CreateTask(task);
+    }
+
+    public List<String> GetPossibleStepList()
+    {
+        List<String> possibleStepList = new List<String>();
+        BoardManager bm = FindObjectOfType<BoardManager>();
+        var allStepLocations = bm.board.stepLocations.Keys;
+        foreach (String key in allStepLocations)
+        {
+            if (!possibleStepList.Contains(key))
+            {
+                possibleStepList.Add(key);
+            }
+        }
+
+        return possibleStepList;
+    }
+
+    public List<TaskType> CreatePossibleTaskList()
+    {
+        List<TaskType> possibleTaskList = new List<TaskType>();
+        var allTaskAndStepDetails = TaskBuilder.GetAllTaskAndStepDetails();
+        foreach (var taskStepCombo in allTaskAndStepDetails)
+        {
+            bool taskPossible = true;
+            foreach (var step in taskStepCombo.Value)
+            {
+                if (!possibleStepList.Contains(step))
+                {
+                    taskPossible = false;
+                    break;
+                }
+            }
+
+            if (taskPossible) possibleTaskList.Add(taskStepCombo.Key);
+        }
+
+        return possibleTaskList;
     }
 }
