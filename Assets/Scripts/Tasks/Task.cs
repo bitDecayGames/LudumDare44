@@ -48,6 +48,8 @@ public class Task : MonoBehaviour
     void Start()
     {
         npc = Instantiate(SomeNpc);
+        // This is XXX af. We need the right reference here, so do this.
+        SomeNpc = npc;
         npcController = npc.GetComponent<NpcController>();
         if (npcController == null)
         {
@@ -106,11 +108,22 @@ public class Task : MonoBehaviour
         Icons.Clear();
     }
 
-    public void CompleteStep(TaskStepType type, bool npcStep) {
+    public void CompleteStep(TaskStepType type, GameObject completer) {
+        if (steps.Count <= 0)
+        {
+            Debug.Log("BEHAVIOR UNKNOWN: Tried to complete a task step with no steps remaining");
+            return;
+        }
         TaskStep currentStep = steps.Peek();
-        if (currentStep.type != type || currentStep.npcStep != npcStep)
+        if (currentStep.type != type)
         {
             Debug.LogWarning("Step " + type + " cannot be completed");
+            return;
+        }
+
+        if (completer != null && SomeNpc != completer)
+        {
+            Debug.Log("Wrong NPC tried to complete a task");
             return;
         }
 
@@ -119,7 +132,7 @@ public class Task : MonoBehaviour
         completedSteps.Add(currentStep);
         Debug.Log(type + " Complete");
 
-        if (!npcStep)
+        if (completer == null)
         {
             var player = FindObjectOfType<PlayerTaskController>();
             taskManager.Feedback.Positive("you got there mfer!!", player.transform);
