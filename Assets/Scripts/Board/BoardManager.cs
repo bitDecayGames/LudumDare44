@@ -168,11 +168,11 @@ namespace Board {
                                     Board.POI linePOI = new Board.POI();
                                     linePOI.myNode = lineNode;
                                     lineNode.poi = linePOI;
-                                    foreach (var p in props.m_Properties)
+                                    foreach (var innerProp in props.m_Properties)
                                     {
-                                        if (p.m_Name == "ForTask")
+                                        if (innerProp.m_Name == "ForTask")
                                         {
-                                            linePOI.Meta = p.m_Value;
+                                            linePOI.Meta = innerProp.m_Value;
                                         }
                                     }
                                     board.lineLocations[p.m_Value.ToInt()].Add(linePOI);

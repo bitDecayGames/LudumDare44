@@ -152,7 +152,14 @@ public static class TaskBuilder
     static void ATMDeposit(Task task)
     {
         task.type = TaskType.ATMDeposit;
+        task.lineTask = true;
 
+        TaskStep.Create()
+            .Type(TaskStepType.GetInLine)
+            .NPC()
+            .Meta(TaskStepType.ATM)
+            .AddTo(task);
+        
         TaskStep.Create()
             .Type(TaskStepType.ATM)
             .NPC()
