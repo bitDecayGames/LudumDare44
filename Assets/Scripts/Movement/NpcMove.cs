@@ -33,6 +33,8 @@ namespace Movement {
         private Board.Board.Node currentStepLocation;
         private bool initialized = false;
 
+        private SpriteRenderer _spriteRenderer;
+
         private float waitTime;
         private TaskStep _taskStep;
 
@@ -55,6 +57,7 @@ namespace Movement {
                 if (board == null) throw new Exception("Missing BoardManager in the Scene, just drag the script onto the Camera");
                 lerper = GetComponentInChildren<LerpAnimator>();
                 if (lerper == null) lerper = animator.gameObject.AddComponent<LerpAnimator>();
+                _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             }
         }
 
@@ -76,12 +79,14 @@ namespace Movement {
                 if (currentDirections.Count > 0) {
                     NpcHelper.SmartNamer(gameObject, _taskStep.type, currentDirections[0]);
                     if (AttemptMoveInDirection(currentDirections[0])) {
+                        _spriteRenderer.color = Color.white;
                         currentDirections.RemoveAt(0);
                         tries = 0;
                     } else {
                         if (currentDirections[0] == Direction.Wait) {
                             getDirections();
                             if (isDebug) {
+                                _spriteRenderer.color = Color.yellow;
                                 Debug.DrawLine(occupier.myNode.IsoLoc().ToWorldPosReadable(), currentStepLocation.IsoLoc().ToWorldPosReadable(), Color.red, 0, true);
                             }
                             return; // don't increment tries while waiting
@@ -92,7 +97,7 @@ namespace Movement {
                                 currentDirections.RemoveAt(0);
                                 Finish();
                             } else {
-                                waitTime = 2;
+                                waitTime = 1;
                                 tries = 0;
                                 overallTries++;
                                 if (overallTries <= maxOverallTries) getDirections();
@@ -127,21 +132,20 @@ namespace Movement {
             Initialize();
             _taskStep = taskStep;
             this.callback = callback;
-            var taskStepName = TaskStep.GetStepName(taskStep.type).ToLower();
+            var taskStepName = TaskStep.GetStepName(taskStep.type);
 
             if (taskStep.node != null) {
                 currentStepLocation = taskStep.node;
                 getDirections();
-            } else if (board.board.stepLocations.ContainsKey(taskStepName)) {
-                var taskStepLocations = board.board.stepLocations[taskStepName];
-                if (taskStepLocations.Count > 0) {
-                    currentStepLocation = getStepLocation(taskStepLocations);
+            } else {
+                var possibleTaskNodes = getValidNodeLocations(taskStepName);
+                if (possibleTaskNodes.Count > 0) {
+                    currentStepLocation = getRandomStepLocation(possibleTaskNodes);
                     getDirections();
                 } else {
                     throw new Exception("The board has an empty list of step locations with the task step name: " + taskStepName);
+                    throw new Exception("The board has no record of a step location with the task step name: " + taskStepName);
                 }
-            } else {
-                throw new Exception("The board has no record of a step location with the task step name: " + taskStepName);
             }
         }
 
@@ -165,9 +169,23 @@ namespace Movement {
             return thingInFront == currentStepLocation && (thingInFront.isBusy == occupier || thingInFront.isBusy == null);
         }
 
-        private Board.Board.Node getStepLocation(List<Board.Board.Occupier> stepLocations) {
-            // TODO: MW figure out if these step locations are currently available to be interacted with and then pick a random one
-            return stepLocations[0].myNode;
+        private List<Board.Board.Node> getValidNodeLocations(string taskStepName) {
+            List<Board.Board.Node> nodes = new List<Board.Board.Node>();
+            if (board.board.stepLocations.ContainsKey(taskStepName.ToLower())) {
+                nodes.AddRange(board.board.stepLocations[taskStepName.ToLower()].ConvertAll(o => o.myNode));
+            }
+            if (board.board.poiLocations.ContainsKey(taskStepName)) {
+                nodes.AddRange(board.board.poiLocations[taskStepName].ConvertAll(o => o.myNode));
+            }
+            return nodes.FindAll(n => n != null);
+        }
+
+        private Board.Board.Node getRandomStepLocation(List<Board.Board.Node> stepLocations) {
+            var nonBusyNodes = stepLocations.FindAll(n => n.isBusy == null || n.isBusy == occupier);
+            // find a non busy node if it exists
+            if (nonBusyNodes.Count > 0) return nonBusyNodes[UnityEngine.Random.Range(0, nonBusyNodes.Count)];
+            // if all nodes are busy, queue one up anyways so that the wait logic works
+            return stepLocations[UnityEngine.Random.Range(0, stepLocations.Count)];
         }
 
         private void getDirections() {
