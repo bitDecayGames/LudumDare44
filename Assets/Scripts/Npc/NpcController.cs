@@ -82,13 +82,7 @@ public class NpcController : MonoBehaviour
     {
         taskStep = step;
         taskStepType = taskStep.type;
-        npcMovement.Move(taskStep, () => {
-            taskManager.CompleteTaskStep(taskStep.type, taskStep.npcStep);
-            });
-    }
 
-    public void CompleteCurrentStep()
-    {
-        FindObjectOfType<TaskManager>().CompleteTaskStep(taskStep.type, true);
+        npcMovement.Move(taskStep, () => { taskManager.CompleteTaskStep(step.type, npcMovement.gameObject); });
     }
 }

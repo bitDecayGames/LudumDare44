@@ -19,13 +19,11 @@ public class TaskManager : MonoBehaviour
     private Timer timer;
     private EasyNavigator navigator;
 
-    uint NumTasks = 1;
+    uint NumTasks = 5;
 
     // Time before a new task is created. (Seconds)
     static float TaskBetweenTime = 1f;
     float TimeToNewTasks = TaskBetweenTime;
-
-    bool TaskResentlyComplete = false;
 
     static int MaxNumberLines = 0;
     int currentLine = 0;
@@ -41,17 +39,15 @@ public class TaskManager : MonoBehaviour
     
     void Update()
     {
-        if (!TaskResentlyComplete)
+        var numCurrentTasks = GetComponentsInChildren<Task>().Length;
+
+        if (numCurrentTasks < NumTasks)
         {
-            var numCurrentTasks = GetComponentsInChildren<Task>().Length;
-            if (numCurrentTasks < NumTasks) {
-                CreateTaskGameObj();
-            }
-        } else {
             TimeToNewTasks -= Time.deltaTime;
+            
             if (TimeToNewTasks <= 0) {
+                CreateTaskGameObj();
                 TimeToNewTasks = TaskBetweenTime;
-                TaskResentlyComplete = false;
             }
         }
 
@@ -73,17 +69,16 @@ public class TaskManager : MonoBehaviour
         navigator.GoToScene("Score");
     }
 
-    public void CompleteTaskStep(TaskStepType type, bool npcStep)
+    public void CompleteTaskStep(TaskStepType type, GameObject completer)
     {
         GameObject[] taskObjs = GameObject.FindGameObjectsWithTag(TAG);
         foreach (GameObject go in taskObjs)
         {
             Task task = go.GetComponent<Task>();
-            task.CompleteStep(type, npcStep);
+            task.CompleteStep(type, completer);
 
             if (task.IsComplete()) {
                 Destroy(go);
-                TaskResentlyComplete = true;
             }
         }
     }

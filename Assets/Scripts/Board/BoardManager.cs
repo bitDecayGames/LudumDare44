@@ -151,8 +151,8 @@ namespace Board {
             // Debug.Log("Dictionary size: " + board.stepLocations.Count);
             // foreach (KeyValuePair<string, List<Board.Occupier>> entry in board.stepLocations)
             // {
-            //     Debug.Log("key" + entry.Key);
-            //     if(entry.Key == "")
+            //     Debug.Log("key " + entry.Key);
+            //     Debug.Log("occupier: " + entry.Value.Count);
             // }
             // Debug.Log("Dictionary size: " + board.lineLocations.Count);
             // foreach (KeyValuePair<int, List<Board.Occupier>> entry in board.lineLocations)
