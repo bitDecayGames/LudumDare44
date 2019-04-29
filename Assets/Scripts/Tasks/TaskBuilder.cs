@@ -46,7 +46,7 @@ public static class TaskBuilder
         task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Elipsis));
         task.AddStep(new TaskStep(TaskStepType.Safe, Icon.Angry));
         task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Elipsis));
-        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, Icon.Angry, true));        
+        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, true));        
     }
 
     static void ChangeIntoCash(Task task) {
@@ -58,7 +58,7 @@ public static class TaskBuilder
         task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Elipsis));
         task.AddStep(new TaskStep(TaskStepType.CoinMachine, Icon.Coins));
         task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Coins));
-        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, Icon.Angry, true));        
+        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, true));        
     }
 
     static void ATMDeposit(Task task)
@@ -66,7 +66,7 @@ public static class TaskBuilder
         task.type = TaskType.ATMDeposit;
 
         task.AddStep(new TaskStep(TaskStepType.Safe, Icon.Angry, true));
-        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, Icon.Angry, true));        
+        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, true));        
     }
 
     static void FillCashRegister(Task task) {

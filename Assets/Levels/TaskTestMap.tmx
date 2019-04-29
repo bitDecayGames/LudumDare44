@@ -121,7 +121,7 @@
  <objectgroup id="3" name="Interactables">
   <object id="5" gid="29" x="-424" y="368" width="16" height="32">
    <properties>
-    <property name="TaskStepType" value="cashregister"/>
+    <property name="TaskStepType" value="CashRegister"/>
    </properties>
   </object>
   <object id="15" gid="83" x="-424" y="336" width="16" height="32"/>
