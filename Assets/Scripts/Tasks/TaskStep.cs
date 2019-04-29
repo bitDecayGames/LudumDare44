@@ -71,4 +71,8 @@ public class TaskStep
     public Icon icon = Icon.Empty;
 
     public string SFX;
+
+    public override string ToString() {
+        return string.Format("[{0} Npc:{1} {2} {3} Comp:{4}]", type, npcStep, node == null ? "(null_node)" : node.ToString(), icon, complete);
+    }
 }

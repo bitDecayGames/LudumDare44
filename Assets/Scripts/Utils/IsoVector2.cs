@@ -70,5 +70,9 @@ namespace Utils {
             // HACK: everything has to be -2, -2 before it goes onto the board state... ask Logan
             return new IsoVector2((int) (x / 8) - 2, (int) (y / 8) - 2);
         }
+
+        public override string ToString() {
+            return string.Format("({0}, {1})", x, y);
+        }
     }
 }

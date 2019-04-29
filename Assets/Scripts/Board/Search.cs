@@ -45,9 +45,9 @@
             while (true)
             {
                 iterations++;
-                if (iterations > 500)
-                {
-                    Debug.Log("Unable to find path to destination");
+                if (iterations > 500) {
+                    var cur = fringe != null && fringe.GetFirstNode() != null ? fringe.GetFirstNode().currentNode : new Board.Board.Node(-1, -1);
+                    Debug.Log(string.Format("Unable to find path from {0} to destination {1}", cur, dest));
                     return new List<Direction>();
                 }
                 

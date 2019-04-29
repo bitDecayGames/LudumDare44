@@ -131,13 +131,16 @@ public class Task : MonoBehaviour
             Board.Board.Node newStepNode = null;
             Board.BoardManager bm = FindObjectOfType<Board.BoardManager>();
 
+            if (!bm.board.stepLocations.ContainsKey(step.type.ToString().ToLower())) {
+                throw new Exception("Tried to assign node to step, but couldn't find any step locations with: " + step.type);
+            }
             var allStepTypeOccupiers = bm.board.stepLocations[step.type.ToString().ToLower()];
             List<Board.Board.Node> allStepTypeNodes = new List<Board.Board.Node>();
             foreach (var occupier in allStepTypeOccupiers)
             {
                 allStepTypeNodes.Add(occupier.myNode);
             }
-            if (allStepTypeNodes.Count == 0) throw new Exception("No nodes found on the map for step type: " + step.type.ToString());
+            if (allStepTypeNodes.Count == 0) throw new Exception("No nodes found on the map for step type: " + step.type);
 
             // If npc not null then attempt to set node based on the npc's position and stepType
             if (SomeNpc != null)

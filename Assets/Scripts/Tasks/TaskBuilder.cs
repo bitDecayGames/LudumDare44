@@ -1,17 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-// TODO ADD ICONS EVERYWHERE!!! SHIT!!
+using System;
 
 public static class TaskBuilder
 {
     private static int numRandomTasks = 3;
 
     public static void CreateRandomTask(Task task){
-        var rand = new System.Random();
-        // int taskNumber = rand.Next(numRandomTasks);
-        int taskNumber = 0; // TODO: MW put this back
+        var rand = new Random();
+        int taskNumber = rand.Next(numRandomTasks);
+//        int taskNumber = 0; // TODO: MW put this back
         // Debug.Log("Random task number: " + taskNumber);
 
         switch (taskNumber)
@@ -58,7 +54,7 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.Safe)
-            .SetIcon(Icon.Angry)
+            .SetIcon(Icon.Money)
             .AddTo(task);
 
         TaskStep.Create()
@@ -113,7 +109,7 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.Safe)
-            .SetIcon(Icon.Angry)
+            .SetIcon(Icon.Check)
             .NPC(true)
             .AddTo(task);
 
@@ -128,17 +124,17 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
-            .SetIcon(Icon.Angry)
+            .SetIcon(Icon.Empty)
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.Safe)
-            .SetIcon(Icon.Angry)
+            .SetIcon(Icon.Money)
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
-            .SetIcon(Icon.Angry)
+            .SetIcon(Icon.Money)
             .AddTo(task);
     }
 
@@ -147,12 +143,12 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
-            .SetIcon(Icon.Elipsis)
+            .SetIcon(Icon.FullRegister)
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.Safe)
-            .SetIcon(Icon.Angry)
+            .SetIcon(Icon.Money)
             .AddTo(task);
     }
 

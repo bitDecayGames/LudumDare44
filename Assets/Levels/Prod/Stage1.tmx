@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="14" nextobjectid="181">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="17" nextobjectid="188">
  <tileset firstgid="1" source="../../Art/Tilesets/Floors/testfloors.tsx"/>
  <tileset firstgid="26" source="../../Art/Tilesets/Objects/Objects.tsx"/>
  <tileset firstgid="143" source="../../Art/Tilesets/Cars/Cars.tsx"/>
+ <tileset firstgid="197" source="../Tilesets/floors.tsx"/>
  <layer id="7" name="Floor" width="164" height="116">
   <data encoding="csv">
    <chunk x="-16" y="16" width="16" height="16">
@@ -457,6 +458,17 @@
 </chunk>
   </data>
  </layer>
+ <objectgroup id="15" name="InvisibleCollisions">
+  <object id="181" name="rope_blocker_4" gid="220" x="256" y="440" width="16" height="32"/>
+  <object id="182" name="rope_blocker_3" gid="220" x="240" y="440" width="16" height="32"/>
+  <object id="183" name="rope_blocker_2" gid="220" x="240" y="424" width="16" height="32"/>
+  <object id="184" name="rope_blocker_1" gid="220" x="256" y="424" width="16" height="32"/>
+ </objectgroup>
+ <objectgroup id="16" name="NpcOnlyCollisions">
+  <object id="185" name="DoorToFrontDesk2" gid="220" x="184" y="464" width="16" height="32"/>
+  <object id="186" name="DoorToFrontDesk1" gid="220" x="184" y="472" width="16" height="32"/>
+  <object id="187" name="OverBySignUpDesk" gid="220" x="296" y="504" width="16" height="32"/>
+ </objectgroup>
  <objectgroup id="9" name="Collisions">
   <object id="1" gid="56" x="328" y="456" width="16" height="32"/>
   <object id="2" gid="56" x="328" y="464" width="16" height="32"/>

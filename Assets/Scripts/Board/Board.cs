@@ -125,6 +125,7 @@ namespace Board {
             var topLeftY = startY + height;
             var bottomRightX = startX;
             var bottomRightY = startY;
+            
             board.ForEach(n => {
                 if (n.occupier != null) {
                     if (topLeftX > n.x) topLeftX = n.x;
@@ -137,11 +138,18 @@ namespace Board {
             for (int y = topLeftY; y <= bottomRightY; y++) {
                 for (int x = topLeftX; x <= bottomRightX; x++) {
                     var node = Get(x, y);
-                    sb.Append(node.occupier == null ? "." : "@");
+                    if (node.occupier != null) sb.Append("@");
+                    else if (node.npcOffLimits) sb.Append("#");
+                    else if (node.poi != null) sb.Append("+");
+                    else sb.Append(".");
                 }
 
                 sb.AppendLine();
             }
+
+            sb.AppendLine();
+            sb.Append("Add these to the Line and Column value to get the correct coordinate:").AppendLine();
+            sb.Append("(").Append(topLeftX - 1).Append(", ").Append(topLeftY - 1).Append(")").AppendLine();
 
             return sb.ToString();
         }
@@ -168,10 +176,21 @@ namespace Board {
             {
                 return new IsoVector2(x, y);
             }
+
+            public override string ToString() {
+                return string.Format("({0}, {1})", x, y);
+            }
         }
 
         public class Occupier : MonoBehaviour {
             public Node myNode;
+
+            private void OnDestroy() {
+                if (myNode != null) {
+                    myNode.occupier = null;
+                    if (myNode.isBusy == this) myNode.isBusy = null;
+                }
+            }
         }
 
         public class POI

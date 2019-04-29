@@ -1,27 +1,30 @@
-using System.Collections;
 using System.Collections.Generic;
 
 public class PriorityQueue {
-    private IComparer NodeComp = new NodePathComparer();
-    private ArrayList nodes = new ArrayList();
+    private NodePathComparer NodeComp = new NodePathComparer();
+    private List<Search.NodePath> nodes = new List<Search.NodePath>();
+
     public int Length {
-        get {
-            return nodes.Count;
-        }
+        get { return nodes.Count; }
     }
-    public bool Contains(object node) {
+
+    public bool Contains(Search.NodePath node) {
         return nodes.Contains(node);
     }
+
     public Search.NodePath GetFirstNode() {
         if (nodes.Count > 0) {
-            return (Search.NodePath) nodes[0];
+            return nodes[0];
         }
+
         return null;
     }
+
     public void Push(Search.NodePath node) {
         nodes.Add(node);
         nodes.Sort(NodeComp);
     }
+
     public void Remove(Search.NodePath node) {
         nodes.Remove(node);
         // Don't sort on remove for now
@@ -29,11 +32,8 @@ public class PriorityQueue {
     }
 }
 
-internal class NodePathComparer : IComparer
-{
-    public int Compare(object x, object y)
-    {
-        return ((Search.NodePath)x).weight - ((Search.NodePath)y).weight;
-//        return ((Search.NodePath)y).weight - ((Search.NodePath)x).weight;
+internal class NodePathComparer : IComparer<Search.NodePath> {
+    public int Compare(Search.NodePath x, Search.NodePath y) {
+        return x.weight - y.weight;
     }
 }

@@ -25,11 +25,12 @@ namespace Movement {
         private int tries = 0;
         private const int maxTries = 30;
         private int overallTries = 0;
-        private const int maxOverallTries = 5;
+        private const int maxOverallTries = 2;
         private Board.Board.Node currentStepLocation;
         private bool initialized = false;
 
         private float waitTime;
+        private TaskStep _taskStep;
 
         [HideInInspector]
         public Facing facing;
@@ -79,14 +80,13 @@ namespace Movement {
                         if (tries >= maxTries) {
                             if (IsTheThingInfrontTheThingIWant(currentDirections[0])) {
                                 currentDirections.RemoveAt(0);
-                                tries = 0;
                                 Finish();
                             } else {
                                 waitTime = 2;
                                 tries = 0;
                                 overallTries++;
                                 if (overallTries <= maxOverallTries) getDirections();
-                                else throw new Exception("This shouldn't happen... The npc tried x times to follow directions to a node and failed all of them.");
+                                else throw new Exception(string.Format("This shouldn't happen... The npc tried {0} times to follow directions to a node and failed all of them from {1} to {2}", overallTries, occupier.myNode != null ? occupier.myNode.ToString() : "(null_node)", _taskStep));
                             }
                         }
                     }
@@ -109,11 +109,13 @@ namespace Movement {
             currentStepLocation.isBusy = null;
             isFindingPath = false;
             overallTries = 0;
+            tries = 0;
             callback();
         }
 
         public void Move(TaskStep taskStep, Action callback) {
             Initialize();
+            _taskStep = taskStep;
             this.callback = callback;
             var taskStepName = TaskStep.GetStepName(taskStep.type).ToLower();
 
@@ -146,10 +148,15 @@ namespace Movement {
 
         private void getDirections() {
             if (currentStepLocation.isBusy == occupier || currentStepLocation.isBusy == null) {
+                if (occupier.myNode == null) throw new Exception(string.Format("This NPC({0}) doesn't have a node, it must have been 1) forcibly removed from the board or 2) was never added to the board in the first place.", gameObject.name));
+                
                 currentStepLocation.isBusy = occupier;
                 currentDirections = Search.Navigate(board.board,
                     occupier.myNode.IsoLoc(),
                     currentStepLocation.IsoLoc());
+                if (currentDirections.Count == 0) {
+                    Debug.Log(string.Format("Received 0 directions from Search Algorithm from {0} to {1} for task step {2}", occupier.myNode, currentStepLocation, _taskStep));
+                }
             } else {
                 currentDirections = new List<Direction>{Direction.Wait};
             }
