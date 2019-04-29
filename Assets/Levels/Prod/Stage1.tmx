@@ -659,12 +659,6 @@
    </properties>
    <point/>
   </object>
-  <object id="177" name="LineStart" x="264" y="432">
-   <properties>
-    <property name="LineNumber" value="0"/>
-   </properties>
-   <point/>
-  </object>
   <object id="188" name="NpcSpawn2" x="424" y="424">
    <properties>
     <property name="poiName" value="npcSpawn"/>
@@ -674,6 +668,12 @@
   <object id="189" name="NpcSpawn3" x="424" y="448">
    <properties>
     <property name="poiName" value="npcSpawn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="177" name="LineStart" x="264" y="432">
+   <properties>
+    <property name="LineNumber" value="0"/>
    </properties>
    <point/>
   </object>
