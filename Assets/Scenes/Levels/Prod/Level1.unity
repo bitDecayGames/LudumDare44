@@ -112,6 +112,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &157565852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 666369492967965040, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_Name
+      value: LeftHandedDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.73861
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.58107
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 144.28862
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 666369492967965043, guid: cd30a1773fd50471fa004941aca91a4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd30a1773fd50471fa004941aca91a4c, type: 3}
 --- !u!1001 &190456468
 PrefabInstance:
   m_ObjectHideFlags: 0
