@@ -389,7 +389,11 @@ public class Task : MonoBehaviour
                 var player = FindObjectOfType<PlayerTaskController>();
                 if (taskManager != null && taskManager.Feedback != null)
                 {
-                    if (!currentStep.npcStep) taskManager.Feedback.Positive("New Account Opened!", player.transform);
+                    if (!currentStep.npcStep)
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ByeCustomer);   
+                        taskManager.Feedback.Positive("New Account Opened!", player.transform);
+                    }
                 }
                 break;
         }
