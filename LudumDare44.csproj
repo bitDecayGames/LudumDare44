@@ -334,6 +334,7 @@
     <Compile Include="Assets\Scripts\Board\PriorityQueue.cs" />
     <Compile Include="Assets\Scripts\Board\Search.cs" />
     <Compile Include="Assets\Scripts\Camera\Follow.cs" />
+    <Compile Include="Assets\Scripts\Car\CarController.cs" />
     <Compile Include="Assets\Scripts\Constants\Scenes.cs" />
     <Compile Include="Assets\Scripts\Constants\SFX.cs" />
     <Compile Include="Assets\Scripts\Constants\Songs.cs" />
@@ -357,6 +358,8 @@
     <Compile Include="Assets\Scripts\Tasks\TaskStep.cs" />
     <Compile Include="Assets\Scripts\Time\Clock.cs" />
     <Compile Include="Assets\Scripts\Time\Timer.cs" />
+    <Compile Include="Assets\Scripts\Ui\CanvasGoupAlphaBounceComponent.cs" />
+    <Compile Include="Assets\Scripts\Ui\PressStartListener.cs" />
     <Compile Include="Assets\Scripts\Utils\AbstractFadeInOverTime.cs" />
     <Compile Include="Assets\Scripts\Utils\AbstractFadeOutOverTime.cs" />
     <Compile Include="Assets\Scripts\Utils\CustomMath.cs" />

@@ -105,7 +105,7 @@ namespace Board {
             if (props != null) {
                 foreach (var p in props.m_Properties) {
                     if (p.m_Name == "poiName") {
-                        string key = p.m_Value;
+                        string key = p.m_Value.ToLower();
                         if (!board.poiLocations.ContainsKey(key)) {
                             board.poiLocations.Add(key, new List<Board.POI>());
                         }
@@ -139,11 +139,11 @@ namespace Board {
                                     } else {
                                         var diff = point - lastPoint;
                                         if (Mathf.Abs(diff.x) != 0.5f) {
-                                            throw new RuntimeException("Line x coords are bad");
+                                            throw new RuntimeException("Line x coords are bad: " + diff);
                                         }
 
-                                        if (Mathf.Abs(point.y - lastPoint.y) != 0.25f) {
-                                            throw new RuntimeException("Line y coords are bad");
+                                        if (Mathf.Abs(diff.y) != 0.25f) {
+                                            throw new RuntimeException("Line y coords are bad" + diff);
                                         }
 
                                         lastPoint = point;

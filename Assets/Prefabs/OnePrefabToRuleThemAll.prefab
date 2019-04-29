@@ -53,9 +53,15 @@ MonoBehaviour:
     type: 3}
   negativeFeedbackTextPrefab: {fileID: 6198107261837481071, guid: 73df7c91f96d741029409c72a0679ca0,
     type: 3}
+  cars:
+  - {fileID: 21300000, guid: cfdb488b964e6a041b3daa958b2f8aba, type: 3}
+  - {fileID: 21300002, guid: cfdb488b964e6a041b3daa958b2f8aba, type: 3}
+  - {fileID: 21300004, guid: cfdb488b964e6a041b3daa958b2f8aba, type: 3}
+  - {fileID: 21300006, guid: cfdb488b964e6a041b3daa958b2f8aba, type: 3}
   loader: {fileID: 0}
   board: {fileID: 0}
   feedback: {fileID: 0}
   tasker: {fileID: 0}
   iconer: {fileID: 0}
   navigator: {fileID: 0}
+  car: {fileID: 0}

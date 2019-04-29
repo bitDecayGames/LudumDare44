@@ -86,7 +86,7 @@ public class Task : MonoBehaviour
         var npcOccupier = SomeNpc.GetComponentInChildren<Board.Board.Occupier>();
         var board = FindObjectOfType<BoardManager>();
             
-        if (board.board.poiLocations.ContainsKey("npcSpawn"))
+        if (board.board.poiLocations.ContainsKey("npcSpawn".ToLower()))
         {
             // TODO make sure we spawn these thigns reasonably
             var mySpawn = pickSpawnLocation(board.board);
@@ -101,7 +101,7 @@ public class Task : MonoBehaviour
     }
 
     private Board.Board.Node pickSpawnLocation(Board.Board board) {
-        var spawnPoints = board.poiLocations["npcSpawn"].FindAll(p => p != null && p.myNode != null).ConvertAll(p => p.myNode);
+        var spawnPoints = board.poiLocations["npcSpawn".ToLower()].FindAll(p => p != null && p.myNode != null).ConvertAll(p => p.myNode);
         List<Board.Board.Node> possibleSpawns = spawnPoints.FindAll(n => n.occupier == null && !n.npcOffLimits);
         if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
         possibleSpawns.Clear();
@@ -160,7 +160,7 @@ public class Task : MonoBehaviour
 
         // if the step has a node, use that location to set the icon. Otherwise set it fucking everywhere.
         if (step.node != null) {
-            GameObject iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, step.node.occupier.transform, offset);
+            GameObject iconObj = IconManager.GetLocalReference().CreateIconForNonPerson(step.icon, step.node.occupier.transform, offset);
             Icons.Add(iconObj);
         } else {
 
@@ -171,7 +171,7 @@ public class Task : MonoBehaviour
             List<Board.Board.Occupier> locations = boardManager.board.stepLocations[lowerName];
             foreach (var loc in locations)
             {
-                GameObject iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, loc.gameObject.transform, offset);
+                GameObject iconObj = IconManager.GetLocalReference().CreateIconForNonPerson(step.icon, loc.gameObject.transform, offset);
                 Icons.Add(iconObj);
             }
         }
@@ -193,7 +193,7 @@ public class Task : MonoBehaviour
 
             List<Board.Board.POI> pois;
             if (allStepTypeNodes.Count == 0) {
-                pois = bm.board.poiLocations.ContainsKey(step.type.ToString()) ? bm.board.poiLocations[step.type.ToString()] : new List<Board.Board.POI>();
+                pois = bm.board.poiLocations.ContainsKey(step.type.ToString().ToLower()) ? bm.board.poiLocations[step.type.ToString().ToLower()] : new List<Board.Board.POI>();
                 foreach (var poi in pois)
                 {
                     allStepTypeNodes.Add(poi.myNode);
@@ -249,7 +249,9 @@ public class Task : MonoBehaviour
         Score.FailedTasks++;
         Score.TotalTasks++;
 
-        //TODO Play fail sound here
+        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CustomerLeft);
+        var player = FindObjectOfType<PlayerTaskController>();
+        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Negative("Customer left", player.transform);
         
         TaskStep leaveStep = 
             TaskStep.Create()

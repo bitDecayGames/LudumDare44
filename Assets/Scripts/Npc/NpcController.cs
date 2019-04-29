@@ -12,7 +12,7 @@ public class NpcController : MonoBehaviour
     TaskManager taskManager;
     private bool isInited = false;
 
-    float MaxWaitTimeSeconds = 30;
+    const float MaxWaitTimeSeconds = 60;
     float totalWaitTime;
 
     bool waiting;
@@ -116,7 +116,7 @@ public class NpcController : MonoBehaviour
     void CreateIcon(Icon icon)
     {
         ClearIcon();
-        currentIcon = IconManager.GetLocalReference().CreateIcon(icon, gameObject.transform.Find("Sprite").transform);
+        currentIcon = IconManager.GetLocalReference().CreateIconForPerson(icon, gameObject.transform.Find("Sprite").transform);
     }
 
     void ClearIcon()

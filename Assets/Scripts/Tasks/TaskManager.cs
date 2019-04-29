@@ -139,11 +139,16 @@ public class TaskManager : MonoBehaviour
             {
                 for (var linenum = 0; linenum < bm.board.lineLocations.Count; linenum++)
                 {
-                    if (ts.meta == bm.board.lineLocations[linenum][0].Meta)
+                    if (bm.board.lineLocations[linenum][0].Meta != null)
                     {
-                        task.lineNumber = linenum;
-                        break;
+                        if (ts.meta == bm.board.lineLocations[linenum][0].Meta.ToLower())
+                        {
+                            task.lineNumber = linenum;
+                            break;
+                        }
                     }
+
+                    task.lineNumber = linenum;
                 }
             }
             foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
@@ -222,6 +227,7 @@ public class TaskManager : MonoBehaviour
             {
                 if (!possibleStepList.Contains(step))
                 {
+                    Debug.Log("Couldn't create task "+taskStepCombo.Key+", no step found for " + step);
                     taskPossible = false;
                     break;
                 }

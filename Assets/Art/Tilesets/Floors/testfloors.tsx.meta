@@ -30,6 +30,16 @@ ScriptedImporter:
     11400048: Tile_floors_23
     11400050: Tile_floors_24
     11400052: Tile_floors_25
+    11400054: Tile_floors_26
+    11400056: Tile_floors_27
+    11400058: Tile_floors_28
+    11400060: Tile_floors_29
+    11400062: Tile_floors_30
+    11400064: Tile_floors_31
+    11400066: Tile_floors_32
+    11400068: Tile_floors_33
+    11400070: Tile_floors_34
+    11400072: Tile_floors_35
     21300000: Sprite_floors_1
     21300002: Sprite_floors_2
     21300004: Sprite_floors_3
@@ -55,6 +65,16 @@ ScriptedImporter:
     21300044: Sprite_floors_23
     21300046: Sprite_floors_24
     21300048: Sprite_floors_25
+    21300050: Sprite_floors_26
+    21300052: Sprite_floors_27
+    21300054: Sprite_floors_28
+    21300056: Sprite_floors_29
+    21300058: Sprite_floors_30
+    21300060: Sprite_floors_31
+    21300062: Sprite_floors_32
+    21300064: Sprite_floors_33
+    21300066: Sprite_floors_34
+    21300068: Sprite_floors_35
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -69,7 +89,7 @@ ScriptedImporter:
   importerVersion: 7
   pixelsPerUnit: 16
   edgesPerEllipse: 32
-  numberOfObjectsImported: 53
+  numberOfObjectsImported: 73
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048

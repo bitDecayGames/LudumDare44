@@ -153,9 +153,12 @@ namespace Movement {
             List<Vector3> lines = new List<Vector3>();
             var cur = boardPos.CopyIsoVector2();
             lines.Add(cur.ToWorldPosReadable());
-            currentDirections.ForEach(dir => {
-                lines.Add(DirectionAddToIsoVector(dir, cur).ToWorldPosReadable());
-            });
+            if (currentDirections != null)
+            {
+                currentDirections.ForEach(dir => {
+                    lines.Add(DirectionAddToIsoVector(dir, cur).ToWorldPosReadable());
+                });
+            }
             for (int i = 0; i + 1 < lines.Count; i++) {
                 var a = lines[i];
                 var b = lines[i + 1];
@@ -174,8 +177,8 @@ namespace Movement {
             if (board.board.stepLocations.ContainsKey(taskStepName.ToLower())) {
                 nodes.AddRange(board.board.stepLocations[taskStepName.ToLower()].ConvertAll(o => o.myNode));
             }
-            if (board.board.poiLocations.ContainsKey(taskStepName)) {
-                nodes.AddRange(board.board.poiLocations[taskStepName].ConvertAll(o => o.myNode));
+            if (board.board.poiLocations.ContainsKey(taskStepName.ToLower())) {
+                nodes.AddRange(board.board.poiLocations[taskStepName.ToLower()].ConvertAll(o => o.myNode));
             }
             return nodes.FindAll(n => n != null);
         }

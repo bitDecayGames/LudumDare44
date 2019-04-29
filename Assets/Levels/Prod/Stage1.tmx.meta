@@ -3907,41 +3907,41 @@ ScriptedImporter:
     107804: _MapPrfab/Stage1/POIs/WaitZone (4)
     107806: _MapPrfab/Stage1/POIs/WaitZone (5)
     107808: _MapPrfab/Stage1/POIs/WaitZone (6)
-    107816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)
-    107818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
+    107810: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
       (CF)
-    107820: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
+    107812: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
       (CF)/rope_blocker_1
-    107822: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)
-    107824: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
+    107814: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
       (CF)
-    107826: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
+    107816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)
+    107818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
       (CF)/rope_blocker_2
-    107828: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)
-    107830: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
+    107820: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
       (CF)
-    107832: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
+    107822: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)
+    107824: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
       (CF)/rope_blocker_3
-    107834: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)
-    107836: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
+    107826: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
       (CF)
-    107838: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
+    107828: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)
+    107830: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
       (CF)/rope_blocker_4
-    107840: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)
-    107842: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
+    107832: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
       (CF)
-    107844: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
+    107834: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)
+    107836: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
       (CF)/DoorToFrontDesk1
-    107846: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)
-    107848: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
+    107838: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
       (CF)
-    107850: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
+    107840: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)
+    107842: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
       (CF)/DoorToFrontDesk2
-    107852: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)
-    107854: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
+    107844: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)
-    107856: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
+    107846: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)
+    107848: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)/OverBySignUpDesk
+    107852: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)
     400000: _MapPrfab/Stage1/Transform
     400002: _MapPrfab/Stage1/Floor/Transform
     400004: _MapPrfab/Stage1/Floor/Chunk (-16,16)/Transform
@@ -7847,41 +7847,41 @@ ScriptedImporter:
     407804: _MapPrfab/Stage1/POIs/WaitZone (4)/Transform
     407806: _MapPrfab/Stage1/POIs/WaitZone (5)/Transform
     407808: _MapPrfab/Stage1/POIs/WaitZone (6)/Transform
-    407816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/Transform
-    407818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
+    407810: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
       (CF)/Transform
-    407820: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
+    407812: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
       (CF)/rope_blocker_1/Transform
-    407822: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/Transform
-    407824: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
+    407814: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
       (CF)/Transform
-    407826: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
+    407816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/Transform
+    407818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
       (CF)/rope_blocker_2/Transform
-    407828: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/Transform
-    407830: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
+    407820: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
       (CF)/Transform
-    407832: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
+    407822: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/Transform
+    407824: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
       (CF)/rope_blocker_3/Transform
-    407834: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/Transform
-    407836: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
+    407826: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
       (CF)/Transform
-    407838: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
+    407828: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/Transform
+    407830: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
       (CF)/rope_blocker_4/Transform
-    407840: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/Transform
-    407842: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
+    407832: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
       (CF)/Transform
-    407844: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
+    407834: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/Transform
+    407836: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
       (CF)/DoorToFrontDesk1/Transform
-    407846: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/Transform
-    407848: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
+    407838: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
       (CF)/Transform
-    407850: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
+    407840: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/Transform
+    407842: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
       (CF)/DoorToFrontDesk2/Transform
-    407852: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/Transform
-    407854: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
+    407844: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)/Transform
-    407856: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
+    407846: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/Transform
+    407848: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)/OverBySignUpDesk/Transform
+    407852: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/Transform
     6800000: _MapPrfab/Stage1/Line/Line/EdgeCollider2D
     6800002: _MapPrfab/Stage1/Line/Object_191/EdgeCollider2D
     11400000: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperMap
@@ -16406,19 +16406,19 @@ ScriptedImporter:
     21207012: _MapPrfab/Stage1/Floor/Chunk (48,80)/tile (59, 81) (TRS)/SpriteRenderer
     21207014: _MapPrfab/Stage1/Floor/Chunk (48,80)/tile (59, 82) (TRS)/SpriteRenderer
     21207016: _MapPrfab/Stage1/Floor/Chunk (48,80)/tile (59, 83) (TRS)/SpriteRenderer
-    21207032: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
+    21207018: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
       (CF)/rope_blocker_1/SpriteRenderer
-    21207034: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
+    21207020: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/rope_blocker_2
       (CF)/rope_blocker_2/SpriteRenderer
-    21207036: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
+    21207022: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_3 (TRS)/rope_blocker_3
       (CF)/rope_blocker_3/SpriteRenderer
-    21207038: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
+    21207024: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_4 (TRS)/rope_blocker_4
       (CF)/rope_blocker_4/SpriteRenderer
-    21207040: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
+    21207026: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk1 (TRS)/DoorToFrontDesk1
       (CF)/DoorToFrontDesk1/SpriteRenderer
-    21207042: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
+    21207028: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/DoorToFrontDesk2
       (CF)/DoorToFrontDesk2/SpriteRenderer
-    21207044: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
+    21207030: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)/OverBySignUpDesk/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/Stage1/Grid
