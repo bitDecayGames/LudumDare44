@@ -19,14 +19,14 @@ public class TaskManager : MonoBehaviour
     private Timer timer;
     private EasyNavigator navigator;
 
-    uint NumTasks = 8;
+    uint NumTasks = 5;
     int NumRandomTasks;
 
     // Time before a new task is created. (Seconds)
-    static float TaskBetweenTime = 5f;
+    static float TaskBetweenTime = 1f;
     float TimeToNewTasks = TaskBetweenTime;
 
-    static int MaxNumberLines = 2;
+    static int MaxNumberLines = 1;
     int currentLine = 0;
     private bool isLevelEnded = false;
 
@@ -114,10 +114,22 @@ public class TaskManager : MonoBehaviour
         foreach (GameObject go in taskObjs)
         {
             Task task = go.GetComponent<Task>();
-            task.CompleteStep(type, completer);
 
-            if (task.IsComplete()) {
-                Destroy(go);
+            TaskStep nextStep = task.steps.Peek();
+
+            BoardManager bm = FindObjectOfType<BoardManager>();
+            BoardPosition completerPos = completer.GetComponent<BoardPosition>();
+            Board.Board.Node completerNode = bm.board.Get(completerPos.X, completerPos.Y);
+
+            var expandedNextStepNode = Task.ExpandNode(nextStep.node);
+            foreach (var node in expandedNextStepNode)
+            {
+                if (node.Equals(completerNode)){
+                    task.CompleteStep(type, completer);
+                    if (task.IsComplete()) {
+                        Destroy(go);
+                    }
+                }
             }
         }
     }
@@ -200,6 +212,7 @@ public class TaskManager : MonoBehaviour
     public void CreateRandomTask(Task task){
         var rand = new System.Random();
         int taskNumber = rand.Next(NumRandomTasks);
+        Debug.Log("Rand task number to spawn: " + taskNumber);
         task.type = possibleTaskList[taskNumber];
         TaskBuilder.CreateTask(task);
     }

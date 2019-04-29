@@ -20,41 +20,41 @@ public static class TaskBuilder
                 break;
             case TaskType.OpenBankDoor:
                 OpenBankDoor(task);
-            break;
-           case TaskType.ChangeIntoCash:
-               ChangeIntoCash(task);
-               break;
-           case TaskType.ATMDeposit:
-               ATMDeposit(task);
-               break;
+                break;
+            case TaskType.ChangeIntoCash:
+                ChangeIntoCash(task);
+                break;
+            case TaskType.ATMDeposit:
+                ATMDeposit(task);
+                break;
             case TaskType.OpenAccount:
                 OpenAccount(task);
-            break;
+                break;
             case TaskType.CheckCashing:
                 CheckCashing(task);
-            break;
+                break;
             case TaskType.VacuumTubeDeposit:
                 VacuumTubeDeposit(task);
-            break;
+                break;
             case TaskType.VacuumTubeCoinChange:
                 VacuumTubeCoinChange(task);
-            break;
+                break;
         }
     }
 
     public static Dictionary<TaskType, List<String>> GetAllTaskAndStepDetails()
     {
         Dictionary<TaskType, List<String>> dict = new Dictionary<TaskType, List<String>>();
-        dict.Add(TaskType.DepositMoney, DepositMoney());
+        // dict.Add(TaskType.DepositMoney, DepositMoney());
         // dict.Add(TaskType.FillCashRegister, FillCashRegister());
         // dict.Add(TaskType.EmptyCashRegister, EmptyCashRegister());
-        dict.Add(TaskType.OpenBankDoor, OpenBankDoor());
-        dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
-        dict.Add(TaskType.ATMDeposit, ATMDeposit());
+        // dict.Add(TaskType.OpenBankDoor, OpenBankDoor());
+        // dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
+        // dict.Add(TaskType.ATMDeposit, ATMDeposit());
         dict.Add(TaskType.OpenAccount, OpenAccount());
-        dict.Add(TaskType.CheckCashing, CheckCashing());
-        dict.Add(TaskType.VacuumTubeDeposit, VacuumTubeDeposit());
-        dict.Add(TaskType.VacuumTubeCoinChange, VacuumTubeCoinChange());
+        // dict.Add(TaskType.CheckCashing, CheckCashing());
+        // dict.Add(TaskType.VacuumTubeDeposit, VacuumTubeDeposit());
+        // dict.Add(TaskType.VacuumTubeCoinChange, VacuumTubeCoinChange());
 
         return dict;
     }
