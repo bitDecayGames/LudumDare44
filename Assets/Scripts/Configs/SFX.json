@@ -10,6 +10,8 @@
     "SlidingDoorOpen",
     "SlidingDoorClose",
     "GreetCustomer",
-    "ByeCustomer"
+    "ByeCustomer",
+    "PressStart",
+    "CustomerLeft"
   ]
 }

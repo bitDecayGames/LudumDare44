@@ -279,13 +279,6 @@ public static class TaskBuilder
     static void OpenAccount(Task task)
     {
         task.type = TaskType.OpenAccount;
-        task.lineTask = true;
-
-        TaskStep.Create()
-            .Type(TaskStepType.GetInLine)
-            .NPC()
-            .Meta(TaskStepType.AccountComputer)
-            .AddTo(task);
         
         TaskStep.Create()
             .Type(TaskStepType.AccountComputer)
