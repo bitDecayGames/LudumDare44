@@ -12,12 +12,12 @@ public static class TaskBuilder
             case TaskType.DepositMoney:
                 DepositMoney(task);
                 break;
-            case TaskType.ChangeIntoCash:
-                ChangeIntoCash(task);
-                break;
-            case TaskType.ATMDeposit:
-                ATMDeposit(task);
-                break;
+//            case TaskType.ChangeIntoCash:
+//                ChangeIntoCash(task);
+//                break;
+//            case TaskType.ATMDeposit:
+//                ATMDeposit(task);
+//                break;
             // case TaskType.FillCashRegister:
             //     FillCashRegister(task);
             //     break;
@@ -34,8 +34,8 @@ public static class TaskBuilder
     {
         Dictionary<TaskType, List<String>> dict = new Dictionary<TaskType, List<String>>();
         dict.Add(TaskType.DepositMoney, DepositMoney());
-        dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
-        dict.Add(TaskType.ATMDeposit, ATMDeposit());
+//        dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
+//        dict.Add(TaskType.ATMDeposit, ATMDeposit());
         // dict.Add(TaskType.FillCashRegister, FillCashRegister());
         // dict.Add(TaskType.EmptyCashRegister, EmptyCashRegister());
         // dict.Add(TaskType.OpenBankDoor, OpenBankDoor());
@@ -65,6 +65,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
             .NPC()
+            .Meta(TaskStepType.CashRegister)
             .AddTo(task);
 
         TaskStep.Create()
@@ -151,7 +152,14 @@ public static class TaskBuilder
     static void ATMDeposit(Task task)
     {
         task.type = TaskType.ATMDeposit;
+        task.lineTask = true;
 
+        TaskStep.Create()
+            .Type(TaskStepType.GetInLine)
+            .NPC()
+            .Meta(TaskStepType.ATM)
+            .AddTo(task);
+        
         TaskStep.Create()
             .Type(TaskStepType.ATM)
             .NPC()

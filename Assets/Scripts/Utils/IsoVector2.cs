@@ -30,6 +30,12 @@ namespace Utils {
             return new Vector2((x - y) * (TileConstants.TILE_WIDTH * .5f) / TileConstants.TILE_WIDTH, (x + y) * (TileConstants.TILE_HEIGHT * .5f) / -TileConstants.TILE_WIDTH);
         }
 
+        public Vector2 ToWorldPosReadable() {
+            var v = ToWorldPos();
+            v.y -= 0.75f;
+            return v;
+        }
+
         public IsoVector2 Add(int x, int y, int z = 0) {
             this.x += x;
             this.y += y;

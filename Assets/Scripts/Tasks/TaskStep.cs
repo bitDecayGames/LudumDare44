@@ -25,6 +25,7 @@ public class TaskStep
     public Icon icon = Icon.Empty;
     public string SFX;
     public bool lastStepForSuccess = false;
+    public string meta;
     
     public static TaskStep Create()
     {
@@ -34,6 +35,12 @@ public class TaskStep
     public TaskStep Type(TaskStepType type)
     {
         this.type = type;
+        return this;
+    }
+    
+    public TaskStep Meta(TaskStepType taskmeta)
+    {
+        meta = taskmeta.ToString();
         return this;
     }
 

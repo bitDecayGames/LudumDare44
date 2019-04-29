@@ -9,6 +9,7 @@
     "FemaleAngry",
     "SlidingDoorOpen",
     "SlidingDoorClose",
-    "GreetCustomer"
+    "GreetCustomer",
+    "ByeCustomer"
   ]
 }

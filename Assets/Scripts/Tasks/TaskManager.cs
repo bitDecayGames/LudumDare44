@@ -135,9 +135,17 @@ public class TaskManager : MonoBehaviour
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
             MaxNumberLines = bm.board.lineLocations.Count;
-            task.lineNumber = currentLine;
-            currentLine++;
-            if(currentLine >= MaxNumberLines) currentLine = 0;
+            foreach (var ts in task.steps)
+            {
+                for (var linenum = 0; linenum < bm.board.lineLocations.Count; linenum++)
+                {
+                    if (ts.meta == bm.board.lineLocations[linenum][0].Meta)
+                    {
+                        task.lineNumber = linenum;
+                        break;
+                    }
+                }
+            }
             foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
             {
                 TaskStep getInLine = TaskStep.Create().Type(TaskStepType.GetInLine).NPC(true);
