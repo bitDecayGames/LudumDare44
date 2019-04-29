@@ -140,7 +140,7 @@ public class Task : MonoBehaviour
         if (completer == null)
         {
             var player = FindObjectOfType<PlayerTaskController>();
-            taskManager.Feedback.Positive("you got there mfer!!", player.transform);
+            if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("you got there mfer!!", player.transform);
         }
 
         ClearIcons();

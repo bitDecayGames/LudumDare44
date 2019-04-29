@@ -102,9 +102,7 @@ public class TaskManager : MonoBehaviour
             if(currentLine >= MaxNumberLines) currentLine = 0;
             foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
             {
-                TaskStep getInLine = new TaskStep();
-                getInLine.type = TaskStepType.GetInLine;
-                getInLine.npcStep = true;
+                TaskStep getInLine = new TaskStep(TaskStepType.GetInLine, true);
                 getInLine.node = poi.myNode;
                 getInLineSteps.Enqueue(getInLine);
             }

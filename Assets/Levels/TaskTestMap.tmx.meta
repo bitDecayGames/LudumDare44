@@ -5,12 +5,6 @@ ScriptedImporter:
     100000: _MapPrfab/TaskTestMap
     100002: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-46, 47) (TRS)
     100004: _MapPrfab/TaskTestMap/Collisions
-    100006: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)
-    100008: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Object_1 (CF)
-    100010: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1
-    100012: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)
-    100014: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Object_2 (CF)
-    100016: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2
     100018: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)
     100020: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)
     100022: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8
@@ -216,12 +210,6 @@ ScriptedImporter:
     400000: _MapPrfab/TaskTestMap/Transform
     400002: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-46, 47) (TRS)/Transform
     400004: _MapPrfab/TaskTestMap/Collisions/Transform
-    400006: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Transform
-    400008: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Object_1 (CF)/Transform
-    400010: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/Transform
-    400012: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Transform
-    400014: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Object_2 (CF)/Transform
-    400016: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/Transform
     400018: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Transform
     400020: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Transform
     400022: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8/Transform
@@ -433,10 +421,6 @@ ScriptedImporter:
     11400010: _superAsset
     11400012: _MapPrfab/TaskTestMap/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400014: _MapPrfab/TaskTestMap/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400016: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400018: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400020: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400022: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400024: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400026: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400028: _MapPrfab/TaskTestMap/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -741,8 +725,6 @@ ScriptedImporter:
     11400626: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400628: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400630: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    21200000: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/SpriteRenderer
-    21200002: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
     21200004: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8/SpriteRenderer
     21200006: _MapPrfab/TaskTestMap/Collisions/Object_9 (TRS)/Object_9 (CF)/Object_9/SpriteRenderer
     21200008: _MapPrfab/TaskTestMap/Collisions/Object_10 (TRS)/Object_10 (CF)/Object_10/SpriteRenderer
