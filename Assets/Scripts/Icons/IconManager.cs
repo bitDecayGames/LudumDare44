@@ -17,6 +17,8 @@ public enum Icon
     VacuumIn,
     VacuumOut,
     Waiting,
+    Handshake,
+
 }
 
 public class IconManager : MonoBehaviour
