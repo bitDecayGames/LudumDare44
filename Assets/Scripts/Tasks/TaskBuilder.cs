@@ -39,12 +39,12 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
-            .NPC(true)
+            .NPC()
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
-            .NPC(true)
+            .NPC()
             .AddTo(task);
 
         TaskStep.Create()
@@ -60,11 +60,12 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
             .SetIcon(Icon.Elipsis)
+            .TriggersSuccess()
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.LeaveBuilding)
-            .NPC(true)
+            .NPC()
             .AddTo(task);     
     }
 
@@ -74,12 +75,12 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
-            .NPC(true)
+            .NPC()
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
-            .NPC(true)
+            .NPC()
             .AddTo(task);
 
         TaskStep.Create()
@@ -95,11 +96,12 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
             .SetIcon(Icon.Coins)
+            .TriggersSuccess()
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.LeaveBuilding)
-            .NPC(true)
+            .NPC()
             .AddTo(task);        
     }
 
@@ -108,14 +110,20 @@ public static class TaskBuilder
         task.type = TaskType.ATMDeposit;
 
         TaskStep.Create()
-            .Type(TaskStepType.Safe)
+            .Type(TaskStepType.ATM)
+            .NPC()
+            .AddTo(task);
+
+        // MW this will make the check icon appear for a second I think
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
             .SetIcon(Icon.Check)
-            .NPC(true)
+            .NPC()
             .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.LeaveBuilding)
-            .NPC(true)
+            .NPC()
             .AddTo(task);      
     }
 

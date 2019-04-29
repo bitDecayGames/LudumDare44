@@ -30,7 +30,8 @@ public class Task : MonoBehaviour
     public bool lineTask = false;
     public int numSteps = 0;
     private bool initialized = false;
-    bool failed;
+    private bool failed;
+    private bool success;
 
     public static string GetTaskName(TaskType type)
     {
@@ -186,11 +187,14 @@ public class Task : MonoBehaviour
         ClearIcons();
         failed = true;
 
+        Score.FailedTasks++;
+        Score.TotalTasks++;
+
         TaskStep leaveStep = 
             TaskStep.Create()
                 .Type(TaskStepType.LeaveBuilding)
                 .SetIcon(Icon.Angry)
-                .NPC(true);
+                .NPC();
 
         AddStep(leaveStep);
         npcController.AssignStep(leaveStep);
@@ -218,6 +222,10 @@ public class Task : MonoBehaviour
         steps.Dequeue();
         currentStep.complete = true;
         completedSteps.Add(currentStep);
+        if (currentStep.lastStepForSuccess) {
+            Score.CompletedTasks++;
+            Score.TotalTasks++;
+        }
         if (currentStep.SFX != null) {
             FMODSoundEffectsPlayer.Instance.PlaySoundEffect(currentStep.SFX);
         }

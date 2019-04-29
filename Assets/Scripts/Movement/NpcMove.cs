@@ -10,6 +10,7 @@ using Utils;
 namespace Movement {
     public class NpcMove : MonoBehaviour {
         public const float TIME_TO_MOVE = 0.4f;
+        public const float TIME_TO_MOVE_VARIANCE = 0.075f;
 
         private BoardPosition boardPos;
 
@@ -22,10 +23,11 @@ namespace Movement {
         private Action callback;
         private bool isFindingPath = false;
         private List<Direction> currentDirections;
+        private float speed = TIME_TO_MOVE;
         private int tries = 0;
         private const int maxTries = 30;
         private int overallTries = 0;
-        private const int maxOverallTries = 2;
+        private const int maxOverallTries = 6;
         private Board.Board.Node currentStepLocation;
         private bool initialized = false;
 
@@ -42,6 +44,7 @@ namespace Movement {
         public void Initialize() {
             if (!initialized) {
                 initialized = true;
+                speed = UnityEngine.Random.Range(TIME_TO_MOVE - TIME_TO_MOVE_VARIANCE, TIME_TO_MOVE + TIME_TO_MOVE_VARIANCE);
                 boardPos = GetComponent<BoardPosition>();
                 animator = GetComponentInChildren<Animator>();
                 occupier = GetComponent<Board.Board.Occupier>();
@@ -198,7 +201,7 @@ namespace Movement {
         private void StartLerp(Vector2 originalPos, Vector2 endPos) {
             isAcceptingInput = false;
             standing = false;
-            lerper.Begin(originalPos, endPos, TIME_TO_MOVE, () => { isAcceptingInput = true; });
+            lerper.Begin(originalPos, endPos, speed, () => { isAcceptingInput = true; });
         }
 
         private void playAnimationIfNotPlayingAsAFunction(string animName)

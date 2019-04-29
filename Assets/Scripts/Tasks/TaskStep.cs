@@ -15,6 +15,16 @@ public enum TaskStepType {
 
 public class TaskStep
 {
+    
+
+    public TaskStepType type;
+    public bool complete;
+    public bool npcStep = false;
+    public Board.Board.Node node;
+    public Icon icon = Icon.Empty;
+    public string SFX;
+    public bool lastStepForSuccess = false;
+    
     public static TaskStep Create()
     {
         return new TaskStep();
@@ -26,7 +36,7 @@ public class TaskStep
         return this;
     }
 
-    public TaskStep NPC(bool isNpc)
+    public TaskStep NPC(bool isNpc = true)
     {
         npcStep = isNpc;
         return this;
@@ -41,6 +51,11 @@ public class TaskStep
     public TaskStep SFC(string sfx)
     {
         SFX = sfx;
+        return this;
+    }
+
+    public TaskStep TriggersSuccess() {
+        lastStepForSuccess = true;
         return this;
     }
 
@@ -60,19 +75,7 @@ public class TaskStep
         return System.Text.RegularExpressions.Regex.Replace(typeName, "(\\B[A-Z])", " $1");
     }
 
-    public TaskStepType type;
-
-    public bool complete;
-
-    public bool npcStep = false;
-
-    public Board.Board.Node node;
-
-    public Icon icon = Icon.Empty;
-
-    public string SFX;
-
     public override string ToString() {
-        return string.Format("[{0} Npc:{1} {2} {3} Comp:{4}]", type, npcStep, node == null ? "(null_node)" : node.ToString(), icon, complete);
+        return string.Format("[{0} at {2} Npc:{1} Icon:{3} Comp:{4}]", type, npcStep, node == null ? "(null_node)" : node.ToString(), icon, complete);
     }
 }
