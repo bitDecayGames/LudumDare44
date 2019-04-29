@@ -33,6 +33,21 @@ public static class TaskBuilder
 
     }
 
+    public static void GetStartingTask(Task task, string level)
+    {
+        task.type = TaskType.OpenBankDoor;
+
+        TaskStep.Create()
+            .Type(TaskStepType.Safe)
+            .SetIcon(Icon.Money)
+            .AddTo(task);
+        
+        TaskStep.Create()
+            .Type(TaskStepType.CashRegister)
+            .SetIcon(Icon.Money)
+            .AddTo(task);
+    }
+
     static void DepositMoney(Task task){
         task.type = TaskType.DepositMoney;
         task.lineTask = true;
