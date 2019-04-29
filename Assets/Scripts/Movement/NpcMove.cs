@@ -153,9 +153,12 @@ namespace Movement {
             List<Vector3> lines = new List<Vector3>();
             var cur = boardPos.CopyIsoVector2();
             lines.Add(cur.ToWorldPosReadable());
-            currentDirections.ForEach(dir => {
-                lines.Add(DirectionAddToIsoVector(dir, cur).ToWorldPosReadable());
-            });
+            if (currentDirections != null)
+            {
+                currentDirections.ForEach(dir => {
+                    lines.Add(DirectionAddToIsoVector(dir, cur).ToWorldPosReadable());
+                });
+            }
             for (int i = 0; i + 1 < lines.Count; i++) {
                 var a = lines[i];
                 var b = lines[i + 1];
