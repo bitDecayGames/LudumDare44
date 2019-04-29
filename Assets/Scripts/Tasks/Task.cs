@@ -327,7 +327,7 @@ public class Task : MonoBehaviour
 
 //TODO make so npc can only commplete npc steps
 
-        if (SomeNpc != completer)
+        if (!completer.tag.Equals("Player") && SomeNpc != completer)
         {
             // Debug.Log("Wrong NPC tried to complete a task");
             return;
