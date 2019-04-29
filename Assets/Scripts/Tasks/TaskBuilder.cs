@@ -10,8 +10,7 @@ public static class TaskBuilder
 
     public static void CreateRandomTask(Task task){
         var rand = new System.Random();
-        // int taskNumber = rand.Next(numRandomTasks);
-        int taskNumber = 2;
+        int taskNumber = rand.Next(numRandomTasks);
         Debug.Log("Random task number: " + taskNumber);
 
         switch (taskNumber)
