@@ -28,7 +28,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3540771336331668810}
   m_LocalRotation: {x: 0.13984817, y: -0.48398405, z: -0.06940382, w: 0.8610372}
-  m_LocalPosition: {x: 0, y: 0, z: -0.084}
+  m_LocalPosition: {x: 0, y: 0, z: -0.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8847254563823819957}
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 10, y: -60, z: -15}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.735, y: 4.516}
-  m_SizeDelta: {x: 3.225, y: 0.7}
+  m_AnchoredPosition: {x: -2.99, y: 4.84}
+  m_SizeDelta: {x: 2.335, y: 0.507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &7005624056883973606
 MeshFilter:
@@ -83,7 +83,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 41
 --- !u!222 &3128692667066126033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 12:30 PM
+  m_text: 02:30 PM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 11b55326c1bd90848bae91a7eb28cf11, type: 2}
   m_sharedMaterial: {fileID: 21331997993263584, guid: 11b55326c1bd90848bae91a7eb28cf11,
@@ -141,8 +141,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -279,8 +279,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4973452421420871895}
   m_LocalRotation: {x: 0.13984817, y: -0.48398405, z: -0.06940382, w: 0.8610372}
-  m_LocalPosition: {x: -2.75, y: 4.56, z: -0.19}
-  m_LocalScale: {x: 151.54999, y: 41.3841, z: 1}
+  m_LocalPosition: {x: -3.02, y: 4.88, z: -0.269}
+  m_LocalScale: {x: 120.36856, y: 29.962914, z: 0.72401994}
   m_Children: []
   m_Father: {fileID: 8847254563823819957}
   m_RootOrder: 0
@@ -321,7 +321,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 32
   m_Sprite: {fileID: 21300000, guid: 1b8065b7089246a4381637a29d7adc6e, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
