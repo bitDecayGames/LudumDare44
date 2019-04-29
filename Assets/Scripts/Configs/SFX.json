@@ -12,6 +12,10 @@
     "GreetCustomer",
     "ByeCustomer",
     "PressStart",
-    "CustomerLeft"
+    "CustomerLeft",
+    "OpenVault",
+    "CloseVault",
+    "OpenDoor",
+    "CloseDoor"
   ]
 }

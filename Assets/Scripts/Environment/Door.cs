@@ -35,7 +35,18 @@ namespace Environment {
 
         public void Open() {
             if (animators.Count > 0 && !isOpen) {
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.SlidingDoorOpen);
+                if (name.Contains("Safe"))
+                {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.OpenVault);
+                }
+                else if (name.Contains("Sliding"))
+                {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.SlidingDoorOpen);                    
+                }
+                else
+                {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.OpenDoor);
+                }
                 animators.ForEach(a => a.Play("Open"));
                 isOpen = true;
             }
@@ -43,7 +54,18 @@ namespace Environment {
 
         public void Close() {
             if (animators.Count > 0 && isOpen) {
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.SlidingDoorClose);
+                if (name.Contains("Safe"))
+                {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CloseVault);
+                }
+                else if (name.Contains("Sliding"))
+                {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.SlidingDoorClose);
+                }
+                else
+                {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CloseDoor);
+                }
                 animators.ForEach(a => a.Play("Close"));
                 isOpen = false;
             }

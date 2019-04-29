@@ -37,15 +37,9 @@ ScriptedImporter:
     100064: _MapPrfab/Stage3/Collisions/Object_44 (TRS)
     100066: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)
     100068: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44
-    100070: _MapPrfab/Stage3/Collisions/Object_45 (TRS)
-    100072: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)
-    100074: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45
     100076: _MapPrfab/Stage3/Collisions/Object_46 (TRS)
     100078: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)
     100080: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46
-    100082: _MapPrfab/Stage3/Collisions/Object_48 (TRS)
-    100084: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)
-    100086: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48
     100088: _MapPrfab/Stage3/Collisions/Object_49 (TRS)
     100090: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)
     100092: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49
@@ -6294,6 +6288,8 @@ ScriptedImporter:
     112578: _MapPrfab/Stage3/Interactables/Despawn (5)
     112580: _MapPrfab/Stage3/Interactables/Spawn
     112582: _MapPrfab/Stage3/Interactables/CarBoi
+    112584: _MapPrfab/Stage3/Line/Line 4
+    112586: _MapPrfab/Stage3/POIs/LineStart (4)
     112590: _MapPrfab/Stage3/POIs/LineStart
     112592: _MapPrfab/Stage3/POIs/LineStart (1)
     112594: _MapPrfab/Stage3/POIs/LineStart (2)
@@ -6352,15 +6348,9 @@ ScriptedImporter:
     400064: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Transform
     400066: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Transform
     400068: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/Transform
-    400070: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Transform
-    400072: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Transform
-    400074: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45/Transform
     400076: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Transform
     400078: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Transform
     400080: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46/Transform
-    400082: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Transform
-    400084: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Transform
-    400086: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48/Transform
     400088: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Transform
     400090: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Transform
     400092: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/Transform
@@ -12609,6 +12599,8 @@ ScriptedImporter:
     412578: _MapPrfab/Stage3/Interactables/Despawn (5)/Transform
     412580: _MapPrfab/Stage3/Interactables/Spawn/Transform
     412582: _MapPrfab/Stage3/Interactables/CarBoi/Transform
+    412584: _MapPrfab/Stage3/Line/Line 4/Transform
+    412586: _MapPrfab/Stage3/POIs/LineStart (4)/Transform
     412590: _MapPrfab/Stage3/POIs/LineStart/Transform
     412592: _MapPrfab/Stage3/POIs/LineStart (1)/Transform
     412594: _MapPrfab/Stage3/POIs/LineStart (2)/Transform
@@ -12632,6 +12624,7 @@ ScriptedImporter:
     412630: _MapPrfab/Stage3/Line/Line 1/Transform
     412632: _MapPrfab/Stage3/Line/Line 2/Transform
     412634: _MapPrfab/Stage3/Line/Line 3/Transform
+    6800000: _MapPrfab/Stage3/Line/Line 4/EdgeCollider2D
     6800008: _MapPrfab/Stage3/Line/Line 0/EdgeCollider2D
     6800010: _MapPrfab/Stage3/Line/Line 1/EdgeCollider2D
     6800012: _MapPrfab/Stage3/Line/Line 2/EdgeCollider2D
@@ -12663,12 +12656,8 @@ ScriptedImporter:
     11400048: _MapPrfab/Stage3/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400050: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400052: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400054: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400056: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400058: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400060: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400062: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400064: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400066: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400068: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400070: _MapPrfab/Stage3/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -20056,14 +20045,19 @@ ScriptedImporter:
     11414834: _MapPrfab/Stage3/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414836: _MapPrfab/Stage3/Interactables/CarBoi/MonoBehaviour-SuperTiled2Unity.SuperObject
     11414838: _MapPrfab/Stage3/Interactables/CarBoi/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414860: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414862: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414864: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414866: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414868: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414870: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414872: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414874: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414840: _MapPrfab/Stage3/Line/Line 4/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414842: _MapPrfab/Stage3/Line/Line 4/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11414844: _MapPrfab/Stage3/Line/Line 4/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414846: _MapPrfab/Stage3/POIs/LineStart (4)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414848: _MapPrfab/Stage3/POIs/LineStart (4)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414856: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414858: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414860: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414862: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414864: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414866: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414868: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414870: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414876: _MapPrfab/Stage3/POIs/NPC Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
     11414878: _MapPrfab/Stage3/POIs/NPC Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414880: _MapPrfab/Stage3/POIs/NPC Spawn (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -20117,9 +20111,7 @@ ScriptedImporter:
     21200016: _MapPrfab/Stage3/Collisions/Object_42 (TRS)/Object_42 (CF)/Object_42/SpriteRenderer
     21200018: _MapPrfab/Stage3/Collisions/Object_43 (TRS)/Object_43 (CF)/Object_43/SpriteRenderer
     21200020: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/SpriteRenderer
-    21200022: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45/SpriteRenderer
     21200024: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46/SpriteRenderer
-    21200026: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48/SpriteRenderer
     21200028: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/SpriteRenderer
     21200030: _MapPrfab/Stage3/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/SpriteRenderer
     21200032: _MapPrfab/Stage3/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/SpriteRenderer

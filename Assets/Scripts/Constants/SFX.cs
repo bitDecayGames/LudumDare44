@@ -13,4 +13,8 @@ public class SFX
 	public const string ByeCustomer = "ByeCustomer";
 	public const string PressStart = "PressStart";
 	public const string CustomerLeft = "CustomerLeft";
+	public const string OpenVault = "OpenVault";
+	public const string CloseVault = "CloseVault";
+	public const string OpenDoor = "OpenDoor";
+	public const string CloseDoor = "CloseDoor";
 }

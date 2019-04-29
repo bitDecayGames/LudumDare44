@@ -136,6 +136,7 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
+            .Meta(TaskStepType.CashRegister)
             .NPC()
             .AddTo(task);
 
@@ -188,15 +189,16 @@ public static class TaskBuilder
         
         TaskStep.Create()
             .Type(TaskStepType.ATM)
-            .NPC()
-            .AddTo(task);
-
-        // MW this will make the check icon appear for a second I think
-        TaskStep.Create()
-            .Type(TaskStepType.ATM)
             .SetIcon(Icon.Check)
             .NPC()
             .AddTo(task);
+
+//        // MW this will make the check icon appear for a second I think
+//        TaskStep.Create()
+//            .Type(TaskStepType.ATM)
+//            
+//            .NPC()
+//            .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.LeaveBuilding)
@@ -288,6 +290,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.AccountComputer)
             .SetIcon(Icon.Handshake)
+            .TriggersSuccess()
             .AddTo(task);
 
         TaskStep.Create()
@@ -323,6 +326,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
             .SetIcon(Icon.Check)
+            .TriggersSuccess()
             .AddTo(task);      
 
         TaskStep.Create()
@@ -359,6 +363,7 @@ public static class TaskBuilder
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
             .RemoveCar()
+            .TriggersSuccess()
             .AddTo(task);      
     }
     
@@ -390,6 +395,7 @@ public static class TaskBuilder
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
             .RemoveCar()
+            .TriggersSuccess()
             .AddTo(task);      
     }
     
