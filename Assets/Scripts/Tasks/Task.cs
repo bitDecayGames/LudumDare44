@@ -160,7 +160,7 @@ public class Task : MonoBehaviour
 
         // if the step has a node, use that location to set the icon. Otherwise set it fucking everywhere.
         if (step.node != null) {
-            GameObject iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, step.node.occupier.transform, offset);
+            GameObject iconObj = IconManager.GetLocalReference().CreateIconForNonPerson(step.icon, step.node.occupier.transform, offset);
             Icons.Add(iconObj);
         } else {
 
@@ -171,7 +171,7 @@ public class Task : MonoBehaviour
             List<Board.Board.Occupier> locations = boardManager.board.stepLocations[lowerName];
             foreach (var loc in locations)
             {
-                GameObject iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, loc.gameObject.transform, offset);
+                GameObject iconObj = IconManager.GetLocalReference().CreateIconForNonPerson(step.icon, loc.gameObject.transform, offset);
                 Icons.Add(iconObj);
             }
         }

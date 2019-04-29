@@ -116,7 +116,7 @@ public class NpcController : MonoBehaviour
     void CreateIcon(Icon icon)
     {
         ClearIcon();
-        currentIcon = IconManager.GetLocalReference().CreateIcon(icon, gameObject.transform.Find("Sprite").transform);
+        currentIcon = IconManager.GetLocalReference().CreateIconForPerson(icon, gameObject.transform.Find("Sprite").transform);
     }
 
     void ClearIcon()
