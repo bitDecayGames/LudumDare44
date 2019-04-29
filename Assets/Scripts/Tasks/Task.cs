@@ -213,7 +213,7 @@ public class Task : MonoBehaviour
         if (currentStep.SFX != null) {
             FMODSoundEffectsPlayer.Instance.PlaySoundEffect(currentStep.SFX);
         }
-        Debug.Log(type + " Complete");
+        // Debug.Log(type + " Complete");
 
         if (completer == null)
         {
