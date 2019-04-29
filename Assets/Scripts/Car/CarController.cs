@@ -59,7 +59,7 @@ public class CarController : MonoBehaviour {
         c.a = 0;
         renderer.color = c;
 
-        renderer.sortingOrder = 10000;
+        renderer.sortingOrder = 1;
 
         currentCar.AddComponent<SpriteRendererFadeInOverTime>().timeToFadeIn = 2f;
 

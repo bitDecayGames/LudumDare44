@@ -6293,6 +6293,7 @@ ScriptedImporter:
     112576: _MapPrfab/Stage3/Interactables/Despawn (4)
     112578: _MapPrfab/Stage3/Interactables/Despawn (5)
     112580: _MapPrfab/Stage3/Interactables/Spawn
+    112582: _MapPrfab/Stage3/Interactables/CarBoi
     112590: _MapPrfab/Stage3/POIs/LineStart
     112592: _MapPrfab/Stage3/POIs/LineStart (1)
     112594: _MapPrfab/Stage3/POIs/LineStart (2)
@@ -12607,6 +12608,7 @@ ScriptedImporter:
     412576: _MapPrfab/Stage3/Interactables/Despawn (4)/Transform
     412578: _MapPrfab/Stage3/Interactables/Despawn (5)/Transform
     412580: _MapPrfab/Stage3/Interactables/Spawn/Transform
+    412582: _MapPrfab/Stage3/Interactables/CarBoi/Transform
     412590: _MapPrfab/Stage3/POIs/LineStart/Transform
     412592: _MapPrfab/Stage3/POIs/LineStart (1)/Transform
     412594: _MapPrfab/Stage3/POIs/LineStart (2)/Transform
@@ -20052,6 +20054,8 @@ ScriptedImporter:
     11414830: _MapPrfab/Stage3/Interactables/Despawn (5)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414832: _MapPrfab/Stage3/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
     11414834: _MapPrfab/Stage3/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414836: _MapPrfab/Stage3/Interactables/CarBoi/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414838: _MapPrfab/Stage3/Interactables/CarBoi/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414860: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
     11414862: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414864: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
