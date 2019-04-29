@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace Environment {
     public class Door : MonoBehaviour {
-        private Animator animator;
+        private List<Animator> animators = new List<Animator>();
         private bool isOpen = false;
         private int inMe = 0;
 
         private void Start() {
-            animator = GetComponentInChildren<Animator>();
+            animators.AddRange(GetComponentsInChildren<Animator>());
             Close();
         }
 
@@ -34,15 +34,15 @@ namespace Environment {
         }
 
         public void Open() {
-            if (animator != null && !isOpen) {
-                animator.Play("Open");
+            if (animators.Count > 0 && !isOpen) {
+                animators.ForEach(a => a.Play("Open"));
                 isOpen = true;
             }
         }
 
         public void Close() {
-            if (animator != null && isOpen) {
-                animator.Play("Close");
+            if (animators.Count > 0 && isOpen) {
+                animators.ForEach(a => a.Play("Close"));
                 isOpen = false;
             }
         }

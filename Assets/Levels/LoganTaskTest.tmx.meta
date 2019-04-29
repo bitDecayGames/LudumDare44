@@ -362,6 +362,14 @@ ScriptedImporter:
     100714: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 54) (TRS)
     100716: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 55) (TRS)
     100718: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 56) (TRS)
+    100720: _MapPrfab/LoganTaskTest/Interactables/Object_52 (TRS)/Object_52 (CF)
+    100722: _MapPrfab/LoganTaskTest/Interactables/Object_52 (TRS)/Object_52 (CF)/Object_52
+    100724: _MapPrfab/LoganTaskTest/Interactables/Object_53 (TRS)/Object_53 (CF)
+    100726: _MapPrfab/LoganTaskTest/Interactables/Object_53 (TRS)/Object_53 (CF)/Object_53
+    100728: _MapPrfab/LoganTaskTest/Interactables/Object_54 (TRS)/Object_54 (CF)
+    100730: _MapPrfab/LoganTaskTest/Interactables/Object_54 (TRS)/Object_54 (CF)/Object_54
+    100732: _MapPrfab/LoganTaskTest/Interactables/Object_55 (TRS)/Object_55 (CF)
+    100734: _MapPrfab/LoganTaskTest/Interactables/Object_55 (TRS)/Object_55 (CF)/Object_55
     100738: _MapPrfab/LoganTaskTest/POIs/NPCSpawn
     100740: _MapPrfab/LoganTaskTest/POIs/NPCSpawn (1)
     400000: _MapPrfab/LoganTaskTest/Transform
@@ -724,6 +732,14 @@ ScriptedImporter:
     400714: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 54) (TRS)/Transform
     400716: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 55) (TRS)/Transform
     400718: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 56) (TRS)/Transform
+    400720: _MapPrfab/LoganTaskTest/Interactables/Object_52 (TRS)/Object_52 (CF)/Transform
+    400722: _MapPrfab/LoganTaskTest/Interactables/Object_52 (TRS)/Object_52 (CF)/Object_52/Transform
+    400724: _MapPrfab/LoganTaskTest/Interactables/Object_53 (TRS)/Object_53 (CF)/Transform
+    400726: _MapPrfab/LoganTaskTest/Interactables/Object_53 (TRS)/Object_53 (CF)/Object_53/Transform
+    400728: _MapPrfab/LoganTaskTest/Interactables/Object_54 (TRS)/Object_54 (CF)/Transform
+    400730: _MapPrfab/LoganTaskTest/Interactables/Object_54 (TRS)/Object_54 (CF)/Object_54/Transform
+    400732: _MapPrfab/LoganTaskTest/Interactables/Object_55 (TRS)/Object_55 (CF)/Transform
+    400734: _MapPrfab/LoganTaskTest/Interactables/Object_55 (TRS)/Object_55 (CF)/Object_55/Transform
     400738: _MapPrfab/LoganTaskTest/POIs/NPCSpawn/Transform
     400740: _MapPrfab/LoganTaskTest/POIs/NPCSpawn (1)/Transform
     6800000: _MapPrfab/LoganTaskTest/Line/Line/EdgeCollider2D
@@ -1787,6 +1803,10 @@ ScriptedImporter:
     21200678: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 54) (TRS)/SpriteRenderer
     21200680: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 55) (TRS)/SpriteRenderer
     21200682: _MapPrfab/LoganTaskTest/Floors/Chunk (16,48)/tile (28, 56) (TRS)/SpriteRenderer
+    21200684: _MapPrfab/LoganTaskTest/Interactables/Object_52 (TRS)/Object_52 (CF)/Object_52/SpriteRenderer
+    21200686: _MapPrfab/LoganTaskTest/Interactables/Object_53 (TRS)/Object_53 (CF)/Object_53/SpriteRenderer
+    21200688: _MapPrfab/LoganTaskTest/Interactables/Object_54 (TRS)/Object_54 (CF)/Object_54/SpriteRenderer
+    21200690: _MapPrfab/LoganTaskTest/Interactables/Object_55 (TRS)/Object_55 (CF)/Object_55/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/LoganTaskTest/Grid
   externalObjects: {}
@@ -1795,13 +1815,7 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
-  errors:
-  - Errors detected in tileset 'Tilesets/Objects.tsx'. Check the tileset inspector
-    for more details. Your map may be broken until these are fixed.
-  - Missing tile '29' on tile object ''
-  - Missing tile '80' on tile object ''
-  - Missing tile '80' on tile object ''
-  - Missing tile '83' on tile object ''
+  errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []
