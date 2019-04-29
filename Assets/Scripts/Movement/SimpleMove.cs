@@ -35,6 +35,12 @@ namespace Movement {
 
         // Update is called once per frame
         void Update() {
+
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Coinstar);
+            }
+            
             if (isAcceptingInput) {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
                     facing = Facing.Left;

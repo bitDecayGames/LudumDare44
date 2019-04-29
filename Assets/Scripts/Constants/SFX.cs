@@ -1,5 +1,10 @@
 public class SFX
 {
-	public const string Sound = "Sound";
-	public const string Sound2 = "Sound2";
+	public const string CashRegister = "CashRegister";
+	public const string Coinstar = "Coinstar";
+	public const string Bills = "Bills";
+	public const string MaleImpatient = "MaleImpatient";
+	public const string MaleAngry = "MaleAngry";
+	public const string FemaleImpatient = "FemaleImpatient";
+	public const string FemaleAngry = "FemaleAngry";
 }
