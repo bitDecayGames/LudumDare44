@@ -237,7 +237,11 @@
   <object id="142" gid="121" x="248" y="624" width="16" height="32"/>
   <object id="143" gid="121" x="248" y="632" width="16" height="32"/>
   <object id="144" gid="121" x="248" y="640" width="16" height="32"/>
-  <object id="145" gid="142" x="344" y="344" width="16" height="32"/>
+  <object id="145" gid="142" x="344" y="344" width="16" height="32">
+   <properties>
+    <property name="TaskStepType" value=""/>
+   </properties>
+  </object>
   <object id="146" gid="108" x="312" y="344" width="16" height="32"/>
   <object id="147" gid="125" x="256" y="344" width="16" height="32"/>
   <object id="148" gid="125" x="280" y="344" width="16" height="32"/>
