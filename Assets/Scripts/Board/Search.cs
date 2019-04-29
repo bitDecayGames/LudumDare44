@@ -45,10 +45,10 @@
             while (true)
             {
                 iterations++;
-                if (iterations > 1000) {
+                if (iterations > 300) {
                     var cur = fringe != null && fringe.GetFirstNode() != null ? fringe.GetFirstNode().currentNode : new Board.Board.Node(-1, -1);
-                    Debug.Log(string.Format("Unable to find path from {0} to destination {1}", cur, dest));
-                    return new List<Direction>();
+                    Debug.Log(string.Format("Giving back best effort. Unable to find path from {0} to destination {1}", cur, dest));
+                    return fringe.GetFirstNode().path;
                 }
                 
                 if (fringe.Length <= 0)
@@ -63,10 +63,10 @@
 
                 if (dest.Equals(checkPath.currentNode.x, checkPath.currentNode.y))
                 {
-//                    Debug.Log("Took " + iterations + " iterations to complete");
-//                    Debug.Log("Explored " + visited.Count + " nodes");
-//                    Debug.Log("Fringe left with " + fringe.Length + " unexplored items");
-//                    Debug.Log("Took " + ((Time.time * 1000 - start)) + " milliseconds to complete");
+                    Debug.Log("Took " + iterations + " iterations to complete");
+                    Debug.Log("Explored " + visited.Count + " nodes");
+                    Debug.Log("Fringe left with " + fringe.Length + " unexplored items");
+                    Debug.Log("Took " + ((Time.time * 1000 - start)) + " milliseconds to complete");
                     return checkPath.path;
                 }
                 
@@ -89,13 +89,17 @@
                         fringe.Push(next);
                     }
                 }
+                
+                fringe.Sort();
             }
         }
 
-        public static System.Collections.Generic.List<NodePath> expand(NodePath p, Board.Board board, IsoVector2 dest)
+        private static System.Collections.Generic.List<NodePath> nexts = new System.Collections.Generic.List<NodePath>();
+        
+        private static System.Collections.Generic.List<NodePath> expand(NodePath p, Board.Board board, IsoVector2 dest)
         {
            // Debug.Log("Expanding: " + p.currentNode.x + ", " + p.currentNode.y);
-            System.Collections.Generic.List<NodePath> nexts = new System.Collections.Generic.List<NodePath>();
+           nexts.Clear();
 
             Board.Board.Node check = p.currentNode.down;
             if (check != null)

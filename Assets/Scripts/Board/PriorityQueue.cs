@@ -22,6 +22,10 @@ public class PriorityQueue {
 
     public void Push(Search.NodePath node) {
         nodes.Add(node);
+    }
+
+    public void Sort()
+    {
         nodes.Sort(NodeComp);
     }
 
