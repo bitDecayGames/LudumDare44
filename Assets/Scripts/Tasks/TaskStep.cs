@@ -48,7 +48,7 @@ public class TaskStep
         return this;
     }
 
-    public TaskStep SFC(string sfx)
+    public TaskStep SetSfx(string sfx)
     {
         SFX = sfx;
         return this;

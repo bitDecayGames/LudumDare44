@@ -65,13 +65,27 @@ public class NpcController : MonoBehaviour
 
         if (ShouldWait())
         {
+            if (name.Contains("Woman"))
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.FemaleImpatient);
+            }
+            else
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.MaleImpatient);
+            }
             CreateIcon(Icon.Waiting);
             waiting = true;
         }
         else if (ShouldAnger())
         {
-//            GetComponent<Animation>().
-//            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.);
+            if (name.Contains("Woman"))
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.FemaleAngry);
+            }
+            else
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.MaleAngry);
+            }
             CreateIcon(Icon.Angry);
             angry = true;
         }
