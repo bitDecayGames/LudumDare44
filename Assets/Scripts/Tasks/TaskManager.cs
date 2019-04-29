@@ -77,7 +77,8 @@ public class TaskManager : MonoBehaviour
             Task task = go.GetComponent<Task>();
             task.CompleteStep(type, completer);
 
-            if (task.IsComplete() || task.IsFailed()) {
+            if (task.IsComplete())
+            {
                 Destroy(go);
             }
         }
