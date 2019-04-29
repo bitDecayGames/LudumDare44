@@ -194,12 +194,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &363260057 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 716663488043917065, guid: 1387a70d0fe13445da7bedfd7bc31c62,
+    type: 3}
+  m_PrefabInstance: {fileID: 1200010474}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &885451205
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 363260057}
     m_Modifications:
     - target: {fileID: 100000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_Name
@@ -207,27 +213,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.258963
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.28157032
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.106135115
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalRotation.w
@@ -235,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e0003a0114105408615d3cf52f0612, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
