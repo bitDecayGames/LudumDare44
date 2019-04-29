@@ -55,6 +55,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
             .NPC()
+            .Meta(TaskStepType.CashRegister)
             .AddTo(task);
 
         TaskStep.Create()

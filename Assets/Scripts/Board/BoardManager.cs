@@ -168,6 +168,13 @@ namespace Board {
                                     Board.POI linePOI = new Board.POI();
                                     linePOI.myNode = lineNode;
                                     lineNode.poi = linePOI;
+                                    foreach (var p in props.m_Properties)
+                                    {
+                                        if (p.m_Name == "ForTask")
+                                        {
+                                            linePOI.Meta = p.m_Value;
+                                        }
+                                    }
                                     board.lineLocations[p.m_Value.ToInt()].Add(linePOI);
                                 }
                             } else {
