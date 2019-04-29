@@ -16,10 +16,10 @@ public static class TaskBuilder
                 DepositMoney(task);
                 break;
             case 1:
-                ChangeIntoCash(task);
+                DepositMoney(task);
                 break;
             case 2:
-                ATMDeposit(task);
+                DepositMoney(task);
                 break;
             // case 3:
             //     FillCashRegister(task);
