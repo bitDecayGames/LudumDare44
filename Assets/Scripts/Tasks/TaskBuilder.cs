@@ -288,6 +288,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.AccountComputer)
             .SetIcon(Icon.Handshake)
+            .TriggersSuccess()
             .AddTo(task);
 
         TaskStep.Create()
@@ -323,6 +324,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.CashRegister)
             .SetIcon(Icon.Check)
+            .TriggersSuccess()
             .AddTo(task);      
 
         TaskStep.Create()
@@ -359,6 +361,7 @@ public static class TaskBuilder
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
             .RemoveCar()
+            .TriggersSuccess()
             .AddTo(task);      
     }
     
@@ -390,6 +393,7 @@ public static class TaskBuilder
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
             .RemoveCar()
+            .TriggersSuccess()
             .AddTo(task);      
     }
     
