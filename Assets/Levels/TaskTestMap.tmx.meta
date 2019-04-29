@@ -5,6 +5,12 @@ ScriptedImporter:
     100000: _MapPrfab/TaskTestMap
     100002: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-46, 47) (TRS)
     100004: _MapPrfab/TaskTestMap/Collisions
+    100006: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)
+    100008: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/Object_39 (CF)
+    100010: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/Object_39 (CF)/Object_39
+    100012: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)
+    100014: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/Object_40 (CF)
+    100016: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/Object_40 (CF)/Object_40
     100018: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)
     100020: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)
     100022: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8
@@ -207,9 +213,66 @@ ScriptedImporter:
     100416: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)
     100418: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)
     100420: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)
+    100422: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)
+    100424: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/Object_41 (CF)
+    100426: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/Object_41 (CF)/Object_41
+    100428: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)
+    100430: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/Object_42 (CF)
+    100432: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/Object_42 (CF)/Object_42
+    100434: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)
+    100436: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/Object_43 (CF)
+    100438: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/Object_43 (CF)/Object_43
+    100440: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)
+    100442: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/Object_44 (CF)
+    100444: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44
+    100446: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)
+    100448: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/Object_45 (CF)
+    100450: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45
+    100452: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)
+    100454: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/Object_46 (CF)
+    100456: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46
+    100458: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)
+    100460: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/Object_47 (CF)
+    100462: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/Object_47 (CF)/Object_47
+    100464: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)
+    100466: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/Object_48 (CF)
+    100468: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48
+    100470: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)
+    100472: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/Object_49 (CF)
+    100474: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49
+    100476: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)
+    100478: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/Object_50 (CF)
+    100480: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50
+    100482: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)
+    100484: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/Object_51 (CF)
+    100486: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51
+    100488: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)
+    100490: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/Object_52 (CF)
+    100492: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52
+    100494: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)
+    100496: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/Object_53 (CF)
+    100498: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53
+    100500: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)
+    100502: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/Object_54 (CF)
+    100504: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54
+    100506: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)
+    100508: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/Object_55 (CF)
+    100510: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55
+    100512: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)
+    100514: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/Object_56 (CF)
+    100516: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/Object_56 (CF)/Object_56
+    100518: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)
+    100520: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/Object_57 (CF)
+    100522: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/Object_57 (CF)/Object_57
     400000: _MapPrfab/TaskTestMap/Transform
     400002: _MapPrfab/TaskTestMap/Floors/Chunk (-48,32)/tile (-46, 47) (TRS)/Transform
     400004: _MapPrfab/TaskTestMap/Collisions/Transform
+    400006: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/Transform
+    400008: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/Object_39 (CF)/Transform
+    400010: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/Object_39 (CF)/Object_39/Transform
+    400012: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/Transform
+    400014: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/Object_40 (CF)/Transform
+    400016: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/Object_40 (CF)/Object_40/Transform
     400018: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Transform
     400020: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Transform
     400022: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8/Transform
@@ -412,6 +475,57 @@ ScriptedImporter:
     400416: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)/Transform
     400418: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/Transform
     400420: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/Transform
+    400422: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/Transform
+    400424: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/Object_41 (CF)/Transform
+    400426: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/Object_41 (CF)/Object_41/Transform
+    400428: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/Transform
+    400430: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/Object_42 (CF)/Transform
+    400432: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/Object_42 (CF)/Object_42/Transform
+    400434: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/Transform
+    400436: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/Object_43 (CF)/Transform
+    400438: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/Object_43 (CF)/Object_43/Transform
+    400440: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/Transform
+    400442: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/Object_44 (CF)/Transform
+    400444: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/Transform
+    400446: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/Transform
+    400448: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/Object_45 (CF)/Transform
+    400450: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45/Transform
+    400452: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/Transform
+    400454: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/Object_46 (CF)/Transform
+    400456: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46/Transform
+    400458: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/Transform
+    400460: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/Object_47 (CF)/Transform
+    400462: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/Object_47 (CF)/Object_47/Transform
+    400464: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/Transform
+    400466: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/Object_48 (CF)/Transform
+    400468: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48/Transform
+    400470: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/Transform
+    400472: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/Object_49 (CF)/Transform
+    400474: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/Transform
+    400476: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/Transform
+    400478: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/Object_50 (CF)/Transform
+    400480: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/Transform
+    400482: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/Transform
+    400484: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/Object_51 (CF)/Transform
+    400486: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/Transform
+    400488: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/Transform
+    400490: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/Object_52 (CF)/Transform
+    400492: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52/Transform
+    400494: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/Transform
+    400496: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/Object_53 (CF)/Transform
+    400498: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53/Transform
+    400500: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/Transform
+    400502: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/Object_54 (CF)/Transform
+    400504: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54/Transform
+    400506: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/Transform
+    400508: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/Object_55 (CF)/Transform
+    400510: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55/Transform
+    400512: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/Transform
+    400514: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/Object_56 (CF)/Transform
+    400516: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/Object_56 (CF)/Object_56/Transform
+    400518: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/Transform
+    400520: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/Object_57 (CF)/Transform
+    400522: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/Object_57 (CF)/Object_57/Transform
     6800000: _MapPrfab/TaskTestMap/Line/Object_38/EdgeCollider2D
     11400000: _MapPrfab/TaskTestMap/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/TaskTestMap/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -421,6 +535,10 @@ ScriptedImporter:
     11400010: _superAsset
     11400012: _MapPrfab/TaskTestMap/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400014: _MapPrfab/TaskTestMap/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400018: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400022: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400024: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400026: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400028: _MapPrfab/TaskTestMap/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -725,6 +843,42 @@ ScriptedImporter:
     11400626: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400628: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400630: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400632: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400634: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400636: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400638: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400640: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400642: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400644: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400646: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400648: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400650: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400652: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400654: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400656: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400658: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400660: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400662: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400664: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400666: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400668: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400670: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400672: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400674: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400676: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400678: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400680: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400682: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400684: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400686: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400688: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400690: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400692: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400694: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400696: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400698: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    21200000: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/Object_39 (CF)/Object_39/SpriteRenderer
+    21200002: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/Object_40 (CF)/Object_40/SpriteRenderer
     21200004: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Object_8 (CF)/Object_8/SpriteRenderer
     21200006: _MapPrfab/TaskTestMap/Collisions/Object_9 (TRS)/Object_9 (CF)/Object_9/SpriteRenderer
     21200008: _MapPrfab/TaskTestMap/Collisions/Object_10 (TRS)/Object_10 (CF)/Object_10/SpriteRenderer
@@ -870,6 +1024,23 @@ ScriptedImporter:
     21200288: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 41) (TRS)/SpriteRenderer
     21200290: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 42) (TRS)/SpriteRenderer
     21200292: _MapPrfab/TaskTestMap/Floors/Chunk (-64,32)/tile (-55, 43) (TRS)/SpriteRenderer
+    21200294: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/Object_41 (CF)/Object_41/SpriteRenderer
+    21200296: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/Object_42 (CF)/Object_42/SpriteRenderer
+    21200298: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/Object_43 (CF)/Object_43/SpriteRenderer
+    21200300: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/SpriteRenderer
+    21200302: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45/SpriteRenderer
+    21200304: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46/SpriteRenderer
+    21200306: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/Object_47 (CF)/Object_47/SpriteRenderer
+    21200308: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48/SpriteRenderer
+    21200310: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/SpriteRenderer
+    21200312: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/SpriteRenderer
+    21200314: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/SpriteRenderer
+    21200316: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52/SpriteRenderer
+    21200318: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53/SpriteRenderer
+    21200320: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54/SpriteRenderer
+    21200322: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55/SpriteRenderer
+    21200324: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/Object_56 (CF)/Object_56/SpriteRenderer
+    21200326: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/Object_57 (CF)/Object_57/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/TaskTestMap/Grid
   externalObjects: {}
