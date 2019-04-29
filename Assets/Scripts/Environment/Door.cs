@@ -35,6 +35,7 @@ namespace Environment {
 
         public void Open() {
             if (animators.Count > 0 && !isOpen) {
+                // TODO: MW SFX could go here?
                 animators.ForEach(a => a.Play("Open"));
                 isOpen = true;
             }
@@ -42,6 +43,7 @@ namespace Environment {
 
         public void Close() {
             if (animators.Count > 0 && isOpen) {
+                // TODO: MW SFX could go here?
                 animators.ForEach(a => a.Play("Close"));
                 isOpen = false;
             }
