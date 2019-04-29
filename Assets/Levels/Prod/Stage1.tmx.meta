@@ -3899,7 +3899,14 @@ ScriptedImporter:
     107788: _MapPrfab/Stage1/POIs/NpcSpawn3 (1)
     107790: _MapPrfab/Stage1/POIs/NpcSpawn3 (2)
     107792: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)
+    107794: _MapPrfab/Stage1/POIs/WaitZone
     107796: _MapPrfab/Stage1/NpcOnlyCollisions
+    107798: _MapPrfab/Stage1/POIs/WaitZone (1)
+    107800: _MapPrfab/Stage1/POIs/WaitZone (2)
+    107802: _MapPrfab/Stage1/POIs/WaitZone (3)
+    107804: _MapPrfab/Stage1/POIs/WaitZone (4)
+    107806: _MapPrfab/Stage1/POIs/WaitZone (5)
+    107808: _MapPrfab/Stage1/POIs/WaitZone (6)
     107816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)
     107818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
       (CF)
@@ -7832,7 +7839,14 @@ ScriptedImporter:
     407788: _MapPrfab/Stage1/POIs/NpcSpawn3 (1)/Transform
     407790: _MapPrfab/Stage1/POIs/NpcSpawn3 (2)/Transform
     407792: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)/Transform
+    407794: _MapPrfab/Stage1/POIs/WaitZone/Transform
     407796: _MapPrfab/Stage1/NpcOnlyCollisions/Transform
+    407798: _MapPrfab/Stage1/POIs/WaitZone (1)/Transform
+    407800: _MapPrfab/Stage1/POIs/WaitZone (2)/Transform
+    407802: _MapPrfab/Stage1/POIs/WaitZone (3)/Transform
+    407804: _MapPrfab/Stage1/POIs/WaitZone (4)/Transform
+    407806: _MapPrfab/Stage1/POIs/WaitZone (5)/Transform
+    407808: _MapPrfab/Stage1/POIs/WaitZone (6)/Transform
     407816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/Transform
     407818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
       (CF)/Transform
@@ -12869,6 +12883,20 @@ ScriptedImporter:
     11409992: _MapPrfab/Stage1/POIs/NpcSpawn3 (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409994: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409996: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409998: _MapPrfab/Stage1/POIs/WaitZone/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410000: _MapPrfab/Stage1/POIs/WaitZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11410002: _MapPrfab/Stage1/POIs/WaitZone (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410004: _MapPrfab/Stage1/POIs/WaitZone (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11410006: _MapPrfab/Stage1/POIs/WaitZone (2)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410008: _MapPrfab/Stage1/POIs/WaitZone (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11410010: _MapPrfab/Stage1/POIs/WaitZone (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410012: _MapPrfab/Stage1/POIs/WaitZone (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11410014: _MapPrfab/Stage1/POIs/WaitZone (4)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410016: _MapPrfab/Stage1/POIs/WaitZone (4)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11410018: _MapPrfab/Stage1/POIs/WaitZone (5)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410020: _MapPrfab/Stage1/POIs/WaitZone (5)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11410022: _MapPrfab/Stage1/POIs/WaitZone (6)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410024: _MapPrfab/Stage1/POIs/WaitZone (6)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/Stage1/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/SpriteRenderer
     21200002: _MapPrfab/Stage1/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
     21200004: _MapPrfab/Stage1/Collisions/Object_3 (TRS)/Object_3 (CF)/Object_3/SpriteRenderer
