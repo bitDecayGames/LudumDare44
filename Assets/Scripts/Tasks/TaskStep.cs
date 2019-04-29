@@ -5,17 +5,28 @@ using UnityEngine;
 public enum TaskStepType {
     Safe,
     VacuumTube,
-    EmptyCashRegister,
-    FullCashRegister,
     BankDoor,
     GetInLine,
-    TalkToTeller,
-    NpcSpawn
+    CashRegister,
+    CoinMachine,
+    ATM,
+    LeaveBuilding,
 }
 
 public class TaskStep
 {
 
+    public TaskStep(TaskStepType type, bool isNpc = false) {
+        this.type = type;
+        npcStep = isNpc;
+    }
+
+    public TaskStep(TaskStepType type, Icon icon, bool isNpc = false) {
+        this.type = type;
+        this.icon = icon;
+        npcStep = isNpc;
+    }
+    
     public static string GetStepName(TaskStepType type)
     {
         return System.Enum.GetName(typeof(TaskStepType), type);

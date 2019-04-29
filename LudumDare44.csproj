@@ -334,13 +334,6 @@
     <Compile Include="Assets\Scripts\Board\PriorityQueue.cs" />
     <Compile Include="Assets\Scripts\Board\Search.cs" />
     <Compile Include="Assets\Scripts\Camera\Follow.cs" />
-    <Compile Include="Assets\Scripts\CodeGeneration\GenerateScenes.cs" />
-    <Compile Include="Assets\Scripts\CodeGeneration\GenerateSFX.cs" />
-    <Compile Include="Assets\Scripts\CodeGeneration\GenerateSongs.cs" />
-    <Compile Include="Assets\Scripts\CodeGeneration\GenerateTags.cs" />
-    <Compile Include="Assets\Scripts\CodeGeneration\JsonFileSchemas\SFXList.cs" />
-    <Compile Include="Assets\Scripts\CodeGeneration\JsonFileSchemas\SongList.cs" />
-    <Compile Include="Assets\Scripts\CodeGeneration\OnSaveScripts.cs" />
     <Compile Include="Assets\Scripts\Constants\Scenes.cs" />
     <Compile Include="Assets\Scripts\Constants\SFX.cs" />
     <Compile Include="Assets\Scripts\Constants\Songs.cs" />
@@ -351,7 +344,6 @@
     <Compile Include="Assets\Scripts\Managers\GameObjectManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Managers\GenericGameObjectClass.cs" />
-    <Compile Include="Assets\Scripts\Menus\MenuController.cs" />
     <Compile Include="Assets\Scripts\Menus\Score.cs" />
     <Compile Include="Assets\Scripts\Movement\Facing.cs" />
     <Compile Include="Assets\Scripts\Movement\NpcMove.cs" />

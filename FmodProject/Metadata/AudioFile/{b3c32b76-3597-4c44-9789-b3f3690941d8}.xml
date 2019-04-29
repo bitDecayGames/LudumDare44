@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{b3c32b76-3597-4c44-9789-b3f3690941d8}">
+        <property name="assetPath">
+            <value>MaleAngry2.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.1159183673469388</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fe823660-c101-4fc8-9657-8b0fde2a30b7}</destination>
+        </relationship>
+    </object>
+</objects>

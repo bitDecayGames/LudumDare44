@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: a459e556080ae7d45af50f1f9c418c1c
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/FishersTestLand
+    100002: _MapPrfab/FishersTestLand/Collisions
+    100016: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)
+    100022: _MapPrfab/FishersTestLand/Collisions/Object_9 (TRS)
+    100028: _MapPrfab/FishersTestLand/Collisions/Object_10 (TRS)
+    100034: _MapPrfab/FishersTestLand/Collisions/Object_11 (TRS)
+    100040: _MapPrfab/FishersTestLand/Collisions/Object_12 (TRS)
+    100046: _MapPrfab/FishersTestLand/Collisions/Object_13 (TRS)
+    100052: _MapPrfab/FishersTestLand/Collisions/Object_19 (TRS)
+    100058: _MapPrfab/FishersTestLand/Collisions/Object_20 (TRS)
+    100064: _MapPrfab/FishersTestLand/Collisions/Object_21 (TRS)
+    100070: _MapPrfab/FishersTestLand/Collisions/Object_22 (TRS)
+    100076: _MapPrfab/FishersTestLand/Collisions/Object_23 (TRS)
+    100082: _MapPrfab/FishersTestLand/Collisions/Object_24 (TRS)
+    100088: _MapPrfab/FishersTestLand/Collisions/Object_25 (TRS)
+    100094: _MapPrfab/FishersTestLand/Collisions/Object_26 (TRS)
+    100100: _MapPrfab/FishersTestLand/Collisions/Object_27 (TRS)
+    100106: _MapPrfab/FishersTestLand/Collisions/Object_28 (TRS)
+    100112: _MapPrfab/FishersTestLand/Collisions/Object_29 (TRS)
+    100118: _MapPrfab/FishersTestLand/Collisions/Object_30 (TRS)
+    100124: _MapPrfab/FishersTestLand/Collisions/Object_31 (TRS)
+    100130: _MapPrfab/FishersTestLand/Collisions/Object_32 (TRS)
+    100136: _MapPrfab/FishersTestLand/Collisions/Object_33 (TRS)
+    100142: _MapPrfab/FishersTestLand/Floors
+    100144: _MapPrfab/FishersTestLand/Floors/Chunk (-48,32)
+    100146: _MapPrfab/FishersTestLand/Floors/Chunk (-48,48)
+    100148: _MapPrfab/FishersTestLand/Floors/Chunk (-64,32)
+    100150: _MapPrfab/FishersTestLand/Floors/Chunk (-64,48)
+    100152: _MapPrfab/FishersTestLand/Interactables
+    100154: _MapPrfab/FishersTestLand/Interactables/CoinMachine (TRS)
+    100166: _MapPrfab/FishersTestLand/Interactables/Spawn
+    100168: _MapPrfab/FishersTestLand/Line
+    100170: _MapPrfab/FishersTestLand/Line/Object_35
+    100172: _MapPrfab/FishersTestLand/POIs
+    100174: _MapPrfab/FishersTestLand/POIs/LineStart
+    100176: _MapPrfab/FishersTestLand/POIs/NpcSpawn
+    100386: _MapPrfab/FishersTestLand/Collisions/Object_36 (TRS)
+    100392: _MapPrfab/FishersTestLand/Collisions/Object_37 (TRS)
+    100398: _MapPrfab/FishersTestLand/Collisions/Object_38 (TRS)
+    100404: _MapPrfab/FishersTestLand/Collisions/Object_39 (TRS)
+    100410: _MapPrfab/FishersTestLand/Collisions/Object_41 (TRS)
+    100416: _MapPrfab/FishersTestLand/Collisions/Object_42 (TRS)
+    100422: _MapPrfab/FishersTestLand/Collisions/Object_43 (TRS)
+    100428: _MapPrfab/FishersTestLand/Collisions/Object_44 (TRS)
+    100434: _MapPrfab/FishersTestLand/Collisions/Object_45 (TRS)
+    100440: _MapPrfab/FishersTestLand/Collisions/Object_46 (TRS)
+    100446: _MapPrfab/FishersTestLand/Collisions/Object_47 (TRS)
+    100452: _MapPrfab/FishersTestLand/Collisions/Object_48 (TRS)
+    100458: _MapPrfab/FishersTestLand/Collisions/Object_50 (TRS)
+    100464: _MapPrfab/FishersTestLand/Interactables/ATM (TRS)
+    100470: _MapPrfab/FishersTestLand/Interactables/CashRegister (TRS)
+    100482: _MapPrfab/FishersTestLand/Interactables/Safe (TRS)
+    100800: _MapPrfab/FishersTestLand/Collisions/Object_53 (TRS)
+    100806: _MapPrfab/FishersTestLand/Collisions/Object_54 (TRS)
+    400000: _MapPrfab/FishersTestLand/Transform
+    400002: _MapPrfab/FishersTestLand/Collisions/Transform
+    400016: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/Transform
+    400022: _MapPrfab/FishersTestLand/Collisions/Object_9 (TRS)/Transform
+    400028: _MapPrfab/FishersTestLand/Collisions/Object_10 (TRS)/Transform
+    400034: _MapPrfab/FishersTestLand/Collisions/Object_11 (TRS)/Transform
+    400040: _MapPrfab/FishersTestLand/Collisions/Object_12 (TRS)/Transform
+    400046: _MapPrfab/FishersTestLand/Collisions/Object_13 (TRS)/Transform
+    400052: _MapPrfab/FishersTestLand/Collisions/Object_19 (TRS)/Transform
+    400058: _MapPrfab/FishersTestLand/Collisions/Object_20 (TRS)/Transform
+    400064: _MapPrfab/FishersTestLand/Collisions/Object_21 (TRS)/Transform
+    400070: _MapPrfab/FishersTestLand/Collisions/Object_22 (TRS)/Transform
+    400076: _MapPrfab/FishersTestLand/Collisions/Object_23 (TRS)/Transform
+    400082: _MapPrfab/FishersTestLand/Collisions/Object_24 (TRS)/Transform
+    400088: _MapPrfab/FishersTestLand/Collisions/Object_25 (TRS)/Transform
+    400094: _MapPrfab/FishersTestLand/Collisions/Object_26 (TRS)/Transform
+    400100: _MapPrfab/FishersTestLand/Collisions/Object_27 (TRS)/Transform
+    400106: _MapPrfab/FishersTestLand/Collisions/Object_28 (TRS)/Transform
+    400112: _MapPrfab/FishersTestLand/Collisions/Object_29 (TRS)/Transform
+    400118: _MapPrfab/FishersTestLand/Collisions/Object_30 (TRS)/Transform
+    400124: _MapPrfab/FishersTestLand/Collisions/Object_31 (TRS)/Transform
+    400130: _MapPrfab/FishersTestLand/Collisions/Object_32 (TRS)/Transform
+    400136: _MapPrfab/FishersTestLand/Collisions/Object_33 (TRS)/Transform
+    400142: _MapPrfab/FishersTestLand/Floors/Transform
+    400144: _MapPrfab/FishersTestLand/Floors/Chunk (-48,32)/Transform
+    400146: _MapPrfab/FishersTestLand/Floors/Chunk (-48,48)/Transform
+    400148: _MapPrfab/FishersTestLand/Floors/Chunk (-64,32)/Transform
+    400150: _MapPrfab/FishersTestLand/Floors/Chunk (-64,48)/Transform
+    400152: _MapPrfab/FishersTestLand/Interactables/Transform
+    400154: _MapPrfab/FishersTestLand/Interactables/CoinMachine (TRS)/Transform
+    400166: _MapPrfab/FishersTestLand/Interactables/Spawn/Transform
+    400168: _MapPrfab/FishersTestLand/Line/Transform
+    400170: _MapPrfab/FishersTestLand/Line/Object_35/Transform
+    400172: _MapPrfab/FishersTestLand/POIs/Transform
+    400174: _MapPrfab/FishersTestLand/POIs/LineStart/Transform
+    400176: _MapPrfab/FishersTestLand/POIs/NpcSpawn/Transform
+    400386: _MapPrfab/FishersTestLand/Collisions/Object_36 (TRS)/Transform
+    400392: _MapPrfab/FishersTestLand/Collisions/Object_37 (TRS)/Transform
+    400398: _MapPrfab/FishersTestLand/Collisions/Object_38 (TRS)/Transform
+    400404: _MapPrfab/FishersTestLand/Collisions/Object_39 (TRS)/Transform
+    400410: _MapPrfab/FishersTestLand/Collisions/Object_41 (TRS)/Transform
+    400416: _MapPrfab/FishersTestLand/Collisions/Object_42 (TRS)/Transform
+    400422: _MapPrfab/FishersTestLand/Collisions/Object_43 (TRS)/Transform
+    400428: _MapPrfab/FishersTestLand/Collisions/Object_44 (TRS)/Transform
+    400434: _MapPrfab/FishersTestLand/Collisions/Object_45 (TRS)/Transform
+    400440: _MapPrfab/FishersTestLand/Collisions/Object_46 (TRS)/Transform
+    400446: _MapPrfab/FishersTestLand/Collisions/Object_47 (TRS)/Transform
+    400452: _MapPrfab/FishersTestLand/Collisions/Object_48 (TRS)/Transform
+    400458: _MapPrfab/FishersTestLand/Collisions/Object_50 (TRS)/Transform
+    400464: _MapPrfab/FishersTestLand/Interactables/ATM (TRS)/Transform
+    400470: _MapPrfab/FishersTestLand/Interactables/CashRegister (TRS)/Transform
+    400482: _MapPrfab/FishersTestLand/Interactables/Safe (TRS)/Transform
+    400800: _MapPrfab/FishersTestLand/Collisions/Object_53 (TRS)/Transform
+    400806: _MapPrfab/FishersTestLand/Collisions/Object_54 (TRS)/Transform
+    6800000: _MapPrfab/FishersTestLand/Line/Object_35/EdgeCollider2D
+    11400000: _MapPrfab/FishersTestLand/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/FishersTestLand/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/FishersTestLand/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400006: _MapPrfab/FishersTestLand/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400018: _MapPrfab/FishersTestLand/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/FishersTestLand/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400022: _MapPrfab/FishersTestLand/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400024: _MapPrfab/FishersTestLand/Collisions/Object_10 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400026: _MapPrfab/FishersTestLand/Collisions/Object_10 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400028: _MapPrfab/FishersTestLand/Collisions/Object_11 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400030: _MapPrfab/FishersTestLand/Collisions/Object_11 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400032: _MapPrfab/FishersTestLand/Collisions/Object_12 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400034: _MapPrfab/FishersTestLand/Collisions/Object_12 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400036: _MapPrfab/FishersTestLand/Collisions/Object_13 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400038: _MapPrfab/FishersTestLand/Collisions/Object_13 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400040: _MapPrfab/FishersTestLand/Collisions/Object_19 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400042: _MapPrfab/FishersTestLand/Collisions/Object_19 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400044: _MapPrfab/FishersTestLand/Collisions/Object_20 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400046: _MapPrfab/FishersTestLand/Collisions/Object_20 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400048: _MapPrfab/FishersTestLand/Collisions/Object_21 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400050: _MapPrfab/FishersTestLand/Collisions/Object_21 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400052: _MapPrfab/FishersTestLand/Collisions/Object_22 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400054: _MapPrfab/FishersTestLand/Collisions/Object_22 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400056: _MapPrfab/FishersTestLand/Collisions/Object_23 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400058: _MapPrfab/FishersTestLand/Collisions/Object_23 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400060: _MapPrfab/FishersTestLand/Collisions/Object_24 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400062: _MapPrfab/FishersTestLand/Collisions/Object_24 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400064: _MapPrfab/FishersTestLand/Collisions/Object_25 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400066: _MapPrfab/FishersTestLand/Collisions/Object_25 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400068: _MapPrfab/FishersTestLand/Collisions/Object_26 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400070: _MapPrfab/FishersTestLand/Collisions/Object_26 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400072: _MapPrfab/FishersTestLand/Collisions/Object_27 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400074: _MapPrfab/FishersTestLand/Collisions/Object_27 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400076: _MapPrfab/FishersTestLand/Collisions/Object_28 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400078: _MapPrfab/FishersTestLand/Collisions/Object_28 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400080: _MapPrfab/FishersTestLand/Collisions/Object_29 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400082: _MapPrfab/FishersTestLand/Collisions/Object_29 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400084: _MapPrfab/FishersTestLand/Collisions/Object_30 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400086: _MapPrfab/FishersTestLand/Collisions/Object_30 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400088: _MapPrfab/FishersTestLand/Collisions/Object_31 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400090: _MapPrfab/FishersTestLand/Collisions/Object_31 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400092: _MapPrfab/FishersTestLand/Collisions/Object_32 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400094: _MapPrfab/FishersTestLand/Collisions/Object_32 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400096: _MapPrfab/FishersTestLand/Collisions/Object_33 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400098: _MapPrfab/FishersTestLand/Collisions/Object_33 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400100: _MapPrfab/FishersTestLand/Floors/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400102: _MapPrfab/FishersTestLand/Floors/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400104: _MapPrfab/FishersTestLand/Collisions/Object_36 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400106: _MapPrfab/FishersTestLand/Interactables/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400108: _MapPrfab/FishersTestLand/Interactables/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400110: _MapPrfab/FishersTestLand/Interactables/CoinMachine (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400112: _MapPrfab/FishersTestLand/Interactables/CoinMachine (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400118: _MapPrfab/FishersTestLand/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400120: _MapPrfab/FishersTestLand/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400122: _MapPrfab/FishersTestLand/Line/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400124: _MapPrfab/FishersTestLand/Line/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400126: _MapPrfab/FishersTestLand/Line/Object_35/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400128: _MapPrfab/FishersTestLand/Line/Object_35/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400130: _MapPrfab/FishersTestLand/Line/Object_35/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400132: _MapPrfab/FishersTestLand/POIs/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400134: _MapPrfab/FishersTestLand/POIs/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400136: _MapPrfab/FishersTestLand/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400138: _MapPrfab/FishersTestLand/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400140: _MapPrfab/FishersTestLand/POIs/NpcSpawn/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400142: _MapPrfab/FishersTestLand/POIs/NpcSpawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400144: _superAsset
+    11400562: _MapPrfab/FishersTestLand/Collisions/Object_36 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400564: _MapPrfab/FishersTestLand/Collisions/Object_37 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400566: _MapPrfab/FishersTestLand/Collisions/Object_37 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400568: _MapPrfab/FishersTestLand/Collisions/Object_38 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400570: _MapPrfab/FishersTestLand/Collisions/Object_38 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400572: _MapPrfab/FishersTestLand/Collisions/Object_39 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400574: _MapPrfab/FishersTestLand/Collisions/Object_39 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400576: _MapPrfab/FishersTestLand/Collisions/Object_41 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400578: _MapPrfab/FishersTestLand/Collisions/Object_41 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400580: _MapPrfab/FishersTestLand/Collisions/Object_42 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400582: _MapPrfab/FishersTestLand/Collisions/Object_42 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400584: _MapPrfab/FishersTestLand/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400586: _MapPrfab/FishersTestLand/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400588: _MapPrfab/FishersTestLand/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400590: _MapPrfab/FishersTestLand/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400592: _MapPrfab/FishersTestLand/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400594: _MapPrfab/FishersTestLand/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400596: _MapPrfab/FishersTestLand/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400598: _MapPrfab/FishersTestLand/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400600: _MapPrfab/FishersTestLand/Collisions/Object_47 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400602: _MapPrfab/FishersTestLand/Collisions/Object_47 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400604: _MapPrfab/FishersTestLand/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400606: _MapPrfab/FishersTestLand/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400608: _MapPrfab/FishersTestLand/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400610: _MapPrfab/FishersTestLand/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400612: _MapPrfab/FishersTestLand/Interactables/ATM (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400614: _MapPrfab/FishersTestLand/Interactables/ATM (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400616: _MapPrfab/FishersTestLand/Interactables/CashRegister (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400618: _MapPrfab/FishersTestLand/Interactables/CashRegister (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400624: _MapPrfab/FishersTestLand/Interactables/Safe (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400626: _MapPrfab/FishersTestLand/Interactables/Safe (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11401268: _MapPrfab/FishersTestLand/Collisions/Object_53 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11401270: _MapPrfab/FishersTestLand/Collisions/Object_53 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11401272: _MapPrfab/FishersTestLand/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11401274: _MapPrfab/FishersTestLand/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/FishersTestLand/Grid
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors:
+  - Errors detected in tileset 'Tilesets/floors.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Errors detected in tileset 'Tilesets/Objects.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '40' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '39' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '24' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '22' on tile object ''
+  - Missing tile '22' on tile object ''
+  - Missing tile '22' on tile object ''
+  - Missing tile '73' on tile object ''
+  - Missing tile '73' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '66' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '67' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '41' on tile object ''
+  - Missing tile '107' on tile object ''
+  - Missing tile '58' on tile object ''
+  - Missing tile '29' on tile object ''
+  - Missing tile '83' on tile object ''
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 12
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 1
+  sortingMode: 1
+  isIsometric: 1
+  customImporterClassName: 
+  internalTilesets: []

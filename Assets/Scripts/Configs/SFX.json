@@ -1,6 +1,11 @@
 {
   "SFX":[
-    "Sound",
-    "Sound2"
+    "CashRegister",
+    "Coinstar",
+    "Bills",
+    "MaleImpatient",
+    "MaleAngry",
+    "FemaleImpatient",
+    "FemaleAngry" 
   ]
 }

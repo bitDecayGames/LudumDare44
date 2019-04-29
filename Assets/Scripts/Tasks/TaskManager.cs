@@ -19,7 +19,7 @@ public class TaskManager : MonoBehaviour
     private Timer timer;
     private EasyNavigator navigator;
 
-    uint NumTasks = 5;
+    uint NumTasks = 2;
 
     // Time before a new task is created. (Seconds)
     static float TaskBetweenTime = 1f;
@@ -69,15 +69,15 @@ public class TaskManager : MonoBehaviour
         navigator.GoToScene("Score");
     }
 
-    public void CompleteTaskStep(TaskStepType type, bool npcStep)
+    public void CompleteTaskStep(TaskStepType type, GameObject completer)
     {
         GameObject[] taskObjs = GameObject.FindGameObjectsWithTag(TAG);
         foreach (GameObject go in taskObjs)
         {
             Task task = go.GetComponent<Task>();
-            task.CompleteStep(type, npcStep);
+            task.CompleteStep(type, completer);
 
-            if (task.IsComplete()) {
+            if (task.IsComplete() || task.IsFailed()) {
                 Destroy(go);
             }
         }
@@ -92,8 +92,6 @@ public class TaskManager : MonoBehaviour
         newTaskObj.tag = TAG;
 
         if (task.lineTask) {
-            
-
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
             MaxNumberLines = bm.board.lineLocations.Count;
@@ -102,9 +100,7 @@ public class TaskManager : MonoBehaviour
             if(currentLine >= MaxNumberLines) currentLine = 0;
             foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
             {
-                TaskStep getInLine = new TaskStep();
-                getInLine.type = TaskStepType.GetInLine;
-                getInLine.npcStep = true;
+                TaskStep getInLine = new TaskStep(TaskStepType.GetInLine, true);
                 getInLine.node = poi.myNode;
                 getInLineSteps.Enqueue(getInLine);
             }

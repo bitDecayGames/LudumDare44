@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Boo.Lang.Runtime;
@@ -8,7 +9,9 @@ public enum TaskType {
     FillCashRegister,
     EmptyCashRegister,
     OpenBankDoor,
-    TestTask
+    ChangeIntoCash,
+    VacuumTubeDeposit,
+    ATMDeposit
 }
 
 public class Task : MonoBehaviour
@@ -26,6 +29,7 @@ public class Task : MonoBehaviour
     public int lineNumber;
     public bool lineTask = false;
     public int numSteps = 0;
+    bool failed;
 
     public static string GetTaskName(TaskType type)
     {
@@ -45,16 +49,22 @@ public class Task : MonoBehaviour
 
     void Start()
     {
-        npc = Instantiate(SomeNpc);
-        npcController = npc.GetComponent<NpcController>();
-        if (npcController == null)
+        if (HaveNpcSteps())
         {
-            throw new RuntimeException("NPC did not have NPC Controller on prefab");
-        }
-        npcController.Init();
-        if(steps.Peek().npcStep)
-        {
-            npcController.AssignStep(steps.Peek());
+            npc = Instantiate(SomeNpc);
+            // This is XXX af. We need the right reference here, so do this.
+            SomeNpc = npc;
+            npcController = npc.GetComponent<NpcController>();
+            if (npcController == null)
+            {
+                throw new RuntimeException("NPC did not have NPC Controller on prefab");
+            }
+            npcController.Init();
+            npcController.AssignTask(this);
+            if(steps.Peek().npcStep)
+            {
+                npcController.AssignStep(steps.Peek());
+            }
         }
         CreateIconsForStep(steps.Peek());
         taskManager = GetComponentInParent<TaskManager>();
@@ -85,6 +95,7 @@ public class Task : MonoBehaviour
 
         Board.BoardManager boardManager = FindObjectOfType<Board.BoardManager>();
         string lowerName = TaskStep.GetStepName(step.type).ToLower();
+        if (!boardManager.board.stepLocations.ContainsKey(lowerName)) throw new Exception("Couldn't find task step type in the board: " + lowerName);
         List<Board.Board.Occupier> locations = boardManager.board.stepLocations[lowerName];
         foreach (var loc in locations)
         {
@@ -104,11 +115,32 @@ public class Task : MonoBehaviour
         Icons.Clear();
     }
 
-    public void CompleteStep(TaskStepType type, bool npcStep) {
+    public void Fail()
+    {
+        steps.Clear();
+        ClearIcons();
+        failed = true;
+        TaskStep leaveStep = new TaskStep(TaskStepType.LeaveBuilding, Icon.Angry, true);
+        AddStep(leaveStep);
+        npcController.AssignStep(leaveStep);
+    }
+
+    public void CompleteStep(TaskStepType type, GameObject completer) {
+        if (steps.Count <= 0)
+        {
+            Debug.Log("BEHAVIOR UNKNOWN: Tried to complete a task step with no steps remaining");
+            return;
+        }
         TaskStep currentStep = steps.Peek();
-        if (currentStep.type != type || currentStep.npcStep != npcStep)
+        if (currentStep.type != type)
         {
             Debug.LogWarning("Step " + type + " cannot be completed");
+            return;
+        }
+
+        if (completer != null && SomeNpc != completer)
+        {
+            Debug.Log("Wrong NPC tried to complete a task");
             return;
         }
 
@@ -117,15 +149,14 @@ public class Task : MonoBehaviour
         completedSteps.Add(currentStep);
         Debug.Log(type + " Complete");
 
-        if (!npcStep)
+        if (completer == null)
         {
             var player = FindObjectOfType<PlayerTaskController>();
-            taskManager.Feedback.Positive("you got there mfer!!", player.transform);
+            if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("you got there mfer!!", player.transform);
         }
 
         ClearIcons();
-
-        if (!IsComplete())
+        if (!IsComplete() && !IsFailed())
         {
             TaskStep nextStep = steps.Peek();
             if(nextStep.npcStep)
@@ -138,6 +169,24 @@ public class Task : MonoBehaviour
 
     public bool IsComplete()
     {
-        return steps.Count <= 0;
+        return steps.Count <= 0 && !failed;
+    }
+
+    public bool IsFailed()
+    {
+        return failed;
+    }
+
+    private bool HaveNpcSteps(){
+        bool haveNpcSteps = false;
+        foreach (TaskStep step in steps)
+        {
+            if(step.npcStep)
+            {
+                haveNpcSteps = true;
+                break;
+            }
+        }
+        return haveNpcSteps;
     }
 }

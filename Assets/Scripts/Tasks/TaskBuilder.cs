@@ -3,77 +3,90 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // TODO ADD ICONS EVERYWHERE!!! SHIT!!
+
 public static class TaskBuilder
 {
+    private static int numRandomTasks = 5;
+
     public static void CreateRandomTask(Task task){
-        // EmptyCashRegister(task);
-        DepositMoney(task);
-//        TestTask(task);
-    }
+        var rand = new System.Random();
+//        int taskNumber = rand.Next(numRandomTasks);
+        int taskNumber = 0; // TODO: MW put this back
+        Debug.Log("Random task number: " + taskNumber);
 
-    static void TestTask(Task task)
-    {
-        task.type = TaskType.TestTask;
+        switch (taskNumber)
+        {
+            case 0:
+                DepositMoney(task);
+                break;
+            case 1:
+                ChangeIntoCash(task);
+                break;
+            case 2:
+                ATMDeposit(task);
+                break;
+            case 3:
+                FillCashRegister(task);
+                break;
+            case 4:
+                EmptyCashRegister(task);
+                break;
+            default:
+                break;
+        }
 
-        TaskStep moveToSafe = new TaskStep();
-        moveToSafe.type = TaskStepType.Safe;
-        task.AddStep(moveToSafe);
     }
 
     static void DepositMoney(Task task){
         task.type = TaskType.DepositMoney;
         task.lineTask = true;
 
-        TaskStep getInLine = new TaskStep();
-        getInLine.type = TaskStepType.GetInLine;
-        getInLine.npcStep = true;
-        task.AddStep(getInLine);
+        task.AddStep(new TaskStep(TaskStepType.GetInLine, true));
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, true));
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Elipsis));
+        task.AddStep(new TaskStep(TaskStepType.Safe, Icon.Angry));
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Elipsis));
+        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, true));        
+    }
 
-        TaskStep talkToTeller = new TaskStep();
-        talkToTeller.type = TaskStepType.TalkToTeller;
-        task.AddStep(talkToTeller);
-        
-        TaskStep depositMoney = new TaskStep();
-        depositMoney.type = TaskStepType.Safe;
-        depositMoney.icon = Icon.Angry;
-        task.AddStep(depositMoney);
+    static void ChangeIntoCash(Task task) {
+        task.type = TaskType.ChangeIntoCash;
+        task.lineTask = true;
+
+        task.AddStep(new TaskStep(TaskStepType.GetInLine, true));
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, true));
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Elipsis));
+        task.AddStep(new TaskStep(TaskStepType.CoinMachine, Icon.Coins));
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Coins));
+        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, true));        
+    }
+
+    static void ATMDeposit(Task task)
+    {
+        task.type = TaskType.ATMDeposit;
+
+        task.AddStep(new TaskStep(TaskStepType.Safe, Icon.Angry, true));
+        task.AddStep(new TaskStep(TaskStepType.LeaveBuilding, true));        
     }
 
     static void FillCashRegister(Task task) {
         task.type = TaskType.FillCashRegister;
 
-        TaskStep moveToTeller = new TaskStep();
-        moveToTeller.type = TaskStepType.EmptyCashRegister;
-        task.AddStep(moveToTeller);
-
-        TaskStep moveToSafe = new TaskStep();
-        moveToSafe.type = TaskStepType.Safe;
-        task.AddStep(moveToSafe);
-
-        TaskStep moveToTeller2 = new TaskStep();
-        moveToTeller2.type = TaskStepType.FullCashRegister;
-        task.AddStep(moveToTeller2);
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Angry));
+        task.AddStep(new TaskStep(TaskStepType.Safe, Icon.Angry));
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Angry));
     }
 
     static void EmptyCashRegister(Task task) {
         task.type = TaskType.EmptyCashRegister;
 
-        TaskStep moveToTeller = new TaskStep();
-        moveToTeller.type = TaskStepType.FullCashRegister;
-        moveToTeller.icon = Icon.Elipsis;
-        task.AddStep(moveToTeller);
-
-        TaskStep moveToSafe = new TaskStep();
-        moveToSafe.type = TaskStepType.Safe;
-        moveToSafe.icon = Icon.Angry;
-        task.AddStep(moveToSafe);
+        task.AddStep(new TaskStep(TaskStepType.CashRegister, Icon.Elipsis));
+        task.AddStep(new TaskStep(TaskStepType.Safe, Icon.Angry));
     }
 
     static void OpenBankDoor(Task task) {
         task.type = TaskType.OpenBankDoor;
 
-        TaskStep moveToBankDoor = new TaskStep();
-        moveToBankDoor.type = TaskStepType.BankDoor;
-        task.AddStep(moveToBankDoor);
+        task.AddStep(new TaskStep(TaskStepType.BankDoor));
     }
 }

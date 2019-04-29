@@ -156,7 +156,9 @@ namespace Board {
 
             public Occupier occupier;
             public POI poi;
-            
+            public Occupier isBusy = null;
+            public bool npcOffLimits;
+
             public Node(int x, int y) {
                 this.x = x;
                 this.y = y;

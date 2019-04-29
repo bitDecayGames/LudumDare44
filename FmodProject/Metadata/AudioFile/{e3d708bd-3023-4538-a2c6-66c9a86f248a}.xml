@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{e3d708bd-3023-4538-a2c6-66c9a86f248a}">
+        <property name="assetPath">
+            <value>MaleImpatient1.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.9069387755102041</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fe823660-c101-4fc8-9657-8b0fde2a30b7}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -4,8 +4,8 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: _MapPrfab/TaskTestMap
     100004: _MapPrfab/TaskTestMap/Collisions
-    100006: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)
-    100012: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)
+    100006: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)
+    100012: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)
     100018: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)
     100024: _MapPrfab/TaskTestMap/Collisions/Object_9 (TRS)
     100030: _MapPrfab/TaskTestMap/Collisions/Object_10 (TRS)
@@ -41,10 +41,37 @@ ScriptedImporter:
     100174: _MapPrfab/TaskTestMap/Interactables/Spawn
     100176: _MapPrfab/TaskTestMap/Line
     100178: _MapPrfab/TaskTestMap/Line/Object_38
+    100422: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)
+    100428: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)
+    100434: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)
+    100440: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)
+    100446: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)
+    100452: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)
+    100458: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)
+    100464: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)
+    100470: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)
+    100476: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)
+    100482: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)
+    100488: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)
+    100494: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)
+    100500: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)
+    100506: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)
+    100512: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)
+    100518: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)
+    100524: _MapPrfab/TaskTestMap/OffLimits
+    100526: _MapPrfab/TaskTestMap/OffLimits/Object_58 (TRS)
+    100532: _MapPrfab/TaskTestMap/OffLimits/Object_59 (TRS)
+    100538: _MapPrfab/TaskTestMap/OffLimits/Object_60 (TRS)
+    100544: _MapPrfab/TaskTestMap/OffLimits/Object_61 (TRS)
+    100550: _MapPrfab/TaskTestMap/OffLimits/Object_62 (TRS)
+    100556: _MapPrfab/TaskTestMap/OffLimits/Object_63 (TRS)
+    100562: _MapPrfab/TaskTestMap/OffLimits/Object_64 (TRS)
+    100568: _MapPrfab/TaskTestMap/OffLimits/Object_65 (TRS)
+    100574: _MapPrfab/TaskTestMap/OffLimits/Object_66 (TRS)
     400000: _MapPrfab/TaskTestMap/Transform
     400004: _MapPrfab/TaskTestMap/Collisions/Transform
-    400006: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/Transform
-    400012: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/Transform
+    400006: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/Transform
+    400012: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/Transform
     400018: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/Transform
     400024: _MapPrfab/TaskTestMap/Collisions/Object_9 (TRS)/Transform
     400030: _MapPrfab/TaskTestMap/Collisions/Object_10 (TRS)/Transform
@@ -80,16 +107,43 @@ ScriptedImporter:
     400174: _MapPrfab/TaskTestMap/Interactables/Spawn/Transform
     400176: _MapPrfab/TaskTestMap/Line/Transform
     400178: _MapPrfab/TaskTestMap/Line/Object_38/Transform
+    400422: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/Transform
+    400428: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/Transform
+    400434: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/Transform
+    400440: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/Transform
+    400446: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/Transform
+    400452: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/Transform
+    400458: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/Transform
+    400464: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/Transform
+    400470: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/Transform
+    400476: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/Transform
+    400482: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/Transform
+    400488: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/Transform
+    400494: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/Transform
+    400500: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/Transform
+    400506: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/Transform
+    400512: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/Transform
+    400518: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/Transform
+    400524: _MapPrfab/TaskTestMap/OffLimits/Transform
+    400526: _MapPrfab/TaskTestMap/OffLimits/Object_58 (TRS)/Transform
+    400532: _MapPrfab/TaskTestMap/OffLimits/Object_59 (TRS)/Transform
+    400538: _MapPrfab/TaskTestMap/OffLimits/Object_60 (TRS)/Transform
+    400544: _MapPrfab/TaskTestMap/OffLimits/Object_61 (TRS)/Transform
+    400550: _MapPrfab/TaskTestMap/OffLimits/Object_62 (TRS)/Transform
+    400556: _MapPrfab/TaskTestMap/OffLimits/Object_63 (TRS)/Transform
+    400562: _MapPrfab/TaskTestMap/OffLimits/Object_64 (TRS)/Transform
+    400568: _MapPrfab/TaskTestMap/OffLimits/Object_65 (TRS)/Transform
+    400574: _MapPrfab/TaskTestMap/OffLimits/Object_66 (TRS)/Transform
     6800000: _MapPrfab/TaskTestMap/Line/Object_38/EdgeCollider2D
     11400000: _MapPrfab/TaskTestMap/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/TaskTestMap/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400010: _superAsset
     11400012: _MapPrfab/TaskTestMap/Collisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400014: _MapPrfab/TaskTestMap/Collisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400016: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400018: _MapPrfab/TaskTestMap/Collisions/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400020: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400022: _MapPrfab/TaskTestMap/Collisions/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400018: _MapPrfab/TaskTestMap/Collisions/Object_39 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400022: _MapPrfab/TaskTestMap/Collisions/Object_40 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400024: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400026: _MapPrfab/TaskTestMap/Collisions/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400028: _MapPrfab/TaskTestMap/Collisions/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -153,6 +207,60 @@ ScriptedImporter:
     11400146: _MapPrfab/TaskTestMap/Line/Object_38/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400148: _MapPrfab/TaskTestMap/Line/Object_38/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400150: _MapPrfab/TaskTestMap/Line/Object_38/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400632: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400634: _MapPrfab/TaskTestMap/Collisions/Object_41 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400636: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400638: _MapPrfab/TaskTestMap/Collisions/Object_42 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400640: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400642: _MapPrfab/TaskTestMap/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400644: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400646: _MapPrfab/TaskTestMap/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400648: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400650: _MapPrfab/TaskTestMap/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400652: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400654: _MapPrfab/TaskTestMap/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400656: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400658: _MapPrfab/TaskTestMap/Collisions/Object_47 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400660: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400662: _MapPrfab/TaskTestMap/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400664: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400666: _MapPrfab/TaskTestMap/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400668: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400670: _MapPrfab/TaskTestMap/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400672: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400674: _MapPrfab/TaskTestMap/Collisions/Object_51 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400676: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400678: _MapPrfab/TaskTestMap/Collisions/Object_52 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400680: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400682: _MapPrfab/TaskTestMap/Collisions/Object_53 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400684: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400686: _MapPrfab/TaskTestMap/Collisions/Object_54 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400688: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400690: _MapPrfab/TaskTestMap/Collisions/Object_55 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400692: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400694: _MapPrfab/TaskTestMap/Interactables/Object_56 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400696: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400698: _MapPrfab/TaskTestMap/Interactables/Object_57 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400700: _MapPrfab/TaskTestMap/OffLimits/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400702: _MapPrfab/TaskTestMap/OffLimits/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400704: _MapPrfab/TaskTestMap/OffLimits/Object_58 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400706: _MapPrfab/TaskTestMap/OffLimits/Object_58 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400708: _MapPrfab/TaskTestMap/OffLimits/Object_59 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400710: _MapPrfab/TaskTestMap/OffLimits/Object_59 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400712: _MapPrfab/TaskTestMap/OffLimits/Object_60 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400714: _MapPrfab/TaskTestMap/OffLimits/Object_60 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400716: _MapPrfab/TaskTestMap/OffLimits/Object_61 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400718: _MapPrfab/TaskTestMap/OffLimits/Object_61 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400720: _MapPrfab/TaskTestMap/OffLimits/Object_62 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400722: _MapPrfab/TaskTestMap/OffLimits/Object_62 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400724: _MapPrfab/TaskTestMap/OffLimits/Object_63 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400726: _MapPrfab/TaskTestMap/OffLimits/Object_63 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400728: _MapPrfab/TaskTestMap/OffLimits/Object_64 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400730: _MapPrfab/TaskTestMap/OffLimits/Object_64 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400732: _MapPrfab/TaskTestMap/OffLimits/Object_65 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400734: _MapPrfab/TaskTestMap/OffLimits/Object_65 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400736: _MapPrfab/TaskTestMap/OffLimits/Object_66 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400738: _MapPrfab/TaskTestMap/OffLimits/Object_66 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/TaskTestMap/Grid
   externalObjects: {}
@@ -180,26 +288,52 @@ ScriptedImporter:
   - Missing tile '39' on tile object ''
   - Missing tile '39' on tile object ''
   - Missing tile '40' on tile object ''
+  - Missing tile '46' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '46' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '43' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '43' on tile object ''
   - Missing tile '24' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '43' on tile object ''
+  - Missing tile '46' on tile object ''
+  - Missing tile '46' on tile object ''
+  - Missing tile '46' on tile object ''
   - Missing tile '22' on tile object ''
   - Missing tile '22' on tile object ''
   - Missing tile '22' on tile object ''
   - Missing tile '73' on tile object ''
   - Missing tile '73' on tile object ''
   - Missing tile '41' on tile object ''
-  - Missing tile '66' on tile object ''
+  - Missing tile '43' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '46' on tile object ''
   - Missing tile '41' on tile object ''
-  - Missing tile '67' on tile object ''
+  - Missing tile '43' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '46' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '43' on tile object ''
   - Missing tile '41' on tile object ''
+  - Missing tile '43' on tile object ''
+  - Missing tile '43' on tile object ''
+  - Missing tile '43' on tile object ''
+  - Missing tile '43' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
+  - Missing tile '15' on tile object ''
   - Missing tile '83' on tile object ''
   - Missing tile '29' on tile object ''
+  - Missing tile '83' on tile object ''
+  - Missing tile '72' on tile object ''
   warnings: []
   missingSortingLayers: []
   missingLayers: []
