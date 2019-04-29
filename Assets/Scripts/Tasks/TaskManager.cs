@@ -27,6 +27,7 @@ public class TaskManager : MonoBehaviour
 
     static int MaxNumberLines = 2;
     int currentLine = 0;
+    private bool isLevelEnded = false;
 
     void Start() {
         timer = gameObject.AddComponent<Timer>();
@@ -35,6 +36,8 @@ public class TaskManager : MonoBehaviour
 
         navigator = FindObjectOfType<EasyNavigator>();
         if (navigator == null) throw new Exception("Couldn't find an EasyNavigator, probably a bug in the OneScriptToRuleThemAll or it's prefab");
+        
+        Score.ResetScore();
     }
     
     void Update()
@@ -51,19 +54,19 @@ public class TaskManager : MonoBehaviour
             }
         }
 
-        if (timer.complete) {
+        if (timer.complete && !isLevelEnded) {
             EndLevel();
         }
     }
 
     public void EndLevel() {
+        isLevelEnded = true;
         Score.LevelName = SceneManager.GetActiveScene().name;
-        // TODO: MW
-        Score.Money = 1000;
-        Score.Happiness = 10;
-        Score.TotalTasks = 30;
-        Score.CompletedTasks = 20;
-        Score.FailedTasks = 10;
+        var rnd = new System.Random();
+        for (int i = 0; i < Score.CompletedTasks; i++) {
+            Score.Money += 5 * rnd.Next(1, 10);
+        }
+        Score.Happiness = Score.TotalTasks == 0 ? 0 : (int)Math.Round(Score.CompletedTasks / (float) Score.TotalTasks * 10);
         Score.NextLevelName = "Somehow get the next level name?";
         
         navigator.GoToScene("Score");
@@ -77,8 +80,7 @@ public class TaskManager : MonoBehaviour
             Task task = go.GetComponent<Task>();
             task.CompleteStep(type, completer);
 
-            if (task.IsComplete())
-            {
+            if (task.IsComplete()) {
                 Destroy(go);
             }
         }

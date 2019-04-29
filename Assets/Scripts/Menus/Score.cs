@@ -12,6 +12,16 @@ namespace Menus {
         public static string LevelName;
         public static string NextLevelName;
 
+        public static void ResetScore() {
+            Money = 0;
+            Happiness = 0;
+            CompletedTasks = 0;
+            FailedTasks = 0;
+            TotalTasks = 0;
+            LevelName = "this level name got reset by the ResetScore method";
+            NextLevelName = "this level name got reset by the ResetScore method";
+        }
+
         public TextMeshProUGUI levelName;
         public TextMeshProUGUI money;
         public TextMeshProUGUI happiness;
@@ -25,8 +35,8 @@ namespace Menus {
             navigator = gameObject.AddComponent<EasyNavigator>();
 
             levelName.text = LevelName;
-            money.text = "" + Money;
-            happiness.text = "" + Happiness;
+            money.text = "$" + Money;
+            happiness.text = Happiness + " / 10";
             completedTasks.text = "" + CompletedTasks;
             failedTasks.text = "" + FailedTasks;
             totalTasks.text = "" + TotalTasks;
