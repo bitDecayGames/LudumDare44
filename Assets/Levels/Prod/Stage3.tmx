@@ -145,9 +145,7 @@
   <object id="42" gid="48" x="512" y="592" width="16" height="32"/>
   <object id="43" gid="48" x="520" y="592" width="16" height="32"/>
   <object id="44" gid="48" x="528" y="592" width="16" height="32"/>
-  <object id="45" gid="48" x="472" y="592" width="16" height="32"/>
   <object id="46" gid="48" x="456" y="592" width="16" height="32"/>
-  <object id="48" gid="48" x="368" y="592" width="16" height="32"/>
   <object id="49" gid="48" x="352" y="592" width="16" height="32"/>
   <object id="50" gid="48" x="296" y="560" width="16" height="32"/>
   <object id="51" gid="48" x="296" y="576" width="16" height="32"/>
@@ -798,7 +796,7 @@
     <property name="ForType" value="ATM"/>
     <property name="LineNumber" value="4"/>
    </properties>
-   <polyline points="0,0 0,-8 0,-16 0,-24"/>
+   <polyline points="0,0 0,-8 0,-16"/>
   </object>
  </objectgroup>
 </map>
