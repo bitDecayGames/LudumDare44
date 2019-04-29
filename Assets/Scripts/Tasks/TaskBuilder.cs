@@ -189,15 +189,16 @@ public static class TaskBuilder
         
         TaskStep.Create()
             .Type(TaskStepType.ATM)
-            .NPC()
-            .AddTo(task);
-
-        // MW this will make the check icon appear for a second I think
-        TaskStep.Create()
-            .Type(TaskStepType.ATM)
             .SetIcon(Icon.Check)
             .NPC()
             .AddTo(task);
+
+//        // MW this will make the check icon appear for a second I think
+//        TaskStep.Create()
+//            .Type(TaskStepType.ATM)
+//            
+//            .NPC()
+//            .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.LeaveBuilding)

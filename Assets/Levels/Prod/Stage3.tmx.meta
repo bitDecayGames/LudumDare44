@@ -37,15 +37,9 @@ ScriptedImporter:
     100064: _MapPrfab/Stage3/Collisions/Object_44 (TRS)
     100066: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)
     100068: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44
-    100070: _MapPrfab/Stage3/Collisions/Object_45 (TRS)
-    100072: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)
-    100074: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45
     100076: _MapPrfab/Stage3/Collisions/Object_46 (TRS)
     100078: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)
     100080: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46
-    100082: _MapPrfab/Stage3/Collisions/Object_48 (TRS)
-    100084: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)
-    100086: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48
     100088: _MapPrfab/Stage3/Collisions/Object_49 (TRS)
     100090: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)
     100092: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49
@@ -6354,15 +6348,9 @@ ScriptedImporter:
     400064: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Transform
     400066: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Transform
     400068: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/Transform
-    400070: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Transform
-    400072: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Transform
-    400074: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45/Transform
     400076: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Transform
     400078: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Transform
     400080: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46/Transform
-    400082: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Transform
-    400084: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Transform
-    400086: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48/Transform
     400088: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Transform
     400090: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Transform
     400092: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/Transform
@@ -12668,12 +12656,8 @@ ScriptedImporter:
     11400048: _MapPrfab/Stage3/Collisions/Object_43 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400050: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400052: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400054: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400056: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400058: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400060: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400062: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400064: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400066: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400068: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400070: _MapPrfab/Stage3/Collisions/Object_50 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -20127,9 +20111,7 @@ ScriptedImporter:
     21200016: _MapPrfab/Stage3/Collisions/Object_42 (TRS)/Object_42 (CF)/Object_42/SpriteRenderer
     21200018: _MapPrfab/Stage3/Collisions/Object_43 (TRS)/Object_43 (CF)/Object_43/SpriteRenderer
     21200020: _MapPrfab/Stage3/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/SpriteRenderer
-    21200022: _MapPrfab/Stage3/Collisions/Object_45 (TRS)/Object_45 (CF)/Object_45/SpriteRenderer
     21200024: _MapPrfab/Stage3/Collisions/Object_46 (TRS)/Object_46 (CF)/Object_46/SpriteRenderer
-    21200026: _MapPrfab/Stage3/Collisions/Object_48 (TRS)/Object_48 (CF)/Object_48/SpriteRenderer
     21200028: _MapPrfab/Stage3/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/SpriteRenderer
     21200030: _MapPrfab/Stage3/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/SpriteRenderer
     21200032: _MapPrfab/Stage3/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/SpriteRenderer

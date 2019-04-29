@@ -222,8 +222,8 @@ namespace Board {
                 else if (n.isBusy != null) color = Color.yellow;
                 else if (n.npcOffLimits) color = Color.red;
                 else if (n.poi != null) color = Color.cyan;
-                else color = Color.gray;
-//                else return;
+//                else color = Color.gray;
+                else return;
                 DrawSquareAt(n.IsoLoc(), color);
             });
         }
