@@ -84,6 +84,10 @@ namespace Movement {
                             if (IsTheThingInfrontTheThingIWant(currentDirections[0])) {
                                 currentDirections.RemoveAt(0);
                                 tries = 0;
+                                UpdateStandAnimation();
+                                isFindingPath = false;
+                                overallTries = 0;
+                                callback();
                             } else {
                                 tries = 0;
                                 overallTries++;
