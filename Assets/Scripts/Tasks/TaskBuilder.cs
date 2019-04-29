@@ -287,8 +287,7 @@ public static class TaskBuilder
         
         TaskStep.Create()
             .Type(TaskStepType.AccountComputer)
-            // Replace with account open icon
-            .SetIcon(Icon.Open)
+            .SetIcon(Icon.Handshake)
             .AddTo(task);
 
         TaskStep.Create()
