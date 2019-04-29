@@ -83,7 +83,11 @@ public class Task : MonoBehaviour
 
     void OnDestroy()
     {
-        SomeNpc.GetComponent<NpcController>().Kill();
+        if (SomeNpc != null && SomeNpc.gameObject != null) {
+            // MW had to do this because npcController would sometimes be null here... NPE!!!!
+            var ctrl = SomeNpc.GetComponent<NpcController>();
+            if (ctrl != null) ctrl.Kill();
+        }
     }
 
     public void AddStep(TaskStep step)
