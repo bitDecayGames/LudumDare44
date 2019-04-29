@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Board;
 using Managers;
 using TMPro;
@@ -12,6 +13,7 @@ namespace Utils {
         public FadeInFromBlack fadeInPrefab;
         public TextMeshPro positiveFeedbackTextPrefab;
         public TextMeshPro negativeFeedbackTextPrefab;
+        public List<Sprite> cars;
 
         [HideInInspector] public Loader loader;
         [HideInInspector] public BoardManager board;
@@ -19,6 +21,7 @@ namespace Utils {
         [HideInInspector] public TaskManager tasker;
         [HideInInspector] public IconManager iconer;
         [HideInInspector] public EasyNavigator navigator;
+        [HideInInspector] public CarController car;
 
         private FadeInFromBlack fadeInner;
 
@@ -42,6 +45,10 @@ namespace Utils {
             if (iconer == null) iconer = gameObject.AddComponent<IconManager>();
             navigator = FindObjectOfType<EasyNavigator>();
             if (navigator == null) navigator = gameObject.AddComponent<EasyNavigator>();
+
+            car = FindObjectOfType<CarController>();
+            if (car == null) car = gameObject.AddComponent<CarController>();
+            car.carSprites = cars;
 
             fadeInner = Instantiate(fadeInPrefab);
 
