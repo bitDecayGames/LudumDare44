@@ -12,8 +12,11 @@ public enum TaskType {
     EmptyCashRegister,
     OpenBankDoor,
     ChangeIntoCash,
+    ATMDeposit,
+    OpenAccount,
+    CheckCashing,
     VacuumTubeDeposit,
-    ATMDeposit
+    VacuumTubeCoinChange
 }
 
 public class Task : MonoBehaviour
@@ -181,16 +184,23 @@ public class Task : MonoBehaviour
             Board.Board.Node newStepNode = null;
             Board.BoardManager bm = FindObjectOfType<Board.BoardManager>();
 
-            if (!bm.board.stepLocations.ContainsKey(step.type.ToString().ToLower())) {
-                throw new Exception("Tried to assign node to step, but couldn't find any step locations with: " + step.type);
-            }
-            var allStepTypeOccupiers = bm.board.stepLocations[step.type.ToString().ToLower()];
             List<Board.Board.Node> allStepTypeNodes = new List<Board.Board.Node>();
+            var allStepTypeOccupiers = bm.board.stepLocations.ContainsKey(step.type.ToString().ToLower()) ? bm.board.stepLocations[step.type.ToString().ToLower()] : new List<Board.Board.Occupier>();
             foreach (var occupier in allStepTypeOccupiers)
             {
                 allStepTypeNodes.Add(occupier.myNode);
             }
-            if (allStepTypeNodes.Count == 0) throw new Exception("No nodes found on the map for step type: " + step.type);
+
+            List<Board.Board.POI> pois;
+            if (allStepTypeNodes.Count == 0) {
+                pois = bm.board.poiLocations.ContainsKey(step.type.ToString()) ? bm.board.poiLocations[step.type.ToString()] : new List<Board.Board.POI>();
+                foreach (var poi in pois)
+                {
+                    allStepTypeNodes.Add(poi.myNode);
+                }
+                
+                if (pois.Count == 0) throw new Exception("No nodes found on the map for step type: " + step.type);
+            }
 
             // If npc not null then attempt to set node based on the npc's position and stepType
             if (SomeNpc != null)

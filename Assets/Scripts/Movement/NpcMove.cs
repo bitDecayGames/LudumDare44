@@ -12,6 +12,8 @@ namespace Movement {
         public const float TIME_TO_MOVE = 0.4f;
         public const float TIME_TO_MOVE_VARIANCE = 0.075f;
 
+        public bool isDebug; // change this through the UI
+
         private BoardPosition boardPos;
 
         private BoardManager board;
@@ -30,6 +32,8 @@ namespace Movement {
         private const int maxOverallTries = 6;
         private Board.Board.Node currentStepLocation;
         private bool initialized = false;
+
+        private SpriteRenderer _spriteRenderer;
 
         private float waitTime;
         private TaskStep _taskStep;
@@ -53,10 +57,12 @@ namespace Movement {
                 if (board == null) throw new Exception("Missing BoardManager in the Scene, just drag the script onto the Camera");
                 lerper = GetComponentInChildren<LerpAnimator>();
                 if (lerper == null) lerper = animator.gameObject.AddComponent<LerpAnimator>();
+                _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             }
         }
 
         void Update() {
+            if (isDebug) DrawDebugLines();
             if (waitTime > 0)
             {
                 waitTime -= Time.deltaTime;
@@ -73,17 +79,25 @@ namespace Movement {
                 if (currentDirections.Count > 0) {
                     NpcHelper.SmartNamer(gameObject, _taskStep.type, currentDirections[0]);
                     if (AttemptMoveInDirection(currentDirections[0])) {
+                        _spriteRenderer.color = Color.white;
                         currentDirections.RemoveAt(0);
                         tries = 0;
                     } else {
-                        if (currentDirections[0] == Direction.Wait) return; // don't increment tries while waiting
+                        if (currentDirections[0] == Direction.Wait) {
+                            getDirections();
+                            if (isDebug) {
+                                _spriteRenderer.color = Color.yellow;
+                                Debug.DrawLine(occupier.myNode.IsoLoc().ToWorldPosReadable(), currentStepLocation.IsoLoc().ToWorldPosReadable(), Color.red, 0, true);
+                            }
+                            return; // don't increment tries while waiting
+                        }
                         tries++;
                         if (tries >= maxTries) {
                             if (IsTheThingInfrontTheThingIWant(currentDirections[0])) {
                                 currentDirections.RemoveAt(0);
                                 Finish();
                             } else {
-                                waitTime = 2;
+                                waitTime = 1;
                                 tries = 0;
                                 overallTries++;
                                 if (overallTries <= maxOverallTries) getDirections();
@@ -118,21 +132,34 @@ namespace Movement {
             Initialize();
             _taskStep = taskStep;
             this.callback = callback;
-            var taskStepName = TaskStep.GetStepName(taskStep.type).ToLower();
+            var taskStepName = TaskStep.GetStepName(taskStep.type);
 
             if (taskStep.node != null) {
                 currentStepLocation = taskStep.node;
                 getDirections();
-            } else if (board.board.stepLocations.ContainsKey(taskStepName)) {
-                var taskStepLocations = board.board.stepLocations[taskStepName];
-                if (taskStepLocations.Count > 0) {
-                    currentStepLocation = getStepLocation(taskStepLocations);
+            } else {
+                var possibleTaskNodes = getValidNodeLocations(taskStepName);
+                if (possibleTaskNodes.Count > 0) {
+                    currentStepLocation = getRandomStepLocation(possibleTaskNodes);
                     getDirections();
                 } else {
                     throw new Exception("The board has an empty list of step locations with the task step name: " + taskStepName);
+                    throw new Exception("The board has no record of a step location with the task step name: " + taskStepName);
                 }
-            } else {
-                throw new Exception("The board has no record of a step location with the task step name: " + taskStepName);
+            }
+        }
+
+        private void DrawDebugLines() {
+            List<Vector3> lines = new List<Vector3>();
+            var cur = boardPos.CopyIsoVector2();
+            lines.Add(cur.ToWorldPosReadable());
+            currentDirections.ForEach(dir => {
+                lines.Add(DirectionAddToIsoVector(dir, cur).ToWorldPosReadable());
+            });
+            for (int i = 0; i + 1 < lines.Count; i++) {
+                var a = lines[i];
+                var b = lines[i + 1];
+                Debug.DrawLine(a, b, Color.cyan, 0, true);
             }
         }
 
@@ -142,9 +169,23 @@ namespace Movement {
             return thingInFront == currentStepLocation && (thingInFront.isBusy == occupier || thingInFront.isBusy == null);
         }
 
-        private Board.Board.Node getStepLocation(List<Board.Board.Occupier> stepLocations) {
-            // TODO: MW figure out if these step locations are currently available to be interacted with and then pick a random one
-            return stepLocations[0].myNode;
+        private List<Board.Board.Node> getValidNodeLocations(string taskStepName) {
+            List<Board.Board.Node> nodes = new List<Board.Board.Node>();
+            if (board.board.stepLocations.ContainsKey(taskStepName.ToLower())) {
+                nodes.AddRange(board.board.stepLocations[taskStepName.ToLower()].ConvertAll(o => o.myNode));
+            }
+            if (board.board.poiLocations.ContainsKey(taskStepName)) {
+                nodes.AddRange(board.board.poiLocations[taskStepName].ConvertAll(o => o.myNode));
+            }
+            return nodes.FindAll(n => n != null);
+        }
+
+        private Board.Board.Node getRandomStepLocation(List<Board.Board.Node> stepLocations) {
+            var nonBusyNodes = stepLocations.FindAll(n => n.isBusy == null || n.isBusy == occupier);
+            // find a non busy node if it exists
+            if (nonBusyNodes.Count > 0) return nonBusyNodes[UnityEngine.Random.Range(0, nonBusyNodes.Count)];
+            // if all nodes are busy, queue one up anyways so that the wait logic works
+            return stepLocations[UnityEngine.Random.Range(0, stepLocations.Count)];
         }
 
         private void getDirections() {
@@ -290,6 +331,25 @@ namespace Movement {
             }
 
             return null;
+        }
+
+        private IsoVector2 DirectionAddToIsoVector(Direction dir, IsoVector2 v) {
+            switch (dir) {
+                case Direction.Up:
+                    v.y -= 1;
+                    break;
+                case Direction.Down:
+                    v.y += 1;
+                    break;
+                case Direction.Left:
+                    v.x -= 1;
+                    break;
+                case Direction.Right:
+                    v.x += 1;
+                    break;
+            }
+
+            return v;
         }
     }
 }
