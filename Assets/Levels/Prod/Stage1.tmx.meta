@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: a651da50a1cc6b74caa044287462a025
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/Stage1
+    400000: _MapPrfab/Stage1/Transform
+    11400000: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/Stage1/Grid
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors:
+  - 'Missing tileset asset: C:/Users/nandemoguy/Desktop/testfloors.tsx'
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 12
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 1
+  customImporterClassName: 
+  internalTilesets: []

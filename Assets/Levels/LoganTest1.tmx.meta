@@ -5,35 +5,15 @@ ScriptedImporter:
     100000: _MapPrfab/LoganTest1
     100002: _MapPrfab/LoganTest1/Collisions
     100004: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)
-    100006: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)
-    100008: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49
     100010: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)
-    100012: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)
-    100014: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50
     100016: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)
-    100018: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)
-    100020: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51
     100022: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)
-    100024: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)
-    100026: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52
     100028: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)
-    100030: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)
-    100032: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53
     100034: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)
-    100036: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)
-    100038: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54
     100040: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)
-    100042: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)
-    100044: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55
     100046: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)
-    100048: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)
-    100050: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Object_56
     100052: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)
-    100054: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)
-    100056: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Object_57
     100058: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)
-    100060: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)
-    100062: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Object_58
     100064: _MapPrfab/LoganTest1/Floors
     100066: _MapPrfab/LoganTest1/Floors/Chunk (0,32)
     100068: _MapPrfab/LoganTest1/Floors/Chunk (0,48)
@@ -42,173 +22,41 @@ ScriptedImporter:
     100074: _MapPrfab/LoganTest1/Interactables
     100076: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)
     100078: _MapPrfab/LoganTest1/Interactables/Spawn
-    100080: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)
-    100082: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Object_59
-    100084: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)
-    100086: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Object_60
-    100088: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)
-    100090: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Object_61
-    100092: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)
-    100094: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Object_62
-    100096: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)
-    100098: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Object_63
-    100100: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)
-    100102: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Object_64
-    100104: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)
-    100106: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Object_65
-    100108: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)
-    100110: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Object_66
-    100112: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)
-    100114: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Object_67
-    100116: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)
-    100118: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Object_68
-    100120: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)
-    100122: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Object_69
-    100124: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)
-    100126: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Object_70
-    100128: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)
-    100130: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Object_71
-    100132: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)
-    100134: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Object_72
-    100136: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)
-    100138: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Object_73
-    100140: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)
-    100142: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74
-    100144: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)
-    100146: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75
-    100148: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)
-    100150: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Object_76
-    100152: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)
-    100154: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Object_77
-    100156: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)
-    100158: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Object_78
-    100160: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)
-    100162: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Object_79
-    100164: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)
-    100166: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Object_80
-    100168: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 44) (TRS)
-    100170: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 45) (TRS)
-    100172: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 46) (TRS)
-    100174: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 47) (TRS)
-    100176: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 44) (TRS)
-    100178: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 45) (TRS)
-    100180: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 46) (TRS)
-    100182: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 47) (TRS)
-    100184: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 48) (TRS)
-    100186: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 49) (TRS)
-    100188: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 50) (TRS)
-    100190: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 48) (TRS)
-    100192: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 49) (TRS)
-    100194: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 50) (TRS)
-    100196: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 44) (TRS)
-    100198: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 45) (TRS)
-    100200: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 46) (TRS)
-    100202: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 47) (TRS)
-    100204: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 41) (TRS)
-    100206: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 44) (TRS)
     100208: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)
-    100210: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 45) (TRS)
-    100212: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 46) (TRS)
     100214: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)
-    100216: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 47) (TRS)
-    100218: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 44) (TRS)
     100220: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)
-    100222: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 45) (TRS)
-    100224: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 46) (TRS)
     100226: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)
-    100228: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 47) (TRS)
-    100230: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 44) (TRS)
     100232: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)
-    100234: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 45) (TRS)
-    100236: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 46) (TRS)
-    100238: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 47) (TRS)
-    100240: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 44) (TRS)
     100242: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)
-    100244: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 45) (TRS)
-    100246: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 46) (TRS)
     100248: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)
-    100250: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 47) (TRS)
-    100252: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 44) (TRS)
     100254: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)
-    100256: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 45) (TRS)
-    100258: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 46) (TRS)
     100260: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)
-    100262: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 47) (TRS)
-    100264: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 44) (TRS)
     100266: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)
-    100268: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 45) (TRS)
-    100270: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 46) (TRS)
     100272: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)
-    100274: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 47) (TRS)
-    100276: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 48) (TRS)
     100278: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)
-    100280: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 49) (TRS)
-    100282: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 50) (TRS)
     100284: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)
-    100286: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 48) (TRS)
-    100288: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 49) (TRS)
     100290: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)
-    100292: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 50) (TRS)
-    100294: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 48) (TRS)
     100296: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)
-    100298: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 49) (TRS)
-    100300: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 50) (TRS)
     100302: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)
-    100304: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 48) (TRS)
-    100306: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 49) (TRS)
     100308: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)
-    100310: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 50) (TRS)
-    100312: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 48) (TRS)
     100314: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)
-    100316: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 49) (TRS)
-    100318: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 50) (TRS)
     100320: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)
-    100322: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 48) (TRS)
-    100324: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 49) (TRS)
     100326: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)
-    100328: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 50) (TRS)
-    100330: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 48) (TRS)
     100332: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)
-    100334: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)
-    100336: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)
     100338: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)
-    100340: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)
-    100342: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44
-    100344: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)
-    100346: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Object_82
     100350: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)
     400000: _MapPrfab/LoganTest1/Transform
     400002: _MapPrfab/LoganTest1/Collisions/Transform
     400004: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Transform
-    400006: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Transform
-    400008: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/Transform
     400010: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Transform
-    400012: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Transform
-    400014: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/Transform
     400016: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Transform
-    400018: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Transform
-    400020: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/Transform
     400022: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Transform
-    400024: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Transform
-    400026: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52/Transform
     400028: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Transform
-    400030: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Transform
-    400032: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53/Transform
     400034: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Transform
-    400036: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Transform
-    400038: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54/Transform
     400040: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Transform
-    400042: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Transform
-    400044: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55/Transform
     400046: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Transform
-    400048: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Transform
-    400050: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Object_56/Transform
     400052: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Transform
-    400054: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Transform
-    400056: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Object_57/Transform
     400058: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Transform
-    400060: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Transform
-    400062: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Object_58/Transform
     400064: _MapPrfab/LoganTest1/Floors/Transform
     400066: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/Transform
     400068: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/Transform
@@ -217,140 +65,28 @@ ScriptedImporter:
     400074: _MapPrfab/LoganTest1/Interactables/Transform
     400076: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Transform
     400078: _MapPrfab/LoganTest1/Interactables/Spawn/Transform
-    400080: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Transform
-    400082: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Object_59/Transform
-    400084: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Transform
-    400086: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Object_60/Transform
-    400088: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Transform
-    400090: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Object_61/Transform
-    400092: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Transform
-    400094: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Object_62/Transform
-    400096: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Transform
-    400098: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Object_63/Transform
-    400100: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Transform
-    400102: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Object_64/Transform
-    400104: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Transform
-    400106: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Object_65/Transform
-    400108: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Transform
-    400110: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Object_66/Transform
-    400112: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Transform
-    400114: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Object_67/Transform
-    400116: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Transform
-    400118: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Object_68/Transform
-    400120: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Transform
-    400122: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Object_69/Transform
-    400124: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Transform
-    400126: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Object_70/Transform
-    400128: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Transform
-    400130: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Object_71/Transform
-    400132: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Transform
-    400134: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Object_72/Transform
-    400136: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Transform
-    400138: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Object_73/Transform
-    400140: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Transform
-    400142: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74/Transform
-    400144: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Transform
-    400146: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75/Transform
-    400148: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Transform
-    400150: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Object_76/Transform
-    400152: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Transform
-    400154: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Object_77/Transform
-    400156: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Transform
-    400158: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Object_78/Transform
-    400160: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Transform
-    400162: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Object_79/Transform
-    400164: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Transform
-    400166: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Object_80/Transform
-    400168: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 44) (TRS)/Transform
-    400170: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 45) (TRS)/Transform
-    400172: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 46) (TRS)/Transform
-    400174: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 47) (TRS)/Transform
-    400176: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 44) (TRS)/Transform
-    400178: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 45) (TRS)/Transform
-    400180: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 46) (TRS)/Transform
-    400182: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 47) (TRS)/Transform
-    400184: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 48) (TRS)/Transform
-    400186: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 49) (TRS)/Transform
-    400188: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 50) (TRS)/Transform
-    400190: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 48) (TRS)/Transform
-    400192: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 49) (TRS)/Transform
-    400194: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 50) (TRS)/Transform
-    400196: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 44) (TRS)/Transform
-    400198: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 45) (TRS)/Transform
-    400200: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 46) (TRS)/Transform
-    400202: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 47) (TRS)/Transform
-    400204: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 41) (TRS)/Transform
-    400206: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 44) (TRS)/Transform
     400208: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Transform
-    400210: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 45) (TRS)/Transform
-    400212: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 46) (TRS)/Transform
     400214: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Transform
-    400216: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 47) (TRS)/Transform
-    400218: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 44) (TRS)/Transform
     400220: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Transform
-    400222: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 45) (TRS)/Transform
-    400224: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 46) (TRS)/Transform
     400226: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Transform
-    400228: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 47) (TRS)/Transform
-    400230: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 44) (TRS)/Transform
     400232: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Transform
-    400234: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 45) (TRS)/Transform
-    400236: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 46) (TRS)/Transform
-    400238: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 47) (TRS)/Transform
-    400240: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 44) (TRS)/Transform
     400242: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Transform
-    400244: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 45) (TRS)/Transform
-    400246: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 46) (TRS)/Transform
     400248: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Transform
-    400250: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 47) (TRS)/Transform
-    400252: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 44) (TRS)/Transform
     400254: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Transform
-    400256: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 45) (TRS)/Transform
-    400258: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 46) (TRS)/Transform
     400260: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Transform
-    400262: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 47) (TRS)/Transform
-    400264: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 44) (TRS)/Transform
     400266: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Transform
-    400268: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 45) (TRS)/Transform
-    400270: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 46) (TRS)/Transform
     400272: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Transform
-    400274: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 47) (TRS)/Transform
-    400276: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 48) (TRS)/Transform
     400278: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Transform
-    400280: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 49) (TRS)/Transform
-    400282: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 50) (TRS)/Transform
     400284: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Transform
-    400286: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 48) (TRS)/Transform
-    400288: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 49) (TRS)/Transform
     400290: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Transform
-    400292: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 50) (TRS)/Transform
-    400294: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 48) (TRS)/Transform
     400296: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Transform
-    400298: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 49) (TRS)/Transform
-    400300: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 50) (TRS)/Transform
     400302: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Transform
-    400304: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 48) (TRS)/Transform
-    400306: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 49) (TRS)/Transform
     400308: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Transform
-    400310: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 50) (TRS)/Transform
-    400312: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 48) (TRS)/Transform
     400314: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Transform
-    400316: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 49) (TRS)/Transform
-    400318: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 50) (TRS)/Transform
     400320: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Transform
-    400322: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 48) (TRS)/Transform
-    400324: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 49) (TRS)/Transform
     400326: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Transform
-    400328: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 50) (TRS)/Transform
-    400330: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 48) (TRS)/Transform
     400332: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Transform
-    400334: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)/Transform
-    400336: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)/Transform
     400338: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Transform
-    400340: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Transform
-    400342: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/Transform
-    400344: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Transform
-    400346: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Object_82/Transform
     400350: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Transform
     11400000: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/LoganTest1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -387,134 +123,6 @@ ScriptedImporter:
     11400064: _MapPrfab/LoganTest1/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400066: _MapPrfab/LoganTest1/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400068: _superAsset
-    11400070: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400072: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400074: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400076: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400078: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400080: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400082: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400084: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400086: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400088: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400090: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400092: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400094: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400096: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400098: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400100: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400102: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400104: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400106: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400108: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400110: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400112: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400114: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400116: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400118: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400120: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400122: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400124: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400126: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400128: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400130: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400132: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400134: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400136: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400138: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400140: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400142: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400144: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 41) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400146: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400148: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400150: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400152: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400154: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400156: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400158: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400160: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400162: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400164: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400166: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400168: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400170: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400172: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400174: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400176: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400178: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400180: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400182: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400184: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400186: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400188: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400190: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400192: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400194: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400196: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400198: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400200: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400202: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400204: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400206: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400208: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400210: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400212: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400214: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400216: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400218: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400220: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400222: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400224: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400226: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400228: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 44) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400230: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400232: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 45) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400234: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400236: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 46) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400238: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400240: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 47) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400242: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400244: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400246: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400248: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400250: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400252: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400254: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400256: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400258: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400260: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400262: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400264: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400266: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400268: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400270: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400272: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400274: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400276: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400278: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400280: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400282: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400284: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400286: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400288: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400290: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400292: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400294: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400296: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400298: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400300: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400302: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400304: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400306: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400308: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400310: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400312: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400314: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400316: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 48) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400318: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400320: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400322: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400324: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400326: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400328: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400330: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -559,104 +167,6 @@ ScriptedImporter:
     11400408: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400414: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400416: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    21200000: _MapPrfab/LoganTest1/Collisions/Object_49 (TRS)/Object_49 (CF)/Object_49/SpriteRenderer
-    21200002: _MapPrfab/LoganTest1/Collisions/Object_50 (TRS)/Object_50 (CF)/Object_50/SpriteRenderer
-    21200004: _MapPrfab/LoganTest1/Collisions/Object_51 (TRS)/Object_51 (CF)/Object_51/SpriteRenderer
-    21200006: _MapPrfab/LoganTest1/Collisions/Object_52 (TRS)/Object_52 (CF)/Object_52/SpriteRenderer
-    21200008: _MapPrfab/LoganTest1/Collisions/Object_53 (TRS)/Object_53 (CF)/Object_53/SpriteRenderer
-    21200010: _MapPrfab/LoganTest1/Collisions/Object_54 (TRS)/Object_54 (CF)/Object_54/SpriteRenderer
-    21200012: _MapPrfab/LoganTest1/Collisions/Object_55 (TRS)/Object_55 (CF)/Object_55/SpriteRenderer
-    21200014: _MapPrfab/LoganTest1/Collisions/Object_56 (TRS)/Object_56 (CF)/Object_56/SpriteRenderer
-    21200016: _MapPrfab/LoganTest1/Collisions/Object_57 (TRS)/Object_57 (CF)/Object_57/SpriteRenderer
-    21200018: _MapPrfab/LoganTest1/Collisions/Object_58 (TRS)/Object_58 (CF)/Object_58/SpriteRenderer
-    21200020: _MapPrfab/LoganTest1/Collisions/Object_59 (TRS)/Object_59 (CF)/Object_59/SpriteRenderer
-    21200022: _MapPrfab/LoganTest1/Collisions/Object_60 (TRS)/Object_60 (CF)/Object_60/SpriteRenderer
-    21200024: _MapPrfab/LoganTest1/Collisions/Object_61 (TRS)/Object_61 (CF)/Object_61/SpriteRenderer
-    21200026: _MapPrfab/LoganTest1/Collisions/Object_62 (TRS)/Object_62 (CF)/Object_62/SpriteRenderer
-    21200028: _MapPrfab/LoganTest1/Collisions/Object_63 (TRS)/Object_63 (CF)/Object_63/SpriteRenderer
-    21200030: _MapPrfab/LoganTest1/Collisions/Object_64 (TRS)/Object_64 (CF)/Object_64/SpriteRenderer
-    21200032: _MapPrfab/LoganTest1/Collisions/Object_65 (TRS)/Object_65 (CF)/Object_65/SpriteRenderer
-    21200034: _MapPrfab/LoganTest1/Collisions/Object_66 (TRS)/Object_66 (CF)/Object_66/SpriteRenderer
-    21200036: _MapPrfab/LoganTest1/Collisions/Object_67 (TRS)/Object_67 (CF)/Object_67/SpriteRenderer
-    21200038: _MapPrfab/LoganTest1/Collisions/Object_68 (TRS)/Object_68 (CF)/Object_68/SpriteRenderer
-    21200040: _MapPrfab/LoganTest1/Collisions/Object_69 (TRS)/Object_69 (CF)/Object_69/SpriteRenderer
-    21200042: _MapPrfab/LoganTest1/Collisions/Object_70 (TRS)/Object_70 (CF)/Object_70/SpriteRenderer
-    21200044: _MapPrfab/LoganTest1/Collisions/Object_71 (TRS)/Object_71 (CF)/Object_71/SpriteRenderer
-    21200046: _MapPrfab/LoganTest1/Collisions/Object_72 (TRS)/Object_72 (CF)/Object_72/SpriteRenderer
-    21200048: _MapPrfab/LoganTest1/Collisions/Object_73 (TRS)/Object_73 (CF)/Object_73/SpriteRenderer
-    21200050: _MapPrfab/LoganTest1/Collisions/Object_74 (TRS)/Object_74 (CF)/Object_74/SpriteRenderer
-    21200052: _MapPrfab/LoganTest1/Collisions/Object_75 (TRS)/Object_75 (CF)/Object_75/SpriteRenderer
-    21200054: _MapPrfab/LoganTest1/Collisions/Object_76 (TRS)/Object_76 (CF)/Object_76/SpriteRenderer
-    21200056: _MapPrfab/LoganTest1/Collisions/Object_77 (TRS)/Object_77 (CF)/Object_77/SpriteRenderer
-    21200058: _MapPrfab/LoganTest1/Collisions/Object_78 (TRS)/Object_78 (CF)/Object_78/SpriteRenderer
-    21200060: _MapPrfab/LoganTest1/Collisions/Object_79 (TRS)/Object_79 (CF)/Object_79/SpriteRenderer
-    21200062: _MapPrfab/LoganTest1/Collisions/Object_80 (TRS)/Object_80 (CF)/Object_80/SpriteRenderer
-    21200064: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 44) (TRS)/SpriteRenderer
-    21200066: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 45) (TRS)/SpriteRenderer
-    21200068: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 46) (TRS)/SpriteRenderer
-    21200070: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (14, 47) (TRS)/SpriteRenderer
-    21200072: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 44) (TRS)/SpriteRenderer
-    21200074: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 45) (TRS)/SpriteRenderer
-    21200076: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 46) (TRS)/SpriteRenderer
-    21200078: _MapPrfab/LoganTest1/Floors/Chunk (0,32)/tile (15, 47) (TRS)/SpriteRenderer
-    21200080: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 48) (TRS)/SpriteRenderer
-    21200082: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 49) (TRS)/SpriteRenderer
-    21200084: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (14, 50) (TRS)/SpriteRenderer
-    21200086: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 48) (TRS)/SpriteRenderer
-    21200088: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 49) (TRS)/SpriteRenderer
-    21200090: _MapPrfab/LoganTest1/Floors/Chunk (0,48)/tile (15, 50) (TRS)/SpriteRenderer
-    21200092: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 44) (TRS)/SpriteRenderer
-    21200094: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 45) (TRS)/SpriteRenderer
-    21200096: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 46) (TRS)/SpriteRenderer
-    21200098: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (16, 47) (TRS)/SpriteRenderer
-    21200100: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 41) (TRS)/SpriteRenderer
-    21200102: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 44) (TRS)/SpriteRenderer
-    21200104: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 45) (TRS)/SpriteRenderer
-    21200106: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 46) (TRS)/SpriteRenderer
-    21200108: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (17, 47) (TRS)/SpriteRenderer
-    21200110: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 44) (TRS)/SpriteRenderer
-    21200112: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 45) (TRS)/SpriteRenderer
-    21200114: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 46) (TRS)/SpriteRenderer
-    21200116: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (18, 47) (TRS)/SpriteRenderer
-    21200118: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 44) (TRS)/SpriteRenderer
-    21200120: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 45) (TRS)/SpriteRenderer
-    21200122: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 46) (TRS)/SpriteRenderer
-    21200124: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (19, 47) (TRS)/SpriteRenderer
-    21200126: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 44) (TRS)/SpriteRenderer
-    21200128: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 45) (TRS)/SpriteRenderer
-    21200130: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 46) (TRS)/SpriteRenderer
-    21200132: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (20, 47) (TRS)/SpriteRenderer
-    21200134: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 44) (TRS)/SpriteRenderer
-    21200136: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 45) (TRS)/SpriteRenderer
-    21200138: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 46) (TRS)/SpriteRenderer
-    21200140: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (21, 47) (TRS)/SpriteRenderer
-    21200142: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 44) (TRS)/SpriteRenderer
-    21200144: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 45) (TRS)/SpriteRenderer
-    21200146: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 46) (TRS)/SpriteRenderer
-    21200148: _MapPrfab/LoganTest1/Floors/Chunk (16,32)/tile (22, 47) (TRS)/SpriteRenderer
-    21200150: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 48) (TRS)/SpriteRenderer
-    21200152: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 49) (TRS)/SpriteRenderer
-    21200154: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (16, 50) (TRS)/SpriteRenderer
-    21200156: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 48) (TRS)/SpriteRenderer
-    21200158: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 49) (TRS)/SpriteRenderer
-    21200160: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (17, 50) (TRS)/SpriteRenderer
-    21200162: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 48) (TRS)/SpriteRenderer
-    21200164: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 49) (TRS)/SpriteRenderer
-    21200166: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (18, 50) (TRS)/SpriteRenderer
-    21200168: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 48) (TRS)/SpriteRenderer
-    21200170: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 49) (TRS)/SpriteRenderer
-    21200172: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (19, 50) (TRS)/SpriteRenderer
-    21200174: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 48) (TRS)/SpriteRenderer
-    21200176: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 49) (TRS)/SpriteRenderer
-    21200178: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (20, 50) (TRS)/SpriteRenderer
-    21200180: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 48) (TRS)/SpriteRenderer
-    21200182: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 49) (TRS)/SpriteRenderer
-    21200184: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (21, 50) (TRS)/SpriteRenderer
-    21200186: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 48) (TRS)/SpriteRenderer
-    21200188: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 49) (TRS)/SpriteRenderer
-    21200190: _MapPrfab/LoganTest1/Floors/Chunk (16,48)/tile (22, 50) (TRS)/SpriteRenderer
-    21200192: _MapPrfab/LoganTest1/Collisions/Object_44 (TRS)/Object_44 (CF)/Object_44/SpriteRenderer
-    21200194: _MapPrfab/LoganTest1/Collisions/Object_82 (TRS)/Object_82 (CF)/Object_82/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/LoganTest1/Grid
   externalObjects: {}
@@ -665,7 +175,49 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
-  errors: []
+  errors:
+  - Errors detected in tileset 'Tilesets/floors.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Errors detected in tileset 'Tilesets/Objects.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Could not find tile 2. Make sure the tilesets were successfully imported.
+  - Missing tile '24' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '23' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '17' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
+  - Missing tile '19' on tile object ''
   warnings: []
   missingSortingLayers: []
   missingLayers: []
