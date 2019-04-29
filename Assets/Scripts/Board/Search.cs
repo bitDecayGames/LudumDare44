@@ -54,7 +54,7 @@
                 if (fringe.Length <= 0)
                 {
                     Debug.Log("Visited " + visited.Count + " nodes before failing");
-                    throw new RuntimeException("No nodes to search for " + dest + ". Boom");
+                    return new List<Direction>();
                 }
                 
                 NodePath checkPath = fringe.GetFirstNode();

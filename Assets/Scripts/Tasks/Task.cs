@@ -239,6 +239,8 @@ public class Task : MonoBehaviour
         Score.FailedTasks++;
         Score.TotalTasks++;
 
+        //TODO Play fail sound here
+        
         TaskStep leaveStep = 
             TaskStep.Create()
                 .Type(TaskStepType.LeaveBuilding)
@@ -277,13 +279,51 @@ public class Task : MonoBehaviour
         }
         if (currentStep.SFX != null) {
             FMODSoundEffectsPlayer.Instance.PlaySoundEffect(currentStep.SFX);
-        }
-        // Debug.Log(type + " Complete");
 
-        if (completer == null)
+            switch (currentStep.type)
+            {
+                case TaskStepType.Safe:
+                    var player = FindObjectOfType<PlayerTaskController>();
+                    if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Cash Grabbed", player.transform);
+                    break;
+            }
+        }
+        else
         {
-            var player = FindObjectOfType<PlayerTaskController>();
-            if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("you got there mfer!!", player.transform);
+            switch (currentStep.type)
+            {
+                case TaskStepType.Safe:
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Bills);
+                    break;
+                case TaskStepType.CashRegister:
+                    if (!currentStep.lastStepForSuccess && completer == null && this.type == TaskType.DepositMoney)
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.GreetCustomer);
+                        
+                        Debug.Log("task type: " + this.type);
+                        
+                        var player = FindObjectOfType<PlayerTaskController>();
+                        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Customer Greeted", player.transform);
+                    }
+                    else if (currentStep.lastStepForSuccess && completer == null)
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ByeCustomer);                    
+                        
+                        var player = FindObjectOfType<PlayerTaskController>();
+                        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Happy Customer!", player.transform);
+                    } 
+                    else if (this.type == TaskType.OpenBankDoor && completer == null)
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CashRegister);                    
+                        
+                        var player = FindObjectOfType<PlayerTaskController>();
+                        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Register Filled", player.transform);
+                        
+                        Destroy(GameObject.Find("TutorialCanvas"));
+                    } 
+
+                    break;
+            }
         }
 
         ClearIcons();

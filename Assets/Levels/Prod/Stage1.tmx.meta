@@ -3886,10 +3886,19 @@ ScriptedImporter:
     107762: _MapPrfab/Stage1/Line/Line
     107764: _MapPrfab/Stage1/InvisibleCollisions
     107766: _MapPrfab/Stage1/POIs/LineStart
+    107768: _MapPrfab/Stage1/Line/Object_191
     107770: _MapPrfab/Stage1/Interactables/LeaveBuilding
     107772: _MapPrfab/Stage1/POIs/NpcSpawn1
     107774: _MapPrfab/Stage1/POIs/NpcSpawn2
     107776: _MapPrfab/Stage1/POIs/NpcSpawn3
+    107778: _MapPrfab/Stage1/POIs/LineStart (1)
+    107780: _MapPrfab/Stage1/Interactables/LeaveBuilding (1)
+    107782: _MapPrfab/Stage1/Interactables/LeaveBuilding (2)
+    107784: _MapPrfab/Stage1/Interactables/LeaveBuilding (3)
+    107786: _MapPrfab/Stage1/Interactables/LeaveBuilding (4)
+    107788: _MapPrfab/Stage1/POIs/NpcSpawn3 (1)
+    107790: _MapPrfab/Stage1/POIs/NpcSpawn3 (2)
+    107792: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)
     107796: _MapPrfab/Stage1/NpcOnlyCollisions
     107816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)
     107818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
@@ -7810,10 +7819,19 @@ ScriptedImporter:
     407762: _MapPrfab/Stage1/Line/Line/Transform
     407764: _MapPrfab/Stage1/InvisibleCollisions/Transform
     407766: _MapPrfab/Stage1/POIs/LineStart/Transform
+    407768: _MapPrfab/Stage1/Line/Object_191/Transform
     407770: _MapPrfab/Stage1/Interactables/LeaveBuilding/Transform
     407772: _MapPrfab/Stage1/POIs/NpcSpawn1/Transform
     407774: _MapPrfab/Stage1/POIs/NpcSpawn2/Transform
     407776: _MapPrfab/Stage1/POIs/NpcSpawn3/Transform
+    407778: _MapPrfab/Stage1/POIs/LineStart (1)/Transform
+    407780: _MapPrfab/Stage1/Interactables/LeaveBuilding (1)/Transform
+    407782: _MapPrfab/Stage1/Interactables/LeaveBuilding (2)/Transform
+    407784: _MapPrfab/Stage1/Interactables/LeaveBuilding (3)/Transform
+    407786: _MapPrfab/Stage1/Interactables/LeaveBuilding (4)/Transform
+    407788: _MapPrfab/Stage1/POIs/NpcSpawn3 (1)/Transform
+    407790: _MapPrfab/Stage1/POIs/NpcSpawn3 (2)/Transform
+    407792: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)/Transform
     407796: _MapPrfab/Stage1/NpcOnlyCollisions/Transform
     407816: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/Transform
     407818: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/rope_blocker_1
@@ -7851,6 +7869,7 @@ ScriptedImporter:
     407856: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)/OverBySignUpDesk/Transform
     6800000: _MapPrfab/Stage1/Line/Line/EdgeCollider2D
+    6800002: _MapPrfab/Stage1/Line/Object_191/EdgeCollider2D
     11400000: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _superAsset
     11400004: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -12807,6 +12826,8 @@ ScriptedImporter:
     11409906: _MapPrfab/Stage1/InvisibleCollisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409908: _MapPrfab/Stage1/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409910: _MapPrfab/Stage1/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409912: _MapPrfab/Stage1/Line/Object_191/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11409914: _MapPrfab/Stage1/Line/Object_191/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11409916: _MapPrfab/Stage1/Interactables/LeaveBuilding/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409918: _MapPrfab/Stage1/Interactables/LeaveBuilding/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409920: _MapPrfab/Stage1/POIs/NpcSpawn1/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -12815,8 +12836,16 @@ ScriptedImporter:
     11409926: _MapPrfab/Stage1/POIs/NpcSpawn2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409928: _MapPrfab/Stage1/POIs/NpcSpawn3/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409930: _MapPrfab/Stage1/POIs/NpcSpawn3/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409932: _MapPrfab/Stage1/Line/Object_191/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409934: _MapPrfab/Stage1/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409936: _MapPrfab/Stage1/NpcOnlyCollisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11409938: _MapPrfab/Stage1/NpcOnlyCollisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409940: _MapPrfab/Stage1/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409942: _MapPrfab/Stage1/Interactables/LeaveBuilding (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11409944: _MapPrfab/Stage1/Interactables/LeaveBuilding (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409946: _MapPrfab/Stage1/Interactables/LeaveBuilding (2)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11409948: _MapPrfab/Stage1/Interactables/LeaveBuilding (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409950: _MapPrfab/Stage1/Interactables/LeaveBuilding (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409952: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409954: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409956: _MapPrfab/Stage1/InvisibleCollisions/rope_blocker_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -12831,6 +12860,15 @@ ScriptedImporter:
     11409974: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409976: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409978: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409980: _MapPrfab/Stage1/Interactables/LeaveBuilding (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409982: _MapPrfab/Stage1/Interactables/LeaveBuilding (4)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11409984: _MapPrfab/Stage1/Interactables/LeaveBuilding (4)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409986: _MapPrfab/Stage1/POIs/NpcSpawn3 (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11409988: _MapPrfab/Stage1/POIs/NpcSpawn3 (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409990: _MapPrfab/Stage1/POIs/NpcSpawn3 (2)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11409992: _MapPrfab/Stage1/POIs/NpcSpawn3 (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11409994: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11409996: _MapPrfab/Stage1/POIs/NpcSpawn3 (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/Stage1/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/SpriteRenderer
     21200002: _MapPrfab/Stage1/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
     21200004: _MapPrfab/Stage1/Collisions/Object_3 (TRS)/Object_3 (CF)/Object_3/SpriteRenderer
