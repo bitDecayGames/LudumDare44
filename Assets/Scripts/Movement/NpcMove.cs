@@ -64,10 +64,12 @@ namespace Movement {
             }
             if (isFindingPath && isAcceptingInput) {
                 if (currentDirections.Count > 0) {
+                    NpcHelper.SmartNamer(gameObject, _taskStep.type, currentDirections[0]);
                     if (AttemptMoveInDirection(currentDirections[0])) {
                         currentDirections.RemoveAt(0);
                         tries = 0;
                     } else {
+                        if (currentDirections[0] == Direction.Wait) return; // don't increment tries while waiting
                         tries++;
                         if (tries >= maxTries) {
                             if (IsTheThingInfrontTheThingIWant(currentDirections[0])) {
@@ -78,7 +80,7 @@ namespace Movement {
                                 tries = 0;
                                 overallTries++;
                                 if (overallTries <= maxOverallTries) getDirections();
-                                else throw new Exception(string.Format("This shouldn't happen... The npc tried {0} times to follow directions to a node and failed all of them from {1} to {2}", overallTries, occupier.myNode != null ? occupier.myNode.ToString() : "(null_node)", _taskStep));
+                                else throw new Exception(string.Format("This shouldn't happen... The npc tried {0} times to follow directions to a node and failed all of them from {1} to {2}\n{3}\n{4}", overallTries, occupier.myNode != null ? occupier.myNode.ToString() : "(null_node)", _taskStep, string.Join("->", currentDirections.ConvertAll(c => c.ToString()).ToArray()), board.board));
                             }
                         }
                     }

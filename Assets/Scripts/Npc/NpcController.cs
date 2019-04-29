@@ -121,6 +121,7 @@ public class NpcController : MonoBehaviour
         taskStep = step;
         taskStepType = taskStep.type;
 
+        NpcHelper.SmartNamer(gameObject, taskStepType);
         npcMovement.Move(taskStep, () => { taskManager.CompleteTaskStep(step.type, npcMovement.gameObject); });
     }
 }
