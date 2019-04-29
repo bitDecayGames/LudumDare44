@@ -61,6 +61,11 @@ public static class TaskBuilder
     static void DepositMoney(Task task){
         task.type = TaskType.DepositMoney;
         task.lineTask = true;
+        
+        TaskStep.Create()
+            .Type(TaskStepType.WaitZone)
+            .NPC()
+            .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
@@ -107,6 +112,11 @@ public static class TaskBuilder
     static void ChangeIntoCash(Task task) {
         task.type = TaskType.ChangeIntoCash;
         task.lineTask = true;
+        
+        TaskStep.Create()
+            .Type(TaskStepType.WaitZone)
+            .NPC()
+            .AddTo(task);
 
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Movement {
     public class SimpleMove : MonoBehaviour {
-        public const float TIME_TO_MOVE = 0.25f;
+        public const float TIME_TO_MOVE = 0.05f;
     
         private BoardPosition boardPos;
 

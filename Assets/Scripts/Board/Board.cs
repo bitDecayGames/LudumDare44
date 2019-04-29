@@ -48,6 +48,10 @@ namespace Board {
             }
         }
 
+        public void ForEach(Action<Node> nodeF) {
+            board.ForEach(nodeF);
+        }
+
         public Node Get(int x, int y) {
             if (x < startX || y < startY) return null;
             if (x > startX + width || y > startY + height) return null;

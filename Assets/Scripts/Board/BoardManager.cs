@@ -9,6 +9,9 @@ namespace Board {
     public class BoardManager : MonoBehaviour {
         public Board board = new Board(-100, -100, 200, 200);
         private bool initialized = false;
+        public bool isDebug; // change this in the UI
+        
+        private const float squareSize = 0.2f;
 
         private SuperMap map;
 
@@ -20,6 +23,10 @@ namespace Board {
 
         private void Start() {
             Initialize();
+        }
+
+        private void Update() {
+            if (isDebug) DrawDebugSquares();
         }
 
         private void ForObjInLayer(Action<SuperObject> objF, LayerAction layerAction, params string[] layers) {
@@ -206,6 +213,34 @@ namespace Board {
             }
 
             return null;
+        }
+
+        private void DrawDebugSquares() {
+            board.ForEach(n => {
+                Color color;
+                if (n.occupier != null) color = Color.green;
+                else if (n.isBusy != null) color = Color.yellow;
+                else if (n.npcOffLimits) color = Color.red;
+                else if (n.poi != null) color = Color.cyan;
+                else return;
+                DrawSquareAt(n.IsoLoc(), color);
+            });
+        }
+
+        private void DrawSquareAt(IsoVector2 iso, Color color) {
+            var middle = iso.ToWorldPosReadable() + new Vector2(-squareSize / 2f, squareSize / 2f);
+            var lines = new List<Vector3>();
+            lines.Add(middle);
+            lines.Add(new Vector3(middle.x + squareSize, middle.y));
+            lines.Add(new Vector3(middle.x + squareSize, middle.y - squareSize));
+            lines.Add(new Vector3(middle.x, middle.y - squareSize));
+            lines.Add(middle);
+
+            for (int i = 0; i + 1 < lines.Count; i++) {
+                var a = lines[i];
+                var b = lines[i + 1];
+                Debug.DrawLine(a, b, color, 0, false);
+            }
         }
     }
 }
