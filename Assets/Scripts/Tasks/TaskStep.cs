@@ -9,7 +9,8 @@ public enum TaskStepType {
     GetInLine,
     CashRegister,
     CoinMachine,
-    ATM
+    ATM,
+    LeaveBuilding,
 }
 
 public class TaskStep
