@@ -313,27 +313,7 @@ ScriptedImporter:
     100624: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 42) (TRS)
     100626: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 43) (TRS)
     100628: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 44) (TRS)
-    100630: _MapPrfab/IntroStage/InvisibleCollisions
     100632: _MapPrfab/IntroStage/Line
-    100634: _MapPrfab/IntroStage/NPCOnlyCollisions
-    100636: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)
-    100638: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)
-    100640: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)
-    100642: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)
-    100644: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)
-    100646: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)
-    100648: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)
-    100650: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)
-    100652: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)
-    100654: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)
-    100656: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)
-    100658: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)
-    100660: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)
-    100662: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)
-    100664: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)
-    100666: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)
-    100668: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)
-    100670: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)
     100672: _MapPrfab/IntroStage/POIs
     100684: _MapPrfab/IntroStage/Tile Layer 1
     100686: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)
@@ -359,42 +339,6 @@ ScriptedImporter:
     100730: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 46) (TRS)
     100732: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 47) (TRS)
     100734: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 34) (TRS)
-    100736: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/Object_114 (CF)
-    100738: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/Object_114 (CF)/Object_114
-    100740: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/Object_115 (CF)
-    100742: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/Object_115 (CF)/Object_115
-    100744: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/Object_116 (CF)
-    100746: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/Object_116 (CF)/Object_116
-    100748: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/Object_117 (CF)
-    100750: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/Object_117 (CF)/Object_117
-    100752: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/Object_118 (CF)
-    100754: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/Object_118 (CF)/Object_118
-    100756: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/Object_119 (CF)
-    100758: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/Object_119 (CF)/Object_119
-    100760: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/Object_120 (CF)
-    100762: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/Object_120 (CF)/Object_120
-    100764: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/Object_121 (CF)
-    100766: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/Object_121 (CF)/Object_121
-    100768: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/Object_122 (CF)
-    100770: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/Object_122 (CF)/Object_122
-    100772: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/Object_123 (CF)
-    100774: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/Object_123 (CF)/Object_123
-    100776: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/Object_124 (CF)
-    100778: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/Object_124 (CF)/Object_124
-    100780: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/Object_125 (CF)
-    100782: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/Object_125 (CF)/Object_125
-    100784: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/Object_126 (CF)
-    100786: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/Object_126 (CF)/Object_126
-    100788: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/Object_127 (CF)
-    100790: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/Object_127 (CF)/Object_127
-    100792: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/Object_128 (CF)
-    100794: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/Object_128 (CF)/Object_128
-    100796: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/Object_129 (CF)
-    100798: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/Object_129 (CF)/Object_129
-    100800: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/Object_130 (CF)
-    100802: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/Object_130 (CF)/Object_130
-    100804: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/Object_131 (CF)
-    100806: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/Object_131 (CF)/Object_131
     100808: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 35) (TRS)
     100820: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 36) (TRS)
     100822: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 37) (TRS)
@@ -3394,27 +3338,7 @@ ScriptedImporter:
     400624: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 42) (TRS)/Transform
     400626: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 43) (TRS)/Transform
     400628: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 44) (TRS)/Transform
-    400630: _MapPrfab/IntroStage/InvisibleCollisions/Transform
     400632: _MapPrfab/IntroStage/Line/Transform
-    400634: _MapPrfab/IntroStage/NPCOnlyCollisions/Transform
-    400636: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/Transform
-    400638: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/Transform
-    400640: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/Transform
-    400642: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/Transform
-    400644: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/Transform
-    400646: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/Transform
-    400648: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/Transform
-    400650: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/Transform
-    400652: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/Transform
-    400654: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/Transform
-    400656: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/Transform
-    400658: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/Transform
-    400660: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/Transform
-    400662: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/Transform
-    400664: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/Transform
-    400666: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/Transform
-    400668: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/Transform
-    400670: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/Transform
     400672: _MapPrfab/IntroStage/POIs/Transform
     400684: _MapPrfab/IntroStage/Tile Layer 1/Transform
     400686: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/Transform
@@ -3440,42 +3364,6 @@ ScriptedImporter:
     400730: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 46) (TRS)/Transform
     400732: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 47) (TRS)/Transform
     400734: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 34) (TRS)/Transform
-    400736: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/Object_114 (CF)/Transform
-    400738: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/Object_114 (CF)/Object_114/Transform
-    400740: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/Object_115 (CF)/Transform
-    400742: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/Object_115 (CF)/Object_115/Transform
-    400744: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/Object_116 (CF)/Transform
-    400746: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/Object_116 (CF)/Object_116/Transform
-    400748: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/Object_117 (CF)/Transform
-    400750: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/Object_117 (CF)/Object_117/Transform
-    400752: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/Object_118 (CF)/Transform
-    400754: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/Object_118 (CF)/Object_118/Transform
-    400756: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/Object_119 (CF)/Transform
-    400758: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/Object_119 (CF)/Object_119/Transform
-    400760: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/Object_120 (CF)/Transform
-    400762: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/Object_120 (CF)/Object_120/Transform
-    400764: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/Object_121 (CF)/Transform
-    400766: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/Object_121 (CF)/Object_121/Transform
-    400768: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/Object_122 (CF)/Transform
-    400770: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/Object_122 (CF)/Object_122/Transform
-    400772: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/Object_123 (CF)/Transform
-    400774: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/Object_123 (CF)/Object_123/Transform
-    400776: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/Object_124 (CF)/Transform
-    400778: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/Object_124 (CF)/Object_124/Transform
-    400780: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/Object_125 (CF)/Transform
-    400782: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/Object_125 (CF)/Object_125/Transform
-    400784: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/Object_126 (CF)/Transform
-    400786: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/Object_126 (CF)/Object_126/Transform
-    400788: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/Object_127 (CF)/Transform
-    400790: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/Object_127 (CF)/Object_127/Transform
-    400792: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/Object_128 (CF)/Transform
-    400794: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/Object_128 (CF)/Object_128/Transform
-    400796: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/Object_129 (CF)/Transform
-    400798: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/Object_129 (CF)/Object_129/Transform
-    400800: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/Object_130 (CF)/Transform
-    400802: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/Object_130 (CF)/Object_130/Transform
-    400804: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/Object_131 (CF)/Transform
-    400806: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/Object_131 (CF)/Object_131/Transform
     400808: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 35) (TRS)/Transform
     400820: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 36) (TRS)/Transform
     400822: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-21, 37) (TRS)/Transform
@@ -6375,48 +6263,8 @@ ScriptedImporter:
     11400424: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 37) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400426: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 38) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400428: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 39) (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400430: _MapPrfab/IntroStage/InvisibleCollisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
-    11400432: _MapPrfab/IntroStage/InvisibleCollisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400434: _MapPrfab/IntroStage/Line/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400436: _MapPrfab/IntroStage/Line/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400438: _MapPrfab/IntroStage/NPCOnlyCollisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
-    11400440: _MapPrfab/IntroStage/NPCOnlyCollisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400442: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400444: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400446: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400448: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400450: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400452: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400454: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400456: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400458: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400460: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400462: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400464: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400466: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400468: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400470: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400472: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400474: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400476: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400478: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400480: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400482: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400484: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400486: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400488: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400490: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400492: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400494: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400496: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400498: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400500: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400502: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400504: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400506: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400508: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400510: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400512: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400514: _MapPrfab/IntroStage/POIs/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400516: _MapPrfab/IntroStage/POIs/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400538: _MapPrfab/IntroStage/Tile Layer 1/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
@@ -10104,24 +9952,6 @@ ScriptedImporter:
     21200202: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 34) (TRS)/SpriteRenderer
     21200204: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 35) (TRS)/SpriteRenderer
     21200206: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 36) (TRS)/SpriteRenderer
-    21200208: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_114 (TRS)/Object_114 (CF)/Object_114/SpriteRenderer
-    21200210: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_115 (TRS)/Object_115 (CF)/Object_115/SpriteRenderer
-    21200212: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_116 (TRS)/Object_116 (CF)/Object_116/SpriteRenderer
-    21200214: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_117 (TRS)/Object_117 (CF)/Object_117/SpriteRenderer
-    21200216: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_118 (TRS)/Object_118 (CF)/Object_118/SpriteRenderer
-    21200218: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_119 (TRS)/Object_119 (CF)/Object_119/SpriteRenderer
-    21200220: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_120 (TRS)/Object_120 (CF)/Object_120/SpriteRenderer
-    21200222: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_121 (TRS)/Object_121 (CF)/Object_121/SpriteRenderer
-    21200224: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_122 (TRS)/Object_122 (CF)/Object_122/SpriteRenderer
-    21200226: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_123 (TRS)/Object_123 (CF)/Object_123/SpriteRenderer
-    21200228: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_124 (TRS)/Object_124 (CF)/Object_124/SpriteRenderer
-    21200230: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_125 (TRS)/Object_125 (CF)/Object_125/SpriteRenderer
-    21200232: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_126 (TRS)/Object_126 (CF)/Object_126/SpriteRenderer
-    21200234: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_127 (TRS)/Object_127 (CF)/Object_127/SpriteRenderer
-    21200236: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_128 (TRS)/Object_128 (CF)/Object_128/SpriteRenderer
-    21200238: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_129 (TRS)/Object_129 (CF)/Object_129/SpriteRenderer
-    21200240: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_130 (TRS)/Object_130 (CF)/Object_130/SpriteRenderer
-    21200242: _MapPrfab/IntroStage/NPCOnlyCollisions/Object_131 (TRS)/Object_131 (CF)/Object_131/SpriteRenderer
     21200246: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 37) (TRS)/SpriteRenderer
     21200248: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 38) (TRS)/SpriteRenderer
     21200250: _MapPrfab/IntroStage/Tile Layer 1/Chunk (-32,32)/tile (-20, 39) (TRS)/SpriteRenderer
