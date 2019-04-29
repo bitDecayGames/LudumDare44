@@ -3,19 +3,103 @@ guid: a651da50a1cc6b74caa044287462a025
 ScriptedImporter:
   fileIDToRecycleName:
     100000: _MapPrfab/Stage1
+    100002: _MapPrfab/Stage1/Floor
+    100004: _MapPrfab/Stage1/Floor/Chunk (-16,16)
+    100006: _MapPrfab/Stage1/Floor/Chunk (-16,32)
+    100008: _MapPrfab/Stage1/Floor/Chunk (-16,48)
+    100010: _MapPrfab/Stage1/Floor/Chunk (-16,64)
+    100012: _MapPrfab/Stage1/Floor/Chunk (-16,80)
+    100014: _MapPrfab/Stage1/Floor/Chunk (0,16)
+    100016: _MapPrfab/Stage1/Floor/Chunk (0,32)
+    100018: _MapPrfab/Stage1/Floor/Chunk (0,48)
+    100020: _MapPrfab/Stage1/Floor/Chunk (0,64)
+    100022: _MapPrfab/Stage1/Floor/Chunk (0,80)
+    100024: _MapPrfab/Stage1/Floor/Chunk (16,16)
+    100026: _MapPrfab/Stage1/Floor/Chunk (16,32)
+    100028: _MapPrfab/Stage1/Floor/Chunk (16,48)
+    100030: _MapPrfab/Stage1/Floor/Chunk (16,64)
+    100032: _MapPrfab/Stage1/Floor/Chunk (16,80)
+    100034: _MapPrfab/Stage1/Floor/Chunk (32,16)
+    100036: _MapPrfab/Stage1/Floor/Chunk (32,32)
+    100038: _MapPrfab/Stage1/Floor/Chunk (32,48)
+    100040: _MapPrfab/Stage1/Floor/Chunk (32,64)
+    100042: _MapPrfab/Stage1/Floor/Chunk (32,80)
+    100044: _MapPrfab/Stage1/Floor/Chunk (48,16)
+    100046: _MapPrfab/Stage1/Floor/Chunk (48,32)
+    100048: _MapPrfab/Stage1/Floor/Chunk (48,48)
+    100050: _MapPrfab/Stage1/Floor/Chunk (48,64)
+    100052: _MapPrfab/Stage1/Floor/Chunk (48,80)
+    100054: _MapPrfab/Stage1/Objects
+    100056: _MapPrfab/Stage1/Objects/Chunk (0,48)
+    100058: _MapPrfab/Stage1/Objects/Chunk (0,64)
+    100060: _MapPrfab/Stage1/Objects/Chunk (16,32)
+    100062: _MapPrfab/Stage1/Objects/Chunk (16,48)
+    100064: _MapPrfab/Stage1/Objects/Chunk (16,64)
+    100066: _MapPrfab/Stage1/Objects/Chunk (32,32)
+    100068: _MapPrfab/Stage1/Objects/Chunk (32,48)
+    100070: _MapPrfab/Stage1/Objects/Chunk (32,64)
+    100072: _MapPrfab/Stage1/Objects/Chunk (48,32)
+    100074: _MapPrfab/Stage1/Objects/Chunk (48,48)
     400000: _MapPrfab/Stage1/Transform
+    400002: _MapPrfab/Stage1/Floor/Transform
+    400004: _MapPrfab/Stage1/Floor/Chunk (-16,16)/Transform
+    400006: _MapPrfab/Stage1/Floor/Chunk (-16,32)/Transform
+    400008: _MapPrfab/Stage1/Floor/Chunk (-16,48)/Transform
+    400010: _MapPrfab/Stage1/Floor/Chunk (-16,64)/Transform
+    400012: _MapPrfab/Stage1/Floor/Chunk (-16,80)/Transform
+    400014: _MapPrfab/Stage1/Floor/Chunk (0,16)/Transform
+    400016: _MapPrfab/Stage1/Floor/Chunk (0,32)/Transform
+    400018: _MapPrfab/Stage1/Floor/Chunk (0,48)/Transform
+    400020: _MapPrfab/Stage1/Floor/Chunk (0,64)/Transform
+    400022: _MapPrfab/Stage1/Floor/Chunk (0,80)/Transform
+    400024: _MapPrfab/Stage1/Floor/Chunk (16,16)/Transform
+    400026: _MapPrfab/Stage1/Floor/Chunk (16,32)/Transform
+    400028: _MapPrfab/Stage1/Floor/Chunk (16,48)/Transform
+    400030: _MapPrfab/Stage1/Floor/Chunk (16,64)/Transform
+    400032: _MapPrfab/Stage1/Floor/Chunk (16,80)/Transform
+    400034: _MapPrfab/Stage1/Floor/Chunk (32,16)/Transform
+    400036: _MapPrfab/Stage1/Floor/Chunk (32,32)/Transform
+    400038: _MapPrfab/Stage1/Floor/Chunk (32,48)/Transform
+    400040: _MapPrfab/Stage1/Floor/Chunk (32,64)/Transform
+    400042: _MapPrfab/Stage1/Floor/Chunk (32,80)/Transform
+    400044: _MapPrfab/Stage1/Floor/Chunk (48,16)/Transform
+    400046: _MapPrfab/Stage1/Floor/Chunk (48,32)/Transform
+    400048: _MapPrfab/Stage1/Floor/Chunk (48,48)/Transform
+    400050: _MapPrfab/Stage1/Floor/Chunk (48,64)/Transform
+    400052: _MapPrfab/Stage1/Floor/Chunk (48,80)/Transform
+    400054: _MapPrfab/Stage1/Objects/Transform
+    400056: _MapPrfab/Stage1/Objects/Chunk (0,48)/Transform
+    400058: _MapPrfab/Stage1/Objects/Chunk (0,64)/Transform
+    400060: _MapPrfab/Stage1/Objects/Chunk (16,32)/Transform
+    400062: _MapPrfab/Stage1/Objects/Chunk (16,48)/Transform
+    400064: _MapPrfab/Stage1/Objects/Chunk (16,64)/Transform
+    400066: _MapPrfab/Stage1/Objects/Chunk (32,32)/Transform
+    400068: _MapPrfab/Stage1/Objects/Chunk (32,48)/Transform
+    400070: _MapPrfab/Stage1/Objects/Chunk (32,64)/Transform
+    400072: _MapPrfab/Stage1/Objects/Chunk (48,32)/Transform
+    400074: _MapPrfab/Stage1/Objects/Chunk (48,48)/Transform
     11400000: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _superAsset
+    11400004: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400006: _MapPrfab/Stage1/Floor/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400008: _MapPrfab/Stage1/Floor/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400010: _MapPrfab/Stage1/Floor/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400012: _MapPrfab/Stage1/Objects/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400014: _MapPrfab/Stage1/Objects/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/Stage1/Objects/MonoBehaviour-SuperTiled2Unity.TilemapData
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/Stage1/Grid
+    3664157343022684176: _MapPrfab/Stage1/Floor/TilemapRenderer
+    3664157343022684178: _MapPrfab/Stage1/Objects/TilemapRenderer
+    8195094279510102542: _MapPrfab/Stage1/Floor/Tilemap
+    8195094279510102544: _MapPrfab/Stage1/Objects/Tilemap
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
-  errors:
-  - 'Missing tileset asset: C:/Users/nandemoguy/Desktop/testfloors.tsx'
+  errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []
