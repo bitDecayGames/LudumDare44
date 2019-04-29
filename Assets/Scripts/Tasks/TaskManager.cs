@@ -23,7 +23,7 @@ public class TaskManager : MonoBehaviour
     int NumRandomTasks;
 
     // Time before a new task is created. (Seconds)
-    static float TaskBetweenTime = 1f;
+    static float TaskBetweenTime = 5f;
     float TimeToNewTasks = TaskBetweenTime;
 
     static int MaxNumberLines = 2;

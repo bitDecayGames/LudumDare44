@@ -12,6 +12,7 @@ public enum TaskStepType {
     ATM,
     LeaveBuilding,
     WaitZone,
+    AccountComputer
 }
 
 public class TaskStep

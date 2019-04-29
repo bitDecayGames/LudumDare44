@@ -36,9 +36,34 @@
    <property name="TaskStepType" value="Safe"/>
   </properties>
  </tile>
+ <tile id="39">
+  <properties>
+   <property name="TaskStepType" value="AccountComputer"/>
+  </properties>
+ </tile>
+ <tile id="40">
+  <properties>
+   <property name="TaskStepType" value="AccountComputer"/>
+  </properties>
+ </tile>
+ <tile id="41">
+  <properties>
+   <property name="TaskStepType" value="AccountComputer"/>
+  </properties>
+ </tile>
+ <tile id="42">
+  <properties>
+   <property name="TaskStepType" value="AccountComputer"/>
+  </properties>
+ </tile>
  <tile id="62">
   <properties>
    <property name="TaskStepType" value="ATM"/>
+  </properties>
+ </tile>
+ <tile id="71">
+  <properties>
+   <property name="TaskStepType" value="VacuumTube"/>
   </properties>
  </tile>
  <tile id="86">
@@ -47,6 +72,11 @@
   </properties>
  </tile>
  <tile id="88">
+  <properties>
+   <property name="TaskStepType" value="ATM"/>
+  </properties>
+ </tile>
+ <tile id="106">
   <properties>
    <property name="TaskStepType" value="ATM"/>
   </properties>
