@@ -44,6 +44,7 @@ public class TaskManager : MonoBehaviour
         
         Score.ResetScore();
 
+        // Create the list of possible tasks to create in current level
         possibleStepList = GetPossibleStepList();
         possibleTaskList = CreatePossibleTaskList();
         if(possibleTaskList.Count == 0) throw new Exception ("Couldn't create any possible tasks. Something has gone wrong");
@@ -199,11 +200,6 @@ public class TaskManager : MonoBehaviour
             }
         }
 
-        foreach(var key in possibleStepList)
-        {
-            Debug.Log("Task: " + key);
-        }        
-
         return possibleStepList;
     }
 
@@ -224,12 +220,6 @@ public class TaskManager : MonoBehaviour
             }
 
             if (taskPossible) possibleTaskList.Add(taskStepCombo.Key);
-        }
-
-        Debug.Log("########### POSSIBLE TASKSS ###########");
-        foreach(var key in possibleTaskList)
-        {
-            Debug.Log("Task: " + key);
         }
 
         return possibleTaskList;
