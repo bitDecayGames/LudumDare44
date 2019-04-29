@@ -49,7 +49,7 @@ public class TaskManager : MonoBehaviour
         possibleTaskList = CreatePossibleTaskList();
         if(possibleTaskList.Count == 0) throw new Exception ("Couldn't create any possible tasks. Something has gone wrong");
         NumRandomTasks = possibleTaskList.Count;
-        
+
         // Create the initial task for the player to start the level
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
