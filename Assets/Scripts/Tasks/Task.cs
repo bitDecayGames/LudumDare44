@@ -29,6 +29,7 @@ public class Task : MonoBehaviour
     public int lineNumber;
     public bool lineTask = false;
     public int numSteps = 0;
+    bool failed;
 
     public static string GetTaskName(TaskType type)
     {
@@ -59,6 +60,7 @@ public class Task : MonoBehaviour
                 throw new RuntimeException("NPC did not have NPC Controller on prefab");
             }
             npcController.Init();
+            npcController.AssignTask(this);
             if(steps.Peek().npcStep)
             {
                 npcController.AssignStep(steps.Peek());
@@ -113,6 +115,16 @@ public class Task : MonoBehaviour
         Icons.Clear();
     }
 
+    public void Fail()
+    {
+        steps.Clear();
+        ClearIcons();
+        failed = true;
+        TaskStep leaveStep = new TaskStep(TaskStepType.LeaveBuilding, Icon.Angry, true);
+        AddStep(leaveStep);
+        npcController.AssignStep(leaveStep);
+    }
+
     public void CompleteStep(TaskStepType type, GameObject completer) {
         if (steps.Count <= 0)
         {
@@ -144,8 +156,7 @@ public class Task : MonoBehaviour
         }
 
         ClearIcons();
-
-        if (!IsComplete())
+        if (!IsComplete() && !IsFailed())
         {
             TaskStep nextStep = steps.Peek();
             if(nextStep.npcStep)
@@ -158,7 +169,12 @@ public class Task : MonoBehaviour
 
     public bool IsComplete()
     {
-        return steps.Count <= 0;
+        return steps.Count <= 0 && !failed;
+    }
+
+    public bool IsFailed()
+    {
+        return failed;
     }
 
     private bool HaveNpcSteps(){
