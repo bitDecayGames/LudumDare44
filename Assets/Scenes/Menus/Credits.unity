@@ -757,7 +757,7 @@ MonoBehaviour:
   m_text: "Art\n\tErik \"New Perspective\" Meredith\n\nMusic\n\tTanner \"Second Time's
     the Charm\" Moore\n\nProgramming\n\tJake \"Tamago Sensei\" Caban-Tomski\n\tTanner
     \"Come and Go\" Moore\n\tJake \"Step Master\" Fisher\n\tLogan \"Resting my Eyes\"
-    Moore\n\tMichael \"The Economist Wingfield"
+    Moore\n\tMichael \"The Economist\" Wingfield"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 29.15
+  m_fontSize: 41.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -826,7 +826,7 @@ MonoBehaviour:
   m_margin: {x: 17.897236, y: 21.476652, z: 0, w: 42.95335}
   m_textInfo:
     textComponent: {fileID: 1919264777}
-    characterCount: 251
+    characterCount: 252
     spriteCount: 0
     spaceCount: 43
     wordCount: 35
