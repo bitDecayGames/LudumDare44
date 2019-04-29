@@ -135,22 +135,26 @@ public class TaskManager : MonoBehaviour
             Queue<TaskStep> getInLineSteps = new Queue<TaskStep>();
             BoardManager bm = FindObjectOfType<BoardManager>();
             MaxNumberLines = bm.board.lineLocations.Count;
-            foreach (var ts in task.steps)
-            {
-                for (var linenum = 0; linenum < bm.board.lineLocations.Count; linenum++)
-                {
-                    if (bm.board.lineLocations[linenum][0].Meta != null)
-                    {
-                        if (ts.meta == bm.board.lineLocations[linenum][0].Meta.ToLower())
-                        {
-                            task.lineNumber = linenum;
-                            break;
-                        }
-                    }
-
-                    task.lineNumber = linenum;
+            
+            // find valid line numbers by looping through tasks and line locations for matching meta strings
+            List<int> validLineNumbers = new List<int>();
+            string stepMeta = null;
+            foreach (var step in task.steps) {
+                if (step.meta != null) {
+                    stepMeta = step.meta;
                 }
             }
+            if (stepMeta == null) throw new Exception("There was no step meta on any of the task steps.  You are probably missing a .Meta() call on your task builder for this task: " + task.type);
+            stepMeta = stepMeta.ToLower();
+            foreach (var line in bm.board.lineLocations) {
+                var lineNum = line.Key;
+                var meta = line.Value[0].Meta;
+                if (meta != null && meta.ToLower() == stepMeta) validLineNumbers.Add(lineNum);
+            }
+            if (validLineNumbers.Count == 0) throw new Exception(string.Format("Could not find any valid lines with the meta ({0}).  You are probably missing some line configuration on this tiled map.", stepMeta));
+            task.lineNumber = validLineNumbers[UnityEngine.Random.Range(0, validLineNumbers.Count)];
+            Debug.Log("Picked line number: " + task.lineNumber);
+            
             foreach (Board.Board.POI poi in bm.board.lineLocations[task.lineNumber])
             {
                 TaskStep getInLine = TaskStep.Create().Type(TaskStepType.GetInLine).NPC(true);
