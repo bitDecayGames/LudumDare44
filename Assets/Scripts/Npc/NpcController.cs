@@ -12,7 +12,7 @@ public class NpcController : MonoBehaviour
     TaskManager taskManager;
     private bool isInited = false;
 
-    public float MaxWaitTimeSeconds = 30;
+    public float MaxWaitTimeSeconds = 60;
     float totalWaitTime;
 
     bool waiting;

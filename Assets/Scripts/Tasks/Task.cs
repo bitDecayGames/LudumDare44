@@ -116,7 +116,13 @@ public class Task : MonoBehaviour
         steps.Clear();
         ClearIcons();
         failed = true;
-        TaskStep leaveStep = new TaskStep(TaskStepType.LeaveBuilding, Icon.Angry, true);
+
+        TaskStep leaveStep = 
+            TaskStep.Create()
+                .Type(TaskStepType.LeaveBuilding)
+                .SetIcon(Icon.Angry)
+                .NPC(true);
+
         AddStep(leaveStep);
         npcController.AssignStep(leaveStep);
     }
@@ -143,6 +149,9 @@ public class Task : MonoBehaviour
         steps.Dequeue();
         currentStep.complete = true;
         completedSteps.Add(currentStep);
+        if (currentStep.SFX != null) {
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(currentStep.SFX);
+        }
         Debug.Log(type + " Complete");
 
         if (completer == null)
