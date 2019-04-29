@@ -69,13 +69,13 @@ public class TaskManager : MonoBehaviour
         navigator.GoToScene("Score");
     }
 
-    public void CompleteTaskStep(TaskStepType type, bool npcStep)
+    public void CompleteTaskStep(TaskStepType type, GameObject completer)
     {
         GameObject[] taskObjs = GameObject.FindGameObjectsWithTag(TAG);
         foreach (GameObject go in taskObjs)
         {
             Task task = go.GetComponent<Task>();
-            task.CompleteStep(type, npcStep);
+            task.CompleteStep(type, completer);
 
             if (task.IsComplete()) {
                 Destroy(go);
