@@ -23,3 +23,6 @@ Assets/Resources/FMODStudioSettings.asset
 
 // generated code
 Assets/Scripts/Constants/Scenes.cs
+
+// IDE Files
+Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
