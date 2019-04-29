@@ -19,7 +19,7 @@ public class TaskManager : MonoBehaviour
     private Timer timer;
     private EasyNavigator navigator;
 
-    uint NumTasks = 1;
+    uint NumTasks = 5;
 
     // Time before a new task is created. (Seconds)
     static float TaskBetweenTime = 1f;
