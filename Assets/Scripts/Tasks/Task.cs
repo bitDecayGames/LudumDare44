@@ -97,7 +97,16 @@ public class Task : MonoBehaviour
         {
             // TODO Move this offset somewhere else.
             Vector3 offset = new Vector3(-0.25f, 1f, 0f);
-            GameObject iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, loc.gameObject.transform, offset);
+            GameObject iconObj;
+            // If the game object has an underlying sprite, follow that instead
+            if (loc.gameObject.transform.Find("Sprite") != null)
+            {
+                 iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, loc.gameObject.transform.Find("Sprite").transform, offset);
+            }
+            else
+            {
+                iconObj = IconManager.GetLocalReference().CreateIcon(step.icon, loc.gameObject.transform, offset);    
+            }
             Icons.Add(iconObj);
         }
     }
@@ -116,7 +125,13 @@ public class Task : MonoBehaviour
         steps.Clear();
         ClearIcons();
         failed = true;
-        TaskStep leaveStep = new TaskStep(TaskStepType.LeaveBuilding, Icon.Angry, true);
+
+        TaskStep leaveStep = 
+            TaskStep.Create()
+                .Type(TaskStepType.LeaveBuilding)
+                .SetIcon(Icon.Angry)
+                .NPC(true);
+
         AddStep(leaveStep);
         npcController.AssignStep(leaveStep);
     }
@@ -143,6 +158,9 @@ public class Task : MonoBehaviour
         steps.Dequeue();
         currentStep.complete = true;
         completedSteps.Add(currentStep);
+        if (currentStep.SFX != null) {
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(currentStep.SFX);
+        }
         Debug.Log(type + " Complete");
 
         if (completer == null)

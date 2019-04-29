@@ -15,16 +15,38 @@ public enum TaskStepType {
 
 public class TaskStep
 {
-
-    public TaskStep(TaskStepType type, bool isNpc = false) {
-        this.type = type;
-        npcStep = isNpc;
+    public static TaskStep Create()
+    {
+        return new TaskStep();
     }
 
-    public TaskStep(TaskStepType type, Icon icon, bool isNpc = false) {
+    public TaskStep Type(TaskStepType type)
+    {
         this.type = type;
-        this.icon = icon;
+        return this;
+    }
+
+    public TaskStep NPC(bool isNpc)
+    {
         npcStep = isNpc;
+        return this;
+    }
+
+    public TaskStep SetIcon(Icon icon)
+    {
+        this.icon = icon;
+        return this;
+    }
+
+    public TaskStep SFC(string sfx)
+    {
+        SFX = sfx;
+        return this;
+    }
+
+    public void AddTo(Task task)
+    {
+        task.AddStep(this);
     }
     
     public static string GetStepName(TaskStepType type)
@@ -47,4 +69,6 @@ public class TaskStep
     public Board.Board.Node node;
 
     public Icon icon = Icon.Empty;
+
+    public string SFX;
 }
