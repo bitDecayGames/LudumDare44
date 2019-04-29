@@ -10,5 +10,5 @@ public class SFX
 	public const string SlidingDoorOpen = "SlidingDoorOpen";
 	public const string SlidingDoorClose = "SlidingDoorClose";
 	public const string GreetCustomer = "GreetCustomer";
-	public const string AcceptTask = "AcceptTask";
+	public const string ByeCustomer = "ByeCustomer";
 }

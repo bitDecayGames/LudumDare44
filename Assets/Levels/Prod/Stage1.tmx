@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="17" nextobjectid="190">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="17" nextobjectid="192">
  <tileset firstgid="1" source="../../Art/Tilesets/Floors/testfloors.tsx"/>
  <tileset firstgid="26" source="../../Art/Tilesets/Objects/Objects.tsx"/>
  <tileset firstgid="143" source="../../Art/Tilesets/Cars/Cars.tsx"/>
@@ -673,7 +673,15 @@
   </object>
   <object id="177" name="LineStart" x="264" y="432">
    <properties>
+    <property name="ForTask" value="CashRegister"/>
     <property name="LineNumber" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="190" name="LineStart" x="256" y="392">
+   <properties>
+    <property name="ForTask" value="ATM"/>
+    <property name="LineNumber" value="1"/>
    </properties>
    <point/>
   </object>
@@ -684,6 +692,12 @@
     <property name="LineNumber" value="0"/>
    </properties>
    <polyline points="-3,-1 -11,-1 -19,-1 -27,-1 -35,-1 -43,-1"/>
+  </object>
+  <object id="191" x="256" y="392">
+   <properties>
+    <property name="LineNumber" value="1"/>
+   </properties>
+   <polyline points="0,0 -8,0 -8,-8 -16,-8"/>
   </object>
  </objectgroup>
 </map>

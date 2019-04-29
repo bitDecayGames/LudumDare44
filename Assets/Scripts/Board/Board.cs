@@ -196,6 +196,7 @@ namespace Board {
         public class POI
         {
             public Node myNode;
+            public string Meta { get; set; }
         }
     }
 }

@@ -60,6 +60,13 @@ namespace Movement {
             if (waitTime > 0)
             {
                 waitTime -= Time.deltaTime;
+                if (waitTime <= 0)
+                {
+                    if (currentDirections.Count > 0 && currentDirections[0] == Direction.Wait)
+                    {
+                        currentDirections.Clear();
+                    }
+                }
                 return;
             }
             if (isFindingPath && isAcceptingInput) {
@@ -153,6 +160,7 @@ namespace Movement {
                 }
             } else {
                 currentDirections = new List<Direction>{Direction.Wait};
+                waitTime = 2;
             }
             isFindingPath = true;
         }

@@ -1,38 +1,48 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 public static class TaskBuilder
 {
-    private static int numRandomTasks = 3;
 
-    public static void CreateRandomTask(Task task){
-        var rand = new Random();
-        int taskNumber = rand.Next(numRandomTasks);
-//        int taskNumber = 0; // TODO: MW put this back
-        // Debug.Log("Random task number: " + taskNumber);
-
-        switch (taskNumber)
+    public static void CreateTask (Task task)
+    {
+        switch (task.type)
         {
-            case 0:
+            case TaskType.DepositMoney:
                 DepositMoney(task);
                 break;
-            case 1:
+            case TaskType.ChangeIntoCash:
                 ChangeIntoCash(task);
                 break;
-            case 2:
+            case TaskType.ATMDeposit:
                 ATMDeposit(task);
                 break;
-            // case 3:
+            // case TaskType.FillCashRegister:
             //     FillCashRegister(task);
             //     break;
-            // case 4:
+            // case TaskType.EmptyCashRegister:
             //     EmptyCashRegister(task);
             //     break;
-            default:
-                break;
+            // case TaskType.OpenBankDoor:
+            //     OpenBankDoor(task);
+            // break;
         }
-
     }
 
+    public static Dictionary<TaskType, List<String>> GetAllTaskAndStepDetails()
+    {
+        Dictionary<TaskType, List<String>> dict = new Dictionary<TaskType, List<String>>();
+        dict.Add(TaskType.DepositMoney, DepositMoney());
+        dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
+        dict.Add(TaskType.ATMDeposit, ATMDeposit());
+        // dict.Add(TaskType.FillCashRegister, FillCashRegister());
+        // dict.Add(TaskType.EmptyCashRegister, EmptyCashRegister());
+        // dict.Add(TaskType.OpenBankDoor, OpenBankDoor());
+
+        return dict;
+    }
+    
     public static void GetStartingTask(Task task, string level)
     {
         task.type = TaskType.OpenBankDoor;
@@ -55,6 +65,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
             .NPC()
+            .Meta(TaskStepType.CashRegister)
             .AddTo(task);
 
         TaskStep.Create()
@@ -82,6 +93,15 @@ public static class TaskBuilder
             .Type(TaskStepType.LeaveBuilding)
             .NPC()
             .AddTo(task);     
+    }
+
+    static List<String> DepositMoney()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.CashRegister.ToString().ToLower());
+        stepList.Add(TaskStepType.Safe.ToString().ToLower());
+        stepList.Add(TaskStepType.LeaveBuilding.ToString().ToLower());
+        return stepList;
     }
 
     static void ChangeIntoCash(Task task) {
@@ -119,11 +139,27 @@ public static class TaskBuilder
             .NPC()
             .AddTo(task);        
     }
+    
+    static List<String> ChangeIntoCash()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.CashRegister.ToString().ToLower());
+        stepList.Add(TaskStepType.CoinMachine.ToString().ToLower());
+        stepList.Add(TaskStepType.LeaveBuilding.ToString().ToLower());
+        return stepList;
+    }
 
     static void ATMDeposit(Task task)
     {
         task.type = TaskType.ATMDeposit;
+        task.lineTask = true;
 
+        TaskStep.Create()
+            .Type(TaskStepType.GetInLine)
+            .NPC()
+            .Meta(TaskStepType.ATM)
+            .AddTo(task);
+        
         TaskStep.Create()
             .Type(TaskStepType.ATM)
             .NPC()
@@ -140,6 +176,14 @@ public static class TaskBuilder
             .Type(TaskStepType.LeaveBuilding)
             .NPC()
             .AddTo(task);      
+    }
+    
+    static List<String> ATMDeposit()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.ATM.ToString().ToLower());
+        stepList.Add(TaskStepType.LeaveBuilding.ToString().ToLower());
+        return stepList;
     }
 
     static void FillCashRegister(Task task) {
@@ -161,6 +205,14 @@ public static class TaskBuilder
             .AddTo(task);
     }
 
+    static List<String> FillCashRegister()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.CashRegister.ToString().ToLower());
+        stepList.Add(TaskStepType.Safe.ToString().ToLower());
+        return stepList;
+    }
+
     static void EmptyCashRegister(Task task) {
         task.type = TaskType.EmptyCashRegister;
 
@@ -174,6 +226,14 @@ public static class TaskBuilder
             .SetIcon(Icon.Money)
             .AddTo(task);
     }
+ 
+    static List<String> EmptyCashRegister()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.CashRegister.ToString().ToLower());
+        stepList.Add(TaskStepType.Safe.ToString().ToLower());
+        return stepList;
+    }
 
     static void OpenBankDoor(Task task) {
         task.type = TaskType.OpenBankDoor;
@@ -181,5 +241,12 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.BankDoor)
             .AddTo(task);
+    }
+
+    static List<String> OpenBankDoor()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.BankDoor.ToString().ToLower());
+        return stepList;
     }
 }
