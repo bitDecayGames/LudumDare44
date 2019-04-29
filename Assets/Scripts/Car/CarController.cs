@@ -14,13 +14,9 @@ public class CarController : MonoBehaviour {
 
     string TAG = "MakeDatCarBoi".ToLower();
 
-    void Start()
-    {
-
-    }
-
     void Update()
     { 
+        // TODO TEST Debug Code, safe to remove
         if (Input.GetKeyUp("1"))
         {
             CreateCar();
@@ -55,11 +51,17 @@ public class CarController : MonoBehaviour {
         currentCar = new GameObject();
         currentCar.name = "Car" + carIdx;
 
-        currentCar.AddComponent<SpriteRendererFadeInOverTime>().timeToFadeIn = 2f;
-
         SpriteRenderer renderer = currentCar.AddComponent<SpriteRenderer>();
         renderer.sprite = carSprites[carIdx];
+
+        // Prevent car for flashing on load
+        Color c = renderer.color;
+        c.a = 0;
+        renderer.color = c;
+
         renderer.sortingOrder = 10000;
+
+        currentCar.AddComponent<SpriteRendererFadeInOverTime>().timeToFadeIn = 2f;
 
         currentCar.transform.position = carBois[0].gameObject.transform.position;
     }
