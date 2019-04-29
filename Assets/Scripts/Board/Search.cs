@@ -45,12 +45,10 @@
             while (true)
             {
                 iterations++;
-                if (iterations > 1000)
+                if (iterations > 100)
                 {
-                    Debug.Log("Visited Nodes size: " + visited.Count);
-                    Debug.Log("Fringe size: " + fringe.Length);
-                    
-                    throw new RuntimeException(" Searched more than 10k nodes. Probably bad");
+                    Debug.Log("Unable to find path to destination");
+                    return new List<Direction>();
                 }
                 
                 if (fringe.Length <= 0)

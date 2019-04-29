@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Boo.Lang.Runtime;
 using UnityEngine;
 
 public enum TaskType {
@@ -46,6 +47,10 @@ public class Task : MonoBehaviour
     {
         npc = Instantiate(SomeNpc);
         npcController = npc.GetComponent<NpcController>();
+        if (npcController == null)
+        {
+            throw new RuntimeException("NPC did not have NPC Controller on prefab");
+        }
         npcController.Init();
         if(steps.Peek().npcStep)
         {
