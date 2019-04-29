@@ -174,8 +174,8 @@ namespace Movement {
             if (board.board.stepLocations.ContainsKey(taskStepName.ToLower())) {
                 nodes.AddRange(board.board.stepLocations[taskStepName.ToLower()].ConvertAll(o => o.myNode));
             }
-            if (board.board.poiLocations.ContainsKey(taskStepName)) {
-                nodes.AddRange(board.board.poiLocations[taskStepName].ConvertAll(o => o.myNode));
+            if (board.board.poiLocations.ContainsKey(taskStepName.ToLower())) {
+                nodes.AddRange(board.board.poiLocations[taskStepName.ToLower()].ConvertAll(o => o.myNode));
             }
             return nodes.FindAll(n => n != null);
         }

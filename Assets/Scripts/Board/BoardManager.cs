@@ -105,7 +105,7 @@ namespace Board {
             if (props != null) {
                 foreach (var p in props.m_Properties) {
                     if (p.m_Name == "poiName") {
-                        string key = p.m_Value;
+                        string key = p.m_Value.ToLower();
                         if (!board.poiLocations.ContainsKey(key)) {
                             board.poiLocations.Add(key, new List<Board.POI>());
                         }
