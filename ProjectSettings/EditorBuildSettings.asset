@@ -44,9 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Prod/Level2.unity
     guid: dd8a39c51660649319f1a3268fba903c
-  - enabled: 1
-    path: Assets/Scenes/Levels/Prod/Level3.unity
-    guid: 52ea6debe2a77dd428cc281c0cdaf4d0
   - enabled: 0
     path: Assets/Scenes/Levels/RockosWorld.unity
     guid: 0d9fda158013f0d4fbc7d88b1f03f2cc
