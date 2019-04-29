@@ -75,6 +75,12 @@
                     // Can't walk through occupied spaces
                     continue;
                 }
+
+                if (checkPath.currentNode.npcOffLimits)
+                {
+                    // Can't go here
+                    continue;
+                }
                 
                 bool skip = false;
                 foreach (var next in expand(checkPath, board, dest))
