@@ -19,7 +19,7 @@ public class TaskManager : MonoBehaviour
     private Timer timer;
     private EasyNavigator navigator;
 
-    uint NumTasks = 1;
+    uint NumTasks = 2;
 
     // Time before a new task is created. (Seconds)
     static float TaskBetweenTime = 1f;
@@ -77,7 +77,7 @@ public class TaskManager : MonoBehaviour
             Task task = go.GetComponent<Task>();
             task.CompleteStep(type, completer);
 
-            if (task.IsComplete()) {
+            if (task.IsComplete() || task.IsFailed()) {
                 Destroy(go);
             }
         }
@@ -87,7 +87,7 @@ public class TaskManager : MonoBehaviour
         GameObject newTaskObj = new GameObject();
         var task = newTaskObj.AddComponent(typeof(Task)) as Task;
         TaskBuilder.CreateRandomTask(task);
-        task.SomeNpc = Npcs.PickOneAtRandom();
+        task.SomeNpc = Instantiate(Npcs.PickOneAtRandom());
         newTaskObj.name = Task.GetTaskName(task.type);
         newTaskObj.tag = TAG;
 

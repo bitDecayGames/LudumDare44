@@ -45,7 +45,7 @@
             while (true)
             {
                 iterations++;
-                if (iterations > 100)
+                if (iterations > 500)
                 {
                     Debug.Log("Unable to find path to destination");
                     return new List<Direction>();
@@ -73,6 +73,12 @@
                 if (checkPath.currentNode.occupier != null)
                 {
                     // Can't walk through occupied spaces
+                    continue;
+                }
+
+                if (checkPath.currentNode.npcOffLimits)
+                {
+                    // Can't go here
                     continue;
                 }
                 

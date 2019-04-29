@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="6" nextobjectid="39">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="7" nextobjectid="67">
  <tileset firstgid="1" source="Tilesets/floors.tsx"/>
  <tileset firstgid="21" source="Tilesets/Objects.tsx"/>
  <layer id="1" name="Floors" width="100" height="100">
@@ -100,13 +100,51 @@
   <object id="31" gid="39" x="-416" y="328" width="16" height="32"/>
   <object id="32" gid="39" x="-408" y="328" width="16" height="32"/>
   <object id="33" gid="40" x="-440" y="328" width="16" height="32"/>
+  <object id="39" gid="43" x="-384" y="360" width="16" height="32"/>
+  <object id="40" gid="43" x="-384" y="352" width="16" height="32"/>
+  <object id="41" gid="43" x="-384" y="344" width="16" height="32"/>
+  <object id="42" gid="43" x="-360" y="368" width="16" height="32"/>
+  <object id="43" gid="43" x="-352" y="384" width="16" height="32"/>
+  <object id="44" gid="43" x="-344" y="400" width="16" height="32"/>
+  <object id="45" gid="43" x="-344" y="408" width="16" height="32"/>
+  <object id="46" gid="43" x="-344" y="424" width="16" height="32"/>
+  <object id="47" gid="43" x="-344" y="432" width="16" height="32"/>
+  <object id="48" gid="43" x="-344" y="440" width="16" height="32"/>
+  <object id="49" gid="46" x="-384" y="360" width="16" height="32"/>
+  <object id="50" gid="46" x="-360" y="376" width="16" height="32"/>
+  <object id="51" gid="46" x="-352" y="392" width="16" height="32"/>
+  <object id="52" gid="46" x="-376" y="360" width="16" height="32"/>
+  <object id="53" gid="46" x="-368" y="360" width="16" height="32"/>
+  <object id="54" gid="46" x="-392" y="336" width="16" height="32"/>
+  <object id="55" gid="46" x="-400" y="328" width="16" height="32"/>
+ </objectgroup>
+ <objectgroup id="6" name="OffLimits">
+  <object id="58" gid="15" x="-400" y="360" width="16" height="32"/>
+  <object id="59" gid="15" x="-392" y="360" width="16" height="32"/>
+  <object id="60" gid="15" x="-384" y="400" width="16" height="32"/>
+  <object id="61" gid="15" x="-384" y="408" width="16" height="32"/>
+  <object id="62" gid="15" x="-384" y="416" width="16" height="32"/>
+  <object id="63" gid="15" x="-384" y="424" width="16" height="32"/>
+  <object id="64" gid="15" x="-376" y="440" width="16" height="32"/>
+  <object id="65" gid="15" x="-384" y="432" width="16" height="32"/>
+  <object id="66" gid="15" x="-384" y="440" width="16" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="Interactables">
-  <object id="5" gid="29" x="-424" y="368" width="16" height="32"/>
+  <object id="5" gid="29" x="-424" y="368" width="16" height="32">
+   <properties>
+    <property name="TaskStepType" value="CashRegister"/>
+   </properties>
+  </object>
   <object id="15" gid="83" x="-424" y="336" width="16" height="32"/>
   <object id="34" name="Spawn" x="-408" y="344">
    <point/>
   </object>
+  <object id="56" gid="72" x="-296" y="416" width="16" height="32">
+   <properties>
+    <property name="TaskStepType" value="LeaveBuilding"/>
+   </properties>
+  </object>
+  <object id="57" gid="83" x="-376" y="368" width="16" height="32"/>
  </objectgroup>
  <objectgroup id="4" name="POIs">
   <object id="3" name="LineStart" x="-392" y="424">
@@ -115,7 +153,7 @@
    </properties>
    <point/>
   </object>
-  <object id="14" name="NpcSpawn" x="-352" y="416">
+  <object id="14" name="NpcSpawn" x="-320" y="416">
    <properties>
     <property name="poiName" value="npcSpawn"/>
    </properties>

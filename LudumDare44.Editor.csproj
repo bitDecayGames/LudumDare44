@@ -372,6 +372,13 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\FMODMigrationUtil.cs" />
     <Compile Include="Assets\ResonanceAudio\Editor\FmodResonanceAudioRoomEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\CodeGeneration\GenerateScenes.cs" />
+    <Compile Include="Assets\Scripts\Editor\CodeGeneration\GenerateSFX.cs" />
+    <Compile Include="Assets\Scripts\Editor\CodeGeneration\GenerateSongs.cs" />
+    <Compile Include="Assets\Scripts\Editor\CodeGeneration\GenerateTags.cs" />
+    <Compile Include="Assets\Scripts\Editor\CodeGeneration\JsonFileSchemas\SFXList.cs" />
+    <Compile Include="Assets\Scripts\Editor\CodeGeneration\JsonFileSchemas\SongList.cs" />
+    <Compile Include="Assets\Scripts\Editor\CodeGeneration\OnSaveScripts.cs" />
     <Compile Include="Assets\Scripts\Editor\CustomAssetImporter.cs" />
     <Compile Include="Assets\SuperTiled2Unity\Scripts\Editor\AnimationBuilder.cs" />
     <Compile Include="Assets\SuperTiled2Unity\Scripts\Editor\AssetDatabaseEx.cs" />

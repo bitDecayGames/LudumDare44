@@ -96,6 +96,19 @@ ScriptedImporter:
     11400180: Tile_Objects_89
     11400182: Tile_Objects_90
     11400184: Tile_Objects_91
+    11400186: Tile_Objects_92
+    11400188: Tile_Objects_93
+    11400190: Tile_Objects_94
+    11400192: Tile_Objects_95
+    11400194: Tile_Objects_96
+    11400196: Tile_Objects_97
+    11400198: Tile_Objects_98
+    11400200: Tile_Objects_99
+    11400202: Tile_Objects_100
+    11400204: Tile_Objects_101
+    11400206: Tile_Objects_102
+    11400208: Tile_Objects_103
+    11400210: Tile_Objects_104
     21300000: Sprite_Objects_1
     21300002: Sprite_Objects_2
     21300004: Sprite_Objects_3
@@ -187,6 +200,19 @@ ScriptedImporter:
     21300176: Sprite_Objects_89
     21300178: Sprite_Objects_90
     21300180: Sprite_Objects_91
+    21300182: Sprite_Objects_92
+    21300184: Sprite_Objects_93
+    21300186: Sprite_Objects_94
+    21300188: Sprite_Objects_95
+    21300190: Sprite_Objects_96
+    21300192: Sprite_Objects_97
+    21300194: Sprite_Objects_98
+    21300196: Sprite_Objects_99
+    21300198: Sprite_Objects_100
+    21300200: Sprite_Objects_101
+    21300202: Sprite_Objects_102
+    21300204: Sprite_Objects_103
+    21300206: Sprite_Objects_104
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -201,7 +227,7 @@ ScriptedImporter:
   importerVersion: 7
   pixelsPerUnit: 16
   edgesPerEllipse: 32
-  numberOfObjectsImported: 185
+  numberOfObjectsImported: 211
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048
