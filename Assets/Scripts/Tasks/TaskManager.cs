@@ -32,6 +32,7 @@ public class TaskManager : MonoBehaviour
 
     List<String> possibleStepList;
     List<TaskType> possibleTaskList;
+    private Task levelStartTask;
 
     void Start() {
         timer = gameObject.AddComponent<Timer>();
@@ -47,10 +48,35 @@ public class TaskManager : MonoBehaviour
         possibleTaskList = CreatePossibleTaskList();
         if(possibleTaskList.Count == 0) throw new Exception ("Couldn't create any possible tasks. Something has gone wrong");
         NumRandomTasks = possibleTaskList.Count;
+        
+        // Create the initial task for the player to start the level
+        GameObject newTaskObj = new GameObject();
+        var task = newTaskObj.AddComponent(typeof(Task)) as Task;
+        TaskBuilder.GetStartingTask(task, "");
+        newTaskObj.transform.SetParent(this.transform);
+        newTaskObj.name = Task.GetTaskName(task.type);
+        newTaskObj.tag = TAG;
+        levelStartTask = task;
+
     }
     
     void Update()
     {
+        if (levelStartTask != null)
+        {
+            if (!levelStartTask.IsComplete())
+            {
+                // wait for player to finish the start task
+                return;
+            }
+            else
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.FemaleAngry);
+                levelStartTask = null;
+            }
+        }
+        
+        
         var numCurrentTasks = GetComponentsInChildren<Task>().Length;
 
         if (numCurrentTasks < NumTasks)

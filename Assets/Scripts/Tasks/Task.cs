@@ -239,6 +239,8 @@ public class Task : MonoBehaviour
         Score.FailedTasks++;
         Score.TotalTasks++;
 
+        //TODO Play fail sound here
+        
         TaskStep leaveStep = 
             TaskStep.Create()
                 .Type(TaskStepType.LeaveBuilding)
@@ -277,6 +279,22 @@ public class Task : MonoBehaviour
         }
         if (currentStep.SFX != null) {
             FMODSoundEffectsPlayer.Instance.PlaySoundEffect(currentStep.SFX);
+        }
+        else
+        {
+            switch (currentStep.type)
+            {
+                case TaskStepType.Safe:
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Bills);
+                    break;
+                case TaskStepType.CashRegister:
+                    if (!currentStep.lastStepForSuccess && completer == null)
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.GreetCustomer);                    
+                    }
+
+                    break;
+            }
         }
         // Debug.Log(type + " Complete");
 

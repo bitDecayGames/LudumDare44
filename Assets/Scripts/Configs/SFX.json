@@ -6,6 +6,9 @@
     "MaleImpatient",
     "MaleAngry",
     "FemaleImpatient",
-    "FemaleAngry" 
+    "FemaleAngry",
+    "SlidingDoorOpen",
+    "SlidingDoorClose",
+    "GreetCustomer"
   ]
 }
