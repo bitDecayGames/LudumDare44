@@ -250,6 +250,11 @@ public class Task : MonoBehaviour
             return;
         }
 
+        RemoveCar();
+    }
+
+    void RemoveCar()
+    {
         CarController cc = FindObjectOfType<CarController>();
         if (cc != null) {
             cc.RemoveCar();
@@ -295,6 +300,7 @@ public class Task : MonoBehaviour
 
         var player = FindObjectOfType<PlayerTaskController>();
         FeedbackNegative("Customer left");
+        RemoveCar();
         
         TaskStep leaveStep = 
             TaskStep.Create()
@@ -394,7 +400,11 @@ public class Task : MonoBehaviour
                 var player = FindObjectOfType<PlayerTaskController>();
                 if (taskManager != null && taskManager.Feedback != null)
                 {
-                    if (!currentStep.npcStep) taskManager.Feedback.Positive("New Account Opened!", player.transform);
+                    if (!currentStep.npcStep)
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ByeCustomer);   
+                        taskManager.Feedback.Positive("New Account Opened!", player.transform);
+                    }
                 }
                 break;
         }

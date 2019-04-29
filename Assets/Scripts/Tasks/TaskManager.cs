@@ -212,7 +212,7 @@ public class TaskManager : MonoBehaviour
     public void CreateRandomTask(Task task){
         var rand = new System.Random();
         int taskNumber = rand.Next(NumRandomTasks);
-        Debug.Log("Rand task number to spawn: " + taskNumber);
+        // Debug.Log("Rand task number to spawn: " + taskNumber);
         task.type = possibleTaskList[taskNumber];
         TaskBuilder.CreateTask(task);
     }
