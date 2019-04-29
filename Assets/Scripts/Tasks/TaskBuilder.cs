@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class TaskBuilder
 {
-    private static int numRandomTasks = 3;
+    private static int numRandomTasks = 5;
 
     public static void CreateRandomTask(Task task){
         var rand = new System.Random();
@@ -23,6 +23,12 @@ public static class TaskBuilder
                 break;
             case 2:
                 ATMDeposit(task);
+                break;
+            case 3:
+                FillCashRegister(task);
+                break;
+            case 4:
+                EmptyCashRegister(task);
                 break;
             default:
                 break;
@@ -97,14 +103,17 @@ public static class TaskBuilder
 
         TaskStep moveToTeller = new TaskStep();
         moveToTeller.type = TaskStepType.CashRegister;
+        moveToTeller.icon = Icon.Angry;
         task.AddStep(moveToTeller);
 
         TaskStep moveToSafe = new TaskStep();
         moveToSafe.type = TaskStepType.Safe;
+        moveToSafe.icon = Icon.Angry;
         task.AddStep(moveToSafe);
 
         TaskStep moveToTeller2 = new TaskStep();
         moveToTeller2.type = TaskStepType.CashRegister;
+        moveToTeller2.icon = Icon.Angry;
         task.AddStep(moveToTeller2);
     }
 

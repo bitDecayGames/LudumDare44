@@ -9,7 +9,7 @@ namespace Utils {
             if (!FadeToBlack.Instance.IsFadingOut())
             {
                 FadeToBlack.Instance.FadeOut(2f, () => SceneManager.LoadScene(sceneName));
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Sound);
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CashRegister);
             }
         }
     }

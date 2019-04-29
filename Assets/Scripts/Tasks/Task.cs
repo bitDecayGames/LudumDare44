@@ -48,18 +48,21 @@ public class Task : MonoBehaviour
 
     void Start()
     {
-        npc = Instantiate(SomeNpc);
-        // This is XXX af. We need the right reference here, so do this.
-        SomeNpc = npc;
-        npcController = npc.GetComponent<NpcController>();
-        if (npcController == null)
+        if (HaveNpcSteps())
         {
-            throw new RuntimeException("NPC did not have NPC Controller on prefab");
-        }
-        npcController.Init();
-        if(steps.Peek().npcStep)
-        {
-            npcController.AssignStep(steps.Peek());
+            npc = Instantiate(SomeNpc);
+            // This is XXX af. We need the right reference here, so do this.
+            SomeNpc = npc;
+            npcController = npc.GetComponent<NpcController>();
+            if (npcController == null)
+            {
+                throw new RuntimeException("NPC did not have NPC Controller on prefab");
+            }
+            npcController.Init();
+            if(steps.Peek().npcStep)
+            {
+                npcController.AssignStep(steps.Peek());
+            }
         }
         CreateIconsForStep(steps.Peek());
         taskManager = GetComponentInParent<TaskManager>();
@@ -156,5 +159,18 @@ public class Task : MonoBehaviour
     public bool IsComplete()
     {
         return steps.Count <= 0;
+    }
+
+    private bool HaveNpcSteps(){
+        bool haveNpcSteps = false;
+        foreach (TaskStep step in steps)
+        {
+            if(step.npcStep)
+            {
+                haveNpcSteps = true;
+                break;
+            }
+        }
+        return haveNpcSteps;
     }
 }
