@@ -5,7 +5,6 @@ using Board;
 using Utils;
 
 public class CarController : MonoBehaviour {
-
     System.Random rnd = new System.Random();
 
     Board.BoardManager boardManager;
@@ -22,7 +21,7 @@ public class CarController : MonoBehaviour {
     public void CreateCar()
     {
         if (HasCar()) {
-            Debug.LogWarning("You fool! Remove the current car first");
+            // Debug.LogWarning("You fool! Remove the current car first");
             return;
         }
 
@@ -30,7 +29,7 @@ public class CarController : MonoBehaviour {
         List<Board.Board.Occupier> carBois = boardManager.board.stepLocations[TAG];
 
         if (carBois.Count != 1) {
-            Debug.LogWarning("Need exactly one (1) car boi");
+            // Debug.LogWarning("Need exactly one (1) car boi");
             return;
         }
 
@@ -58,7 +57,7 @@ public class CarController : MonoBehaviour {
     {
         if (!HasCar())
         {
-            Debug.LogWarning("Can't kill a car if it's not there brah");
+            // Debug.LogWarning("Can't kill a car if it's not there brah");
             return;
         }
 

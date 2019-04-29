@@ -250,6 +250,11 @@ public class Task : MonoBehaviour
             return;
         }
 
+        RemoveCar();
+    }
+
+    void RemoveCar()
+    {
         CarController cc = FindObjectOfType<CarController>();
         if (cc != null) {
             cc.RemoveCar();
@@ -295,6 +300,7 @@ public class Task : MonoBehaviour
 
         var player = FindObjectOfType<PlayerTaskController>();
         FeedbackNegative("Customer left");
+        RemoveCar();
         
         TaskStep leaveStep = 
             TaskStep.Create()
