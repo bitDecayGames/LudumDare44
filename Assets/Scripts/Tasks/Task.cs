@@ -135,9 +135,9 @@ public class Task : MonoBehaviour
             if (allStepTypeNodes.Count == 0) throw new Exception("No nodes found on the map for step type: " + step.type.ToString());
 
             // If npc not null then attempt to set node based on the npc's position and stepType
-            if (npc != null)
+            if (SomeNpc != null)
             {
-                var npcPosition = npc.GetComponent<Board.BoardPosition>();
+                var npcPosition = SomeNpc.GetComponent<Board.BoardPosition>();
                 var npcNode = bm.board.Get(npcPosition.X, npcPosition.Y);
 
                 foreach(Board.Board.Node node in allStepTypeNodes)

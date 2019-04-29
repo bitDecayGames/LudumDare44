@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="6" nextobjectid="83">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="8" infinite="1" nextlayerid="6" nextobjectid="56">
  <tileset firstgid="1" source="Tilesets/floors.tsx"/>
- <tileset firstgid="21" source="Tilesets/Objects.tsx"/>
+ <tileset firstgid="26" source="Tilesets/Objects.tsx"/>
  <layer id="1" name="Floors" width="100" height="100">
   <data encoding="csv">
    <chunk x="-64" y="32" width="16" height="16">
@@ -79,71 +79,50 @@
   </data>
  </layer>
  <objectgroup id="2" name="Collisions">
-  <object id="1" gid="66" x="-416" y="376" width="16" height="32"/>
-  <object id="2" gid="67" x="-416" y="392" width="16" height="32"/>
-  <object id="8" gid="22" x="-416" y="368" width="16" height="32"/>
-  <object id="9" gid="22" x="-432" y="368" width="16" height="32"/>
-  <object id="10" gid="22" x="-416" y="368" width="16" height="32"/>
-  <object id="12" gid="73" x="-416" y="368" width="16" height="32"/>
-  <object id="13" gid="73" x="-432" y="368" width="16" height="32"/>
-  <object id="19" gid="41" x="-440" y="408" width="16" height="32"/>
-  <object id="20" gid="41" x="-440" y="400" width="16" height="32"/>
-  <object id="21" gid="41" x="-440" y="392" width="16" height="32"/>
-  <object id="22" gid="41" x="-440" y="384" width="16" height="32"/>
-  <object id="23" gid="41" x="-440" y="376" width="16" height="32"/>
-  <object id="24" gid="41" x="-440" y="368" width="16" height="32"/>
-  <object id="25" gid="41" x="-440" y="360" width="16" height="32"/>
-  <object id="26" gid="41" x="-440" y="352" width="16" height="32"/>
-  <object id="27" gid="41" x="-440" y="344" width="16" height="32"/>
-  <object id="28" gid="41" x="-440" y="336" width="16" height="32"/>
-  <object id="29" gid="39" x="-432" y="328" width="16" height="32"/>
-  <object id="30" gid="39" x="-424" y="328" width="16" height="32"/>
-  <object id="31" gid="39" x="-416" y="328" width="16" height="32"/>
-  <object id="32" gid="39" x="-408" y="328" width="16" height="32"/>
-  <object id="33" gid="40" x="-440" y="328" width="16" height="32"/>
-  <object id="36" gid="39" x="-400" y="328" width="16" height="32"/>
-  <object id="37" gid="39" x="-392" y="328" width="16" height="32"/>
-  <object id="38" gid="39" x="-384" y="328" width="16" height="32"/>
-  <object id="39" gid="39" x="-376" y="328" width="16" height="32"/>
-  <object id="41" gid="39" x="-368" y="328" width="16" height="32"/>
-  <object id="42" gid="39" x="-360" y="328" width="16" height="32"/>
-  <object id="43" gid="39" x="-352" y="328" width="16" height="32"/>
-  <object id="44" gid="39" x="-344" y="328" width="16" height="32"/>
-  <object id="45" gid="39" x="-336" y="328" width="16" height="32"/>
-  <object id="46" gid="39" x="-328" y="328" width="16" height="32"/>
-  <object id="47" gid="39" x="-320" y="328" width="16" height="32"/>
-  <object id="48" gid="39" x="-312" y="328" width="16" height="32"/>
-  <object id="50" gid="39" x="-304" y="328" width="16" height="32"/>
-  <object id="53" gid="66" x="-432" y="376" width="16" height="32"/>
-  <object id="54" gid="67" x="-432" y="392" width="16" height="32"/>
-  <object id="55" gid="73" x="-408" y="368" width="16" height="32"/>
-  <object id="56" gid="73" x="-392" y="368" width="16" height="32"/>
-  <object id="57" gid="73" x="-384" y="368" width="16" height="32"/>
-  <object id="58" gid="73" x="-368" y="368" width="16" height="32"/>
-  <object id="59" gid="73" x="-360" y="368" width="16" height="32"/>
-  <object id="60" gid="73" x="-352" y="368" width="16" height="32"/>
-  <object id="61" gid="73" x="-344" y="368" width="16" height="32"/>
-  <object id="62" gid="73" x="-336" y="368" width="16" height="32"/>
-  <object id="63" gid="73" x="-328" y="368" width="16" height="32"/>
-  <object id="64" gid="73" x="-320" y="368" width="16" height="32"/>
-  <object id="65" gid="73" x="-312" y="368" width="16" height="32"/>
-  <object id="66" gid="73" x="-304" y="368" width="16" height="32"/>
-  <object id="71" gid="66" x="-408" y="376" width="16" height="32"/>
-  <object id="72" gid="67" x="-408" y="392" width="16" height="32"/>
-  <object id="73" gid="66" x="-392" y="376" width="16" height="32"/>
-  <object id="74" gid="67" x="-392" y="392" width="16" height="32"/>
-  <object id="75" gid="66" x="-384" y="376" width="16" height="32"/>
-  <object id="76" gid="67" x="-384" y="392" width="16" height="32"/>
-  <object id="77" gid="66" x="-368" y="376" width="16" height="32"/>
-  <object id="78" gid="67" x="-368" y="392" width="16" height="32"/>
+  <object id="8" gid="27" x="-416" y="368" width="16" height="32"/>
+  <object id="9" gid="27" x="-432" y="368" width="16" height="32"/>
+  <object id="10" gid="27" x="-416" y="368" width="16" height="32"/>
+  <object id="11" gid="29" x="-408" y="360" width="16" height="32"/>
+  <object id="12" gid="78" x="-416" y="368" width="16" height="32"/>
+  <object id="13" gid="78" x="-432" y="368" width="16" height="32"/>
+  <object id="19" gid="46" x="-440" y="408" width="16" height="32"/>
+  <object id="20" gid="46" x="-440" y="400" width="16" height="32"/>
+  <object id="21" gid="46" x="-440" y="392" width="16" height="32"/>
+  <object id="22" gid="46" x="-440" y="384" width="16" height="32"/>
+  <object id="23" gid="46" x="-440" y="376" width="16" height="32"/>
+  <object id="24" gid="46" x="-440" y="368" width="16" height="32"/>
+  <object id="25" gid="46" x="-440" y="360" width="16" height="32"/>
+  <object id="26" gid="46" x="-440" y="352" width="16" height="32"/>
+  <object id="27" gid="46" x="-440" y="344" width="16" height="32"/>
+  <object id="28" gid="46" x="-440" y="336" width="16" height="32"/>
+  <object id="29" gid="44" x="-432" y="328" width="16" height="32"/>
+  <object id="30" gid="44" x="-424" y="328" width="16" height="32"/>
+  <object id="31" gid="44" x="-416" y="328" width="16" height="32"/>
+  <object id="32" gid="44" x="-408" y="328" width="16" height="32"/>
+  <object id="33" gid="45" x="-440" y="328" width="16" height="32"/>
+  <object id="36" gid="44" x="-400" y="328" width="16" height="32"/>
+  <object id="37" gid="44" x="-392" y="328" width="16" height="32"/>
+  <object id="38" gid="44" x="-384" y="328" width="16" height="32"/>
+  <object id="39" gid="44" x="-376" y="328" width="16" height="32"/>
+  <object id="41" gid="44" x="-368" y="328" width="16" height="32"/>
+  <object id="42" gid="44" x="-360" y="328" width="16" height="32"/>
+  <object id="43" gid="44" x="-352" y="328" width="16" height="32"/>
+  <object id="44" gid="44" x="-344" y="328" width="16" height="32"/>
+  <object id="45" gid="44" x="-336" y="328" width="16" height="32"/>
+  <object id="46" gid="44" x="-328" y="328" width="16" height="32"/>
+  <object id="47" gid="44" x="-320" y="328" width="16" height="32"/>
+  <object id="48" gid="44" x="-312" y="328" width="16" height="32"/>
+  <object id="50" gid="44" x="-304" y="328" width="16" height="32"/>
+  <object id="53" gid="71" x="-432" y="376" width="16" height="32"/>
+  <object id="54" gid="72" x="-432" y="392" width="16" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="Interactables">
-  <object id="5" name="CashRegister" gid="29" x="-424" y="368" width="16" height="32">
+  <object id="5" name="CashRegister" gid="34" x="-424" y="368" width="16" height="32">
    <properties>
     <property name="TaskStepType" value="CashRegister"/>
    </properties>
   </object>
-  <object id="15" name="ATM" gid="83" x="-304" y="336" width="16" height="32">
+  <object id="15" name="ATM" gid="88" x="-392" y="376" width="16" height="32">
    <properties>
     <property name="TaskStepType" value="ATM"/>
    </properties>
@@ -151,25 +130,21 @@
   <object id="34" name="Spawn" x="-384" y="344">
    <point/>
   </object>
-  <object id="51" name="CoinMachine" gid="107" x="-368" y="336" width="16" height="32">
+  <object id="51" name="CoinMachine" gid="112" x="-400" y="336" width="16" height="32">
    <properties>
     <property name="TaskStepType" value="CoinMachine"/>
    </properties>
   </object>
-  <object id="52" name="Safe" gid="58" x="-432" y="336" width="16" height="32">
+  <object id="52" name="Safe" gid="63" x="-432" y="336" width="16" height="32">
    <properties>
     <property name="TaskStepType" value="Safe"/>
    </properties>
   </object>
-  <object id="67" name="CashRegister" gid="29" x="-400" y="368" width="16" height="32">
+  <object id="55" name="LeaveBuilding" x="-320" y="392">
    <properties>
-    <property name="TaskStepType" value="CashRegister"/>
+    <property name="TaskStepType" value="LeaveBuilding"/>
    </properties>
-  </object>
-  <object id="68" name="CashRegister" gid="29" x="-376" y="368" width="16" height="32">
-   <properties>
-    <property name="TaskStepType" value="CashRegister"/>
-   </properties>
+   <point/>
   </object>
  </objectgroup>
  <objectgroup id="4" name="POIs">
