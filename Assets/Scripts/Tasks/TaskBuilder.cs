@@ -136,6 +136,7 @@ public static class TaskBuilder
 
         TaskStep.Create()
             .Type(TaskStepType.GetInLine)
+            .Meta(TaskStepType.CashRegister)
             .NPC()
             .AddTo(task);
 

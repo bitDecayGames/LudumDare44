@@ -3886,7 +3886,6 @@ ScriptedImporter:
     107762: _MapPrfab/Stage1/Line/Line
     107764: _MapPrfab/Stage1/InvisibleCollisions
     107766: _MapPrfab/Stage1/POIs/LineStart
-    107768: _MapPrfab/Stage1/Line/Object_191
     107770: _MapPrfab/Stage1/Interactables/LeaveBuilding
     107772: _MapPrfab/Stage1/POIs/NpcSpawn1
     107774: _MapPrfab/Stage1/POIs/NpcSpawn2
@@ -3941,6 +3940,7 @@ ScriptedImporter:
     107846: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)
     107848: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)/OverBySignUpDesk
+    107850: _MapPrfab/Stage1/Line/Line (1)
     107852: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)
     400000: _MapPrfab/Stage1/Transform
     400002: _MapPrfab/Stage1/Floor/Transform
@@ -7826,7 +7826,6 @@ ScriptedImporter:
     407762: _MapPrfab/Stage1/Line/Line/Transform
     407764: _MapPrfab/Stage1/InvisibleCollisions/Transform
     407766: _MapPrfab/Stage1/POIs/LineStart/Transform
-    407768: _MapPrfab/Stage1/Line/Object_191/Transform
     407770: _MapPrfab/Stage1/Interactables/LeaveBuilding/Transform
     407772: _MapPrfab/Stage1/POIs/NpcSpawn1/Transform
     407774: _MapPrfab/Stage1/POIs/NpcSpawn2/Transform
@@ -7881,9 +7880,10 @@ ScriptedImporter:
     407846: _MapPrfab/Stage1/NpcOnlyCollisions/DoorToFrontDesk2 (TRS)/Transform
     407848: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/OverBySignUpDesk
       (CF)/OverBySignUpDesk/Transform
+    407850: _MapPrfab/Stage1/Line/Line (1)/Transform
     407852: _MapPrfab/Stage1/NpcOnlyCollisions/OverBySignUpDesk (TRS)/Transform
     6800000: _MapPrfab/Stage1/Line/Line/EdgeCollider2D
-    6800002: _MapPrfab/Stage1/Line/Object_191/EdgeCollider2D
+    6800004: _MapPrfab/Stage1/Line/Line (1)/EdgeCollider2D
     11400000: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _superAsset
     11400004: _MapPrfab/Stage1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -12840,8 +12840,6 @@ ScriptedImporter:
     11409906: _MapPrfab/Stage1/InvisibleCollisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409908: _MapPrfab/Stage1/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409910: _MapPrfab/Stage1/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11409912: _MapPrfab/Stage1/Line/Object_191/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11409914: _MapPrfab/Stage1/Line/Object_191/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11409916: _MapPrfab/Stage1/Interactables/LeaveBuilding/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409918: _MapPrfab/Stage1/Interactables/LeaveBuilding/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409920: _MapPrfab/Stage1/POIs/NpcSpawn1/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -12850,7 +12848,6 @@ ScriptedImporter:
     11409926: _MapPrfab/Stage1/POIs/NpcSpawn2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409928: _MapPrfab/Stage1/POIs/NpcSpawn3/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409930: _MapPrfab/Stage1/POIs/NpcSpawn3/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11409932: _MapPrfab/Stage1/Line/Object_191/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11409934: _MapPrfab/Stage1/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11409936: _MapPrfab/Stage1/NpcOnlyCollisions/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11409938: _MapPrfab/Stage1/NpcOnlyCollisions/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -12897,6 +12894,9 @@ ScriptedImporter:
     11410020: _MapPrfab/Stage1/POIs/WaitZone (5)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11410022: _MapPrfab/Stage1/POIs/WaitZone (6)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11410024: _MapPrfab/Stage1/POIs/WaitZone (6)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11410026: _MapPrfab/Stage1/Line/Line (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11410028: _MapPrfab/Stage1/Line/Line (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11410030: _MapPrfab/Stage1/Line/Line (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/Stage1/Collisions/Object_1 (TRS)/Object_1 (CF)/Object_1/SpriteRenderer
     21200002: _MapPrfab/Stage1/Collisions/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
     21200004: _MapPrfab/Stage1/Collisions/Object_3 (TRS)/Object_3 (CF)/Object_3/SpriteRenderer
