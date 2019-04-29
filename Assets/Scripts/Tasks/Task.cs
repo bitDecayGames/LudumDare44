@@ -197,13 +197,13 @@ public class Task : MonoBehaviour
         TaskStep currentStep = steps.Peek();
         if (currentStep.type != type)
         {
-            Debug.LogWarning("Step " + type + " cannot be completed");
+            // Debug.LogWarning("Step " + type + " cannot be completed");
             return;
         }
 
         if (completer != null && SomeNpc != completer)
         {
-            Debug.Log("Wrong NPC tried to complete a task");
+            // Debug.Log("Wrong NPC tried to complete a task");
             return;
         }
 
@@ -222,21 +222,24 @@ public class Task : MonoBehaviour
         }
 
         ClearIcons();
-        if (!IsComplete() && !IsFailed())
+
+        if (IsComplete() || IsFailed())
         {
-            TaskStep nextStep = steps.Peek();
-            if(nextStep.npcStep)
-            {
-                npcController.AssignStep(nextStep);
-            }
-            TryAssignNodeToStep(nextStep);
-            CreateIconsForStep(nextStep);
+            return;
         }
+
+        TaskStep nextStep = steps.Peek();
+        if(nextStep.npcStep)
+        {
+            npcController.AssignStep(nextStep);
+        }
+        TryAssignNodeToStep(nextStep);
+        CreateIconsForStep(nextStep);
     }
 
     public bool IsComplete()
     {
-        return steps.Count <= 0 && !failed;
+        return steps.Count <= 0;
     }
 
     public bool IsFailed()
