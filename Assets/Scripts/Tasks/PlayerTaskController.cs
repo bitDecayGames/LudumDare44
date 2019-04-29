@@ -55,7 +55,8 @@ public class PlayerTaskController : MonoBehaviour
                             {
                                 if(node != null && node.Equals(checkNode))
                                 {
-                                    manager.CompleteTaskStep(taskStepType, null);
+                                    var playerGO = GameObject.FindGameObjectWithTag("Player");
+                                    manager.CompleteTaskStep(taskStepType, playerGO);
                                     break;
                                 }
                             }

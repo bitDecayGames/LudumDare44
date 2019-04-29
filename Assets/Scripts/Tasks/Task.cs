@@ -106,17 +106,17 @@ public class Task : MonoBehaviour
         if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
         possibleSpawns.Clear();
         spawnPoints.ForEach(n => {
-            possibleSpawns.AddRange(expandNode(n.up));
-            possibleSpawns.AddRange(expandNode(n.right));
-            possibleSpawns.AddRange(expandNode(n.down));
-            possibleSpawns.AddRange(expandNode(n.left));
+            possibleSpawns.AddRange(ExpandNode(n.up));
+            possibleSpawns.AddRange(ExpandNode(n.right));
+            possibleSpawns.AddRange(ExpandNode(n.down));
+            possibleSpawns.AddRange(ExpandNode(n.left));
         });
         possibleSpawns = possibleSpawns.FindAll(n => n != null && n.occupier == null && !n.npcOffLimits);
         if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
         return null;
     }
 
-    private List<Board.Board.Node> expandNode(Board.Board.Node node) {
+    public static List<Board.Board.Node> ExpandNode(Board.Board.Node node) {
         var tmp = new List<Board.Board.Node>();
         if (node != null) {
             tmp.Add(node);
@@ -301,7 +301,7 @@ public class Task : MonoBehaviour
             return;
         }
 
-        if (completer != null && SomeNpc != completer)
+        if (!completer.tag.Equals("Player") && SomeNpc != completer)
         {
             // Debug.Log("Wrong NPC tried to complete a task");
             return;
@@ -340,7 +340,7 @@ public class Task : MonoBehaviour
                     FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Bills);
                     break;
                 case TaskStepType.CashRegister:
-                    if (!currentStep.lastStepForSuccess && completer == null && this.type == TaskType.DepositMoney)
+                    if (!currentStep.lastStepForSuccess && completer.tag.Equals("Player") && this.type == TaskType.DepositMoney)
                     {
                         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.GreetCustomer);
                         
@@ -349,14 +349,14 @@ public class Task : MonoBehaviour
                         var player = FindObjectOfType<PlayerTaskController>();
                         if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Customer Greeted", player.transform);
                     }
-                    else if (currentStep.lastStepForSuccess && completer == null)
+                    else if (currentStep.lastStepForSuccess && completer.tag.Equals("Player"))
                     {
                         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ByeCustomer);                    
                         
                         var player = FindObjectOfType<PlayerTaskController>();
                         if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Happy Customer!", player.transform);
                     } 
-                    else if (this.type == TaskType.OpenBankDoor && completer == null)
+                    else if (this.type == TaskType.OpenBankDoor && completer.tag.Equals("Player"))
                     {
                         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CashRegister);                    
                         
@@ -365,9 +365,21 @@ public class Task : MonoBehaviour
                         
                         Destroy(GameObject.Find("TutorialCanvas"));
                     } 
-
                     break;
             }
+        }
+
+        // Show feedback for different tasks, without a bunch of other crazy logic
+        switch (currentStep.type)
+        {
+            case TaskStepType.AccountComputer:
+
+                var player = FindObjectOfType<PlayerTaskController>();
+                if (taskManager != null && taskManager.Feedback != null)
+                {
+                    if (!currentStep.npcStep) taskManager.Feedback.Positive("New Account Opened!", player.transform);
+                }
+                break;
         }
 
         ClearIcons();
