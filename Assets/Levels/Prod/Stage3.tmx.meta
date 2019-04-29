@@ -6294,6 +6294,8 @@ ScriptedImporter:
     112578: _MapPrfab/Stage3/Interactables/Despawn (5)
     112580: _MapPrfab/Stage3/Interactables/Spawn
     112582: _MapPrfab/Stage3/Interactables/CarBoi
+    112584: _MapPrfab/Stage3/Line/Line 4
+    112586: _MapPrfab/Stage3/POIs/LineStart (4)
     112590: _MapPrfab/Stage3/POIs/LineStart
     112592: _MapPrfab/Stage3/POIs/LineStart (1)
     112594: _MapPrfab/Stage3/POIs/LineStart (2)
@@ -12609,6 +12611,8 @@ ScriptedImporter:
     412578: _MapPrfab/Stage3/Interactables/Despawn (5)/Transform
     412580: _MapPrfab/Stage3/Interactables/Spawn/Transform
     412582: _MapPrfab/Stage3/Interactables/CarBoi/Transform
+    412584: _MapPrfab/Stage3/Line/Line 4/Transform
+    412586: _MapPrfab/Stage3/POIs/LineStart (4)/Transform
     412590: _MapPrfab/Stage3/POIs/LineStart/Transform
     412592: _MapPrfab/Stage3/POIs/LineStart (1)/Transform
     412594: _MapPrfab/Stage3/POIs/LineStart (2)/Transform
@@ -12632,6 +12636,7 @@ ScriptedImporter:
     412630: _MapPrfab/Stage3/Line/Line 1/Transform
     412632: _MapPrfab/Stage3/Line/Line 2/Transform
     412634: _MapPrfab/Stage3/Line/Line 3/Transform
+    6800000: _MapPrfab/Stage3/Line/Line 4/EdgeCollider2D
     6800008: _MapPrfab/Stage3/Line/Line 0/EdgeCollider2D
     6800010: _MapPrfab/Stage3/Line/Line 1/EdgeCollider2D
     6800012: _MapPrfab/Stage3/Line/Line 2/EdgeCollider2D
@@ -20056,14 +20061,19 @@ ScriptedImporter:
     11414834: _MapPrfab/Stage3/Interactables/Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414836: _MapPrfab/Stage3/Interactables/CarBoi/MonoBehaviour-SuperTiled2Unity.SuperObject
     11414838: _MapPrfab/Stage3/Interactables/CarBoi/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414860: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414862: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414864: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414866: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414868: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414870: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11414872: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11414874: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414840: _MapPrfab/Stage3/Line/Line 4/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414842: _MapPrfab/Stage3/Line/Line 4/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11414844: _MapPrfab/Stage3/Line/Line 4/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414846: _MapPrfab/Stage3/POIs/LineStart (4)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414848: _MapPrfab/Stage3/POIs/LineStart (4)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414856: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414858: _MapPrfab/Stage3/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414860: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414862: _MapPrfab/Stage3/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414864: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414866: _MapPrfab/Stage3/POIs/LineStart (2)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11414868: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11414870: _MapPrfab/Stage3/POIs/LineStart (3)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414876: _MapPrfab/Stage3/POIs/NPC Spawn/MonoBehaviour-SuperTiled2Unity.SuperObject
     11414878: _MapPrfab/Stage3/POIs/NPC Spawn/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11414880: _MapPrfab/Stage3/POIs/NPC Spawn (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
