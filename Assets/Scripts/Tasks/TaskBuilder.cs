@@ -347,6 +347,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumIn)
+            .AddCar()
             .AddTo(task);
 
         TaskStep.Create()
@@ -357,6 +358,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
+            .RemoveCar()
             .AddTo(task);      
     }
     
@@ -376,6 +378,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumIn)
+            .AddCar()
             .AddTo(task);
 
         TaskStep.Create()
@@ -386,6 +389,7 @@ public static class TaskBuilder
         TaskStep.Create()
             .Type(TaskStepType.VacuumTube)
             .SetIcon(Icon.VacuumOut)
+            .RemoveCar()
             .AddTo(task);      
     }
     
