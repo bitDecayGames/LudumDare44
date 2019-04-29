@@ -339,6 +339,7 @@
     <Compile Include="Assets\Scripts\Constants\Songs.cs" />
     <Compile Include="Assets\Scripts\Constants\Tags.cs" />
     <Compile Include="Assets\Scripts\Delegates\Delegates.cs" />
+    <Compile Include="Assets\Scripts\Environment\Door.cs" />
     <Compile Include="Assets\Scripts\Icons\IconManager.cs" />
     <Compile Include="Assets\Scripts\Managers\FeedbackManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameObjectManager.cs" />
@@ -367,6 +368,7 @@
     <Compile Include="Assets\Scripts\Utils\KillAfterTime.cs" />
     <Compile Include="Assets\Scripts\Utils\Loader.cs" />
     <Compile Include="Assets\Scripts\Utils\MoveUp.cs" />
+    <Compile Include="Assets\Scripts\Utils\NpcHelper.cs" />
     <Compile Include="Assets\Scripts\Utils\OneScriptToRuleThemAll.cs" />
     <Compile Include="Assets\Scripts\Utils\RandomNumberGenerator.cs" />
     <Compile Include="Assets\Scripts\Utils\References.cs" />
