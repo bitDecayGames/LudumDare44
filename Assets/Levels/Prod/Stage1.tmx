@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="17" nextobjectid="199">
+<map version="1.2" tiledversion="1.2.1" orientation="isometric" renderorder="right-down" width="164" height="116" tilewidth="16" tileheight="8" infinite="1" nextlayerid="17" nextobjectid="206">
  <tileset firstgid="1" source="../../Art/Tilesets/Floors/testfloors.tsx"/>
  <tileset firstgid="26" source="../../Art/Tilesets/Objects/Objects.tsx"/>
  <tileset firstgid="143" source="../../Art/Tilesets/Cars/Cars.tsx"/>
@@ -724,6 +724,48 @@
   <object id="198" name="NpcSpawn3" x="384" y="472">
    <properties>
     <property name="poiName" value="npcSpawn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="199" name="WaitZone" x="288" y="400">
+   <properties>
+    <property name="poiName" value="WaitZone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="200" name="WaitZone" x="296" y="392">
+   <properties>
+    <property name="poiName" value="WaitZone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="201" name="WaitZone" x="288" y="448">
+   <properties>
+    <property name="poiName" value="WaitZone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="202" name="WaitZone" x="304" y="440">
+   <properties>
+    <property name="poiName" value="WaitZone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="203" name="WaitZone" x="304" y="408">
+   <properties>
+    <property name="poiName" value="WaitZone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="204" name="WaitZone" x="304" y="424">
+   <properties>
+    <property name="poiName" value="WaitZone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="205" name="WaitZone" x="248" y="408">
+   <properties>
+    <property name="poiName" value="WaitZone"/>
    </properties>
    <point/>
   </object>
