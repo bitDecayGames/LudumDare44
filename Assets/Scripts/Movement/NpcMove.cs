@@ -12,6 +12,8 @@ namespace Movement {
         public const float TIME_TO_MOVE = 0.4f;
         public const float TIME_TO_MOVE_VARIANCE = 0.075f;
 
+        public bool isDebug; // change this through the UI
+
         private BoardPosition boardPos;
 
         private BoardManager board;
@@ -57,6 +59,7 @@ namespace Movement {
         }
 
         void Update() {
+            if (isDebug) DrawDebugLines();
             if (waitTime > 0)
             {
                 waitTime -= Time.deltaTime;
@@ -76,7 +79,13 @@ namespace Movement {
                         currentDirections.RemoveAt(0);
                         tries = 0;
                     } else {
-                        if (currentDirections[0] == Direction.Wait) return; // don't increment tries while waiting
+                        if (currentDirections[0] == Direction.Wait) {
+                            getDirections();
+                            if (isDebug) {
+                                Debug.DrawLine(occupier.myNode.IsoLoc().ToWorldPosReadable(), currentStepLocation.IsoLoc().ToWorldPosReadable(), Color.red, 0, true);
+                            }
+                            return; // don't increment tries while waiting
+                        }
                         tries++;
                         if (tries >= maxTries) {
                             if (IsTheThingInfrontTheThingIWant(currentDirections[0])) {
@@ -136,6 +145,20 @@ namespace Movement {
             }
         }
 
+        private void DrawDebugLines() {
+            List<Vector3> lines = new List<Vector3>();
+            var cur = boardPos.CopyIsoVector2();
+            lines.Add(cur.ToWorldPosReadable());
+            currentDirections.ForEach(dir => {
+                lines.Add(DirectionAddToIsoVector(dir, cur).ToWorldPosReadable());
+            });
+            for (int i = 0; i + 1 < lines.Count; i++) {
+                var a = lines[i];
+                var b = lines[i + 1];
+                Debug.DrawLine(a, b, Color.cyan, 0, true);
+            }
+        }
+
         private bool IsTheThingInfrontTheThingIWant(Direction dir) {
             if (dir == Direction.Wait) return false;
             var thingInFront = Peek(dir);
@@ -159,6 +182,7 @@ namespace Movement {
                     Debug.Log(string.Format("Received 0 directions from Search Algorithm from {0} to {1} for task step {2}", occupier.myNode, currentStepLocation, _taskStep));
                 }
             } else {
+                Debug.Log("Someone is already in my node. I'm waiting");
                 currentDirections = new List<Direction>{Direction.Wait};
                 waitTime = 2;
             }
@@ -289,6 +313,25 @@ namespace Movement {
             }
 
             return null;
+        }
+
+        private IsoVector2 DirectionAddToIsoVector(Direction dir, IsoVector2 v) {
+            switch (dir) {
+                case Direction.Up:
+                    v.y -= 1;
+                    break;
+                case Direction.Down:
+                    v.y += 1;
+                    break;
+                case Direction.Left:
+                    v.x -= 1;
+                    break;
+                case Direction.Right:
+                    v.x += 1;
+                    break;
+            }
+
+            return v;
         }
     }
 }

@@ -12,12 +12,12 @@ public static class TaskBuilder
             case TaskType.DepositMoney:
                 DepositMoney(task);
                 break;
-            case TaskType.ChangeIntoCash:
-                ChangeIntoCash(task);
-                break;
-            case TaskType.ATMDeposit:
-                ATMDeposit(task);
-                break;
+//            case TaskType.ChangeIntoCash:
+//                ChangeIntoCash(task);
+//                break;
+//            case TaskType.ATMDeposit:
+//                ATMDeposit(task);
+//                break;
             // case TaskType.FillCashRegister:
             //     FillCashRegister(task);
             //     break;
@@ -34,8 +34,8 @@ public static class TaskBuilder
     {
         Dictionary<TaskType, List<String>> dict = new Dictionary<TaskType, List<String>>();
         dict.Add(TaskType.DepositMoney, DepositMoney());
-        dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
-        dict.Add(TaskType.ATMDeposit, ATMDeposit());
+//        dict.Add(TaskType.ChangeIntoCash, ChangeIntoCash());
+//        dict.Add(TaskType.ATMDeposit, ATMDeposit());
         // dict.Add(TaskType.FillCashRegister, FillCashRegister());
         // dict.Add(TaskType.EmptyCashRegister, EmptyCashRegister());
         // dict.Add(TaskType.OpenBankDoor, OpenBankDoor());

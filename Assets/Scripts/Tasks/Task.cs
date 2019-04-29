@@ -318,6 +318,8 @@ public class Task : MonoBehaviour
                         
                         var player = FindObjectOfType<PlayerTaskController>();
                         if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Register Filled", player.transform);
+                        
+                        Destroy(GameObject.Find("TutorialCanvas"));
                     } 
 
                     break;
