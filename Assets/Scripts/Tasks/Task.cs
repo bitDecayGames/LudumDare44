@@ -239,7 +239,9 @@ public class Task : MonoBehaviour
         Score.FailedTasks++;
         Score.TotalTasks++;
 
-        //TODO Play fail sound here
+        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CustomerLeft);
+        var player = FindObjectOfType<PlayerTaskController>();
+        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Negative("Customer left", player.transform);
         
         TaskStep leaveStep = 
             TaskStep.Create()
