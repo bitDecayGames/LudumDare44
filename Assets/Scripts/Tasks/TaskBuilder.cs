@@ -241,4 +241,124 @@ public static class TaskBuilder
         stepList.Add(TaskStepType.BankDoor.ToString().ToLower());
         return stepList;
     }
+
+    static void OpenAccount(Task task)
+    {
+        task.type = TaskType.OpenAccount;
+
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .NPC()
+            .AddTo(task);
+
+        // MW this will make the check icon appear for a second I think
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .SetIcon(Icon.Check)
+            .NPC()
+            .AddTo(task);
+
+        TaskStep.Create()
+            .Type(TaskStepType.LeaveBuilding)
+            .NPC()
+            .AddTo(task);      
+    }
+    
+    static List<String> OpenAccount()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.ATM.ToString().ToLower());
+        stepList.Add(TaskStepType.LeaveBuilding.ToString().ToLower());
+        return stepList;
+    }
+
+        static void ATMDeposit(Task task)
+    {
+        task.type = TaskType.ATMDeposit;
+
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .NPC()
+            .AddTo(task);
+
+        // MW this will make the check icon appear for a second I think
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .SetIcon(Icon.Check)
+            .NPC()
+            .AddTo(task);
+
+        TaskStep.Create()
+            .Type(TaskStepType.LeaveBuilding)
+            .NPC()
+            .AddTo(task);      
+    }
+    
+    static List<String> ATMDeposit()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.ATM.ToString().ToLower());
+        stepList.Add(TaskStepType.LeaveBuilding.ToString().ToLower());
+        return stepList;
+    }
+
+        static void ATMDeposit(Task task)
+    {
+        task.type = TaskType.ATMDeposit;
+
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .NPC()
+            .AddTo(task);
+
+        // MW this will make the check icon appear for a second I think
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .SetIcon(Icon.Check)
+            .NPC()
+            .AddTo(task);
+
+        TaskStep.Create()
+            .Type(TaskStepType.LeaveBuilding)
+            .NPC()
+            .AddTo(task);      
+    }
+    
+    static List<String> ATMDeposit()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.ATM.ToString().ToLower());
+        stepList.Add(TaskStepType.LeaveBuilding.ToString().ToLower());
+        return stepList;
+    }
+
+        static void ATMDeposit(Task task)
+    {
+        task.type = TaskType.ATMDeposit;
+
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .NPC()
+            .AddTo(task);
+
+        // MW this will make the check icon appear for a second I think
+        TaskStep.Create()
+            .Type(TaskStepType.ATM)
+            .SetIcon(Icon.Check)
+            .NPC()
+            .AddTo(task);
+
+        TaskStep.Create()
+            .Type(TaskStepType.LeaveBuilding)
+            .NPC()
+            .AddTo(task);      
+    }
+    
+    static List<String> ATMDeposit()
+    {
+        List<String> stepList = new List<String>();
+        stepList.Add(TaskStepType.ATM.ToString().ToLower());
+        stepList.Add(TaskStepType.LeaveBuilding.ToString().ToLower());
+        return stepList;
+    }
 }

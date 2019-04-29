@@ -11,6 +11,7 @@ public enum TaskStepType {
     CoinMachine,
     ATM,
     LeaveBuilding,
+    AccountComputer
 }
 
 public class TaskStep
