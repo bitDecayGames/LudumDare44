@@ -86,7 +86,7 @@ public class Task : MonoBehaviour
         var npcOccupier = SomeNpc.GetComponentInChildren<Board.Board.Occupier>();
         var board = FindObjectOfType<BoardManager>();
             
-        if (board.board.poiLocations.ContainsKey("npcSpawn"))
+        if (board.board.poiLocations.ContainsKey("npcSpawn".ToLower()))
         {
             // TODO make sure we spawn these thigns reasonably
             var mySpawn = pickSpawnLocation(board.board);
@@ -101,22 +101,22 @@ public class Task : MonoBehaviour
     }
 
     private Board.Board.Node pickSpawnLocation(Board.Board board) {
-        var spawnPoints = board.poiLocations["npcSpawn"].FindAll(p => p != null && p.myNode != null).ConvertAll(p => p.myNode);
+        var spawnPoints = board.poiLocations["npcSpawn".ToLower()].FindAll(p => p != null && p.myNode != null).ConvertAll(p => p.myNode);
         List<Board.Board.Node> possibleSpawns = spawnPoints.FindAll(n => n.occupier == null && !n.npcOffLimits);
         if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
         possibleSpawns.Clear();
         spawnPoints.ForEach(n => {
-            possibleSpawns.AddRange(expandNode(n.up));
-            possibleSpawns.AddRange(expandNode(n.right));
-            possibleSpawns.AddRange(expandNode(n.down));
-            possibleSpawns.AddRange(expandNode(n.left));
+            possibleSpawns.AddRange(ExpandNode(n.up));
+            possibleSpawns.AddRange(ExpandNode(n.right));
+            possibleSpawns.AddRange(ExpandNode(n.down));
+            possibleSpawns.AddRange(ExpandNode(n.left));
         });
         possibleSpawns = possibleSpawns.FindAll(n => n != null && n.occupier == null && !n.npcOffLimits);
         if (possibleSpawns.Count > 0) return possibleSpawns[UnityEngine.Random.Range(0, possibleSpawns.Count)];
         return null;
     }
 
-    private List<Board.Board.Node> expandNode(Board.Board.Node node) {
+    public static List<Board.Board.Node> ExpandNode(Board.Board.Node node) {
         var tmp = new List<Board.Board.Node>();
         if (node != null) {
             tmp.Add(node);
@@ -147,6 +147,7 @@ public class Task : MonoBehaviour
     public void AddStep(TaskStep step)
     {
         steps.Enqueue(step);
+        MaybeAddCar(step);
     }
 
     void CreateIconsForStep(TaskStep step)
@@ -193,7 +194,7 @@ public class Task : MonoBehaviour
 
             List<Board.Board.POI> pois;
             if (allStepTypeNodes.Count == 0) {
-                pois = bm.board.poiLocations.ContainsKey(step.type.ToString()) ? bm.board.poiLocations[step.type.ToString()] : new List<Board.Board.POI>();
+                pois = bm.board.poiLocations.ContainsKey(step.type.ToString().ToLower()) ? bm.board.poiLocations[step.type.ToString().ToLower()] : new List<Board.Board.POI>();
                 foreach (var poi in pois)
                 {
                     allStepTypeNodes.Add(poi.myNode);
@@ -231,6 +232,35 @@ public class Task : MonoBehaviour
         }
     }
 
+    void MaybeAddCar(TaskStep step)
+    {
+        if (!step.addCar) {
+            return;
+        }
+
+        CarController cc = FindObjectOfType<CarController>();
+        if (cc != null) {
+            cc.CreateCar();
+        }
+    }
+
+    void MaybeRemoveCar(TaskStep step)
+    {
+        if (!step.removeCar) {
+            return;
+        }
+
+        RemoveCar();
+    }
+
+    void RemoveCar()
+    {
+        CarController cc = FindObjectOfType<CarController>();
+        if (cc != null) {
+            cc.RemoveCar();
+        }
+    }
+
     void ClearIcons()
     {
         foreach (GameObject icon in Icons)
@@ -238,6 +268,25 @@ public class Task : MonoBehaviour
             Destroy(icon);
         }
         Icons.Clear();
+    }
+
+    void FeedbackPositive(string msg)
+    {
+       if (taskManager != null && taskManager.Feedback != null)
+        {
+            var player = FindObjectOfType<PlayerTaskController>();
+            taskManager.Feedback.Positive(msg, player.transform);
+        }
+    }
+
+    void FeedbackNegative(string msg)
+    {
+        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CustomerLeft);
+        if (taskManager != null && taskManager.Feedback != null)
+        {
+            var player = FindObjectOfType<PlayerTaskController>();
+            taskManager.Feedback.Negative(msg, player.transform);
+        }
     }
 
     public void Fail()
@@ -249,9 +298,9 @@ public class Task : MonoBehaviour
         Score.FailedTasks++;
         Score.TotalTasks++;
 
-        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CustomerLeft);
         var player = FindObjectOfType<PlayerTaskController>();
-        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Negative("Customer left", player.transform);
+        FeedbackNegative("Customer left");
+        RemoveCar();
         
         TaskStep leaveStep = 
             TaskStep.Create()
@@ -276,15 +325,27 @@ public class Task : MonoBehaviour
             return;
         }
 
-        if (completer != null && SomeNpc != completer)
+//TODO make so npc can only commplete npc steps
+
+        if (!completer.tag.Equals("Player") && SomeNpc != completer)
         {
             // Debug.Log("Wrong NPC tried to complete a task");
             return;
         }
 
+        if (completer.tag.Equals("Player") && currentStep.npcStep) return;
+        if (!completer.tag.Equals("Player") && !currentStep.npcStep) return;
+
         steps.Dequeue();
         currentStep.complete = true;
         completedSteps.Add(currentStep);
+
+        MaybeRemoveCar(currentStep);
+        if (steps.Count > 0)
+        {
+            MaybeAddCar(steps.Peek());
+        }
+
         if (currentStep.lastStepForSuccess) {
             Score.CompletedTasks++;
             Score.TotalTasks++;
@@ -295,8 +356,7 @@ public class Task : MonoBehaviour
             switch (currentStep.type)
             {
                 case TaskStepType.Safe:
-                    var player = FindObjectOfType<PlayerTaskController>();
-                    if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Cash Grabbed", player.transform);
+                    FeedbackPositive("Cash Grabbed");
                     break;
             }
         }
@@ -308,34 +368,45 @@ public class Task : MonoBehaviour
                     FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Bills);
                     break;
                 case TaskStepType.CashRegister:
-                    if (!currentStep.lastStepForSuccess && completer == null && this.type == TaskType.DepositMoney)
+                    if (!currentStep.lastStepForSuccess && completer.tag.Equals("Player") && this.type == TaskType.DepositMoney)
                     {
                         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.GreetCustomer);
                         
-                        Debug.Log("task type: " + this.type);
-                        
-                        var player = FindObjectOfType<PlayerTaskController>();
-                        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Customer Greeted", player.transform);
+                        FeedbackPositive("Customer Greeted");
                     }
-                    else if (currentStep.lastStepForSuccess && completer == null)
+                    else if (currentStep.lastStepForSuccess && completer.tag.Equals("Player"))
                     {
                         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ByeCustomer);                    
                         
-                        var player = FindObjectOfType<PlayerTaskController>();
-                        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Happy Customer!", player.transform);
+                        FeedbackPositive("Happy Customer!");
                     } 
-                    else if (this.type == TaskType.OpenBankDoor && completer == null)
+                    else if (this.type == TaskType.OpenBankDoor && completer.tag.Equals("Player"))
                     {
                         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CashRegister);                    
                         
-                        var player = FindObjectOfType<PlayerTaskController>();
-                        if (taskManager != null && taskManager.Feedback != null) taskManager.Feedback.Positive("Register Filled", player.transform);
+                        FeedbackPositive("Register Filled");
                         
                         Destroy(GameObject.Find("TutorialCanvas"));
                     } 
-
                     break;
             }
+        }
+
+        // Show feedback for different tasks, without a bunch of other crazy logic
+        switch (currentStep.type)
+        {
+            case TaskStepType.AccountComputer:
+
+                var player = FindObjectOfType<PlayerTaskController>();
+                if (taskManager != null && taskManager.Feedback != null)
+                {
+                    if (!currentStep.npcStep)
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ByeCustomer);   
+                        taskManager.Feedback.Positive("New Account Opened!", player.transform);
+                    }
+                }
+                break;
         }
 
         ClearIcons();

@@ -38,5 +38,6 @@ namespace Board {
         private void UpdatePos() {
             transform.localPosition = boardPos.ToWorldPos();
         }
+
     }
 }

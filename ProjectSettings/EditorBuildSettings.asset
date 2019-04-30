@@ -15,39 +15,42 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/TitleScreen.unity
     guid: 358ba7203b34a2f4e8edcab9c1cad88c
   - enabled: 1
-    path: Assets/Scenes/Levels/NewScene.unity
-    guid: adb732fea9fac504b9ae5897b0698235
-  - enabled: 1
-    path: Assets/Scenes/Levels/JakesWorld.unity
-    guid: b0c89745981b7db4bae4b0b8c24a40f9
-  - enabled: 1
-    path: Assets/Scenes/Levels/LoganWorld.unity
-    guid: 30eb159f139b146a8a0b5908ccb5ebc8
-  - enabled: 1
-    path: Assets/Scenes/Debug/DebugPlayerAnimations.unity
-    guid: d8994fe563b3e4e739cfb04ad81befda
-  - enabled: 1
-    path: Assets/Scenes/Levels/TannersWorldMine.unity
-    guid: e0251f5302f63ff4ebdeb2eae81fa16e
-  - enabled: 1
-    path: Assets/Scenes/Levels/Prod/Level1.unity
-    guid: f3e71b23dcbdf45269dfcacbfe37b505
-  - enabled: 1
     path: Assets/Scenes/Menus/LevelSelect.unity
     guid: ec4bad4b50d9d417cbdfcfcb09104b8b
   - enabled: 1
     path: Assets/Scenes/Menus/Credits.unity
     guid: 7743121c791ff02489f423b474567c28
+  - enabled: 0
+    path: Assets/Scenes/Levels/NewScene.unity
+    guid: adb732fea9fac504b9ae5897b0698235
+  - enabled: 0
+    path: Assets/Scenes/Levels/JakesWorld.unity
+    guid: b0c89745981b7db4bae4b0b8c24a40f9
+  - enabled: 0
+    path: Assets/Scenes/Levels/LoganWorld.unity
+    guid: 30eb159f139b146a8a0b5908ccb5ebc8
   - enabled: 1
-    path: Assets/Scenes/Levels/Prod/Level2.unity
-    guid: dd8a39c51660649319f1a3268fba903c
+    path: Assets/Scenes/Debug/DebugPlayerAnimations.unity
+    guid: d8994fe563b3e4e739cfb04ad81befda
+  - enabled: 0
+    path: Assets/Scenes/Levels/TannersWorldMine.unity
+    guid: e0251f5302f63ff4ebdeb2eae81fa16e
   - enabled: 1
     path: Assets/Scenes/Menus/Score.unity
     guid: 503c74c4ed2354934b8edb0ef7ae2737
   - enabled: 1
+    path: Assets/Scenes/Levels/Prod/Level1.unity
+    guid: f3e71b23dcbdf45269dfcacbfe37b505
+  - enabled: 1
+    path: Assets/Scenes/Levels/Prod/Level2.unity
+    guid: dd8a39c51660649319f1a3268fba903c
+  - enabled: 0
     path: Assets/Scenes/Levels/RockosWorld.unity
     guid: 0d9fda158013f0d4fbc7d88b1f03f2cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/FishersTestLand.unity
     guid: cb94f1b749047b64cbfa871153e917b3
+  - enabled: 1
+    path: Assets/Scenes/Levels/Prod/Level3.unity
+    guid: 52ea6debe2a77dd428cc281c0cdaf4d0
   m_configObjects: {}

@@ -42,7 +42,7 @@ public class PlayerTaskController : MonoBehaviour
                 {
                     // Debug.Log("Found Node Property");
                     var typeProperty = new CustomProperty();
-                    if (nodeProperty.TryGetCustomProperty("TaskStepType", out typeProperty))
+                    if (nodeProperty.TryGetCustomProperty("TaskStepType", out typeProperty) && !typeProperty.m_Value.Equals(""))
                     {
                         // Debug.Log("Property: " + typeProperty.m_Value);
                         TaskManager manager = FindObjectOfType<TaskManager>();
@@ -55,7 +55,8 @@ public class PlayerTaskController : MonoBehaviour
                             {
                                 if(node != null && node.Equals(checkNode))
                                 {
-                                    manager.CompleteTaskStep(taskStepType, null);
+                                    var playerGO = GameObject.FindGameObjectWithTag("Player");
+                                    manager.CompleteTaskStep(taskStepType, playerGO);
                                     break;
                                 }
                             }

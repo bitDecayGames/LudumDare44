@@ -27,6 +27,8 @@ public class TaskStep
     public string SFX;
     public bool lastStepForSuccess = false;
     public string meta;
+    public bool addCar;
+    public bool removeCar;
     
     public static TaskStep Create()
     {
@@ -63,10 +65,24 @@ public class TaskStep
         return this;
     }
 
-    public TaskStep TriggersSuccess() {
+    public TaskStep TriggersSuccess()
+    {
         lastStepForSuccess = true;
         return this;
     }
+
+    public TaskStep AddCar()
+    {
+        addCar = true;
+        return this;
+    }
+
+    public TaskStep RemoveCar()
+    {
+        removeCar = true;
+        return this;
+    }
+
 
     public void AddTo(Task task)
     {

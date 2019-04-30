@@ -12,7 +12,7 @@ public class NpcController : MonoBehaviour
     TaskManager taskManager;
     private bool isInited = false;
 
-    float MaxWaitTimeSeconds = 30;
+    const float MaxWaitTimeSeconds = 60;
     float totalWaitTime;
 
     bool waiting;
@@ -91,8 +91,11 @@ public class NpcController : MonoBehaviour
         }
         else if (ShouldLeave())
         {
-            leaving = true;
-            task.Fail();
+            if (task == null) Kill();
+            else {
+                leaving = true;
+                task.Fail();
+            }
         }
     }
 
