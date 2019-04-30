@@ -388,6 +388,12 @@ public class Task : MonoBehaviour
                         
                         Destroy(GameObject.Find("TutorialCanvas"));
                     } 
+                    else if (this.type == TaskType.ChangeIntoCash && completer.tag.Equals("Player"))
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Coinstar);                    
+                        
+                        FeedbackPositive("Coins converted to bills");
+                    } 
                     break;
             }
         }
