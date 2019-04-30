@@ -129,9 +129,9 @@ public class TaskManager : MonoBehaviour
                     if (task.IsComplete()) {
                         Destroy(go);
                     }
+                    
+                    break;
                 }
-
-                break;
             }
         }
     }
