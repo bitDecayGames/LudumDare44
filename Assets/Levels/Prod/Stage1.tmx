@@ -640,8 +640,16 @@
   <object id="121" gid="45" x="216" y="432" width="16" height="32"/>
   <object id="122" gid="75" x="200" y="448" width="16" height="32"/>
   <object id="123" gid="72" x="144" y="384" width="16" height="32"/>
-  <object id="124" gid="71" x="144" y="392" width="16" height="32"/>
-  <object id="125" gid="71" x="144" y="400" width="16" height="32"/>
+  <object id="124" gid="71" x="144" y="392" width="16" height="32">
+   <properties>
+    <property name="TaskStepType" value=""/>
+   </properties>
+  </object>
+  <object id="125" gid="71" x="144" y="400" width="16" height="32">
+   <properties>
+    <property name="TaskStepType" value=""/>
+   </properties>
+  </object>
   <object id="174" name="Spawn" x="216" y="472">
    <point/>
   </object>
