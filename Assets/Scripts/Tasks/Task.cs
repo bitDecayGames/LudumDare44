@@ -66,7 +66,7 @@ public class Task : MonoBehaviour
             npcController.AssignTask(this);
             if(steps.Peek().npcStep)
             {
-                npcController.AssignStep(steps.Peek());
+                npcController.AssignStep(this, steps.Peek());
             }
         }
         TryAssignNodeToStep(steps.Peek());
@@ -309,7 +309,7 @@ public class Task : MonoBehaviour
                 .NPC();
 
         AddStep(leaveStep);
-        npcController.AssignStep(leaveStep);
+        npcController.AssignStep(this, leaveStep);
     }
 
     public void CompleteStep(TaskStepType type, GameObject completer) {
@@ -419,7 +419,7 @@ public class Task : MonoBehaviour
         TaskStep nextStep = steps.Peek();
         if(nextStep.npcStep)
         {
-            npcController.AssignStep(nextStep);
+            npcController.AssignStep(this, nextStep);
         }
         TryAssignNodeToStep(nextStep);
         CreateIconsForStep(nextStep);

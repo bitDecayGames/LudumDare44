@@ -124,13 +124,23 @@ public class TaskManager : MonoBehaviour
             var expandedNextStepNode = Task.ExpandNode(nextStep.node);
             foreach (var node in expandedNextStepNode)
             {
+                
                 if (node.Equals(completerNode)){
                     task.CompleteStep(type, completer);
                     if (task.IsComplete()) {
                         Destroy(go);
                     }
+
+                    break;
                 }
             }
+        }
+    }
+
+    public void NpcCompleteTaskStep(Task task, TaskStep step, GameObject completer) {
+        task.CompleteStep(step.type, completer);
+        if (task.IsComplete()) {
+            Destroy(task.gameObject);
         }
     }
 
