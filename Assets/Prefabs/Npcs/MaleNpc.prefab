@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a56bf3ac2c543cfa30faf2439b0faa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDebug: 1
+  isDebug: 0
   facing: 0
 --- !u!114 &5246299946009712836
 MonoBehaviour:
@@ -174,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5468375bbb9614d61aca79b16c05f16f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {x: 0, y: 0}
 --- !u!114 &466414098795624202
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -62,7 +62,7 @@ namespace Utils {
             tasker.Npcs = npcs;
             tasker.Feedback = feedback;
             iconer.Icons = icons;
-            board.isDebug = true; // TODO: MW set this to false in PROD
+//            board.isDebug = true; // TODO: MW set this to false in PROD
         }
     }
 }
