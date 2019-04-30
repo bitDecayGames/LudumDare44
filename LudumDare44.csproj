@@ -350,6 +350,7 @@
     <Compile Include="Assets\Scripts\Movement\Facing.cs" />
     <Compile Include="Assets\Scripts\Movement\NpcMove.cs" />
     <Compile Include="Assets\Scripts\Movement\SimpleMove.cs" />
+    <Compile Include="Assets\Scripts\Npc\CutsceneController.cs" />
     <Compile Include="Assets\Scripts\Npc\NpcController.cs" />
     <Compile Include="Assets\Scripts\Tasks\PlayerTaskController.cs" />
     <Compile Include="Assets\Scripts\Tasks\Task.cs" />
