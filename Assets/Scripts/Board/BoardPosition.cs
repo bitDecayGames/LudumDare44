@@ -3,10 +3,14 @@ using Utils;
 
 namespace Board {
     public class BoardPosition : MonoBehaviour {
+
+        public Vector2 pos = new Vector2();
+        
         public int X {
             get { return boardPos.x; }
             set {
                 boardPos.x = value;
+                pos.x = value;
                 UpdatePos();
             }
         }
@@ -15,6 +19,7 @@ namespace Board {
             get { return boardPos.y; }
             set {
                 boardPos.y = value;
+                pos.y = value;
                 UpdatePos();
             }
         }
