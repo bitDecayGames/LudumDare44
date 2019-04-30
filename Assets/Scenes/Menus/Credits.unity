@@ -1197,10 +1197,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Art\n\tErik \"New Perspective\" Meredith\n\nMusic\n\tTanner \"Second Time's
-    the Charm\" Moore\n\nProgramming\n\tJake \"Tamago Sensei\" Caban-Tomski\n\tTanner
-    \"Come and Go\" Moore\n\tJake \"Step Master\" Fisher\n\tLogan \"Resting my Eyes\"
-    Moore\n\tMichael \"The Economist\" Wingfield"
+  m_text: "Art\n\tErik \"New Perspective\" Meredith\n\nMusic Writing/Composition and
+    SFX\n\tTanner \"Second Time's the Charm\" Moore\n\nProgramming\n\tJake \"Tamago
+    Sensei\" Caban-Tomski\n\tTanner \"Come and Go\" Moore\n\tJake \"Step Master\"
+    Fisher\n\tLogan \"Resting my Eyes\" Moore\n\tMichael \"The Economist\" Wingfield"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1269,10 +1269,10 @@ MonoBehaviour:
   m_margin: {x: 17.897236, y: 21.476652, z: 0, w: 42.95335}
   m_textInfo:
     textComponent: {fileID: 1919264777}
-    characterCount: 252
+    characterCount: 280
     spriteCount: 0
-    spaceCount: 43
-    wordCount: 35
+    spaceCount: 46
+    wordCount: 39
     linkCount: 0
     lineCount: 12
     pageCount: 1
