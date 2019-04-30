@@ -5440,6 +5440,7 @@ ScriptedImporter:
     110870: _MapPrfab/Stage2/NPCOnlyCollisions/Object_17 (TRS)/Object_17 (CF)/Object_17
     110872: _MapPrfab/Stage2/Interactables/Spawn
     110874: _MapPrfab/Stage2/Line/Line Start
+    110876: _MapPrfab/Stage2/Line/Object_383
     110878: _MapPrfab/Stage2/POIs/Wait zone
     110880: _MapPrfab/Stage2/POIs/Wait zone (1)
     110882: _MapPrfab/Stage2/POIs/Wait zone (2)
@@ -5459,6 +5460,7 @@ ScriptedImporter:
     110910: _MapPrfab/Stage2/Interactables/Despawn (6)
     110912: _MapPrfab/Stage2/POIs/Wait zone (4)
     110914: _MapPrfab/Stage2/POIs/LineStart
+    110916: _MapPrfab/Stage2/POIs/LineStart (1)
     400000: _MapPrfab/Stage2/Transform
     400002: _MapPrfab/Stage2/Collisions/Transform
     400004: _MapPrfab/Stage2/Collisions/Object_28 (TRS)/Transform
@@ -10897,6 +10899,7 @@ ScriptedImporter:
     410870: _MapPrfab/Stage2/NPCOnlyCollisions/Object_17 (TRS)/Object_17 (CF)/Object_17/Transform
     410872: _MapPrfab/Stage2/Interactables/Spawn/Transform
     410874: _MapPrfab/Stage2/Line/Line Start/Transform
+    410876: _MapPrfab/Stage2/Line/Object_383/Transform
     410878: _MapPrfab/Stage2/POIs/Wait zone/Transform
     410880: _MapPrfab/Stage2/POIs/Wait zone (1)/Transform
     410882: _MapPrfab/Stage2/POIs/Wait zone (2)/Transform
@@ -10916,7 +10919,9 @@ ScriptedImporter:
     410910: _MapPrfab/Stage2/Interactables/Despawn (6)/Transform
     410912: _MapPrfab/Stage2/POIs/Wait zone (4)/Transform
     410914: _MapPrfab/Stage2/POIs/LineStart/Transform
+    410916: _MapPrfab/Stage2/POIs/LineStart (1)/Transform
     6800000: _MapPrfab/Stage2/Line/Line Start/EdgeCollider2D
+    6800002: _MapPrfab/Stage2/Line/Object_383/EdgeCollider2D
     11400000: _MapPrfab/Stage2/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _superAsset
     11400004: _MapPrfab/Stage2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -17130,6 +17135,8 @@ ScriptedImporter:
     11412420: _MapPrfab/Stage2/Line/Line Start/MonoBehaviour-SuperTiled2Unity.SuperObject
     11412422: _MapPrfab/Stage2/Line/Line Start/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11412424: _MapPrfab/Stage2/Line/Line Start/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11412426: _MapPrfab/Stage2/Line/Object_383/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11412428: _MapPrfab/Stage2/Line/Object_383/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11412430: _MapPrfab/Stage2/POIs/Wait zone/MonoBehaviour-SuperTiled2Unity.SuperObject
     11412432: _MapPrfab/Stage2/POIs/Wait zone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11412434: _MapPrfab/Stage2/POIs/Wait zone (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -17168,6 +17175,9 @@ ScriptedImporter:
     11412500: _MapPrfab/Stage2/POIs/Wait zone (4)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11412502: _MapPrfab/Stage2/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperObject
     11412504: _MapPrfab/Stage2/POIs/LineStart/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11412506: _MapPrfab/Stage2/Line/Object_383/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11412508: _MapPrfab/Stage2/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11412510: _MapPrfab/Stage2/POIs/LineStart (1)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/Stage2/Collisions/Object_28 (TRS)/Object_28 (CF)/Object_28/SpriteRenderer
     21200002: _MapPrfab/Stage2/Collisions/Object_29 (TRS)/Object_29 (CF)/Object_29/SpriteRenderer
     21200004: _MapPrfab/Stage2/Collisions/Object_30 (TRS)/Object_30 (CF)/Object_30/SpriteRenderer
