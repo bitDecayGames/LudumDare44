@@ -17,4 +17,5 @@ public class SFX
 	public const string CloseVault = "CloseVault";
 	public const string OpenDoor = "OpenDoor";
 	public const string CloseDoor = "CloseDoor";
+	public const string Menu = "Menu";
 }
