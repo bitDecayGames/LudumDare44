@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f19f7e0c8840338c139b66236afdec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFadeOut: 2
+  timeToFadeOut: 3
 --- !u!114 &5773502249554051055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,4 +248,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06543b42e1446519647f509fa7886e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.01
+  Speed: 0.005

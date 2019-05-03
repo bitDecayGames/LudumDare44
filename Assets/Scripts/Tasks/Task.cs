@@ -372,7 +372,7 @@ public class Task : MonoBehaviour
                     {
                         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.GreetCustomer);
                         
-                        FeedbackPositive("Customer Greeted");
+                        FeedbackPositive("Deposit Their Money To the Vault");
                     }
                     else if (currentStep.lastStepForSuccess && completer.tag.Equals("Player"))
                     {
@@ -390,10 +390,26 @@ public class Task : MonoBehaviour
                     } 
                     else if (this.type == TaskType.ChangeIntoCash && completer.tag.Equals("Player"))
                     {
-                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Coinstar);                    
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.GreetCustomer);                    
                         
-                        FeedbackPositive("Coins converted to bills");
+                        FeedbackPositive("Go Convert Coins Into Cash");
                     } 
+                    else if (this.type == TaskType.CheckCashing && completer.tag.Equals("Player"))
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.GreetCustomer);                    
+                        
+                        FeedbackPositive("Go Get Cash From Vault");
+                    } 
+                    break;
+                    
+                case TaskStepType.CoinMachine:
+                    if (completer.tag.Equals("Player"))
+                    {
+                        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Coinstar);
+
+                        FeedbackPositive("Converted!");
+                    }
+
                     break;
             }
         }
