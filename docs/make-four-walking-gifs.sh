@@ -21,5 +21,5 @@ done
 convert -loop 0 -delay 20 $sheets tmp/four-characters.gif
 
 convert tmp/four-characters.gif -coalesce tmp/four-characters-coalesced.gif
-convert -size 64x32 tmp/four-characters-coalesced.gif -resize 512x256 final/four-characters.gif
+convert -size 64x32 tmp/four-characters-coalesced.gif -scale 800% final/four-characters.gif
 rm -r tmp
